@@ -1,0 +1,367 @@
+
+# Danmark set fra Luften
+        
+## Beskrivelse
+
+Dette er en beskrivelse af de services som KB udstiller i forbindelse med Danmark set fra Luften.
+
+Luftfoto frontenden - Danmark Set Fra Luften - henter data fra følgende kilder:
+
+1. COP: diverse billedsamlinger; breve, luftfotos, småtryk, portrætter etc.
+2. AnnotationEngine (Indeholder kommentarer, tags og relationer mellem og til URI's
+3. COWI: Historiske overflyvningskort fra 1954, 1995 og 2006. Disse overflyvningskort er under COWIs
+4. Frontenden - Danmark Set Fra Luften kan ses på [http://www.kb.dk/danmarksetfraluften/](http://www.kb.dk/danmarksetfraluften/)
+        
+Og én af backendens mange services kan kan nås via [http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/](http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/)
+        
+En simpel områdesøgning i KML format:
+
+http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=kml&type=all&bbo=10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
+        
+Servicen er Amazon A9 open Search compliant, læs mere på a9.com
+
+Kendte mangler og kommende ændringer:
+Det er ikke muligt at begrænse resultater til kun at vise korrekt placerede luftfotos.
+
+## Beskrivelse af simplificerede luftfoto json services.
+
+## COP-02 Backend - Syndication Service
+        
+http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/ (the whole collection)
+http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/object59452/ (a single record)
+
+Method: HTTP GET
+
+### Parameters and sample values
+
+Format =(kml,rss, atom, mods)
+
+type = all, 1,2,3
+all = Alle typer, all types of photos
+
+        1 = Skråfoto, aerial photo with an angle.
+        2 = Lodfoto, 90 degree aerial photo (no data at the moment)
+        3 = Protokolside, Protocol page
+        bbo = 10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444
+
+http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=kml&type=all&bbo=10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0&correctness=1
+        
+notBefore=1920-01-01
+        Do not return pictures before this date YYYY-MM-DD
+notAfter=1970-12-31
+        Do not return pictures after this date YYYY-MM-DD
+
+itemsPerPage=1-5000
+        The number of items to be returned per
+page. If 10000 records is found in an area only 5000 will be
+displayed, the last items (5001 to 10000) can be retrieved by
+setting the page variable to 2
+
+page= 1,2,3 etc. depending on the number of results. Works as an offset value.
+
+random= a value between 0.0 and 1.0. Optional and only relevant for the
+luftfoto frontend...
+
+query= a search term.
+
+Further specification on the query search term
+
+        location:X
+        person:Y
+        address:Z
+        building:A
+
+Searching with a query string
+Searching with a query string 
+
+"Lykkegård" and person::"Jørgensen" sic: the text says double colon 
+        
+http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=rss&query=lykkeg%C3%A5rd%26person%3A%3AJ%C3%B8rgensen&type=all&bbo=10.826596760620077,55.54834253439101,10.590219044555624,55.45734180334893&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
+        
+Example Output in KML
+
+```
+<kml>
+  <Document>
+    <Style id="balloon-style">
+      <BalloonStyle>
+	<text>
+	  <img src='$[subjectThumbnailSrc]' />
+	  <br />
+	  <b>Navn:</b> $[subjectName]<br />
+	  <b>Årstal:</b> $[subjectCreationDate]<br />
+	  <b>Sted:</b> $[subjectGeographic]<br /><br />
+	  <a href='$[subjectLink]'>Mere info</a>
+	</text>
+      </BalloonStyle>
+    </Style>
+    <startIndex>1</startIndex>
+    <itemsPerPage>3</itemsPerPage>
+    <Query role="request" searchTerms="{}" startPage="1"/>
+    <totalResults>511</totalResults>
+    <link href="http://www.kb.dk/cop/images/luftfo/2011/maj/luftfoto" rel="search" type="application/opensearchdescription+xml"/>
+    <link href="http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/" rel="search" type="application/kml+xml"/>
+    <Placemark id="object78814">
+      <name>Lykkegård, Valdemar, gårdejer (1948)</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object78814"/>
+      <Point>
+	<coordinates>10.686429993629417,55.49797116219872</coordinates>
+      </Point>
+      <ExtendedData>
+	<Data name="subjectLink">
+	  <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object78814</value>
+	</Data>
+	<Data name="subjectName">
+	  <value>Lykkegård, Valdemar, gårdejer</value>
+	</Data>
+	<Data name="subjectCreatorName">
+	  <value>Sylvest Jensen</value>
+	</Data>
+	<Data name="subjectCreationDate">
+	  <value>1948</value>
+	</Data>
+	<Data name="subjectGenre">
+	  <value>Skråfoto</value>
+	</Data>
+	<Data name="subjectNote">
+	  <value/>
+	</Data>
+	<Data name="subjectGeographic">
+	  <value>Danmark, Fyn, Viby</value>
+	</Data>
+	<Data name="subjectImageSrc">
+	  <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3147/L3147_38.jpg</value>
+	</Data>
+	<Data name="subjectThumbnailSrc">
+	  <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3147/L3147_38.jpg</value>
+	</Data>
+	<Data name="recordCreationDate">
+	  <value>2011-07-11</value>
+	</Data>
+	<Data name="recordChangeDate">
+	  <value>2012-02-16</value>
+	</Data>
+	<Data name="correctness">
+	  <value>1</value>
+	</Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark id="object78546">
+      <name>Petersen, gårdejer (1936/1937/1938)</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object78546"/>
+      <Point>
+	<coordinates>10.685745670318965,55.49695929660715</coordinates>
+      </Point>
+      <ExtendedData>
+	<Data name="subjectLink">
+	  <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object78546</value>
+	</Data>
+	<Data name="subjectName">
+	  <value>Petersen, gårdejer</value>
+	</Data>
+	<Data name="subjectCreatorName">
+	  <value>Sylvest Jensen</value>
+	</Data>
+	<Data name="subjectCreationDate">
+	  <value>1936/1937/1938</value>
+	</Data>
+	<Data name="subjectGenre">
+	  <value>Skråfoto</value>
+	</Data>
+	<Data name="subjectNote">
+	  <value/>
+	</Data>
+	<Data name="subjectGeographic">
+	  <value>Danmark, Fyn, Viby</value>
+	</Data>
+	<Data name="subjectImageSrc">
+	  <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L0271/L0271_12.jpg</value>
+	</Data>
+	<Data name="subjectThumbnailSrc">
+	  <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L0271/L0271_12.jpg</value>
+	</Data>
+	<Data name="recordCreationDate">
+	  <value>2011-07-11</value>
+	</Data>
+	<Data name="recordChangeDate">
+	  <value>2011-07-11</value>
+	</Data>
+	<Data name="correctness">
+	  <value>1</value>
+	</Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark id="object78812">
+      <name>Hansen, uddeler (1948)</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object78812"/>
+      <Point>
+	<coordinates>10.68613495063778,55.496497415382834</coordinates>
+      </Point>
+      <ExtendedData>
+	<Data name="subjectLink">
+	  <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object78812</value>
+	</Data>
+	<Data name="subjectName">
+	  <value>Hansen, uddeler</value>
+	</Data>
+	<Data name="subjectCreatorName">
+	  <value>Sylvest Jensen</value>
+	</Data>
+	<Data name="subjectCreationDate">
+	  <value>1948</value>
+	</Data>
+	<Data name="subjectGenre">
+	  <value>Skråfoto</value>
+	</Data>
+	<Data name="subjectNote">
+	  <value/>
+	</Data>
+	<Data name="subjectGeographic">
+	  <value>Danmark, Fyn, Viby</value>
+	</Data>
+	<Data name="subjectImageSrc">
+	  <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3147/L3147_36.jpg</value>
+	</Data>
+	<Data name="subjectThumbnailSrc">
+	  <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3147/L3147_36.jpg</value>
+	</Data>
+	<Data name="recordCreationDate">
+	  <value>2011-07-11</value>
+	</Data>
+	<Data name="recordChangeDate">
+	  <value>2012-02-16</value>
+	</Data>
+	<Data name="correctness">
+	  <value>1</value>
+	</Data>
+      </ExtendedData>
+    </Placemark>
+  </Document>
+</kml>
+```
+## Shortcut - Luftfoto JSON Service 
+
+As an alternative to the xml based webservice a JSON REST service is available:
+
+type: POST
+
+url: http://www.kb.dk/danmarksetfraluften/async/search/
+request: bbo=10.395490670074423,55.22227193719089,10.296785378326376,55.18994697228769&zoom=14&lat=55.20611273543719&lng=10.346138024200382&page=1&q_fritekst=&q_stednavn=&q_bygningsnavn=&q_person=&q_adresse=&notBefore=1920&notAfter=1970&category=subject203&itemType=all&thumbnailSize=
+
+sample response (slightly modified to display less results):
+
+```
+{
+
+   "status":"OK",
+   "kmlFeedUrl":"REPLACED_EXTERNAL_BACKEND_GUI_URI/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format\u003dkml\u0026type\u003dall\u0026bbo\u003d10.395490670074423,55.22227193719089,10.296785378326376,55.18994697228769\u0026notBefore\u003d1920-01-01\u0026notAfter\u003d1970-12-31\u0026itemsPerPage\u003d50\u0026page\u003d1\u0026random\u003d0.0",
+   "rssUrl":"http://cop-02.kb.dk:8080/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format\u003drss\u0026type\u003dall\u0026bbo\u003d10.395490670074423,55.22227193719089,10.296785378326376,55.18994697228769\u0026notBefore\u003d1920-01-01\u0026notAfter\u003d1970-12-31\u0026itemsPerPage\u003d50\u0026page\u003d1\u0026random\u003d0.0",
+   "copjects":[
+      {
+         "id":"object80081",
+         "title":"Larsen, Marius, gårdejer (1949)",
+         "longitude":"10.299912225723233",
+         "latitude":"55.20855233840371",
+         "location":"Danmark, Fyn, Sandholt Lyndelse",
+         "mods":"",
+         "atomLink":"http://www.kb.dk/danmarksetfraluften/images/luftfo/2011/maj/luftfoto/object80081",
+         "imgUrl":"http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3555/L3555_31a.jpg",
+         "imgURLThumb":"http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3555/L3555_31a.jpg",
+         "imgURLFull":"",
+         "itemType":"Skråfoto",
+         "stjerne":"",
+         "photoYear":"1949",
+         "photoName":"Larsen, Marius, gårdejer",
+         "iconType":"",
+         "isPartofCluster":false,
+         "correctness":"1"
+      },
+      {
+
+         "id":"object80083",
+         "title":"Frederiksen, Fr., gårdejer (1949)",
+         "longitude":"10.301543008804288",
+         "latitude":"55.20570867133342",
+         "location":"Danmark, Fyn, Sandholt Lyndelse",
+         "mods":"",
+         "atomLink":"http://www.kb.dk/danmarksetfraluften/images/luftfo/2011/maj/luftfoto/object80083",
+         "imgUrl":"http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3555/L3555_32a.jpg",
+         "imgURLThumb":"http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3555/L3555_32a.jpg",
+         "imgURLFull":"",
+         "itemType":"Skråfoto",
+         "stjerne":"",
+         "photoYear":"1949",
+         "photoName":"Frederiksen, Fr., gårdejer",
+         "iconType":"",
+         "isPartofCluster":false,
+         "correctness":"1"
+      },
+      {
+         "id":"object79751",
+         "title":"(1949)",
+         "longitude":"10.344592463493541",
+         "latitude":"55.20884006089258",
+         "location":"Danmark, Fyn, Hillerslev",
+         "mods":"",
+         "atomLink":"http://www.kb.dk/danmarksetfraluften/images/luftfo/2011/maj/luftfoto/object79751",
+         "imgUrl":"http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3542/L3542_37a.jpg",
+         "imgURLThumb":"http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L-serien/Negativer/L3542/L3542_37a.jpg",
+         "imgURLFull":"",
+         "itemType":"Skråfoto",
+         "stjerne":"",
+         "photoYear":"1949",
+         "photoName":"",
+         "iconType":"",
+         "isPartofCluster":false,
+         "correctness":"1"
+      },
+      {
+         "id":"object69117",
+         "title":"(1939)",
+         "longitude":"10.300898918628718",
+         "latitude":"55.206124979742256",
+         "location":"Danmark, Fyn, Sandholt Lyndelse",
+         "mods":"",
+         "atomLink":"http://www.kb.dk/danmarksetfraluften/images/luftfo/2011/maj/luftfoto/object69117",
+         "imgUrl":"http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L0815_06.jpg",
+         "imgURLThumb":"http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L0815_06.jpg",
+         "imgURLFull":"",
+         "itemType":"Skråfoto",
+         "stjerne":"",
+         "photoYear":"1939",
+         "photoName":"",
+         "iconType":"",
+         "isPartofCluster":false,
+         "correctness":"1"
+      },
+      {
+         "id":"object69033",
+         "title":"Bondesen, Rs., gårdejer (1939)",
+         "longitude":"10.35555557834302",
+         "latitude":"55.19091957553203",
+         "location":"Danmark, Fyn, Nybølle",
+         "mods":"",
+         "atomLink":"http://www.kb.dk/danmarksetfraluften/images/luftfo/2011/maj/luftfoto/object69033",
+         "imgUrl":"http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L0812_16.jpg",
+         "imgURLThumb":"http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/L0812_16.jpg",
+         "imgURLFull":"",
+         "itemType":"Skråfoto",
+         "stjerne":"",
+         "photoYear":"1939",
+         "photoName":"Bondesen, Rs., gårdejer",
+         "iconType":"",
+         "isPartofCluster":true,
+         "correctness":"0"
+      },
+   ],
+   "totalResultsCount":153,
+   "currentPage":1,
+   "copjectsCount":50,
+   "pagesCount":4,
+   "resultsPerPage":50,
+   "zoomLvl":14
+}
+```

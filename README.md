@@ -42,27 +42,26 @@ documentation whenever possible.
 
 ### Dissemination of metadata
 
-Detta är OAI-PMH från COP, Aleph och Nationell aggregator. Konsumeras av PRIMO och Europeana.
+The dissemination services are aimed at aggregator services of various
+kinds. Our dissemination API is OAI-PMH targets are COP, Aleph and the
+national National aggregator. The most important aggregators are REX
+och Europeana.
 
-Dokumentation:
-
+1. Docuuments:
 http://www.openarchives.org/OAI/openarchivesprotocol.html
 
-Våra tjänster finns här
-
+2. Services:
 http://oai.kb.dk/oai/provider?verb=Identify
 http://www.kb.dk/cop/oai/?verb=Identify
 
-Kommer inte ihåg Alephs OAI BASE URI
-
 ### Search and retrieval
 
-Dokumenten i mitt mail i juli gäller detta. Uteslutande COP (inklusive Luftfoto). Publik dokumentation
+Blah, blah, blah. This is about COP including Luftfoto(Aerial Photography). Documents:
 
 Open search: http://www.opensearch.org/Home
 KML: https://developers.google.com/kml/documentation/
 
-JSON versionen av KML är skriven av Andreas Borchsenius West (https://docs.google.com/document/pub?id=16daS_dAe2nrqCiZeOLb3N0GkfMalbJHAwQhMhWVy0UI)
+JSON version of KML är skriven av Andreas Borchsenius West (https://docs.google.com/document/pub?id=16daS_dAe2nrqCiZeOLb3N0GkfMalbJHAwQhMhWVy0UI)
 
 Services ligger under http://www.kb.dk/cop/syndication/*
 
