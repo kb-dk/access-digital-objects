@@ -28,18 +28,28 @@ delivers table of contents for complex digital objects. ex http://www.kb.dk/cop/
 ### Syndication service 
 
 The syndication service delivers by default rss. It supports a
-'''format''' CGI parameter. When set to mods, the service delivers
-<pre><modsCollection> ... </modsCollection></pre> rather than
-<pre><rss> ... </rss></pre> The RSS syntax includes all data for
-resultset navigation. I.e.,
+`format` CGI parameter. When set to mods, the service delivers
 
-   <opensearch:startIndex>10</opensearch:startIndex>
-   <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
-   <opensearch:totalResults>54589</opensearch:totalResults>
-   <opensearch:Query role="request" startPage="10" searchTerms=""/>
-   <atom:link rel="search" 
+```
+<modsCollection> ... </modsCollection>
+```
+ rather than
+
+```
+<rss> ... </rss>
+```
+
+The RSS syntax includes all data for resultset navigation. I.e.,
+
+```
+<opensearch:startIndex>10</opensearch:startIndex>
+<opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+<opensearch:totalResults>54589</opensearch:totalResults>
+<opensearch:Query role="request" startPage="10" searchTerms=""/>
+<atom:link rel="search" 
             type="application/opensearchdescription+xml" 
             href="http://www.kb.dk:80/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/"/>
+```
 
 + search "by subject", searching by navigation -- ex
 http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&subject=2120&itemsPerPage=40
@@ -48,7 +58,6 @@ http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2120/en/
 The result set can be further molded by the itemsPerPage
 parameter. For example
 http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5
-
 + search "by querying", ordinary search -- ex
 http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&query=jesus&itemsPerPage=40
 supports currently mods and rss.
@@ -83,9 +92,9 @@ Otherwise, see geographic search http://www.opensearch.org/Specifications/OpenSe
 |pag|x|x|Synonym to page. Used for paging of result sets.|Deprecated, use page |
 |lang |x | - | don't use in CGI | ok |
 |itemsPerPage | - | x | |ok |
-|object | x | deprecated | | ok |
+|object | x | - | deprecated | | ok |
 |categories | -  | x | Synonym to subject| Deprecated, use subject |
-|subject | x | depr | Synonym to categories | ok |
+|subject | x | deprecated | Synonym to categories | ok |
 |img | x | - | In Danmarksbilleder only. Used for highlighting that image in the result set which is shown in the landing page part of the page. A function which is similar to the mouse over highlighting in luftfoto | Ready for deprecation? |
 |image_number | - | x | In Danmarksbilleder only| Ready for deprecation? |
 |mode | - | x | Used for "list" and "thumbnails" modes. It seems that a majority of the contributors would like to remove the list mode.| ok |
