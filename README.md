@@ -9,7 +9,7 @@ be useful for a new category library patron whose research or studies
 would benefit from prammatic access to our collections.
 
 
-## Licences & Legelese
+## Licences & Legalese
 
 The documention here is provided as is, and mind you: __Everything
 that's free comes with no guarantee__. As a matter of fact the material
