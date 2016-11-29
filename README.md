@@ -61,7 +61,7 @@ Blah, blah, blah. This is about COP including Luftfoto(Aerial Photography). Docu
 Open search: http://www.opensearch.org/Home
 KML: https://developers.google.com/kml/documentation/
 
-JSON version of KML är skriven av Andreas Borchsenius West (https://docs.google.com/document/pub?id=16daS_dAe2nrqCiZeOLb3N0GkfMalbJHAwQhMhWVy0UI)
+JSON version of KML är skriven av Andreas Borchsenius West [aerial_photography.md](aerial_photography.md)
 
 Services ligger under http://www.kb.dk/cop/syndication/*
 
