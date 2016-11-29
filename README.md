@@ -78,14 +78,8 @@ Extern dokumentation: http://iiif.io/api/image/2.1/
 
 Vi har en klient som heter OpenSeaDragon (OSD). Finns i COP och andra ställen. OSD kräver en konfiguration som levereras som en web baserad json-baserad API.
 
-### ~~Text delivery
+### Text delivery
 
-Helt nya APIer kommer med ADL och Danmarks Brev. De består av de APIer som kommer med vår sökmaskin SOLR
+~~ Helt nya APIer kommer med ADL och Danmarks Brev. De består av de APIer som kommer med vår sökmaskin SOLR Hur sökning sker är dokumenterat externt: https://lucene.apache.org/solr/6_2_1/ (Vi använder betydligt äldre versioner än denna) ~~
 
-Hur sökning sker är dokumenterat externt: https://lucene.apache.org/solr/6_2_1/
-(Vi använder betydligt äldre versioner än denna)
-
-SOLR suppleras med ytterligare web services, som kanske inte ens skall offentliggöras.
-Jfr: https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets
-
-~~
+~~ SOLR suppleras med ytterligare web services, som kanske inte ens skall offentliggöras. Jfr: https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets ~~
