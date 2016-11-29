@@ -9,13 +9,13 @@ be useful for a new category library patron whose research or studies
 would benefit from prammatic access to our collections.
 
 
-## Licences 
+## Licences & Legelese
 
-The documention here is provided as is, and mind you: Everything
-that's free comes with no guarantee. As a matter of fact the material
-in this project is licensed to you as [GNU Free Documentation License](LICENSE)
+The documention here is provided as is, and mind you: __Everything
+that's free comes with no guarantee__. As a matter of fact the material
+in __this git repository__ is licensed to you as [GNU Free Documentation License](LICENSE)
 
-The material we provide access to is of two kinds.
+The material we __provide access to using the APIs described__ are of two kinds:
 
 1. Metadata: This comes to you as [CC0 1.0
 Universal](https://creativecommons.org/publicdomain/zero/1.0/). I.e.,
@@ -26,24 +26,21 @@ varous licenses, but the most common one is
 [Attribution-NonCommercial-NoDerivs 2.0
 Generic](https://creativecommons.org/licenses/by-nc-nd/2.0/)
 
-## A caveat
+## Caveats
 
 The APIs described have used by us for many years. We, the developers,
 created each of them for getting a job done. They are usually well
 tested and works well, but they certainly not polished and neither are
 there any helpful error messages etc.
 
+The formats we are delivering are to a large extent based on
+standards. That means that in many places we refer to external
+documentation whenever possible.
 
 
-1. vi egentligen skall vi inte behöva beskriva/dokumentera särskilt mycket. Vi ofta försökt åstadkomma implementeringar av redan existerande gränssnitt, med extern dokumentation. Ibland har vi inte kunnat göra det (eftersom det finns eller vi inte känner till någon sådan).
+## Services by scope and purposes
 
-2. alla de APIer vi har implementerat eller utvecklat, finns här hos oss därför att vi har haft projekt att slutföra. Jobbet har ALDRIG tidigare handlat om friendly web services for a wider community, med få undantag.
-
-Våra OAI-targets är framför allt för externt bruk. Det enda seriösa försöket att popularisera var Andreas Wesths text inför Hack4dk någon gång i förhistorien.  En del av APIerna vi har kanske inte ens skall offentliggöras.
-
-De jag kan erinra mig är relaterade till:
-
-1. Dissemination of metadata
+### Dissemination of metadata
 
 Detta är OAI-PMH från COP, Aleph och Nationell aggregator. Konsumeras av PRIMO och Europeana.
 
@@ -58,7 +55,7 @@ http://www.kb.dk/cop/oai/?verb=Identify
 
 Kommer inte ihåg Alephs OAI BASE URI
 
-2. Search and retrieval
+### Search and retrieval
 
 Dokumenten i mitt mail i juli gäller detta. Uteslutande COP (inklusive Luftfoto). Publik dokumentation
 
@@ -73,7 +70,7 @@ http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject205/?for
 
 Aleph har en sök-API, och vi har även APIer för SFX och Primo.
 
-3. Image delivery
+### Image delivery
 
 Gäller alla bilder i COP (inklusive Luftfoto), facsimili i Brev och ADL som levereras via IIP Image. APIn är IIIF, vet inte vilken version.
 
@@ -81,7 +78,7 @@ Extern dokumentation: http://iiif.io/api/image/2.1/
 
 Vi har en klient som heter OpenSeaDragon (OSD). Finns i COP och andra ställen. OSD kräver en konfiguration som levereras som en web baserad json-baserad API.
 
-4. Text delivery
+### ~~Text delivery
 
 Helt nya APIer kommer med ADL och Danmarks Brev. De består av de APIer som kommer med vår sökmaskin SOLR
 
@@ -91,29 +88,4 @@ Hur sökning sker är dokumenterat externt: https://lucene.apache.org/solr/6_2_1
 SOLR suppleras med ytterligare web services, som kanske inte ens skall offentliggöras.
 Jfr: https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets
 
-Hilsen
-
-Sigge
-
-
-
-________________________________________
-Fra: Sigfrid Lundberg
-Sendt: 28. juli 2016 11:13
-Til: Bo Krantz Simonsen; Stig Svenningsen; Ditte Laursen
-Emne: api-dokument
-
-Hej,
-
-Den enda dokumentationen vi har offentligt ligger på http://www.kb.dk/da/nb/materialer/luftfoto/forudviklere.html en sida som innehåller en länk:
-https://docs.google.com/document/pub?id=16daS_dAe2nrqCiZeOLb3N0GkfMalbJHAwQhMhWVy0UI
-Flera år senare ligger alltså all information fortfarande på google (sannolikt på Andreas privata google drive).
-
-Min dokumentation of COP (och delvis luftfoto) ligger internt:
-http://diswiki.kb.dk/w/index.php/COP_web_services
-
-Den innehåller info som inte kan offentliggöras utan revision (avsnittet som handlar om hur data sparas i COP)
-
-mvh
-
-Sigge
+~~
