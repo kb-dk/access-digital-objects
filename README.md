@@ -8,9 +8,32 @@ APIs we are using ourselves, in the hope that the access points could
 be useful for a new category library patron whose research or studies
 would benefit from prammatic access to our collections.
 
+
+## Licences 
+
 The documention here is provided as is, and mind you: Everything
 that's free comes with no guarantee. As a matter of fact the material
 in this project is licensed to you as [GNU Free Documentation License](LICENSE)
+
+The material we provide access to is of two kinds.
+
+1. Metadata: This comes to you as [CC0 1.0
+Universal](https://creativecommons.org/publicdomain/zero/1.0/). I.e.,
+our metadata is basically public domain.
+
+2. Content: The content in our digital collections are delivered with
+varous licenses, but the most common one is
+[Attribution-NonCommercial-NoDerivs 2.0
+Generic](https://creativecommons.org/licenses/by-nc-nd/2.0/)
+
+## A caveat
+
+The APIs described have used by us for many years. We, the developers,
+created each of them for getting a job done. They are usually well
+tested and works well, but they certainly not polished and neither are
+there any helpful error messages etc.
+
+
 
 1. vi egentligen skall vi inte behöva beskriva/dokumentera särskilt mycket. Vi ofta försökt åstadkomma implementeringar av redan existerande gränssnitt, med extern dokumentation. Ibland har vi inte kunnat göra det (eftersom det finns eller vi inte känner till någon sådan).
 
