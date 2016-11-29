@@ -61,9 +61,9 @@ Blah, blah, blah. This is about COP including Luftfoto(Aerial Photography). Docu
 Open search: http://www.opensearch.org/Home
 KML: https://developers.google.com/kml/documentation/
 
-JSON version of KML är skriven av Andreas Borchsenius West [aerial_photography.md](aerial_photography.md)
+[aerial_photography.md](aerial_photography.md) by Andreas Borchsenius West 
 
-Services ligger under http://www.kb.dk/cop/syndication/*
+Syndication services http://www.kb.dk/cop/syndication/*
 
 http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject205/?format=kml&type=all&bbo=12.175383114685019,55.84732059821742,8.882231259216269,54.68945661135621&notBefore=1900-01-01&notAfter=2015-12-31&itemsPerPage=75&page=1&random=0.0
 
@@ -71,14 +71,14 @@ Aleph har en sök-API, och vi har även APIer för SFX och Primo.
 
 ### Image delivery
 
-Gäller alla bilder i COP (inklusive Luftfoto), facsimili i Brev och ADL som levereras via IIP Image. APIn är IIIF, vet inte vilken version.
+All images are with few exceptions are delivered via IIP Image using the APIn är IIIF Documents: http://iiif.io/api/image/2.1/
 
-Extern dokumentation: http://iiif.io/api/image/2.1/
-
-Vi har en klient som heter OpenSeaDragon (OSD). Finns i COP och andra ställen. OSD kräver en konfiguration som levereras som en web baserad json-baserad API.
+Our image cluent is OpenSeaDragon (OSD). OSD is used in COP and other
+services. OSD is configured on a per object basis using a json-baserad
+API.
 
 ### Text delivery
 
-~~ Helt nya APIer kommer med ADL och Danmarks Brev. De består av de APIer som kommer med vår sökmaskin SOLR Hur sökning sker är dokumenterat externt: https://lucene.apache.org/solr/6_2_1/ (Vi använder betydligt äldre versioner än denna) ~~
+~~Helt nya APIer kommer med ADL och Danmarks Brev. De består av de APIer som kommer med vår sökmaskin SOLR Hur sökning sker är dokumenterat externt: https://lucene.apache.org/solr/6_2_1/ (Vi använder betydligt äldre versioner än denna)~~
 
-~~ SOLR suppleras med ytterligare web services, som kanske inte ens skall offentliggöras. Jfr: https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets ~~
+~~SOLR suppleras med ytterligare web services, som kanske inte ens skall offentliggöras. Jfr: https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets~~
