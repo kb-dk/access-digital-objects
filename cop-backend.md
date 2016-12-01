@@ -81,7 +81,7 @@ Otherwise, see geographic search http://www.opensearch.org/Specifications/OpenSe
 |-----------|:-------------|:------------|:--------|-------|
 |query | - | x | Synonym to q | ok |
 |format | - | x | kml, rss and mods | ok |
-|page | depr | x | | ok |
+|page | - | x | | ok |
 |itemsPerPage | - | x | |ok |
 |object | x | - | | ok |
 |subject | x | - | Synonym to categories | ok |
