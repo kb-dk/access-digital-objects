@@ -62,12 +62,6 @@ http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/
 http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&query=jesus&itemsPerPage=40
 supports currently mods and rss.
 
-### OAI PMH service 
-
-syndicates metadata using OAI, if you hadn't guessed that
-already. http://www.kb.dk/cop/oai/?verb=Identify which should do what
-an OAI server should
-
 ### GEO search service 
 
 `Lat,Long` or `Long,Lat?`  That depends ;^) 
@@ -85,19 +79,12 @@ Otherwise, see geographic search http://www.opensearch.org/Specifications/OpenSe
 
 | Parameter | Used in PATH | Used in CGI | Comment | Status|
 |-----------|:-------------|:------------|:--------|-------|
-|q          | -            | -           | Synonym to query | deprecated|
 |query | - | x | Synonym to q | ok |
-|format | - | x | rss, mods and atom are supported. The implementation of Atom seems incomplete | ok |
+|format | - | x | kml, rss and mods | ok |
 |page | depr | x | | ok |
-|pag|x|x|Synonym to page. Used for paging of result sets.|Deprecated, use page |
-|lang |x | - | don't use in CGI | ok |
 |itemsPerPage | - | x | |ok |
-|object | x | - | deprecated | | ok |
-|categories | -  | x | Synonym to subject| Deprecated, use subject |
-|subject | x | deprecated | Synonym to categories | ok |
-|img | x | - | In Danmarksbilleder only. Used for highlighting that image in the result set which is shown in the landing page part of the page. A function which is similar to the mouse over highlighting in luftfoto | Ready for deprecation? |
-|image_number | - | x | In Danmarksbilleder only| Ready for deprecation? |
-|mode | - | x | Used for "list" and "thumbnails" modes. It seems that a majority of the contributors would like to remove the list mode.| ok |
+|object | x | - | | ok |
+|subject | x | - | Synonym to categories | ok |
 |bbo | - | x | Bounding Box |
 |notBefore | - | x | Not before a given date | - |
 |notAfter | - | x | Not after a given date | - |
