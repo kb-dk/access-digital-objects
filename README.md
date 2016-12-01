@@ -79,7 +79,7 @@ format, other alternatives are oai_dc and ese. See below.
 ### Search and retrieval
 
 Our most important is internally referred to as COP, which we could
-describe as our *C*ommon *O*bject *P*ublishing platform. Common refer
+describe as our **C**ommon **O**bject **P**ublishing platform. Common refer
 to that it is platform which is shared between different collections
 and media types. Note, however, that it when it was released we
 intentionally never gave it a name.
