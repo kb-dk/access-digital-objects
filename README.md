@@ -51,8 +51,8 @@ och Europeana.
 http://www.openarchives.org/OAI/openarchivesprotocol.html
 
 2. Services:
-+    http://oai.kb.dk/oai/provider?verb=Identify
-+    http://www.kb.dk/cop/oai/?verb=Identify
+   +  http://oai.kb.dk/oai/provider?verb=Identify
+   +  http://www.kb.dk/cop/oai/?verb=Identify
 
 ### Search and retrieval
 
