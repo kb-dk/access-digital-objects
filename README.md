@@ -42,7 +42,7 @@ standards. That means that in many places we refer to external
 documentation whenever possible. We do not guarantee that the
 documents are strictly valid, though.
 
-## Services by scope and purposes
+## Services by scope and purpose
 
 ### Dissemination of metadata
 
@@ -71,11 +71,19 @@ A few example to get an idea what it is about:
 4. One should be able to get hold of a [single record, given its Identifier](http://www.openarchives.org/OAI/openarchivesprotocol.html#GetRecord)
   + http://www.kb.dk/cop/oai/?verb=GetRecord&identifier=oai:kb.dk:manus:judsam:2010:maj:jsmss:object62730&metadataPrefix=oai_dc
 
-In the cases in the examples above we obtained the records in mods format, other alternatives are oai_dc and ese. See below.
+In the cases in the examples above we obtained the records in mods
+format, other alternatives are oai_dc and ese. See below.
+
+
 
 ### Search and retrieval
 
-Blah, blah, blah. This is about COP including Luftfoto(Aerial Photography). Documents:
+Our most important is internally referred to as COP, which we could
+describe as our *C*ommon *O*bject *P*ublishing platform. Common refer
+to that it is platform which is shared between different collections
+and media types. Note, however, that it when it was released we
+intentionally never gave it a name.
+
 
 Open search: http://www.opensearch.org/Home
 KML: https://developers.google.com/kml/documentation/
@@ -100,8 +108,14 @@ API.
 
 ### Text delivery
 
-We don't write about this until after letters (or ADL or both) are published. Need demo of SOLR and snipets
+~~We don't write about this until after letters (or ADL or both) are published. Need demo of SOLR and snipets~~
 
 ~~Helt nya APIer kommer med ADL och Danmarks Brev. De består av de APIer som kommer med vår sökmaskin SOLR Hur sökning sker är dokumenterat externt: https://lucene.apache.org/solr/6_2_1/ (Vi använder betydligt äldre versioner än denna)~~
 
-Text search and retrieval are made using  [https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets](solr-and-snippets)
+~~Text search and retrieval are made using  [https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets](solr-and-snippets)~~
+
+### Acknowledgements
+
+Andreas Borchsenius West contributed information about the JSON
+service used for maps, notably our Aerial photography collection
+Danmark Set Fra Luften.
