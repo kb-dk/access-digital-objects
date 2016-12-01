@@ -60,12 +60,18 @@ known, and we will not provide detailed information about here.
 
 A few example to get an idea what it is about:
 
-+ Each OAI provider should be able to _[http://www.openarchives.org/OAI/openarchivesprotocol.html#Identify](Identify)_ itself.
+1. Each OAI provider should be able to [http://www.openarchives.org/OAI/openarchivesprotocol.html#Identify](Identify) itself.  
   + http://www.kb.dk/cop/oai/?verb=Identify
-+ An OAI provider may contain multiple [http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets](collections or sets)
-  + http://www.kb.dk/cop/oai/?verb=ListSets
-+ For a given set we provide access to a list of records, for instance of all manuscripts in the Judaica collection
+
+2. An OAI provider may contain multiple [http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets](collections or sets)
+  + http://www.kb.dk/cop/oai/?verb=ListSets 
+
+3. For a given set we provide access to a [http://www.openarchives.org/OAI/openarchivesprotocol.html#ListRecords](list of records),
+  for instance of all manuscripts in the Judaica collection 
   + http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:judsam:2010:maj:jsmss&metadataPrefix=mods
+  
+4. One should be able to get hold of a [http://www.openarchives.org/OAI/openarchivesprotocol.html#GetRecord](single record, given its Identifier)
+  + http://www.kb.dk/cop/oai/?verb=GetRecord&identifier=oai:kb.dk:manus:judsam:2010:maj:jsmss:object62730&metadataPrefix=oai_dc
 
 In the cases in the examples above we obtained the records in mods format, other alternatives are oai_dc and ese. See below.
 
@@ -91,6 +97,8 @@ All images are with few exceptions are delivered via IIP Image using the APIn ä
 Our image cluent is OpenSeaDragon (OSD). OSD is used in COP and other
 services. OSD is configured on a per object basis using a json-baserad
 API.
+
+### Metadata formats
 
 ### Text delivery
 
