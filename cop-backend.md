@@ -2,29 +2,6 @@
 
 ## Web services in COP
 
-### Navigation service
-
-delivers the subject hierarchy needed by users browsing the service. Links to RSS & HTML representations of the data -- ex
-
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder and
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/
-
-This service accepts the parameter ```opml_mode``` with values
-```deep``` and ```shallow. For example:
-
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=deep
-
-and
-
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=shallow
-
-Shallow was intended to give the current subject and its descendants. (This seems broken in the current implementation)
-
-### Content service 
-
-delivers table of contents for complex digital objects. ex http://www.kb.dk/cop/content/manus/musman/2010/dec/viser/object23942/en/ and http://www.kb.dk/cop/content/letters/judsam/2011/mar/dsa/object10/en/ representing TOCs of a song book and a two page letter, respectively
-
-
 ### Syndication service 
 
 The syndication service delivers by default rss. It supports a
@@ -75,7 +52,31 @@ http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#coordinates
 
 Otherwise, see geographic search http://www.opensearch.org/Specifications/OpenSearch/Extensions/Geo/1.0/Draft_1
 
-== Complete list of supported CGI parameters in COP ==
+### Navigation service
+
+delivers the subject hierarchy needed by users browsing the service. Links to RSS & HTML representations of the data -- ex
+
+http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder and
+http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/
+
+This service accepts the parameter ```opml_mode``` with values
+```deep``` and ```shallow. For example:
+
+http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=deep
+
+and
+
+http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=shallow
+
+Shallow was intended to give the current subject and its descendants. (This seems broken in the current implementation)
+
+### Content service 
+
+delivers table of contents for complex digital objects. ex http://www.kb.dk/cop/content/manus/musman/2010/dec/viser/object23942/en/ and http://www.kb.dk/cop/content/letters/judsam/2011/mar/dsa/object10/en/ representing TOCs of a song book and a two page letter, respectively
+
+
+
+### Complete list of supported CGI parameters in COP 
 
 | Parameter | Used in PATH | Used in CGI | Comment | Status|
 |-----------|:-------------|:------------|:--------|-------|
