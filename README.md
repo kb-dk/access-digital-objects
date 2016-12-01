@@ -21,14 +21,14 @@ material in __this git repository__ is licensed to you as
 
 The material we __provide access to using the APIs described__ are of two kinds:
 
-1. Metadata: This comes to you as [CC0 1.0
-Universal](https://creativecommons.org/publicdomain/zero/1.0/). I.e.,
+1. Metadata: This comes to you as [https://creativecommons.org/publicdomain/zero/1.0/](CC0 1.0
+Universal). I.e.,
 our metadata is basically public domain.
 
 2. Content: The content in our digital collections are delivered with
 varous licenses, but the most common one is
-[Attribution-NonCommercial-NoDerivs 2.0
-Generic](https://creativecommons.org/licenses/by-nc-nd/2.0/)
+[https://creativecommons.org/licenses/by-nc-nd/2.0/](Attribution-NonCommercial-NoDerivs 2.0
+Generic)
 
 ## Caveats
 
@@ -60,17 +60,17 @@ known, and we will not provide detailed information about here.
 
 A few example to get an idea what it is about:
 
-1. Each OAI provider should be able to [http://www.openarchives.org/OAI/openarchivesprotocol.html#Identify](Identify) itself.  
+1. Each OAI provider should be able to [Identify](http://www.openarchives.org/OAI/openarchivesprotocol.html#Identify) itself.  
   + http://www.kb.dk/cop/oai/?verb=Identify
 
-2. An OAI provider may contain multiple [http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets](collections or sets)
+2. An OAI provider may contain multiple [collections or sets](http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets)
   + http://www.kb.dk/cop/oai/?verb=ListSets 
 
-3. For a given set we provide access to a [http://www.openarchives.org/OAI/openarchivesprotocol.html#ListRecords](list of records),
+3. For a given set we provide access to a [list of records](http://www.openarchives.org/OAI/openarchivesprotocol.html#ListRecords),
   for instance of all manuscripts in the Judaica collection 
   + http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:judsam:2010:maj:jsmss&metadataPrefix=mods
   
-4. One should be able to get hold of a [http://www.openarchives.org/OAI/openarchivesprotocol.html#GetRecord](single record, given its Identifier)
+4. One should be able to get hold of a [single record, given its Identifier](http://www.openarchives.org/OAI/openarchivesprotocol.html#GetRecord)
   + http://www.kb.dk/cop/oai/?verb=GetRecord&identifier=oai:kb.dk:manus:judsam:2010:maj:jsmss:object62730&metadataPrefix=oai_dc
 
 In the cases in the examples above we obtained the records in mods format, other alternatives are oai_dc and ese. See below.
