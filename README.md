@@ -3,17 +3,21 @@
 The Library has been digitizing Cultural Heritage Objects in its
 collections since well over two decades. More recently, the last 6-7
 years, we have tried to build our dissemination platforms using a REST
-based architecture. This collection of documents describes the various
-APIs we are using ourselves, in the hope that the access points could
-be useful for a new category library patron whose research or studies
-would benefit from prammatic access to our collections.
+based architecture.
+
+This collection of documents describes the various APIs we are using
+ourselves to provide access to our data to library patrons, in the
+hope that the access points could be useful for a new category library
+patron whose research or studies would benefit from prammatic access
+to our collections.
 
 
 ## Licences & Legalese
 
 The documention here is provided as is, and mind you: __Everything
-that's free comes with no guarantee__. As a matter of fact the material
-in __this git repository__ is licensed to you as [GNU Free Documentation License](LICENSE)
+that's free comes with no guarantee__. As a matter of fact the
+material in __this git repository__ is licensed to you as 
+[GNU Free Documentation License](LICENSE)
 
 The material we __provide access to using the APIs described__ are of two kinds:
 
@@ -35,8 +39,8 @@ there any helpful error messages etc.
 
 The formats we are delivering are to a large extent based on
 standards. That means that in many places we refer to external
-documentation whenever possible.
-
+documentation whenever possible. We do not guarantee that the
+documents are strictly valid, though.
 
 ## Services by scope and purposes
 
@@ -47,12 +51,23 @@ kinds. Our dissemination API is OAI-PMH targets are COP, Aleph and the
 national National aggregator. The most important aggregators are REX
 och Europeana.
 
-1. Docuuments:
-http://www.openarchives.org/OAI/openarchivesprotocol.html
+The purpose of dissemination is to enable Cultural Heritage
+organisation to share data. To use the data you'll have to store them
+in a database or index of your own. The
+[http://www.openarchives.org/OAI/openarchivesprotocol.html](Open
+Archives Initives Protocol of Metadata Harvesting) (OAI PMH) is well
+known, and we will not provide detailed information about here.
 
-2. Services:
-   +  http://oai.kb.dk/oai/provider?verb=Identify
-   +  http://www.kb.dk/cop/oai/?verb=Identify
+A few example to get an idea what it is about:
+
++ Each OAI provider should be able to _[http://www.openarchives.org/OAI/openarchivesprotocol.html#Identify](Identify)_ itself.
+  + http://www.kb.dk/cop/oai/?verb=Identify
++ An OAI provider may contain multiple [http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets](collections or sets)
+  + http://www.kb.dk/cop/oai/?verb=ListSets
++ For a given set we provide access to a list of records, for instance of all manuscripts in the Judaica collection
+  + http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:judsam:2010:maj:jsmss&metadataPrefix=mods
+
+In the cases in the examples above we obtained the records in mods format, other alternatives are oai_dc and ese. See below.
 
 ### Search and retrieval
 
