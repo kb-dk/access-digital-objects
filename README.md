@@ -53,9 +53,7 @@ och Europeana.
 
 The purpose of dissemination is to enable Cultural Heritage
 organisation to share data. To use the data you'll have to store them
-in a database or index of your own. The
-[http://www.openarchives.org/OAI/openarchivesprotocol.html](Open
-Archives Initives Protocol of Metadata Harvesting) (OAI PMH) is well
+in a database or index of your own. The [Open Archives Initives Protocol of Metadata Harvesting](http://www.openarchives.org/OAI/openarchivesprotocol.html)  (OAI PMH) is well
 known, and we will not provide detailed information about here.
 
 A few example to get an idea what it is about:
