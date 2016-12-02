@@ -1,80 +1,79 @@
 
-# Danmark set fra Luften
+# Aerial Photograph Collection (Danmark set fra Luften - DFSL)
         
-## Beskrivelse
+## Overview
 
-Dette er en beskrivelse af de services som KB udstiller i forbindelse med Danmark set fra Luften.
+This document describes the search interfaces for our Aerial
+Photograph Collection, [Danmark set fra
+Luften](http://www.kb.dk/danmarksetfraluften/), (DFSL).  Because of
+its geographical aspect it has its own frontend.
 
-Luftfoto frontenden - Danmark Set Fra Luften - henter data fra følgende kilder:
+DSFL - draws its data from several sources, notably
 
-1. COP: diverse billedsamlinger; breve, luftfotos, småtryk, portrætter etc.
-2. AnnotationEngine (Indeholder kommentarer, tags og relationer mellem og til URI's
-3. COWI: Historiske overflyvningskort fra 1954, 1995 og 2006. Disse overflyvningskort er under COWIs
-4. Frontenden - Danmark Set Fra Luften kan ses på [http://www.kb.dk/danmarksetfraluften/](http://www.kb.dk/danmarksetfraluften/)
++ The metadata is stored in Common Object Publishing (COP)
++ Vertical, photogrammetrical, images from 1954, 1995 and 2006. These are provided by [COWI](http://www.cowi.dk/menu/home/) based on originals in our collections.
         
-Og én af backendens mange services kan kan nås via [http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/](http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/)
-        
-En simpel områdesøgning i KML format:
+The service is based on the Amazon A9 open Search web service protocol. A more [detailed description is available](cop-backend.md). 
 
-http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=kml&type=all&bbo=10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
-        
-Servicen er Amazon A9 open Search compliant, læs mere på a9.com
-
-Kendte mangler og kommende ændringer:
-Det er ikke muligt at begrænse resultater til kun at vise korrekt placerede luftfotos.
-
-## Beskrivelse af simplificerede luftfoto json services.
+~~Kendte mangler og kommende ændringer: Det er ikke muligt at begrænse resultater til kun at vise korrekt placerede luftfotos.~~
 
 ## COP-02 Backend - Syndication Service
         
-http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/ (the whole collection)
-http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/object59452/ (a single record)
+The whole dataset can (at least in principle) be accessed from http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/
+
+A single record can be retrieved using a URI on this form http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/object59452/ (a single record)
+        
+A simple area search with result presented in KML:
+
+http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=kml&type=all&bbo=10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
 
 Method: HTTP GET
 
 ### Parameters and sample values
 
-Format =(kml,rss, atom, mods)
+format = (kml, rss, atom, mods)
 
 type = all, 1,2,3
-all = Alle typer, all types of photos
 
-        1 = Skråfoto, aerial photo with an angle.
-        2 = Lodfoto, 90 degree aerial photo (no data at the moment)
-        3 = Protokolside, Protocol page
-        bbo = 10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444
+ all = Alle typer, all types of photos
+ 1   = Skråfoto, aerial photo with an angle.
+ 2   = Lodfoto, 90 degree aerial photo
+ 3   = Protokolside, Protocol page
+
+bounding box
+
+ bbo = 10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444
 
 http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=kml&type=all&bbo=10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0&correctness=1
         
-notBefore=1920-01-01
+ notBefore=1920-01-01
         Do not return pictures before this date YYYY-MM-DD
-notAfter=1970-12-31
+ notAfter=1970-12-31
         Do not return pictures after this date YYYY-MM-DD
 
-itemsPerPage=1-5000
-        The number of items to be returned per
-page. If 10000 records is found in an area only 5000 will be
-displayed, the last items (5001 to 10000) can be retrieved by
-setting the page variable to 2
+ itemsPerPage=1-5000
+        The number of items to be returned per page. If 10000 records
+	is found in an area only 5000 will be displayed, the last items (5001
+	to 10000) can be retrieved by setting the page variable to 2
 
-page= 1,2,3 etc. depending on the number of results. Works as an offset value.
+ page= 1,2,3 etc. depending on the number of results. Works as an offset value.
 
-random= a value between 0.0 and 1.0. Optional and only relevant for the
-luftfoto frontend...
+ random= 0.1
+        a value between 0.0 and 1.0. Optional and only relevant for
+	the luftfoto frontend...
 
-query= a search term.
+ query= a search term.
 
-Further specification on the query search term
+Further specification on the query search term. Certain fields can be specified inside a query term. These are, currently
 
-        location:X
-        person:Y
-        address:Z
-        building:A
++ location:X
++ person:Y
++ address:Z
++ building:A
 
-Searching with a query string
 Searching with a query string 
 
-"Lykkegård" and person::"Jørgensen" sic: the text says double colon 
+ "Lykkegård" and person::"Jørgensen" sic: the text says double colon 
         
 http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=rss&query=lykkeg%C3%A5rd%26person%3A%3AJ%C3%B8rgensen&type=all&bbo=10.826596760620077,55.54834253439101,10.590219044555624,55.45734180334893&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
         
