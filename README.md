@@ -78,23 +78,22 @@ format, other alternatives are oai_dc and ese. See below.
 
 ### Search and retrieval
 
-Our most important is internally referred to as COP, which we could
-describe as our **C**ommon **O**bject **P**ublishing platform. Common refer
-to that it is platform which is shared between different collections
-and media types. Note, however, that it when it was released we
-intentionally never gave it a name.
+Our most important is internally referred to as COP, an acronym for
+which there is one interpretation **C**ommon **O**bject **P**ublishing
+platform. _Common_ would refer to that it is platform which is common between
+different collections and media types. Note, however, that it when it
+was released we intentionally never gave it a name.
 
 
 Open search: http://www.opensearch.org/Home
 KML: https://developers.google.com/kml/documentation/
 
-[aerial_photography.md](open-search.md) by Andreas Borchsenius West 
 [cop-backend.md](cop-backend.md)
 Syndication services http://www.kb.dk/cop/syndication/*
 
 http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject205/?format=kml&type=all&bbo=12.175383114685019,55.84732059821742,8.882231259216269,54.68945661135621&notBefore=1900-01-01&notAfter=2015-12-31&itemsPerPage=75&page=1&random=0.0
 
-Aleph har en sök-API, och vi har även APIer för SFX och Primo.
+[open-search-dsfl.md](open-search-dsfl.md) by Andreas Borchsenius West 
 
 ### Image delivery
 
