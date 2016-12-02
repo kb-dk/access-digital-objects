@@ -88,7 +88,7 @@ intentionally never gave it a name.
 Open search: http://www.opensearch.org/Home
 KML: https://developers.google.com/kml/documentation/
 
-[aerial_photography.md](aerial_photography.md) by Andreas Borchsenius West 
+[aerial_photography.md](open-search.md) by Andreas Borchsenius West 
 [cop-backend.md](cop-backend.md)
 Syndication services http://www.kb.dk/cop/syndication/*
 
