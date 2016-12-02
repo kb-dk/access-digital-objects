@@ -62,7 +62,7 @@ http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/
 + search "by querying", ordinary search -- ex
 http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&query=jesus&itemsPerPage=40
 
-We have more [detailed information on GEO](open-search-dsfl.md).
+We have more [detailed information on geographical searching](open-search-dsfl.md).
 
 ### Navigation service
 
@@ -71,20 +71,27 @@ delivers the subject hierarchy needed by users browsing the service. Links to RS
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder and
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/
 
-This service accepts the parameter ```opml_mode``` with values
-```deep``` and ```shallow. For example:
+This service accepts the parameter `opml_mode` with values
+`deep` and `shallow`. For example:
 
+```
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=deep
+```
 
 and
 
+```
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=shallow
+```
 
 Shallow was intended to give the current subject and its descendants. (This seems broken in the current implementation)
 
 ### Content service 
 
-delivers table of contents for complex digital objects. ex http://www.kb.dk/cop/content/manus/musman/2010/dec/viser/object23942/en/ and http://www.kb.dk/cop/content/letters/judsam/2011/mar/dsa/object10/en/ representing TOCs of a song book and a two page letter, respectively
+Tables of contents for complex digital objects are delivered through the content service. 
+
+```
+http://www.kb.dk/cop/content/manus/musman/2010/dec/viser/object23942/en/ and http://www.kb.dk/cop/content/letters/judsam/2011/mar/dsa/object10/en/ representing TOCs of a song book and a two page letter, respectively
 
 
 
