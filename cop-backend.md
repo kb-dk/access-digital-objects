@@ -65,7 +65,9 @@ We have more [detailed information on geographical searching](open-search-dsfl.m
 
 ### Navigation service
 
-delivers the subject hierarchy needed by users browsing the service. Links to RSS & HTML representations of the data -- ex
+The subject hierarchy needed for filtering and for building the
+browsing service can be retrieved from the navigation service. Links
+to RSS & HTML representations of the data -- ex
 
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder and
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/
@@ -89,15 +91,11 @@ Shallow was intended to give the current subject and its descendants. (This seem
 
 Tables of contents for complex digital objects are delivered through the content service. 
 
-```
 http://www.kb.dk/cop/content/manus/musman/2010/dec/viser/object23942/en/
-```
 
 and
 
-```
 http://www.kb.dk/cop/content/letters/judsam/2011/mar/dsa/object10/en/
-```
 
 representing TOCs of a song book and a two page letter, respectively
 
