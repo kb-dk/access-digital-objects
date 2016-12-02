@@ -2,37 +2,54 @@
 
 ## Web services in COP
 
-### Syndication service 
+### Syndication service formats
 
-The syndication service is for searching. It delivers a search result
-set in [rss 2.0](https://cyber.harvard.edu/rss/rss.html).  Clients
-communicates with the server with Amazon A9.com [Open
-search](http://www.opensearch.org/Home) protocol.
+The syndication service is for searching. By default it delivers a
+search result set in [rss 2.0](https://cyber.harvard.edu/rss/rss.html).
 
-It supports
-a `format` CGI parameter. When set to mods, the service delivers
+1. For RSS 2.0, the root document is rss, i.e., 
 
+``` <rss> ... </rss> ```
 
+The syndication service supports some other formats as well, the most
+important ones are mods and kml. You can "toggle" between the formats using the 
+`format` CGI parameter. 
+
+2. When set to `mods`, the service delivers
 
 ```
 <modsCollection> ... </modsCollection>
 ```
- rather than
 
+3. When set to `kml` it delivers a `kml` document
 ```
-<rss> ... </rss>
+<kml> ... </kml>
 ```
+
+Format 1 and 3 are used internally in our services. All search and retrieval in 
+[Digital Editions - COP](http://www.kb.dk/editions/any/2009/jul/editions/en/)
+is based on the former,
+the latter is tranlated to ```json``` and is then used in [DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
+
+### Open Search
+
+Clients communicates with the server with Amazon A9.com [Open
+search](http://www.opensearch.org/Home) protocol.
 
 The RSS syntax includes all data for resultset navigation. I.e.,
 
 ```
-<opensearch:startIndex>10</opensearch:startIndex>
-<opensearch:itemsPerPage>5</opensearch:itemsPerPage>
-<opensearch:totalResults>54589</opensearch:totalResults>
-<opensearch:Query role="request" startPage="10" searchTerms=""/>
-<atom:link rel="search" 
-            type="application/opensearchdescription+xml" 
-            href="http://www.kb.dk:80/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/"/>
+<startIndex xmlns="http://a9.com/-/spec/opensearch/1.1/">1</startIndex>
+    <itemsPerPage xmlns="http://a9.com/-/spec/opensearch/1.1/">40</itemsPerPage>
+    <Query xmlns="http://a9.com/-/spec/opensearch/1.1/" role="request" searchTerms="{}" startPage="1"/>
+    <totalResults xmlns="http://a9.com/-/spec/opensearch/1.1/">104820</totalResults>
+    <link xmlns="http://www.w3.org/2005/Atom" 
+          href="http://www.kb.dk/cop/images/billed/2010/okt/billeder" 
+	  rel="search" 
+	  type="application/opensearchdescription+xml"/>
+    <link xmlns="http://www.w3.org/2005/Atom" href="http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/" 
+          rel="search" 
+	  type="application/rss+xml"/>
 ```
 
 + search "by subject", searching by navigation -- ex
@@ -44,22 +61,8 @@ parameter. For example
 http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5
 + search "by querying", ordinary search -- ex
 http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&query=jesus&itemsPerPage=40
-supports currently mods and rss.
 
-### GEO search service 
-
-`Lat,Long` or `Long,Lat?`  That depends ;^) 
-
-KML: https://developers.google.com/kml/documentation/
-
-* In a `KML`l feed the expected order is Longitude, Latitude format. See KML reference 
-http://code.google.com/intl/da-DK/apis/kml/documentation/kmlreference.html#point
-* In an `RSS` feed using the GeoRSS:point tag, the coordinates are Latitude, Longitude.
-http://www.georss.org/georss
-* In `MODS` the md:coordinates the order is Latitude, Longitude.
-http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#coordinates
-
-Otherwise, see geographic search http://www.opensearch.org/Specifications/OpenSearch/Extensions/Geo/1.0/Draft_1
+We have more [detailed information on GEO](open-search-dsfl.md).
 
 ### Navigation service
 

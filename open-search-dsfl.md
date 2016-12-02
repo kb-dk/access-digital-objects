@@ -364,3 +364,16 @@ sample response (slightly modified to display less results):
    "zoomLvl":14
 }
 ```
+
+### The encoding of coordinates
+
+`Lat,Long` or `Long,Lat?`  That depends ;^) 
+
+* In a `KML`l feed the expected order is Longitude, Latitude format. See KML reference 
+http://code.google.com/intl/da-DK/apis/kml/documentation/kmlreference.html#point
+* In an `RSS` feed using the GeoRSS:point tag, the coordinates are Latitude, Longitude.
+http://www.georss.org/georss
+* In `MODS` the md:coordinates the order is Latitude, Longitude.
+http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#coordinates
+
+
