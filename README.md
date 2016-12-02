@@ -74,26 +74,26 @@ A few example to get an idea what it is about:
 In the cases in the examples above we obtained the records in mods
 format, other alternatives are oai_dc and ese. See below.
 
-
-
 ### Search and retrieval
 
 Our most important is internally referred to as COP, an acronym for
-which there is one interpretation **C**ommon **O**bject **P**ublishing
-platform. _Common_ would refer to that it is platform which is common between
-different collections and media types. Note, however, that it when it
-was released we intentionally never gave it a name.
+which one possible interpretation could be **C**ommon **O**bject
+**P**ublishing platform. The word _Common_ would refer to that it is
+platform which is common between different collections and media
+types. However, when it was released we intentionally never gave the
+service a brand name.
 
+The COP metadata is accessed from two front ends 
 
-Open search: http://www.opensearch.org/Home
-KML: https://developers.google.com/kml/documentation/
++ [Digital Editions](http://www.kb.dk/editions/any/2009/jul/editions/en/)
++ Aerial Photography Collection, [Danmark set fra Luften](http://www.kb.dk/danmarksetfraluften/) (DFSL)
 
-[cop-backend.md](cop-backend.md)
-Syndication services http://www.kb.dk/cop/syndication/*
+The both services use the same web services, but DFSL has some
+geographical extensions in order to run its map based interface. We
+have two different documents describing the backend services
 
-http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject205/?format=kml&type=all&bbo=12.175383114685019,55.84732059821742,8.882231259216269,54.68945661135621&notBefore=1900-01-01&notAfter=2015-12-31&itemsPerPage=75&page=1&random=0.0
-
-[open-search-dsfl.md](open-search-dsfl.md) by Andreas Borchsenius West 
++ [General COP web services](cop-backend.md)
++ [Geographical extensions](open-search-dsfl.md)
 
 ### Image delivery
 
@@ -104,6 +104,8 @@ services. OSD is configured on a per object basis using a json-baserad
 API.
 
 ### Metadata formats
+
+[KML](https://developers.google.com/kml/documentation/)
 
 ### Text delivery
 

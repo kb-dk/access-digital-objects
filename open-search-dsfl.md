@@ -4,7 +4,7 @@
 ## Overview
 
 This document describes the search interfaces for our Aerial
-Photograph Collection, [Danmark set fra
+Photography Collection, [Danmark set fra
 Luften](http://www.kb.dk/danmarksetfraluften/), (DFSL).  Because of
 its geographical aspect it has its own frontend.
 
@@ -23,7 +23,7 @@ The whole dataset can (at least in principle) be accessed from http://www.kb.dk/
 
 A single record can be retrieved using a URI on this form http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/object59452/ (a single record)
         
-A simple area search with result presented in KML:
+A simple area search with result presented in [KML](https://developers.google.com/kml/documentation/)
 
 http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=kml&type=all&bbo=10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
 

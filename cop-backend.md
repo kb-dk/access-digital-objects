@@ -7,6 +7,10 @@
 The syndication service delivers by default rss. It supports a
 `format` CGI parameter. When set to mods, the service delivers
 
+Open search: http://www.opensearch.org/Home
+KML: https://developers.google.com/kml/documentation/
+
+
 ```
 <modsCollection> ... </modsCollection>
 ```
