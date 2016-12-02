@@ -62,7 +62,9 @@ http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?for
         a value between 0.0 and 1.0. Optional and only relevant for
 	the luftfoto frontend...
 
- query= a search term.
+### Searching with a query string 
+
+query= a search term.
 
 Further specification on the query search term. Certain fields can be specified inside a query term. These are, currently
 
@@ -70,8 +72,6 @@ Further specification on the query search term. Certain fields can be specified 
 + person:Y
 + address:Z
 + building:A
-
-Searching with a query string 
 
  "Lykkegård" and person::"Jørgensen" sic: the text says double colon 
         
