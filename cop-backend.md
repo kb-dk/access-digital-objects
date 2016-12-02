@@ -90,8 +90,16 @@ Shallow was intended to give the current subject and its descendants. (This seem
 Tables of contents for complex digital objects are delivered through the content service. 
 
 ```
-http://www.kb.dk/cop/content/manus/musman/2010/dec/viser/object23942/en/ and http://www.kb.dk/cop/content/letters/judsam/2011/mar/dsa/object10/en/ representing TOCs of a song book and a two page letter, respectively
+http://www.kb.dk/cop/content/manus/musman/2010/dec/viser/object23942/en/
+```
 
+and
+
+```
+http://www.kb.dk/cop/content/letters/judsam/2011/mar/dsa/object10/en/
+```
+
+representing TOCs of a song book and a two page letter, respectively
 
 
 ### Complete list of supported CGI parameters in COP 
