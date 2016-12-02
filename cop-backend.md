@@ -4,11 +4,14 @@
 
 ### Syndication service 
 
-The syndication service delivers by default rss. It supports a
-`format` CGI parameter. When set to mods, the service delivers
+The syndication service is for searching. It delivers a search result
+set in [rss 2.0](https://cyber.harvard.edu/rss/rss.html).  Clients
+communicates with the server with Amazon A9.com [Open
+search](http://www.opensearch.org/Home) protocol.
 
-Open search: http://www.opensearch.org/Home
-KML: https://developers.google.com/kml/documentation/
+It supports
+a `format` CGI parameter. When set to mods, the service delivers
+
 
 
 ```
@@ -46,6 +49,8 @@ supports currently mods and rss.
 ### GEO search service 
 
 `Lat,Long` or `Long,Lat?`  That depends ;^) 
+
+KML: https://developers.google.com/kml/documentation/
 
 * In a `KML`l feed the expected order is Longitude, Latitude format. See KML reference 
 http://code.google.com/intl/da-DK/apis/kml/documentation/kmlreference.html#point
