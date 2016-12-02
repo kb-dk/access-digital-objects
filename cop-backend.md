@@ -52,15 +52,12 @@ The RSS syntax includes all data for resultset navigation. I.e.,
 	  type="application/rss+xml"/>
 ```
 
-+ search "by subject", searching by navigation -- ex
-http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&subject=2120&itemsPerPage=40
-which is synonymous with
-http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2120/en/?page=1
-The result set can be further molded by the itemsPerPage
-parameter. For example
-http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5
-+ search "by querying", ordinary search -- ex
-http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&query=jesus&itemsPerPage=40
++ search "by subject", searching by navigation -- examples
+  + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&subject=2120&itemsPerPage=40   which is synonymous with
+  + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2120/en/?page=1 The result set can be further molded by the itemsPerPage parameter. For example
+  + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5
++ search "by querying", ordinary search -- for example
+  http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&query=jesus&itemsPerPage=40
 
 We have more [detailed information on geographical searching](open-search-dsfl.md).
 
