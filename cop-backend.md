@@ -133,14 +133,9 @@ content of a subject, the navigation info for that subject and finally
 the corresponding syndication services. Hence, considering the
 `outline` with subject 1036 above well get:
 
-Its subject tree: http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject1036/
-Its syndication feed: http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject1036/
-
-And finally, if you append a language, for example, `en/` as in English to the htmlUrl
-
-http://www.kb.dk/images/billed/2010/okt/billeder/subject1036/en/
-
-a the search result in HTML for gravsten (i.e., tomb stone) with user interface in English.
++ Its subject tree: http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject1036/
++ Its syndication feed: http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject1036/
++ And finally, if you append a language, for example, `en/` as in English to the htmlUrl http://www.kb.dk/images/billed/2010/okt/billeder/subject1036/en/ a the search result in HTML for gravsten (i.e., tomb stone) with user interface in English.
 
 This service accepts the parameter `opml_mode` with values
 `deep` and `shallow`. For example:
