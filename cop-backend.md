@@ -30,7 +30,8 @@ are embedded in the rss.
 Clients communicates with the server with Amazon A9.com [Open
 search](http://www.opensearch.org/Home) protocol.
 
-All formats supported include the following data for resultset navigation. I.e.,
+All formats supported include the following data for resultset
+navigation at the very beginning of the document. I.e.,
 
 ```
 <startIndex xmlns="http://a9.com/-/spec/opensearch/1.1/">1</startIndex>
@@ -59,6 +60,7 @@ variables
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2120/en/?page=1 
     The result set can be further molded by the itemsPerPage parameter. For example
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5
+    if you need page 4 in the result set add that to the `URI`
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5&page=4
 + search "by querying", ordinary search -- for example
   http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=2&query=jesus&itemsPerPage=40
@@ -83,17 +85,71 @@ The subject hierarchy needed for filtering and for building the
 browsing service can be retrieved from the navigation service. Links
 to RSS & HTML representations of the data -- ex
 
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder and
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/
+
+Here note that you get all nodes in the subject tree down to _kirker
+og kirkegårde_, i.e., a complete bread crumb path: 
+
+_Billeder_ - _Samlinger_ - _Fotografarkiver_ - _Türck, Sven_ - _arkitektur_
+
+Architecture is the parent of _kirker og kirkegårde_
+
+```
+<outline htmlUrl="http://www.kb.dk/images/billed/2010/okt/billeder/subject841/"
+	 id="841" 
+	 nodeId="841" 
+	 text="kirker og kirkegårde" 
+	 url="http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/" 
+	 xmlUrl="http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject841/">
+	 <outline htmlUrl="http://www.kb.dk/images/billed/2010/okt/billeder/subject1035/"
+	          id="1035" 
+		  nodeId="1035" 
+		  text="grave" 
+		  url="http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject1035/" 
+		  xmlUrl="http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject1035/"/>
+         <outline htmlUrl="http://www.kb.dk/images/billed/2010/okt/billeder/subject1036/" 
+	 	  id="1036" 
+		  nodeId="1036" 
+		  text="gravsten" 
+		  url="http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject1036/" 
+		  xmlUrl="http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject1036/"/>
+         <outline htmlUrl="http://www.kb.dk/images/billed/2010/okt/billeder/subject1264/" 
+	          id="1264" 
+		  nodeId="1264" 
+		  text="rundkirker" 
+		  url="http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject1264/"
+		  xmlUrl="http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject1264/"/>
+         </outline>
+</outline>
+```
+
+Each node contains The subjects name in Danish or when applicable also English, such as for the following one:
+
+http://www.kb.dk/cop/navigation/manus/ortsam/2009/okt/orientalia/subject637/en/
+
+where there is `text-en` in addition to `text`. For each `outline` we
+get three `URI` attributes: htmlUrl, url and xmlUrl. They point to the
+content of a subject, the navigation info for that subject and finally
+the corresponding syndication services. Hence, considering the
+`outline` with subject 1036 above well get:
+
+Its subject tree: http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject1036/
+Its syndication feed: http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject1036/
+
+And finally, if you append a language, for example, `en/` as in English to the htmlUrl
+
+http://www.kb.dk/images/billed/2010/okt/billeder/subject1036/en/
+
+a the search result in HTML for gravsten (i.e., tomb stone) with user interface in English.
 
 This service accepts the parameter `opml_mode` with values
 `deep` and `shallow`. For example:
 
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=deep
+http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/?opml_mode=deep
 
 and
 
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=shallow
+http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/?opml_mode=shallow
 
 Shallow was intended to give the current subject and its descendants. (This seems broken in the current implementation)
 
