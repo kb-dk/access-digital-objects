@@ -62,6 +62,6 @@ prepending `http://kb-images.kb.dk/` and `appending` /info.json to
 that string we get the URI of the technical metadata of the image in
 json format from the server. I.e.,
 
-http://kb-images.kb.dk/imageService/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011/info.json
+http://kb-images.kb.dk/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011/info.json
 
 ~~Our image client is OpenSeaDragon (OSD). OSD is used in COP and other services. OSD is configured on a per object basis using a json-baserad API~~
