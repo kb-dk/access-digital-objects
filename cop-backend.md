@@ -6,48 +6,52 @@
 
 The syndication service is for searching. By default it delivers a
 search result set in [rss 2.0](https://cyber.harvard.edu/rss/rss.html).
-
-1. For RSS 2.0, the root document is rss, i.e., 
-```
-<rss> ... </rss>
-```
 The syndication service supports some other formats as well, the most
-important ones are mods and kml. You can "toggle" between the formats using the 
-`format` CGI parameter. 
-2. When set to `mods`, the service delivers
-```
-<modsCollection> ... </modsCollection>
-```
-3. When set to `kml` it delivers a `kml` document
-```
-<kml> ... </kml>
-```
+important ones are mods and kml. You can "toggle" between the formats
+using the `format` CGI parameter.
 
-Format 1 and 3 are used internally in our services. All search and retrieval in 
+
+| format | root element |
+|:-------|:-------------|
+| rss    | ```<rss> ... </rss>```|
+| mods   | ```<modsCollection> ... </modsCollection>``` |
+| kml    | ```<kml> ... </kml>``` |
+
+The formats rss and kml are used internally in our services. All search and retrieval in 
 [Digital Editions - COP](http://www.kb.dk/editions/any/2009/jul/editions/en/)
-is based on the former,
-the latter is tranlated to ```json``` and is then used in [DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
+is based on the former, the latter is tranlated to ```json``` and is then used in the
+client side rendering of maps [DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
+
+The rss and mods formats are equivalent in as much as the mods records
+are embedded in the rss.
 
 ### Open Search
 
 Clients communicates with the server with Amazon A9.com [Open
 search](http://www.opensearch.org/Home) protocol.
 
-The RSS syntax includes all data for resultset navigation. I.e.,
+All formats supported include the following data for resultset navigation. I.e.,
 
 ```
 <startIndex xmlns="http://a9.com/-/spec/opensearch/1.1/">1</startIndex>
-    <itemsPerPage xmlns="http://a9.com/-/spec/opensearch/1.1/">40</itemsPerPage>
-    <Query xmlns="http://a9.com/-/spec/opensearch/1.1/" role="request" searchTerms="{}" startPage="1"/>
-    <totalResults xmlns="http://a9.com/-/spec/opensearch/1.1/">104820</totalResults>
-    <link xmlns="http://www.w3.org/2005/Atom" 
-          href="http://www.kb.dk/cop/images/billed/2010/okt/billeder" 
-	  rel="search" 
-	  type="application/opensearchdescription+xml"/>
-    <link xmlns="http://www.w3.org/2005/Atom" href="http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/" 
-          rel="search" 
-	  type="application/rss+xml"/>
+<itemsPerPage xmlns="http://a9.com/-/spec/opensearch/1.1/">40</itemsPerPage>
+<Query xmlns="http://a9.com/-/spec/opensearch/1.1/" role="request" searchTerms="{}" startPage="1"/>
+<totalResults xmlns="http://a9.com/-/spec/opensearch/1.1/">104820</totalResults>
+<link xmlns="http://www.w3.org/2005/Atom" 
+      href="http://www.kb.dk/cop/images/billed/2010/okt/billeder" 
+      rel="search" 
+      type="application/opensearchdescription+xml"/>
+<link xmlns="http://www.w3.org/2005/Atom" href="http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/" 
+      rel="search" 
+      type="application/rss+xml"/>
 ```
+
+Note that from what you see above is that this search result starts
+with record 1 out of 104820 and that you obtain them in chunks of 40
+items. You adjust your retrieval using the `page` and `itemsPerPage` CGI
+variables
+
+#### Examples
 
 + search "by subject", searching by navigation -- examples
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&subject=2120&itemsPerPage=40
@@ -55,8 +59,9 @@ The RSS syntax includes all data for resultset navigation. I.e.,
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2120/en/?page=1 
     The result set can be further molded by the itemsPerPage parameter. For example
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5
+  + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5&page=4
 + search "by querying", ordinary search -- for example
-  http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&query=jesus&itemsPerPage=40
+  http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=2&query=jesus&itemsPerPage=40
 
 We have more [detailed information on geographical searching](open-search-dsfl.md).
 
