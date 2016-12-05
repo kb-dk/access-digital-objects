@@ -64,4 +64,37 @@ json format from the server. I.e.,
 
 http://kb-images.kb.dk/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011/info.json
 
+returning
+
+```
+{
+  "@context" : "http://iiif.io/api/image/2/context.json",
+  "@id" : "http://kb-images.kb.dk/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011",
+  "protocol" : "http://iiif.io/api/image",
+  "width" : 2940,
+  "height" : 2212,
+  "sizes" : [
+     { "width" : 183, "height" : 138 },
+     { "width" : 367, "height" : 276 },
+     { "width" : 735, "height" : 553 },
+     { "width" : 1470, "height" : 1106 }
+  ],
+  "tiles" : [
+     { "width" : 256, "height" : 256, "scaleFactors" : [ 1, 2, 4, 8, 16 ] }
+  ],
+  "profile" : [
+     "http://iiif.io/api/image/2/level1.json",
+     { "formats" : [ "jpg" ],
+       "qualities" : [ "native","color","gray" ],
+       "supports" : ["regionByPct","sizeByForcedWh","sizeByWh","sizeAboveFull","rotationBy90s","mirroring","gray"] }
+  ]
+}
+```
+
+Note the @id in the json-ld above. Append '/full/!2000,/0/native.jpg' to that you get 
+
+http://kb-images.kb.dk/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011/full/!2000,/0/native.jpg
+
+That is, you can dereference that URI to a 2000 px wide image.
+
 ~~Our image client is OpenSeaDragon (OSD). OSD is used in COP and other services. OSD is configured on a per object basis using a json-baserad API~~
