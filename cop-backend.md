@@ -68,11 +68,12 @@ you just see how your browser renders RSS. If you're using a computer
 supporting a unix command line, such as Mac and Linux it is actually
 easier to use the `xmllint` command:
 
-```
-xmllint --format "http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5&page=4"
-```
+`xmllint --format` "http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5&page=4"
 
-The format option ensures that the retrieved document is nicely indented and pretty-printed.
+Don't forget the quotation marks around the URI, or your shell will
+try to do clever things with the meta-characters (?& etc). The format
+option ensures that the retrieved document is nicely indented and
+pretty-printed.
 
 We have more [detailed information on geographical searching](open-search-dsfl.md).
 
@@ -88,15 +89,11 @@ http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/
 This service accepts the parameter `opml_mode` with values
 `deep` and `shallow`. For example:
 
-```
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=deep
-```
 
 and
 
-```
 http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject2109/?opml_mode=shallow
-```
 
 Shallow was intended to give the current subject and its descendants. (This seems broken in the current implementation)
 
