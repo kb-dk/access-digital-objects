@@ -98,17 +98,13 @@ have two different documents describing the backend services
 + [General COP web services](cop-backend.md)
 + [Geographical extensions](open-search-dsfl.md)
 
-### Image delivery
-
-All images are with few exceptions are delivered via IIP Image using the APIn är IIIF Documents: http://iiif.io/api/image/2.1/
-
-Our image cluent is OpenSeaDragon (OSD). OSD is used in COP and other
-services. OSD is configured on a per object basis using a json-baserad
-API.
-
 ### Metadata formats
 
 [KML](https://developers.google.com/kml/documentation/)
+
+### Content formats 
+
+Virtually all content in COP is delivered as images; their delivery is described in a [separate document](image-delivery.md).
 
 ### Text delivery
 
@@ -118,7 +114,7 @@ API.
 
 ~~Text search and retrieval are made using  [https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets](solr-and-snippets)~~
 
-### Acknowledgements
+## Acknowledgements
 
 Andreas Borchsenius West contributed information about the JSON
 service used for maps, notably our Aerial photography collection

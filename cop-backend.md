@@ -77,6 +77,22 @@ try to do clever things with the meta-characters (?& etc). The format
 option ensures that the retrieved document is nicely indented and
 pretty-printed.
 
+#### CGI parameters in COP 
+
+Complete list of supported CGI parameters in COP 
+
+| Parameter | Used in PATH | Used in CGI | Comment | Status|
+|-----------|:-------------|:------------|:--------|-------|
+|query | - | x | Synonym to q | ok |
+|format | - | x | kml, rss and mods | ok |
+|page | - | x | | ok |
+|itemsPerPage | - | x | |ok |
+|object | x | - | | ok |
+|subject | x | - | Synonym to categories | ok |
+|bbo | - | x | Bounding Box |
+|notBefore | - | x | Not before a given date | - |
+|notAfter | - | x | Not after a given date | - |
+
 We have more [detailed information on geographical searching](open-search-dsfl.md).
 
 ### Navigation service
@@ -149,29 +165,54 @@ descendants, and deep the whole tree below a given point. This is not supported
 
 ### Content service 
 
-Tables of contents for complex digital objects are delivered through the content service. 
+Basically all digital objects in COP are "complex" in one way or
+another. By that we understand that we need to see more than one file
+to consume its content. The simplest case is a photograph requiring a
+digital image of each side. This means that we need a tables of
+contents just about every digital object in the service, and that TOC
+is delivered through the content service.
+
+Here is one for a fairly complex song book
 
 http://www.kb.dk/cop/content/manus/musman/2010/dec/viser/object23942/en/
 
-and
+and one for two page letter
 
 http://www.kb.dk/cop/content/letters/judsam/2011/mar/dsa/object10/en/
 
-representing TOCs of a song book and a two page letter, respectively
+respectively.
+
+Typically they look like:
+
+```
+<outline htmlUrl="online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_001.tif" 
+	 n="1" 
+	 sequence="1" 
+	 text="Chresten Jensens Visebog" 
+	 xml:lang="da">
+   <outline htmlUrl="online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_002.tif" n="2" sequence="2"/>
+   <outline htmlUrl="online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_003.tif" 
+            n="3" sequence="3" text="01 Held Danmarks gamle rige" xml:lang="da"/>
+   <outline htmlUrl="online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_004.tif" n="4" sequence="4">
+      <outline htmlUrl="online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_005.tif" n="5"
+               sequence="5" text="02 Frivillige møder vi" xml:lang="da"/>
+   </outline>
+   <outline htmlUrl="online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_006.tif" n="6" sequence="6" 
+            text="03 Jeg kan tænke, tiden er dig lang" xml:lang="da">
+       <outline htmlUrl="online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_007.tif" n="7" sequence="7"/>
+   </outline>
+   <outline htmlUrl="online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_008.tif" n="8" 
+            sequence="8" text="04 Kom, gode folk" xml:lang="da"/>
+
+...
+
+```
+
+The nesting of outline elements seems to be dependent on some oddities
+in the authoring tool. In order to read the book, you'll have to
+retrieve the images. The construction of [image URIs is described elsewhere](image-delivery.md). 
 
 
-### Complete list of supported CGI parameters in COP 
 
-| Parameter | Used in PATH | Used in CGI | Comment | Status|
-|-----------|:-------------|:------------|:--------|-------|
-|query | - | x | Synonym to q | ok |
-|format | - | x | kml, rss and mods | ok |
-|page | - | x | | ok |
-|itemsPerPage | - | x | |ok |
-|object | x | - | | ok |
-|subject | x | - | Synonym to categories | ok |
-|bbo | - | x | Bounding Box |
-|notBefore | - | x | Not before a given date | - |
-|notAfter | - | x | Not after a given date | - |
 
 
