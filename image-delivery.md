@@ -101,8 +101,8 @@ Image URIs may appear in a few more formats. Note, for example, the
 htmlUrl in outlines of [Chresten Jensens
 Visebog](cop-backend.md#content-service) are actually links to tif
 files. You can easily retrieve a 
-[json file for each page](http://kb-images.kb.dk/online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_001/info.json)
-in the manuscript
+[json-ld file for each page](http://kb-images.kb.dk/online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_001/info.json)
+in the manuscript and then [read it](http://kb-images.kb.dk/online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_001/full/!2000,/0/native.jpg)
 
 
 
