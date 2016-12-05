@@ -8,19 +8,16 @@ The syndication service is for searching. By default it delivers a
 search result set in [rss 2.0](https://cyber.harvard.edu/rss/rss.html).
 
 1. For RSS 2.0, the root document is rss, i.e., 
-
-``` <rss> ... </rss> ```
-
+```
+<rss> ... </rss>
+```
 The syndication service supports some other formats as well, the most
 important ones are mods and kml. You can "toggle" between the formats using the 
 `format` CGI parameter. 
-
 2. When set to `mods`, the service delivers
-
 ```
 <modsCollection> ... </modsCollection>
 ```
-
 3. When set to `kml` it delivers a `kml` document
 ```
 <kml> ... </kml>

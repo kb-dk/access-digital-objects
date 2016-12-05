@@ -8,8 +8,8 @@ based architecture.
 This collection of documents describes the various APIs we are using
 ourselves to provide access to our data to library patrons, in the
 hope that the access points could be useful for a new category library
-patron whose research or studies would benefit from prammatic access
-to our collections.
+patron whose research or studies would benefit from programmatic access
+to our digital collections.
 
 
 ## Licences & Legalese
@@ -34,8 +34,8 @@ Generic)
 
 The APIs described have used by us for many years. We, the developers,
 created each of them for getting a job done. They are usually well
-tested and works well, but they certainly not polished and neither are
-there any helpful error messages etc.
+tested and works well, but they neither polished, nor are there any
+helpful error messages etc.
 
 The formats we are delivering are to a large extent based on
 standards. That means that in many places we refer to external
@@ -83,10 +83,13 @@ platform which is common between different collections and media
 types. However, when it was released we intentionally never gave the
 service a brand name.
 
-The COP metadata is accessed from two front ends 
+The metadata and objects in COP are accessible from two front ends 
 
 + [Digital Editions](http://www.kb.dk/editions/any/2009/jul/editions/en/)
 + Aerial Photography Collection, [Danmark set fra Luften](http://www.kb.dk/danmarksetfraluften/) (DFSL)
+
+It is only the backend which is common, though. The DFSL has its own
+frontend, the rest comes through another.
 
 The both services use the same web services, but DFSL has some
 geographical extensions in order to run its map based interface. We
