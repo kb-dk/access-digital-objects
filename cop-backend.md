@@ -137,16 +137,15 @@ the corresponding syndication services. Hence, considering the
 + Its syndication feed: http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject1036/
 + And finally, if you append a language, for example, `en/` as in English to the htmlUrl http://www.kb.dk/images/billed/2010/okt/billeder/subject1036/en/ a the search result in HTML for gravsten (i.e., tomb stone) with user interface in English.
 
-This service accepts the parameter `opml_mode` with values
-`deep` and `shallow`. For example:
+This service accepts the parameter `opml_mode` with values `deep` and
+`shallow`. Shallow was intended to give the current subject and its
+descendants, and deep the whole tree below a given point. This is not supported
 
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/?opml_mode=deep
+~~http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/?opml_mode=deep~~
 
-and
+~~and~~
 
-http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/?opml_mode=shallow
-
-Shallow was intended to give the current subject and its descendants. (This seems broken in the current implementation)
+~~http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/?opml_mode=shallow~~
 
 ### Content service 
 
