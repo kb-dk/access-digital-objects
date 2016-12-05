@@ -97,4 +97,10 @@ http://kb-images.kb.dk/online_master_arkiv_6/non-archival/Images/BILLED/2008/Bil
 
 That is, you can dereference that URI to a 2000 px wide image.
 
+Image URIs may appear in a few more formats. Note, for example, the htmlUrl in [Chresten Jensens Visebog](cop-backend.md#content-service)
+
+
+online_master_arkiv_5/non-archival/Manus/VMANUS/2009/jun/dfs_1906_6a_16/dfs_1906_6a_16_001.tif
+
+
 ~~Our image client is OpenSeaDragon (OSD). OSD is used in COP and other services. OSD is configured on a per object basis using a json-baserad API~~
