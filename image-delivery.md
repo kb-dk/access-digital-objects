@@ -17,16 +17,39 @@ Two cases arise:
 
 ## Constructing single image URIs
 
-The identifier of an image is found in an element called md:identifier (see the metadata section)
+The identifier of an image is found in an element called md:identifier
+(see the metadata section) with displayLabel="image" and
+displayLabel="thumbnail", respectively.
 
 ```
  <md:identifier displayLabel="image" 
                 type="uri"> Image Uri  </md:identifier>
 ```
+or
 
-http://www.kb.dk/imageService/online_master_arkiv_3/non-archival/Images/SKETCHBOOKS_VANDMAERKER/alfred_schmidt_sketchbooks/2002-179_20/db_alfred_schmidt_02242.jpg
+```
+ <md:identifier displayLabel="thumbnail" 
+                type="uri"> Thumbnail Uri  </md:identifier>
+```
 
-## Constructing IIIF json URIs
+The URIs in the two has the forms
+
+http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011.jpg
+ 
+and
+
+http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011.jpg
+
+respectivly. The forms are old and predates our implementation of
+IIIF. The image's width and height ca be set using the parameters w
+and h in the URI path. Only one of them are needed. E.g.,
+
+http://www.kb.dk/imageService/w640/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011.jpg
+
+will return a 640 px wide image.
+
+
+## Constructing IIIF URIs
 
 Our image client is OpenSeaDragon (OSD). OSD is used in COP and other
 services. OSD is configured on a per object basis using a json-baserad
