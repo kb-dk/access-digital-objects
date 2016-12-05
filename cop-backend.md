@@ -63,6 +63,17 @@ variables
 + search "by querying", ordinary search -- for example
   http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=2&query=jesus&itemsPerPage=40
 
+To see what is going on in these examples, you have to view source, or
+you just see how your browser renders RSS. If you're using a computer
+supporting a unix command line, such as Mac and Linux it is actually
+easier to use the `xmllint` command:
+
+```
+xmllint --format "http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5&page=4"
+```
+
+The format option ensures that the retrieved document is nicely indented and pretty-printed.
+
 We have more [detailed information on geographical searching](open-search-dsfl.md).
 
 ### Navigation service
