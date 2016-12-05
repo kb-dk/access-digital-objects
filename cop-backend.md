@@ -93,7 +93,7 @@ Complete list of supported CGI parameters in COP
 |notBefore | - | x | Not before a given date | - |
 |notAfter | - | x | Not after a given date | - |
 
-We have more [detailed information on geographical searching](open-search-dsfl.md).
+We have more [detailed information on geographical searching](geographic-data.md).
 
 ### Navigation service
 

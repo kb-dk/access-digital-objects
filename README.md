@@ -96,7 +96,7 @@ geographical extensions in order to run its map based interface. We
 have two different documents describing the backend services
 
 + [General COP web services](cop-backend.md)
-+ [Geographical extensions](open-search-dsfl.md)
++ [Geographical extensions](geographic-data.md)
 
 ### Metadata formats
 
