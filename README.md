@@ -100,7 +100,10 @@ have two different documents describing the backend services
 
 ### Metadata formats
 
-[KML](https://developers.google.com/kml/documentation/)
+Through COP we deliver metadata to various services, in different formats.
+
+
+
 
 ### Content formats 
 
