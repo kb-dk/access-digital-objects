@@ -83,11 +83,11 @@ idiosyncrasies in our implementations.
 
 | XPath | Example value | Comment |
 |:------|:--------------|:--------|
-| //md:identifier[@type="uri"][1] | <md:identifier type="uri"> http://www.kb.dk/images/billed/2010/okt/billeder/object67582/da/ </md:identifier> | URI of the object |
-| //md:identifier[@type="local"] | <md:identifier type="local">H02165_020.tif</md:identifier> | The local ID is usually the objects call number |
-| //md:identifier[@type="domsGuid"] | <md:identifier type="domsGuid">Uid:dk:kb:doms:2007-01/d651d950-1e88-11e2-808e-0016357f605f</md:identifier> | A UUID in any of several formats, but usable for connecting it to the ID used for digital preservation if applicable |
-| //md:identifier[@displayLabel="image"][@type="uri"] | <md:identifier displayLabel="image" type="uri">http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H02165/H02165_020.jpg</md:identifier> | A fairly high resolution JPG |
-| //md:identifier[@displayLabel="thumbnail"][@type="uri"] | <md:identifier displayLabel="thumbnail" type="uri">http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H02165/H02165_020.jpg</md:identifier> | URI of a thumbnail |
+| //md:identifier[@type="uri"][1] | `<md:identifier type="uri">` http://www.kb.dk/images/billed/2010/okt/billeder/object67582/da/ `</md:identifier>` | URI of the object |
+| //md:identifier[@type="local"] | `<md:identifier type="local">` H02165_020.tif `</md:identifier>` | The local ID is usually the objects call number |
+| //md:identifier[@type="domsGuid"] | `<md:identifier type="domsGuid">` Uid:dk:kb:doms:2007-01/d651d950-1e88-11e2-808e-0016357f605f `</md:identifier>` | A UUID in any of several formats, but usable for connecting it to the ID used for digital preservation if applicable |
+| //md:identifier[@displayLabel="image"][@type="uri"] | `<md:identifier displayLabel="image" type="uri">` http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H02165/H02165_020.jpg `</md:identifier>` | A fairly high resolution JPG |
+| //md:identifier[@displayLabel="thumbnail"][@type="uri"] | `<md:identifier displayLabel="thumbnail" type="uri">` http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H02165/H02165_020.jpg `</md:identifier>` | URI of a thumbnail |
 
 
 ### Language and other information about the records
