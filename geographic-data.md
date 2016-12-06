@@ -1,5 +1,5 @@
 
-# Aerial Photograph Collection (Danmark set fra Luften - DFSL)
+# Accessing the Aerial Photograph Collection
         
 ## Overview
 
