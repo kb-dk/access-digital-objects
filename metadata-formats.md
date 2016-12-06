@@ -113,6 +113,17 @@ language from the recordinfo section of a record.
 
 The ID of the record and its creation and revision dates can be found here as well.
 
+### Resource language
+
+Some of the objects in COP are in unusual language and script
+combinations, like judeo-arabic (arabic written in Hebr script) and
+even western European languages like Italian and German written in
+Hebrew. In our Oriental collections combinations of language and
+script is not at all obvious. Through history people write those
+languages they know, using the scripts they know. Which in some cases
+give arise to texts like this [Die abhandlung der
+algebra](http://www.kb.dk/manus/judsam/2009/sep/dsh/object28241/en/) which is
+
 ### Event metadata
 
 In publishing the [Comics, caricature and newspaper cartoons
