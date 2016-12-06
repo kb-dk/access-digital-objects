@@ -1,8 +1,9 @@
 
 
-## Web services in COP
+# Web services in COP
 
-### Syndication service formats
+
+## Syndication service formats
 
 The syndication service is for searching. By default it delivers a
 search result set in [rss 2.0](https://cyber.harvard.edu/rss/rss.html).
@@ -25,7 +26,7 @@ client side rendering of maps [DSFL](http://www.kb.dk/danmarksetfraluften/) (DFS
 The rss and mods formats are equivalent in as much as the mods records
 are embedded in the rss.
 
-### Open Search
+## Open Search
 
 Clients communicates with the server with Amazon A9.com [Open
 search](http://www.opensearch.org/Home) protocol.
@@ -52,7 +53,7 @@ with record 1 out of 104820 and that you obtain them in chunks of 40
 items. You adjust your retrieval using the `page` and `itemsPerPage` CGI
 variables
 
-#### Examples
+## Examples
 
 + search "by subject", searching by navigation -- examples
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=1&subject=2120&itemsPerPage=40
@@ -77,7 +78,7 @@ try to do clever things with the meta-characters (?& etc). The format
 option ensures that the retrieved document is nicely indented and
 pretty-printed.
 
-#### CGI parameters in COP 
+## CGI parameters in COP 
 
 Complete list of supported CGI parameters in COP 
 
@@ -95,7 +96,7 @@ Complete list of supported CGI parameters in COP
 
 We have more [detailed information on geographical searching](geographic-data.md).
 
-### Navigation service
+## Navigation service
 
 The subject hierarchy needed for filtering and for building the
 browsing service can be retrieved from the navigation service. Links
@@ -163,7 +164,7 @@ descendants, and deep the whole tree below a given point. This is not supported
 
 ~~http://www.kb.dk/cop/navigation/images/billed/2010/okt/billeder/subject841/?opml_mode=shallow~~
 
-### Content service 
+## Content service 
 
 Basically all digital objects in COP are "complex" in one way or
 another. By that we understand that we need to see more than one file
