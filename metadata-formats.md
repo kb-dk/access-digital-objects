@@ -122,7 +122,11 @@ Hebrew. In our Oriental collections combinations of language and
 script is not at all obvious. Through history people write those
 languages they know, using the scripts they know. Which in some cases
 give arise to texts like this [Die abhandlung der
-algebra](http://www.kb.dk/manus/judsam/2009/sep/dsh/object28241/en/) which is
+algebra](http://www.kb.dk/manus/judsam/2009/sep/dsh/object28241/en/)
+which is written in German but in Hebrew script.
+
+To handle this we use an Internet standard for [language tagging,
+namely RFC 4646](https://www.ietf.org/rfc/rfc4646.txt)
 
 ### Event metadata
 
@@ -197,5 +201,11 @@ object](http://www.kb.dk/cop/syndication/manus/musman/2010/dec/viser/object23942
           </md:titleInfo>
         </md:relatedItem>
 ```
+
+## Europeana Semantic Elements (ESE)
+
+[ESE](http://pro.europeana.eu/page/ese-documentation) is only
+supported by the [OAI server](README.md#dissemination-of-metadata),
+not the syndication services. EDM is not supported.
 
 
