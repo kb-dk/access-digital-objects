@@ -1,9 +1,9 @@
 # Access digital objects!
 
-The Library has been digitizing Cultural Heritage Objects in its
-collections since well over two decades. More recently, the last 6-7
-years, we have tried to build our dissemination platforms using a REST
-based architecture.
+The Royal Library, Copenhagen, has been digitizing Cultural Heritage
+Objects in its collections since well over two decades. More recently,
+the last 6-7 years, we have tried to build our dissemination platforms
+using a REST based architecture.
 
 This collection of documents describes the various APIs we are using
 ourselves to provide access to our data to library patrons, in the
@@ -32,10 +32,10 @@ Generic)
 
 ## Caveats
 
-The APIs described have used by us for many years. We, the developers,
-created each of them for getting a job done. They are usually well
-tested and works well, but they neither polished, nor are there any
-helpful error messages etc.
+The APIs described have been used by us for many years. We, their
+developers, created each of them for getting a job done. They are
+usually well tested and works well, but they neither polished, nor are
+there any helpful error messages etc.
 
 The formats we are delivering are to a large extent based on
 standards. That means that in many places we refer to external
@@ -46,15 +46,18 @@ documents are strictly valid, though.
 
 ### Dissemination of metadata
 
-The dissemination services are aimed at aggregator services of various
-kinds. Our dissemination API is OAI-PMH targets are COP, Aleph and the
-national National aggregator. The most important aggregators are REX
-och Europeana.
+The purpose of our dissemination is to enable us to synchronize data
+between our own systems, but also to share our data with Cultural
+Heritage communities at large. The dissemination services are aimed at
+aggregator services of various kinds. Our dissemination API is
+OAI-PMH, and our targets are COP, Aleph and the national National
+aggregator. The most important aggregators are, the National
+Aggregator (which is our own OAI to OAI gateway and aggregation
+service), REX, our discovery system, och Europeana.
 
-The purpose of dissemination is to enable Cultural Heritage
-organisation to share data. To use the data you'll have to store them
-in a database or index of your own. The [Open Archives Initives
-Protocol of Metadata Harvesting](http://www.openarchives.org/OAI/openarchivesprotocol.html)
+When using these service, you need to store them in a database or
+index of your own. The [Open Archives Initives Protocol of Metadata
+Harvesting](http://www.openarchives.org/OAI/openarchivesprotocol.html)
 (OAI PMH) is well known, and we will not provide detailed information
 about here.
 
@@ -73,17 +76,20 @@ A few example to get an idea what it is about:
 4. One should be able to get hold of a [single record, given its Identifier](http://www.openarchives.org/OAI/openarchivesprotocol.html#GetRecord)
   + http://www.kb.dk/cop/oai/?verb=GetRecord&identifier=oai:kb.dk:manus:judsam:2010:maj:jsmss:object62730&metadataPrefix=oai_dc
 
-In the cases in the examples above we obtained the records in mods
-format, other alternatives are oai_dc and ese. See below.
+You can easily harvest any of our editions by getting chosing the
+desired set in the ListSets example above and insert it into the
+ListRecords URI. In the cases in the examples above we obtained the
+records in mods format, other alternatives are oai_dc and ese. See
+below.
 
 ### Search and retrieval
 
-Our most important is internally referred to as COP, an acronym for
-which one possible interpretation could be **C**ommon **O**bject
-**P**ublishing platform. The word _Common_ would refer to that it is
-platform which is common between different collections and media
-types. However, when it was released we intentionally never gave the
-service a brand name.
+Our most important data source is internally referred to as COP, an
+acronym for which one possible interpretation could be **C**ommon
+**O**bject **P**ublishing platform. The word _Common_ would refer to
+that it is platform which is common between different collections and
+media types. However, when it was released we intentionally never gave
+the service a brand name.
 
 The metadata and objects in COP are accessible from two front ends 
 

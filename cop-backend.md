@@ -1,16 +1,15 @@
 
-
 # Web services in COP
-
 
 ## Syndication service formats
 
-The syndication service is for searching. By default it delivers a
-search result set in [rss 2.0](https://cyber.harvard.edu/rss/rss.html).
-The syndication service supports some other formats as well, the most
-important ones are mods and kml. You can "toggle" between the formats
-using the `format` CGI parameter.
-
+The syndication service is for search and retrieval. By default it
+delivers a search result set (or a retrieval, which is basically a
+search for a record ID) in [rss
+2.0](https://cyber.harvard.edu/rss/rss.html).  The syndication service
+supports some other formats as well, the most important ones are mods
+and kml. You can "toggle" between the formats using the `format` CGI
+parameter.
 
 | format | root element |
 |:-------|:-------------|
@@ -31,8 +30,8 @@ are embedded in the rss.
 Clients communicates with the server with Amazon A9.com [Open
 search](http://www.opensearch.org/Home) protocol.
 
-All formats supported include the following data for resultset
-navigation at the very beginning of the document. I.e.,
+All formats supported include a Open search header for (used for
+resultset navigation) at the very beginning of each result set:
 
 ```
 <startIndex xmlns="http://a9.com/-/spec/opensearch/1.1/">1</startIndex>
@@ -50,8 +49,7 @@ navigation at the very beginning of the document. I.e.,
 
 Note that from what you see above is that this search result starts
 with record 1 out of 104820 and that you obtain them in chunks of 40
-items. You adjust your retrieval using the `page` and `itemsPerPage` CGI
-variables
+items. You adjust your retrieval using the `page` and `itemsPerPage` [CGI variables](cop-backend.md#cgi-parameters-in-cop)
 
 ## Examples
 
