@@ -13,7 +13,7 @@ DSFL - draws its data from several sources, notably
 + The metadata is stored in Common Object Publishing (COP)
 + Vertical, photogrammetrical, images from 1954, 1995 and 2006. These are provided by [COWI](http://www.cowi.dk/menu/home/) based on originals in our collections.
         
-The service is based on the Amazon A9 open Search web service protocol. A more [detailed description is available](cop-backend.md). 
+The service is based on the Amazon A9 open Search web service protocol. A more [detailed description of that is available](cop-backend.md#open-search). 
 
 ~~Kendte mangler og kommende ændringer: Det er ikke muligt at begrænse resultater til kun at vise korrekt placerede luftfotos.~~
 
@@ -23,11 +23,10 @@ The whole dataset can (at least in principle) be accessed from http://www.kb.dk/
 
 A single record can be retrieved using a URI on this form http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/object59452/ (a single record)
         
-A simple area search with result presented in [KML](https://developers.google.com/kml/documentation/)
+A simple area search with result presented in [KML format](https://developers.google.com/kml/documentation/)
 
 http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=kml&type=all&bbo=10.80531074987789,55.57241860489453,10.568933033813437,55.48147359047444&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
 
-Method: HTTP GET
 
 ### Parameters and sample values
 
@@ -73,10 +72,22 @@ Further specification on the query search term. Certain fields can be specified 
 + address:Z
 + building:A
 
- "Lykkegård" and person::"Jørgensen" sic: the text says double colon 
+Example: Searching for "Lykkegård" in the full text of the record and
+combining that with a boolean AND with a search for "Jørgensen" in
+the person field yields
+
+```
+Lykkegård&person::Jørgensen
+```
+
+URI encoded and inserted as the value of the query CGI variable this gives
         
 http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=rss&query=lykkeg%C3%A5rd%26person%3A%3AJ%C3%B8rgensen&type=all&bbo=10.826596760620077,55.54834253439101,10.590219044555624,55.45734180334893&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
-        
+
+~~ To me it looks more like a bug than a feature to use '&' in this position ~~
+
+~~ Honestly: Should we actually publish info on the kml? I have tried, but I can not get it to work. Perhaps we could get google maps to accept the rss instead ~~
+
 Example Output in KML
 
 ```
