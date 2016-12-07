@@ -18,8 +18,10 @@ Two cases arise:
 ## Constructing single image URIs
 
 The identifier of an image is found in an element called md:identifier
-(see the metadata section) with displayLabel="image" and
-displayLabel="thumbnail", respectively.
+(see the [metadata section](metadata-formats.md#identifiers) for more
+information on how to find them in the MODS section) with
+displayLabel="image" and displayLabel="thumbnail", respectively.
+
 
 ```
  <md:identifier displayLabel="image" 
