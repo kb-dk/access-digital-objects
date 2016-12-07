@@ -21,14 +21,12 @@ material in __this git repository__ is licensed to you as
 
 The material we __provide access to using the APIs described__ are of two kinds:
 
-1. Metadata: This comes to you as [https://creativecommons.org/publicdomain/zero/1.0/](CC0 1.0
-Universal). I.e.,
+1. Metadata: This comes to you as [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). I.e.,
 our metadata is basically public domain.
 
 2. Content: The content in our digital collections are delivered with
 varous licenses, but the most common one is
-[https://creativecommons.org/licenses/by-nc-nd/2.0/](Attribution-NonCommercial-NoDerivs 2.0
-Generic)
+[Attribution-NonCommercial-NoDerivs 2.0 Generic](https://creativecommons.org/licenses/by-nc-nd/2.0/). I.e., our content is provided with a much more restrictive CC license.
 
 ## Caveats
 
