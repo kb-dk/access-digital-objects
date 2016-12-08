@@ -42,6 +42,13 @@ documents are strictly valid, though.
 
 ## Services by scope and purpose
 
+A brief introduction to the characters in the story
+
++ [Digital Editions - COP](http://www.kb.dk/editions/any/2009/jul/editions/en/)
++ [Aerial Photography collection - DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
++ [Rex - our Integrated Library System](http://rex.kb.dk/)
++ National Aggregator - A system run by us aggregating material from Danish libraries, museums and archives on behalf of Europeana
+
 ### Dissemination of metadata
 
 The purpose of our dissemination is to enable us to synchronize data
