@@ -17,7 +17,7 @@ The service is based on the Amazon A9 open Search web service protocol. A more [
 
 ~~Kendte mangler og kommende ændringer: Det er ikke muligt at begrænse resultater til kun at vise korrekt placerede luftfotos.~~
 
-## COP-02 Backend - Syndication Service
+## COP Backend - Syndication Service
         
 The whole dataset can (at least in principle) be accessed from http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/
 
