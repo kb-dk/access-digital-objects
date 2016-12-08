@@ -1,3 +1,5 @@
+[README](README.md) [Web services in COP](cop-backend.md) [Aerial Photograph Collection](geographic-data.md)  [Image delivery](image-delivery.md) [Metadata Formats](metadata-formats.md)
+
 # Access digital objects!
 
 The Royal Library, Copenhagen, has been digitizing Cultural Heritage
