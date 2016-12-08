@@ -96,12 +96,8 @@ The metadata and objects in COP are accessible from two front ends
 + [Digital Editions](http://www.kb.dk/editions/any/2009/jul/editions/en/)
 + Aerial Photography Collection, [Danmark set fra Luften](http://www.kb.dk/danmarksetfraluften/) (DFSL)
 
-It is only the backend which is common, though. The DFSL has its own
-frontend, the rest comes through another.
-
 The both services use the same web services, but DFSL has some
-geographical extensions in order to run its map based interface. We
-have two different documents describing the backend services
+geographical extensions in order to run its map based interface
 
 + [General COP web services](cop-backend.md)
 + [Geographical extensions](geographic-data.md)
