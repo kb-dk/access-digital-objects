@@ -49,7 +49,7 @@ resultset navigation) at the very beginning of each result set:
 
 Note that from what you see above is that this search result starts
 with record 1 out of 104820 and that you obtain them in chunks of 40
-items. You adjust your retrieval using the `page` and `itemsPerPage` [CGI variables](cop-backend.md#cgi-parameters-in-cop)
+items. You adjust your retrieval using the `page` and `itemsPerPage` [CGI variables](cop-backend.md#query-parameters-in-cop)
 
 ## Examples
 
@@ -76,9 +76,9 @@ try to do clever things with the meta-characters (?& etc). The format
 option ensures that the retrieved document is nicely indented and
 pretty-printed.
 
-## CGI parameters in COP 
+## Query parameters in COP 
 
-Complete list of supported CGI parameters in COP 
+Complete list of supported parameters in COP 
 
 | Parameter | Used in PATH | Used in CGI | Comment | Status|
 |-----------|:-------------|:------------|:--------|-------|
@@ -87,7 +87,7 @@ Complete list of supported CGI parameters in COP
 |page | - | x | | ok |
 |itemsPerPage | - | x | |ok |
 |object | x | - | | ok |
-|subject | x | - | Synonym to categories | ok |
+|subject | x | deprecated | Synonym to categories | ok |
 |bbo | - | x | Bounding Box |
 |notBefore | - | x | Not before a given date | - |
 |notAfter | - | x | Not after a given date | - |
