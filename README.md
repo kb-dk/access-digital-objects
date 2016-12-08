@@ -83,7 +83,7 @@ A few example to get an idea what it is about:
 4. One should be able to get hold of a [single record, given its Identifier](http://www.openarchives.org/OAI/openarchivesprotocol.html#GetRecord)
   + http://www.kb.dk/cop/oai/?verb=GetRecord&identifier=oai:kb.dk:manus:judsam:2010:maj:jsmss:object62730&metadataPrefix=oai_dc
 
-You can easily harvest any of our editions by getting chosing the
+You can easily harvest any of our editions by chosing the
 desired set in the ListSets example above and insert it into the
 ListRecords URI. In the cases in the examples above we obtained the
 records in mods format, other alternatives are oai_dc and ese. See
