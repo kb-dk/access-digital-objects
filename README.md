@@ -97,7 +97,7 @@ Examples:
 
 | Set Spec | Set Name |
 |----------|----------|
-| [oai:kb.dk:letters:judsam:2011:mar:dsa](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:letters:judsam:2011:mar:ds&metadataPrefix=ese) | David Simonsens Arkiv |
+| [oai:kb.dk:letters:judsam:2011:mar:dsa](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:letters:judsam:2011:mar:dsa&metadataPrefix=ese) | David Simonsens Arkiv |
 | [oai:kb.dk:manus:judsam:2010:maj:jsmss](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:judsam:2010:maj:jsmss&metadataPrefix=ese) | Judaistisk Samling: Håndskrifter | 
 | [oai:kb.dk:images:luftfo:2011:maj:luftfoto](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:images:luftfo:2011:maj:luftfoto&metadataPrefix=ese) | Luftfoto |
 | [oai:kb.dk:pamphlets:dasmaa:2012:jul:smaatryk](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:pamphlets:dasmaa:2012:jul:smaatryk&metadataPrefix=ese) | Småtryk |
