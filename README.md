@@ -74,7 +74,7 @@ A few example to get an idea what it is about:
   + http://www.kb.dk/cop/oai/?verb=Identify
 
 2. An OAI provider may contain multiple [collections or sets](http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets)
-  + http://www.kb.dk/cop/oai/?verb=ListSets 
+  + http://oai.kb.dk/oai/provider?verb=ListSets
 
 3. For a given set we provide access to a [list of records](http://www.openarchives.org/OAI/openarchivesprotocol.html#ListRecords),
   for instance of all manuscripts in the Judaica collection 
