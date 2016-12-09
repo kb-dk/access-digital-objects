@@ -75,6 +75,7 @@ A few example to get an idea what it is about:
 
 2. An OAI provider may contain multiple [collections or sets](http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets)
   + http://oai.kb.dk/oai/provider?verb=ListSets
+  + ~~http://www.kb.dk/cop/oai/?verb=ListSets is right now broken, sorry for that~~
 
 3. For a given set we provide access to a [list of records](http://www.openarchives.org/OAI/openarchivesprotocol.html#ListRecords),
   for instance of all manuscripts in the Judaica collection 
@@ -87,7 +88,30 @@ You can easily harvest any of our editions by choosing the
 desired set in the ListSets example above and insert it into the
 ListRecords URI. In the cases in the examples above we obtained the
 records in mods format, other alternatives are oai_dc and ese. See
-below.
+below .
+
+Examples:
+
++ http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:judsam:2010:maj:jsmss&metadataPrefix=ese
++ http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:judsam:2010:maj:jsmss&metadataPrefix=oai_dc
+
+| Set Spec | Set Name |
+|----------|----------|
+| oai:kb.dk:letters:judsam:2011:mar:dsa | David Simonsens Arkiv |
+| oai:kb.dk:manus:judsam:2010:maj:jsmss | Judaistisk Samling: Håndskrifter | 
+| oai:kb.dk:images:luftfo:2011:maj:luftfoto | Luftfoto |
+| oai:kb.dk:pamphlets:dasmaa:2012:jul:smaatryk | Småtryk |
+| oai:kb.dk:maps:kortsa:2012:jul:kortatlas | Kort og Atlas |
+| oai:kb.dk:pamphlets:dasmaa:2008:feb:partiprogrammer | Partiprogram |
+| oai:kb.dk:images:billed:2010:okt:billeder | Billeder | 
+| oai:kb.dk:manus:ortsam:2009:okt:orientalia | Oriental Collection: Manuscripts |
+| oai:kb.dk:pamphlets:dasmaa:2008:feb:daellsvarehus | Varehuskataloger |
+| oai:kb.dk:books:judsam:2010:maj:jstryk | Judaistisk Samling: Tidlige & sjældne tryk |
+| oai:kb.dk:manus:judsam:2009:sep:dsh | David Simonsens Håndskrifter |
+| oai:kb.dk:books:ortsam:2011:mar:ostryk | Tidlige tryk i Orientalsk Samling, Det Kongelige Bibliotek. |
+| oai:kb.dk:manus:musman:2010:dec:viser | DFS |
+| oai:kb.dk:images:billed:2014:jun:hca | H.C. Andersen |
+| oai:kb.dk:manus:vmanus:2011:dec:ha | Vesterlandske håndskrifter |
 
 ### Search and retrieval
 
