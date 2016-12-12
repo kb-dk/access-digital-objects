@@ -2,6 +2,10 @@
 
 # Web services in COP
 
+## Web service architecture
+
+web-service-architecture.png
+
 ## Syndication service formats
 
 The syndication service is for search and retrieval. By default it
