@@ -2,8 +2,8 @@
 
 # Dissemination API
 
-Our dissemination API is OAI-PMH, and our targets are COP, Aleph (our OPAC) and
-the National aggregator. The most important aggregators are,
+Our dissemination API is OAI-PMH, and our targets are COP, Aleph (our
+OPAC) and the National aggregator. The most important aggregators are,
 the National Aggregator (which is our own OAI to OAI gateway and
 aggregation service), REX, our discovery system and Europeana.
 
