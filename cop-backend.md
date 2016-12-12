@@ -4,7 +4,7 @@
 
 ## Web service architecture
 
-web-service-architecture.png
+![COP Architecture](web-service-architecture.png)
 
 ## Syndication service formats
 
