@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Style id="balloon-style">
+      <BalloonStyle>
+        <text><![CDATA[
+                          <img src='$[subjectThumbnailSrc]' /><br />
+                          <b>Navn:</b> $[subjectName]<br />
+                          <b>Årstal:</b> $[subjectCreationDate]<br />
+                          <b>Sted:</b> $[subjectGeographic]<br />
+                          <br />
+                          <a href='$[subjectLink]'>Mere info</a>
+                    ]]></text>
+      </BalloonStyle>
+    </Style>
+    <startIndex xmlns="http://a9.com/-/spec/opensearch/1.1/">1</startIndex>
+    <itemsPerPage xmlns="http://a9.com/-/spec/opensearch/1.1/">40</itemsPerPage>
+    <Query xmlns="http://a9.com/-/spec/opensearch/1.1/" role="request" searchTerms="{mods=nielsen}" startPage="1"/>
+    <totalResults xmlns="http://a9.com/-/spec/opensearch/1.1/">9099</totalResults>
+    <link xmlns="http://www.w3.org/2005/Atom" href="http://www.kb.dk/cop/images/luftfo/2011/maj/luftfoto" rel="search" type="application/opensearchdescription+xml"/>
+    <link xmlns="http://www.w3.org/2005/Atom" href="http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/" rel="search" type="application/kml+xml"/>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object176166">
+      <name>Nielsen Anders, gårdejer - 1955 - Kamholm</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object176166"/>
+      <Point>
+        <coordinates>10.161837110042256,55.3422380575193</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object176166</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen Anders, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1955</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Tommerup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H07018/H07018_008.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H07018/H07018_008.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-10-22</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-12-11</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>29</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object224025">
+      <name>Nielsen Ejner, gårdejer - 1962 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object224025"/>
+      <Point>
+        <coordinates>10.18851055288701,55.48667168415545</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object224025</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen Ejner, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1962</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Damark, Fyn, Veflinge, Stormarken 24</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_7/non-archival/Maps/FYNLUFTFOTO/Ny-H-serien/H11979/H11979_003.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_7/non-archival/Maps/FYNLUFTFOTO/Ny-H-serien/H11979/H11979_003.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2013-03-01</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2013-03-16</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>25</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object389498">
+      <name>Amagergaard - 1957 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object389498"/>
+      <Point>
+        <coordinates>8.483980000019073,55.94973597768297</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object389498</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Niels</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value>Sylvest Jensen</value>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1957</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Gården eksisterer ikke længere. Beliggenheden var ved Lønborgvej - syd for Vejlen 5</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Skjern, Vejlen</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H09301/H09301_030.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H09301/H09301_030.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-07-29</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-08-01</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>24</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object246744">
+      <name>Teglværkshuset - 1954 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object246744"/>
+      <Point>
+        <coordinates>10.380523335456473,55.11408481190185</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object246744</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Folmer, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1954</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Korinth, Faurshøjvej 52</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/H-serien/H05092/H05092_002.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/H-serien/H05092/H05092_002.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2013-03-19</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2013-05-30</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>24</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object141045">
+      <name>Nielsen, E., gårdejer - 1953</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object141045"/>
+      <Point>
+        <coordinates>10.57691539955124,55.178681462845184</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object141045</value>
+        </Data>
+        <Data name="subjectName">
+          <value>E. Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1953</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>prøvebillede</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Trunderup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03474/H03474_11.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03474/H03474_11.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-07-30</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-09-26</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>21</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object141079">
+      <name>Stokholmgården - 1953</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object141079"/>
+      <Point>
+        <coordinates>10.540823595046845,55.19049135371344</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object141079</value>
+        </Data>
+        <Data name="subjectName">
+          <value>? Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1953</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Trunderup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03474/H03474_34A.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03474/H03474_34A.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-07-30</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-09-26</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>21</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object157727">
+      <name>Nielsen Carl, gårdejer og folketingsmedlem - 1957 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object157727"/>
+      <Point>
+        <coordinates>10.005003518363083,55.26083212965389</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object157727</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen Carl gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1957</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Indtil den nye grundlov i 1953 var C. N. landstingsmedlem og mistede sit sæde i folketinget sidst i tresserne.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Ebberup, Thinggyden 28, 5631 Ebberup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H09137/H09137_028.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H09137/H09137_028.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-10-22</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-10-31</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>20</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object426733">
+      <name>Nielsen,Jens Peter, Gårdejer -1961 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object426733"/>
+      <Point>
+        <coordinates>8.429608941078186,56.05347924865855</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object426733</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Jens Peter Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value>Sylvest Jensen</value>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1961</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Disse bygninger er revet ned og erstattet af ny lidt vest for de gamle.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Adelvej 61, Højmark, 6940 Lem st</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H11794/H11794_021.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H11794/H11794_021.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-09-25</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-09-26</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>20</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object426561">
+      <name>Nielsen, Emil, gårdejer (1961)
+                    </name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object426561"/>
+      <Point>
+        <coordinates>8.52790117263794,56.07037667660498</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object426561</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Emil, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value>Sylvest Jensen</value>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1961</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Skjern</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H11545/H11545_002.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H11545/H11545_002.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-09-24</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-09-26</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>20</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object249854">
+      <name>Nielsen Aksel, gårdejer - 1961 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object249854"/>
+      <Point>
+        <coordinates>10.232607830601978,55.3349584713934</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object249854</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen Aksel, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1961</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Tobovej 54, 5690 Tommerup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Ny-H-serien/H10647_p/H10647_p_016.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Ny-H-serien/H10647_p/H10647_p_016.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2013-06-19</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2013-06-22</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>19</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object386077">
+      <name>Nielsen, Nicolai, gårdejer - 1955</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object386077"/>
+      <Point>
+        <coordinates>9.03098917020543,56.50182867414734</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object386077</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nivolai Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value>Sylvest Jensen</value>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1955</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Tastum</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H05839/H05839_007.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H05839/H05839_007.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-07-23</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-07-29</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>18</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object195444">
+      <name>Nielsen, gårdejer - 1961 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object195444"/>
+      <Point>
+        <coordinates>10.152209583076456,55.44824716066437</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object195444</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1961</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Veflinge</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/Ny-H-serien/H10462/H10462_004.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/Ny-H-serien/H10462/H10462_004.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2013-01-08</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2013-01-28</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>18</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object382760">
+      <name>Nielsen, Jens, gårdejer - 1955</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object382760"/>
+      <Point>
+        <coordinates>8.856090903282166,56.63725624695196</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object382760</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Jens Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1955</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Balling</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H05809/H05809_024.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H05809/H05809_024.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-07-21</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-07-24</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>17</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object140988">
+      <name>Nielsen Ingvard Langelund, gårdejer - 1953 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object140988"/>
+      <Point>
+        <coordinates>10.568787946224575,55.18947772708215</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object140988</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Ingvard Langelund Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1953</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Matrikelnr. 13c. Ejerlav: Sandager By, Gislev. Adresse: Trunderup Dongsvej 24, 5772 Kværndrup.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Trunderup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03475/H03475_04.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03475/H03475_04.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-07-30</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-09-26</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>17</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object250037">
+      <name>Nielsen, Aage, gårdejer - 1954 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object250037"/>
+      <Point>
+        <coordinates>10.317451378768283,55.07648029367599</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object250037</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Aage, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1952</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Tilhører ikke serien H01904, men serien H05086 optaget i 1954.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Svendborgvej 249, 5600 Faaborg</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/H-serien/H05086_p/H01904_p_006.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/H-serien/H05086_p/H01904_p_006.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2013-06-19</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2013-06-22</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>17</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object158234">
+      <name>Nielsen, N., gårdejer - 1957 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object158234"/>
+      <Point>
+        <coordinates>9.939079651355769,55.43741762338798</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object158234</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, N., gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value>Sylvest Jensen</value>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1957</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Set fra Syd</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Ejby, Katgyden 16</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H09402/H09402_021.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H09402/H09402_021.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-10-22</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-11-01</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>17</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object389315">
+      <name>Nyholm Nielsen, gårdejer. (1957)
+                    </name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object389315"/>
+      <Point>
+        <coordinates>9.002639293539687,56.20369750612459</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object389315</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nyholm Nielsen, gårdejer.</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1957</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Sunds</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H09280/H09280_029.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H09280/H09280_029.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-07-29</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-08-01</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>17</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object386662">
+      <name>Nielsen Gade, Karl, gårdejer. (1955)
+                    </name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object386662"/>
+      <Point>
+        <coordinates>8.560495371348225,56.47303166699616</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object386662</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen Gade, Karl, gårdejer.</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1955</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Struer, Ølby</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H07121/H07121_024.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H07121/H07121_024.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-07-26</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-07-30</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>17</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object115793">
+      <name>Nielsen, Aksel, gårdejer - 1956 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object115793"/>
+      <Point>
+        <coordinates>10.494120971679308,55.462460326249385</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object115793</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Aksel, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1956</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Dræby, Dræby Fedvej 565 - 5330 Munkebo</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/H-serien/H07725/H07725_002.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/H-serien/H07725/H07725_002.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-02-22</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-06-13</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>16</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object430663">
+      <name>Nr. Lysgaard - 1962</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object430663"/>
+      <Point>
+        <coordinates>8.741651773452759,56.19292286793067</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object430663</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Aage, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1962</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Timring</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H11890/H11890_014.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H11890/H11890_014.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-09-30</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-10-11</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>16</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object157256">
+      <name>Nielsen, K., gårdejer - 1957</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object157256"/>
+      <Point>
+        <coordinates>10.64408147764209,55.363973189579276</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object157256</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, K., gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1957</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Lokalitet fejlnoteret i protokol.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Odensevej 54, 5540 Ullerslev</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H08970/H08970_002.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H08970/H08970_002.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-10-22</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-10-31</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>16</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object444669">
+      <name>Christensen, Chr. J. - 1964 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object444669"/>
+      <Point>
+        <coordinates>8.123445510864258,56.370681346564105</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object444669</value>
+        </Data>
+        <Data name="subjectName">
+          <value>forrest fra højre Chr.(Kesse) J. og Ruth Christensen - Hakon og Laura Kristensen - Harald og Lis Jensen baggerst fra højre: Kaj og Agnes Terp - Lis og Johannes Dahl Knudsen - Niels og Dagny Terp - Ejgild og Inge Nielsen</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1964</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Mågevej og Ternevej Thorsminde</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H13080/H13080_010.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H13080/H13080_010.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-11-05</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-11-07</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>16</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object385634">
+      <name>Rensborg</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object385634"/>
+      <Point>
+        <coordinates>8.712834119796753,56.468411591946875</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object385634</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Poul, gårdejer.</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1955</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Handbjerg</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H06473/H06473_030.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H06473/H06473_030.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-07-23</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-07-29</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>16</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object389159">
+      <name>Nielsen, Holger, gårdejer - 1957</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object389159"/>
+      <Point>
+        <coordinates>8.945669174718205,56.17472708277898</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object389159</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Holger Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value>Sylvest Jensen</value>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1957</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Herning, Gullestrup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H09238/H09238_029.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H09238/H09238_029.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-07-29</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-08-01</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>15</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object166361">
+      <name>Nielsen, Knud, købmand - 1953 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object166361"/>
+      <Point>
+        <coordinates>10.571319232376254,55.338415002194004</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object166361</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Knud, købmand</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1953</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Davinde Skovvej 81, 5220 Odense SØ</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H03872/H03872_032A.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H03872/H03872_032A.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-09-26</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-11-19</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>15</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object187512">
+      <name>Nielsen, Thorkild- 1970 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object187512"/>
+      <Point>
+        <coordinates>10.134815462132792,55.10124443717736</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object187512</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Thorkild Nielsen</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1970</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Horne,</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/Ny-H-serien/H15284/H15284_009.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/Ny-H-serien/H15284/H15284_009.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-12-12</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2013-01-17</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>15</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object454264">
+      <name>Morten E Nielsen, - 1966 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object454264"/>
+      <Point>
+        <coordinates>8.142428657392884,55.9720748609669</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object454264</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Morten E Nielsen &amp; Kristine D Nielsen</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1966</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Thomas Andersen</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Sønder Klitvej 62 Aargab Bygget 1934</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H13417/H13417_016.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H13417/H13417_016.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-11-19</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-12-11</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>15</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object410464">
+      <name>Nielsen, Laurits, gårdejer - 1955 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object410464"/>
+      <Point>
+        <coordinates>8.771423224825412,56.27397701072619</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object410464</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Laurits, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1955</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Aulum, Lundby</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H05532/H05532_034.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H05532/H05532_034.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-08-22</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-08-27</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object143920">
+      <name>Langstedgaard 1952</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object143920"/>
+      <Point>
+        <coordinates>10.493992225646707,55.46249173370192</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object143920</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Aksel, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1953</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Dræby, Dræby Fedvej 565 - 5330 Munkebo</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H02635/H02635_010.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H02635/H02635_010.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-09-11</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-09-29</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object453529">
+      <name>Planteskole - 1965</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object453529"/>
+      <Point>
+        <coordinates>8.8982048118487,56.16133644396521</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object453529</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Alfred, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1965</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Herning, Gødstrup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H13394/H13394_014.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H13394/H13394_014.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-11-12</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-12-11</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object141158">
+      <name>Brogaard</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object141158"/>
+      <Point>
+        <coordinates>10.703934089660152,55.33410126841197</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object141158</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Gunner, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1953</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Gårdnavnet er Brogaard, beliggende bagerst i Biskoptårup. Gården er udstykket fra Biskopstorp. Mine oldeforældre boede også der. I 1951 blev det nye stuehus opført. Jeg er datter af Gunner Nielsen.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Ullerslev</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03478/H03478_01.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03478/H03478_01.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-07-30</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-09-26</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object410109">
+      <name>Ny Vestergård - 1955</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object410109"/>
+      <Point>
+        <coordinates>8.362167477607727,56.548572625238116</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object410109</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Peter, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1955</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Nørre Lem</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H05433/H05433_026.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H05433/H05433_026.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-08-20</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-08-27</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object139328">
+      <name>Nielsen, Frederik - 1952 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object139328"/>
+      <Point>
+        <coordinates>12.2651621265411,55.94386361517328</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object139328</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Frederik</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1952</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Hører ikke til serien H01776, men til serien H01777. Korrekt filnavn: H01777_16. Ejendommen er i dag nedrevet.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Sophienborgvænget, 3400 Hillerød</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H01776/H01776_17.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H01776/H01776_17.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-07-03</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-09-13</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object400594">
+      <name>Nielsen, Johan, gårdejer (1958)
+                    </name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object400594"/>
+      <Point>
+        <coordinates>8.208699524402618,56.135644543584014</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object400594</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Johan, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value>Sylvest Jensen</value>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1958</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Ringkøbing</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H09995/H09995_021.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H09995/H09995_021.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-08-14</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-08-16</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object141030">
+      <name>Nielsen, Poul, gårdejer - 1953</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object141030"/>
+      <Point>
+        <coordinates>10.57125826072729,55.198630054841544</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object141030</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Poul Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1953</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Sandager, Kohavevej</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03475/H03475_26.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H03475/H03475_26.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-07-30</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-09-26</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object170350">
+      <name>Nielsen, Morris, gårdejer - 1957</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object170350"/>
+      <Point>
+        <coordinates>10.506470213271768,55.16030655809752</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object170350</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Morris Nielsen, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1956</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Hører ikke til serien H08187, men til serien H09657 optaget i 1957. Korrekt filnavn: H09657_040E.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Bukgårdsvej 3, 5772 Kværndrup</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H08187/H08187_60a.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_12/non-archival/Maps/FYNLUFTFOTO/H-serien/H08187/H08187_60a.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-10-22</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-11-23</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object123603">
+      <name>Nielsen H. J. husmand - 1957</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object123603"/>
+      <Point>
+        <coordinates>10.580229889869543,55.18319021600991</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object123603</value>
+        </Data>
+        <Data name="subjectName">
+          <value>H. J. Nielsen, husmand</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1957</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Matrikelnr. 11f. Ejerlav: Trunderup By, Kværndrup. Adresse: Trunderup Dongsvej 17, 5772 Kværndrup.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Trunderup, Trunderup Dongsvej 17</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/H-serien/H08780/H08780_028.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/H-serien/H08780/H08780_028.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2012-07-03</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-07-04</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object422329">
+      <name>Nielsen, smed - 1961</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object422329"/>
+      <Point>
+        <coordinates>9.174914360046387,56.13151323709063</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object422329</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, smed</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1961</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Ikast, Grødde</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H11436/H11436_045.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H11436/H11436_045.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2014-09-04</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2014-09-19</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object535599">
+      <name>Bollerupgård, - 1952 -</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object535599"/>
+      <Point>
+        <coordinates>8.174622058868408,56.10942025698632</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object535599</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, Peter Bjerg, gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1952</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value/>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Jylland, Ringkøbing, Gammel Sogn</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H01761_p/H01761_p_023.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Maps/FYNLUFTFOTO/Danmark/H-serien/H01761_p/H01761_p_023.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2015-07-22</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2015-10-01</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>14</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2" id="object92226">
+      <name>Ny Hønneruplund</name>
+      <styleUrl>#balloon-style</styleUrl>
+      <atom:link href="http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object92226"/>
+      <Point>
+        <coordinates>9.962974731445343,55.43666082567542</coordinates>
+      </Point>
+      <ExtendedData>
+        <Data name="subjectLink">
+          <value>http://www.kb.dk/images/luftfo/2011/maj/luftfoto/object92226</value>
+        </Data>
+        <Data name="subjectName">
+          <value>Nielsen, P., gårdejer</value>
+        </Data>
+        <Data name="subjectCreatorName">
+          <value/>
+        </Data>
+        <Data name="subjectCreationDate">
+          <value>1954</value>
+        </Data>
+        <Data name="subjectGenre">
+          <value>Skråfoto</value>
+        </Data>
+        <Data name="subjectNote">
+          <value>Ejby Sogn, Ejby By, matr. 11q. - Set fra Nordvest.</value>
+        </Data>
+        <Data name="subjectGeographic">
+          <value>Danmark, Fyn, Langholm, Langholmvej 12</value>
+        </Data>
+        <Data name="subjectImageSrc">
+          <value>http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H04658_13.jpg</value>
+        </Data>
+        <Data name="subjectThumbnailSrc">
+          <value>http://www.kb.dk/imageService/w150/h150/online_master_arkiv_10/non-archival/Maps/FYNLUFTFOTO/Proeve_H04048-H05064/H04658_13.jpg</value>
+        </Data>
+        <Data name="recordCreationDate">
+          <value>2011-10-26</value>
+        </Data>
+        <Data name="recordChangeDate">
+          <value>2012-01-30</value>
+        </Data>
+        <Data name="correctness">
+          <value>1</value>
+        </Data>
+        <Data name="interestingness">
+          <value>13</value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+  </Document>
+</kml>
