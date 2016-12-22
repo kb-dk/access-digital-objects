@@ -81,14 +81,6 @@ formats](metadata-formats.md).
 Virtually all content in COP is delivered as images; their delivery is
 described in a [separate document](image-delivery.md).
 
-### Text delivery
-
-~~We don't write about this until after letters (or ADL or both) are published. Need demo of SOLR and snipets~~
-
-~~Helt nya APIer kommer med ADL och Danmarks Brev. De består av de APIer som kommer med vår sökmaskin SOLR Hur sökning sker är dokumenterat externt: https://lucene.apache.org/solr/6_2_1/ (Vi använder betydligt äldre versioner än denna)~~
-
-~~Text search and retrieval are made using  [https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets](solr-and-snippets)~~
-
 ## Acknowledgements
 
 Andreas Borchsenius West contributed information about feeds and the

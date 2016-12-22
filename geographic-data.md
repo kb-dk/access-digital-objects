@@ -16,8 +16,6 @@ DSFL - draws its data from several sources, notably
         
 The service is based on the Amazon A9 open Search web service protocol. A more [detailed description of that is available](cop-backend.md#open-search). 
 
-~~Kendte mangler og kommende ændringer: Det er ikke muligt at begrænse resultater til kun at vise korrekt placerede luftfotos.~~
-
 ## COP Backend - Syndication Service
         
 The whole dataset can (at least in principle) be accessed from http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/
@@ -84,10 +82,6 @@ Lykkegård&person::Jørgensen
 URI encoded and inserted as the value of the query CGI variable this gives
         
 http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/?format=rss&query=lykkeg%C3%A5rd%26person%3A%3AJ%C3%B8rgensen&type=all&bbo=10.826596760620077,55.54834253439101,10.590219044555624,55.45734180334893&notBefore=1920-01-01&notAfter=1970-12-31&itemsPerPage=50&page=1&random=0.0
-
-~~ To me it looks more like a bug than a feature to use '&' in this position ~~
-
-~~ Honestly: Should we actually publish info on the kml? I have tried, but I can not get it to work. Perhaps we could get google maps to accept the rss instead ~~
 
 Example Output in KML
 
