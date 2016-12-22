@@ -20,7 +20,6 @@ A few example to get an idea what it is about:
 
 2. An OAI provider may contain multiple [collections or sets](http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets)
   + http://oai.kb.dk/oai/provider?verb=ListSets
-  + ~~http://www.kb.dk/cop/oai/?verb=ListSets is right now broken, sorry for that~~
 
 3. For a given set we provide access to a [list of records](http://www.openarchives.org/OAI/openarchivesprotocol.html#ListRecords),
   for instance of all manuscripts in the Judaica collection 
