@@ -39,8 +39,9 @@ there helpful error messages etc.
 
 The formats we are delivering are to a large extent based on
 standards. That means that in many places we refer to external
-documentation whenever possible. We do not guarantee that the
-documents are strictly valid, though.
+documentation whenever possible. We are not guaranteeing anything
+concerning the external information sources, nor that our data are
+strictly valid in relation to those documents.
 
 ## Services by scope and purpose
 

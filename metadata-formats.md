@@ -133,11 +133,10 @@ namely RFC 4646](https://www.ietf.org/rfc/rfc4646.txt)
 
 In publishing the [Comics, caricature and newspaper cartoons
 collection](http://www.kb.dk/images/billed/2010/okt/billeder/subject2427/da/)
-we realized that it is more or less meaningful to publish artwork of
+we realized that it is more or less meaningless to publish artwork of
 this kind without being able to connect it to a description of the
 situation it was created. Find below an example of how such an event
 is encoded as a related item, which in this case is a revue preformance.
-
 
 ```
  <md:relatedItem type="event">
