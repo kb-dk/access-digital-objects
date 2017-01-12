@@ -97,6 +97,24 @@ Complete list of supported parameters in COP
 |notBefore | - | x | Not before a given date | - |
 |notAfter | - | x | Not after a given date | - |
 
+Field candidates, mostly geographical ones
+
+| Parameter | Used in PATH | Used in CGI | Comment | Status|
+|-----------|:-------------|:------------|:--------|-------|
+|title | - | x |||
+|person | - | x |||
+|building | - | x |||
+|parish | - | x |||
+|street | - | x |||
+|housenumber | - | x |||
+|zipcode | - | x |||
+|cadastre | - | x |||
+|area | - | x |||
+|city | - | x |||
+|location | - | x |||
+|note | - | x |||
+|orientation | - | x |||
+
 We have more [detailed information on geographical searching](geographic-data.md).
 
 ## Navigation service
