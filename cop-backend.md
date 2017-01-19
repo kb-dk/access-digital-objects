@@ -85,35 +85,35 @@ pretty-printed.
 
 Complete list of supported parameters in COP 
 
-| Parameter | Used in PATH | Used in CGI | Comment | Status|
+| Parameter | Use in PATH | Use in CGI | Comment | Status|
 |-----------|:-------------|:------------|:--------|-------|
-|query | - | x | Synonym to q | ok |
-|format | - | x | kml, rss and mods | ok |
-|page | - | x | | ok |
-|itemsPerPage | - | x | |ok |
-|object | x | - | | ok |
-|subject | x | deprecated | Synonym to categories | ok |
-|bbo | - | x | Bounding Box |
-|notBefore | - | x | Not before a given date | - |
-|notAfter | - | x | Not after a given date | - |
+|query | - | supported | Synonym to q | ok |
+|format | - | supported | kml, rss and mods | ok |
+|page | - | supported | | ok |
+|itemsPerPage | - | supported | |ok |
+|object | supported | - | | ok |
+|subject | supported | deprecated | Synonym to categories | ok |
+|bbo | - | supported | Bounding Box |
+|notBefore | - | supported | Not before a given date | - |
+|notAfter | - | supported | Not after a given date | - |
 
 Field candidates, mostly geographical ones
 
 | Parameter | Used in PATH | Used in CGI | Comment | Status|
 |-----------|:-------------|:------------|:--------|-------|
-|title | - | x |||
-|person | - | x |||
-|building | - | x |||
-|parish | - | x |||
-|street | - | x |||
-|housenumber | - | x |||
-|zipcode | - | x |||
-|cadastre | - | x |||
-|area | - | x |||
-|city | - | x |||
-|location | - | x |||
-|note | - | x |||
-|orientation | - | x |||
+|title | - | supported |||
+|person | - | supported |||
+|building | - | supported |||
+|parish | - | supported |||
+|street | - | supported |||
+|housenumber | - | supported |||
+|zipcode | - | supported |||
+|cadastre | - | supported |||
+|area | - | supported |||
+|city | - | supported |||
+|location | - | supported |||
+|note | - | supported |||
+|orientation | - | supported |||
 
 We have more [detailed information on geographical searching](geographic-data.md).
 
