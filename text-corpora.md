@@ -29,6 +29,7 @@ The correct way to handle collections or anthologies is structure the  texts are
 
 The document will be structured as follows
 
+```
  &lt;TEI xmlns="http://www.tei-c.org/ns/1.0">
   &lt;teiHeader>
  &lt;!-- .... -->
@@ -60,8 +61,9 @@ The document will be structured as follows
    &lt;/back>
   &lt;/text>
  &lt;/TEI>
+```
 
-== Works with supplied or uniform titles ==
+### Works with supplied or uniform titles 
 
 There are other needs for works, which are related to a class of interesting and important use cases arising through the requirements for the provision of access to digital resources. I.e., text fragment like objects, such as poems, short stories, even parts of novels (individual chapters or other more or less arbitrary text segments) may need independent dissemination because that is the way they are used. In the case of ADL, this is mainly the case for poetry, songs and psalms. 
 
@@ -69,6 +71,7 @@ After discussions in [https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&
 
 Just about any structure in the text can be used as a '''work''', by giving it a decls attribute which is an idref pointing to a bibl or biblStruct somewhere in sourceDesc in the teiHeader. The markup will look like
 
+```
  &lt;?xml version="1.0" encoding="UTF-8" ?>
  &lt;TEI xmlns="http://www.tei-c.org/ns/1.0">
    &lt;teiHeader>
@@ -104,6 +107,7 @@ Just about any structure in the text can be used as a '''work''', by giving it a
      &lt;/body>
    &lt;/text>
  &lt;/TEI>
+```
 
 ### The whole is more than its parts
 
