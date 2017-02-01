@@ -14,7 +14,7 @@ described.
 ## Text encoding
 
 Most texts are from collected works and are critical editions.
-All data and metadata available are in XML markup Text Encoding Initiative, TEI, [Guidlines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
+All data and metadata available are in XML markup according Text Encoding Initiative, TEI, [Guidlines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
 
 Our services use a work concept developed together with the original
 service som 15 years ago by experienced reference librariance. It is
@@ -32,7 +32,7 @@ With the exception for novels, most of these works are text fragments inside vol
 
 After discussions in the [TEI listserv, TEI-L](https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2) it seems that the simplest and most correct way seems to be to use  [the decls attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2) which was suggested by [Lou Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
 
-Just about any structure in the text can be used as a '''work''', by giving it a decls attribute which is an idref pointing to a bibl or biblStruct somewhere in sourceDesc in the teiHeader. The markup will look like
+Just about any structure in the text can be used as a __work__, by giving it a decls attribute which is an idref pointing to a bibl or biblStruct somewhere in sourceDesc in the teiHeader. The markup will look like
 
 ```
  <?xml version="1.0" encoding="UTF-8" ?>
