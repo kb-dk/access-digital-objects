@@ -2,10 +2,16 @@
 
 # Access to text search, retrieval etc
 
-The Royal Danish Library provide access to some text and language resources. The text APIs are entirely new and demonstrate programmatic access to services like
+The Royal Danish Library provide access to some text and language
+resources. The text APIs are entirely new and demonstrate programmatic
+access to services like
 
-* [Archive for Danish Literature, ADL](http://www.adl.dk/). The APIs described in this document apply to this data set, but the new service are not even released yet.
-* [Danmark's Breve](http://danmarksbreve.kb.dk/) use the basically the same APIs, but we have not decided to release the API on this data set.
+* [Archive for Danish Literature, ADL](http://www.adl.dk/). The APIs
+  described in this document apply to this data set, but the new
+  service are not even released yet.
+* [Danmark's Breve](http://danmarksbreve.kb.dk/) use the basically the
+  same APIs, but we have not decided to release the API on this data
+  set.
 
 The APIs described here are provided with similar
 [caveats](README.md#caveats) and [legal restrictions](README.md#licences--legalese) as the other services
@@ -74,10 +80,8 @@ Just about any structure in the text can be used as a __work__, by giving it a d
 
 ### The whole is more than its parts
 
-Note that the various methods will be used together. 
-
-The TEI header is used for designating metadata for the whole volume, 
-the <group> for designating metadata to the parts it comprises, and
+The TEI header is used for designating metadata for the whole volume.
+the metadata to the parts it comprises, and
 finally, the fine granularity metadata arising through curatorial procedures are asigned using the decls attribute as described
 
 
