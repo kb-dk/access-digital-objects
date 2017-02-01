@@ -17,10 +17,14 @@ The APIs described here are provided with similar
 [caveats](README.md#caveats) and [legal restrictions](README.md#licences--legalese) as the other services
 described.
 
+These APIs are work in progress. The search interface is not described yet.
+
 ## Text encoding
 
 Most texts are from collected works and are critical editions.
 All data and metadata available are in XML markup according Text Encoding Initiative, TEI, [Guidlines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
+
+### The work
 
 Our services use a work concept developed together with the original
 service som 15 years ago by experienced reference librariance. It is
@@ -46,37 +50,45 @@ Just about any structure in the text can be used as a __work__, by giving it a d
    <teiHeader>
      <fileDesc>
        <titleStmt>
- 	<title>
- 	</title>
+	 <title>
+	 </title>
        </titleStmt>
        <publicationStmt>
- 	<publisher>
- 	</publisher>
+	 <publisher>
+	 </publisher>
        </publicationStmt>
        <sourceDesc>
- 	<listBibl>
- 	  <bibl xml:id="bib101">
- 	    <title>The name of the hymn</title>
- 	    <author>The psalmist</author>
- 	  </bibl>
- 	</listBibl>
+	 <listBibl>
+	   <bibl xml:id="bib101">
+	     <title>The name of the hymn</title>
+	     <author>The psalmist</author>
+	   </bibl>
+	 </listBibl>
        </sourceDesc>
      </fileDesc>
    </teiHeader>
    <text>
      <body>
        <div decls="#bib101" >
- 	<lg>
- 	  <l>Angres det med ærlig Smerte,</l>
- 	  <l>Vendes om med ydmyg Bøn,</l>
- 	  <l>Kirken dog med Moder-Hjerte</l>
- 	  <l>Favner den forlorne Søn!</l>
- 	</lg>
+	 <lg>
+	   <l>Angres det med ærlig Smerte,</l>
+	   <l>Vendes om med ydmyg Bøn,</l>
+	   <l>Kirken dog med Moder-Hjerte</l>
+	   <l>Favner den forlorne Søn!</l>
+	 </lg>
        </div>
      </body>
    </text>
  </TEI>
 ```
+
+### Anchors, searchability and retrievability
+
+The XML texts pass through a number of procedures before entering the
+system. The most important one is to add an xml:id attibute to each
+element in a document that has not got one to begin with. Each element
+is then possible to use as an anchor for linking.
+
 
 ### The whole is more than its parts
 
@@ -94,18 +106,18 @@ Most Snippet Server scripts support the following arguments
 * doc -- the name of the document to be rendered or transformed
 * c   -- if there are more sub-collections inside the data set, c is the name of the dirctory where doc is to be retrieved. Default is 'texts' for ADL, other are 'periods' and 'authors'
 * op  -- is the operation to be performed upon the document doc. Possible op are
-  * 'render' which implies that doc is transformed into HTML. http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=aakjaer01val.xml&op=render
-  * 'solrize' which returns a solr <add> ... </add> which is ready to be sent to SOLR. C.f., http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=aakjaer01val.xml&op=solrize
-  * 'facsimile' which returns a HTML document with images of the pages. Since we introduced OSD, it is only used for PDF generation. http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=aakjaer01val.xml&op=facsimile
-  * 'toc' returns a HTML table of contents http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=aakjaer01val.xml&op=toc 
+  * 'render' which implies that doc is transformed into HTML. http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render
+  * 'solrize' which returns a solr <add> ... </add> which is ready to be sent to SOLR. C.f., http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=solrize
+  * 'facsimile' which returns a HTML document with images of the pages. Since we introduced OSD, it is only used for PDF generation. http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=facsimile
+  * 'toc' returns a HTML table of contents http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc 
 * id  -- the id of a part inside the doc which is to be treated. 
 * q -- assuming that 'q' is the query, the present.xq is labelling the hits in the text
 
 Some more examples
 
-* Holberg, vol 3, HTML: http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=holb03val.xml&op=render
-* Den politiske Kandstøber, Actus II http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=holb03val.xml&op=render&id=idm140583366846000
+* Holberg, vol 3, HTML: http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render
+* Den politiske Kandstøber, Actus II http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render&id=idm140583366846000
 * A single 'speak' in that play, 
-  * as HTML http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=holb03val.xml&op=render&id=idm140583366681648
-  * or as SOLR doc http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=holb03val.xml&op=solrize&id=idm140583366681648
-* A TOC for a small work http://bifrost-test-01.kb.dk:8080/exist/rest/db/adl/present.xq?doc=aakjaer01val.xml&op=toc&id=workid59384
+  * as HTML http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render&id=idm140583366681648
+  * or as SOLR doc http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=solrize&id=idm140583366681648
+* A TOC for a small work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&id=workid59384
