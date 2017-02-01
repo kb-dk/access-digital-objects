@@ -1,5 +1,16 @@
 [README](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) [Text Corpora](text-corpora.md)
 
+# Access to text search, retrieval etc
+
+The text APIs are entirely new and related to 
+
+* [Archive for Danish Literature, ADL](http://www.adl.dk/)
+* [Danmark's Breve](http://danmarksbreve.kb.dk/)
+
+The Royal Danish Library provide access to some text and language
+resources. The APIs described here are provided with similar caveats
+and limitations as the other services described here.
+
 Most Snippet Server scripts support the following arguments
 
 * doc -- the name of the document to be rendered or transformed
