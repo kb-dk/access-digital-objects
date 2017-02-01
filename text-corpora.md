@@ -17,7 +17,7 @@ The APIs described here are provided with similar
 [caveats](README.md#caveats) and [legal restrictions](README.md#licences--legalese) as the other services
 described.
 
-These APIs are work in progress. The search interface is not described yet.
+These APIs are work in progress. The search interface is not described yet, basically because it is not published yet.
 
 ## Text encoding
 
@@ -87,16 +87,34 @@ Just about any structure in the text can be used as a __work__, by giving it a d
 The XML texts pass through a number of procedures before entering the
 system. The most important one is to add an xml:id attibute to each
 element in a document that has not got one to begin with. Each element
-is then possible to use as an anchor for linking.
+in the texts is then possible to use as an anchor for linking.
 
+The indexing system (which you cannot use just yet see above), creates
+records corresponding to 
 
-### The whole is more than its parts
+* volume
+* work
+* text 
+
+where volume and work is defined as described above.
+
+Text is indexed in a way that a search result can address a 
+
+* paragraph of prose
+* strophe in poetry 
+* speech in a play
+
 
 The TEI header is used for designating metadata for the whole volume.
-Inside the volume there might be collections of short stories or poetry. These collections may or may not be __works__,
+Inside the volume there might be collections of short stories or poetry.
+These collections may or may not be __works__,
 that may or may not contain poems, stories or whatever that are works.
-the metadata to the parts it comprises, and
-finally, the fine granularity metadata arising through curatorial procedures are asigned using the decls attribute as described
+the metadata
+to the parts it comprises, and finally, the fine granularity metadata
+arising through curatorial procedures are asigned using the decls
+attribute as described.
+
+
 
 
 ## API for our texts
