@@ -1,15 +1,16 @@
-[README](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) [Text Corpora](text-corpora.md)
+[README](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
 
 # Access to text search, retrieval etc
 
-The text APIs are entirely new and related to 
+The Royal Danish Library provide access to some text and language resources. The text APIs are entirely new and demonstrate programmatic access to services like
 
-* [Archive for Danish Literature, ADL](http://www.adl.dk/)
-* [Danmark's Breve](http://danmarksbreve.kb.dk/)
+* [Archive for Danish Literature, ADL](http://www.adl.dk/). The APIs described in this document apply to this data set, but the new service are not even released yet.
+* [Danmark's Breve](http://danmarksbreve.kb.dk/) use the basically the same APIs, but we have not decided to release the API on this data set.
 
-The Royal Danish Library provide access to some text and language
-resources. The APIs described here are provided with similar caveats
-and limitations as the other services described here.
+The APIs described here are provided with similar
+[caveats](README.md#caveats) and [legal
+restrictions](README.md#licences--legalese) as the other services
+described.
 
 Most Snippet Server scripts support the following arguments
 
