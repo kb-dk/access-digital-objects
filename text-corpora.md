@@ -17,7 +17,8 @@ The APIs described here are provided with similar
 [caveats](README.md#caveats) and [legal restrictions](README.md#licences--legalese) as the other services
 described.
 
-These APIs are work in progress. The search interface is not described yet, basically because it is not published yet.
+These APIs are work in progress. The search interface is not described
+yet, basically because it is not available outside the applications yet. It is based on [SOLR & Lucene](http://lucene.apache.org/solr/).
 
 ## Text encoding
 
@@ -28,8 +29,8 @@ All data and metadata available are in XML markup according Text Encoding Initia
 
 Our services use a work concept developed together with the original
 service som 15 years ago by experienced reference librariance. It is
-completely heuristic and related to what their needs were when they provided pointers
-to texts at the information desk:
+completely pragmatic and related to what their needs were when 
+providing pointers to texts as librarians.
 
 At the information desk, the most common questions about literature were about
 
@@ -40,7 +41,9 @@ At the information desk, the most common questions about literature were about
 
 With the exception for novels, most of these works are text fragments inside volumes.
 
-After discussions in the [TEI listserv, TEI-L](https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2) it seems that the simplest and most correct way seems to be to use  [the decls attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2) which was suggested by [Lou Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
+After discussions in the [TEI listserv, TEI-L](https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2)
+it seems that the simplest and most correct way seems to be to use
+[the decls attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2) which was suggested by [Lou Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
 
 Just about any structure in the text can be used as a __work__, by giving it a decls attribute which is an idref pointing to a bibl or biblStruct somewhere in sourceDesc in the teiHeader. The markup will look like
 
@@ -89,33 +92,30 @@ system. The most important one is to add an xml:id attibute to each
 element in a document that has not got one to begin with. Each element
 in the texts is then possible to use as an anchor for linking.
 
+There are TEI elements that containers and those that are empty. When
+indexing we concentrate on the latter, since they are the ones that we
+need to search. There are a very important class of empty elements
+called milestones, and the most important one is presumably page
+break, at least in a digitisation project.
+
 The indexing system (which you cannot use just yet see above), creates
 records corresponding to 
 
 * volume
 * work
-* text 
+* text item
 
 where volume and work is defined as described above.
 
-Text is indexed in a way that a search result can address a 
+Text item is indexed in a way that a search result can address a single
 
 * paragraph of prose
 * strophe in poetry 
 * speech in a play
 
-
-The TEI header is used for designating metadata for the whole volume.
-Inside the volume there might be collections of short stories or poetry.
-These collections may or may not be __works__,
-that may or may not contain poems, stories or whatever that are works.
-the metadata
-to the parts it comprises, and finally, the fine granularity metadata
-arising through curatorial procedures are asigned using the decls
-attribute as described.
-
-
-
+Typically one volume contributes (obviously) one volume record, one to
+dozens of work records and houndreds or thousands of text items.
+The records for works and text items import basic metadata and includes
 
 ## API for our texts
 
