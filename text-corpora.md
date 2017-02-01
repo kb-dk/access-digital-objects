@@ -31,7 +31,7 @@ At the information desk, the most common questions about literature were about
 
 * individual poems, songs and psalms
 * individual short stories
-* novels and other longer pieces of prose (basically: ``books'')
+* novels and other longer pieces of prose (basically: "books")
 * plays
 
 With the exception for novels, most of these works are text fragments inside volumes.
