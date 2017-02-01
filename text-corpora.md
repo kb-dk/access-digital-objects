@@ -13,61 +13,24 @@ described.
 
 ## Text encoding
 
-The texts available are in []
+Most texts are from collected works and are critical editions.
+All data and metadata available are in XML markup Text Encoding Initiative, TEI, [Guidlines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
 
-### TEI Metadata
+Our services use a work concept developed together with the original
+service som 15 years ago by experienced reference librariance. It is
+completely heuristic and related to what their needs were to provide pointers
+to texts at the information desk:
 
-This document does not prescribe any specific constraints for the [http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html TEI header]. Any TEI application should have a valid TEI header from which it is possible to extract a valid Chronos metadata set.
+The most common questions were about
 
-The aim of this is to describe how to indicate that a segment of text inside a larger corpus indeed is a work.
+* poems, songs and psalms
+* short stories
+* novels and other longer pieces of prose
+* plays
 
-### Collected Works and Anthologies
+With the exception for novels, most of these works are text fragments inside volumes.
 
-The texts in ADL are from collections many of which were produced by DSL. 
-
-The correct way to handle collections or anthologies is structure the  texts are usually structured using &lt;group&gt; elements. There are good examples in the Guidlines, eg the one based on   [http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DSGRP ''The Adventures of Sherlock Holmes'']. Hence this practice applies to "traditional" works, where title are defined as in the original version of DCMI metadata: [https://tools.ietf.org/html/rfc2413#page-3 ''The name given to the resource, usually by the Creator or Publisher'']
-
-The document will be structured as follows
-
-```
- <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
- <!-- .... -->
-  </teiHeader>
-  <text>
-   <front>
- <!-- front matter for composite text -->
-   </front>
-   <group>
-    <text>
-     <front>
- <!-- front matter of first unitary text, if any -->
-     </front>
-     <body>
- <!-- body of first unitary text -->
-     </body>
-     <back>
- <!-- back matter of first unitary text, if any -->
-     </back>
-    </text>
-    <text>
-     <body>
- <!-- body of second unitary text -->
-     </body>
-    </text>
-   </group>
-  <back>
- <!-- back matter for composite text, if any -->
-   </back>
-  </text>
- </TEI>
-```
-
-### Works with supplied or uniform titles 
-
-There are other needs for works, which are related to a class of interesting and important use cases arising through the requirements for the provision of access to digital resources. I.e., text fragment like objects, such as poems, short stories, even parts of novels (individual chapters or other more or less arbitrary text segments) may need independent dissemination because that is the way they are used. In the case of ADL, this is mainly the case for poetry, songs and psalms. 
-
-After discussions in [https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2 TEI-L] it seems that the simplest and most correct way seems to be to use  [http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2 decls attribute] which was suggested by [https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469 Lou Bournard].
+After discussions in the [TEI listserv, TEI-L](https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2) it seems that the simplest and most correct way seems to be to use  [the decls attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2) which was suggested by [Lou Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
 
 Just about any structure in the text can be used as a '''work''', by giving it a decls attribute which is an idref pointing to a bibl or biblStruct somewhere in sourceDesc in the teiHeader. The markup will look like
 
