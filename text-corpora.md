@@ -24,14 +24,14 @@ All data and metadata available are in XML markup according Text Encoding Initia
 
 Our services use a work concept developed together with the original
 service som 15 years ago by experienced reference librariance. It is
-completely heuristic and related to what their needs were to provide pointers
+completely heuristic and related to what their needs were when they provided pointers
 to texts at the information desk:
 
-The most common questions were about
+At the information desk, the most common questions about literature were about
 
-* poems, songs and psalms
-* short stories
-* novels and other longer pieces of prose
+* individual poems, songs and psalms
+* individual short stories
+* novels and other longer pieces of prose (basically: ``books'')
 * plays
 
 With the exception for novels, most of these works are text fragments inside volumes.
@@ -81,6 +81,8 @@ Just about any structure in the text can be used as a __work__, by giving it a d
 ### The whole is more than its parts
 
 The TEI header is used for designating metadata for the whole volume.
+Inside the volume there might be collections of short stories or poetry. These collections may or may not be __works__,
+that may or may not contain poems, stories or whatever that are works.
 the metadata to the parts it comprises, and
 finally, the fine granularity metadata arising through curatorial procedures are asigned using the decls attribute as described
 
