@@ -30,37 +30,37 @@ The correct way to handle collections or anthologies is structure the  texts are
 The document will be structured as follows
 
 ```
- &lt;TEI xmlns="http://www.tei-c.org/ns/1.0">
-  &lt;teiHeader>
- &lt;!-- .... -->
-  &lt;/teiHeader>
-  &lt;text>
-   &lt;front>
- &lt;!-- front matter for composite text -->
-   &lt;/front>
-   &lt;group>
-    &lt;text>
-     &lt;front>
- &lt;!-- front matter of first unitary text, if any -->
-     &lt;/front>
-     &lt;body>
- &lt;!-- body of first unitary text -->
-     &lt;/body>
-     &lt;back>
- &lt;!-- back matter of first unitary text, if any -->
-     &lt;/back>
-    &lt;/text>
-    &lt;text>
-     &lt;body>
- &lt;!-- body of second unitary text -->
-     &lt;/body>
-    &lt;/text>
-   &lt;/group>
-  &lt;back>
- &lt;!-- back matter for composite text, if any -->
-   &lt;/back>
-  &lt;/text>
- &lt;/TEI>
+ <TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+ <!-- .... -->
+  </teiHeader>
+  <text>
+   <front>
+ <!-- front matter for composite text -->
+   </front>
+   <group>
+    <text>
+     <front>
+ <!-- front matter of first unitary text, if any -->
+     </front>
+     <body>
+ <!-- body of first unitary text -->
+     </body>
+     <back>
+ <!-- back matter of first unitary text, if any -->
+     </back>
+    </text>
+    <text>
+     <body>
+ <!-- body of second unitary text -->
+     </body>
+    </text>
+   </group>
+  <back>
+ <!-- back matter for composite text, if any -->
+   </back>
+  </text>
+ </TEI>
 ```
 
 ### Works with supplied or uniform titles 
@@ -72,41 +72,41 @@ After discussions in [https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&
 Just about any structure in the text can be used as a '''work''', by giving it a decls attribute which is an idref pointing to a bibl or biblStruct somewhere in sourceDesc in the teiHeader. The markup will look like
 
 ```
- &lt;?xml version="1.0" encoding="UTF-8" ?>
- &lt;TEI xmlns="http://www.tei-c.org/ns/1.0">
-   &lt;teiHeader>
-     &lt;fileDesc>
-       &lt;titleStmt>
- 	&lt;title>
- 	&lt;/title>
-       &lt;/titleStmt>
-       &lt;publicationStmt>
- 	&lt;publisher>
- 	&lt;/publisher>
-       &lt;/publicationStmt>
-       &lt;sourceDesc>
- 	&lt;listBibl>
- 	  &lt;bibl xml:id="bib101">
- 	    &lt;title>The name of the hymn&lt;/title>
- 	    &lt;author>The psalmist&lt;/author>
- 	  &lt;/bibl>
- 	&lt;/listBibl>
-       &lt;/sourceDesc>
-     &lt;/fileDesc>
-   &lt;/teiHeader>
-   &lt;text>
-     &lt;body>
-       &lt;div decls="#bib101" >
- 	&lt;lg>
- 	  &lt;l>Angres det med ærlig Smerte,&lt;/l>
- 	  &lt;l>Vendes om med ydmyg Bøn,&lt;/l>
- 	  &lt;l>Kirken dog med Moder-Hjerte&lt;/l>
- 	  &lt;l>Favner den forlorne Søn!&lt;/l>
- 	&lt;/lg>
-       &lt;/div>
-     &lt;/body>
-   &lt;/text>
- &lt;/TEI>
+ <?xml version="1.0" encoding="UTF-8" ?>
+ <TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+     <fileDesc>
+       <titleStmt>
+ 	<title>
+ 	</title>
+       </titleStmt>
+       <publicationStmt>
+ 	<publisher>
+ 	</publisher>
+       </publicationStmt>
+       <sourceDesc>
+ 	<listBibl>
+ 	  <bibl xml:id="bib101">
+ 	    <title>The name of the hymn</title>
+ 	    <author>The psalmist</author>
+ 	  </bibl>
+ 	</listBibl>
+       </sourceDesc>
+     </fileDesc>
+   </teiHeader>
+   <text>
+     <body>
+       <div decls="#bib101" >
+ 	<lg>
+ 	  <l>Angres det med ærlig Smerte,</l>
+ 	  <l>Vendes om med ydmyg Bøn,</l>
+ 	  <l>Kirken dog med Moder-Hjerte</l>
+ 	  <l>Favner den forlorne Søn!</l>
+ 	</lg>
+       </div>
+     </body>
+   </text>
+ </TEI>
 ```
 
 ### The whole is more than its parts
@@ -114,7 +114,7 @@ Just about any structure in the text can be used as a '''work''', by giving it a
 Note that the various methods will be used together. 
 
 The TEI header is used for designating metadata for the whole volume, 
-the &lt;group&gt; for designating metadata to the parts it comprises, and
+the <group> for designating metadata to the parts it comprises, and
 finally, the fine granularity metadata arising through curatorial procedures are asigned using the decls attribute as described
 
 
