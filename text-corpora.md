@@ -60,9 +60,9 @@ Infrastructures_](http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml)
 Some ye olde ideas on text search and retrieval [_S:t Laurentius
 Digital Manuscript Library: An excursion along the border between
 resource discovery and resource
-description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf),
-which is about [Laurentius](http://laurentius.ub.lu.se/) which to my
-surprise still running.
+description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf)
+about [Laurentius](http://laurentius.ub.lu.se/) which to my surprise
+still running.
 
 ## Text encoding
 
