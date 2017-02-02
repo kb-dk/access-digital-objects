@@ -127,20 +127,30 @@ need to search. There are a very important class of empty elements
 called milestones, and the most important one is presumably page
 break, at least in a digitisation project.
 
-The indexing system (which you cannot use just yet see above), creates
+The search system (which you cannot use just yet, see above), creates
 records corresponding to three levels
 
 * volume
 * work
 * text item
 
-where volume and work is defined as described above.
+where volume and work is defined as described above. When indexing, records are created taking 
 
-Text item is indexed in a way that a search result can address a single
+* metadata from the TEI header given the reference in the decls attribute
+* text from the appropriate level, and below.
+
+All work and text item records contain data on the xml:id of the
+containing element and the xml:id page number of the preceeding page
+break.
+
+The text items are indexed in a way that a search result can address a single
 
 * paragraph of prose
 * strophe in poetry 
 * speech in a play
+
+Please note that a strophe occuring inside speech are not recognized
+as poetry.
 
 Typically one volume contributes (obviously) one volume record, one to
 dozens of work records and houndreds or thousands of text items.
@@ -156,7 +166,6 @@ Most Snippet Server scripts support the following arguments
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render&q=samlede with an argument q giving a search string to be highlighted in the text, in this case _samlede_
   * 'solrize' which returns a solr <add> ... </add> which is ready to be sent to SOLR. C.f., http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=solrize
-  * 'facsimile' which returns a HTML document with images of the pages. Since we introduced OSD, it is only used for PDF generation. http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=facsimile
   * 'toc' returns a HTML table of contents 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render 
