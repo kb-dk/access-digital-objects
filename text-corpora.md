@@ -1,14 +1,14 @@
-[README](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
+[READ ME](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
 
 # Access to web services for text search, retrieval and other operations
 
 The Royal Danish Library provide access to some text and language
-resources. Until recently these resources has been meant for users
-coming to a site for searching, browsing and basically reading.
+resources. Until recently these resources has been meant solely for
+users coming to a site using a browser for searching, browsing and
+reading.
 
-Now we want to complement these end user services with various text
-APIs.  These are entirely new and they are provided as is with no
-guarantee.  We hope that they are useful for students and scholars
+Recently we want to complement these end user services with various text
+APIs. We hope that they are useful for students and scholars
 alike, and we also hope that this could lead to discussions on what
 kind APIs are useful within digital humanities and literary computing.
 
@@ -25,8 +25,7 @@ The APIs described here are provided with similar
 [caveats](README.md#caveats) and [legal
 restrictions](README.md#licences--legalese) as the other services
 described, and like them, these APIs are work in progress as public
-services. And again, they are a byproduct of other services and
-frontends.
+services. Also they are byproducts of our services and front ends.
 
 There are two kinds of services (and thus servers)
 
@@ -36,7 +35,7 @@ There are two kinds of services (and thus servers)
 The meaning of search service is obvious, the snippet service is less
 so. _Snippet server_ is our internal nick name of a set of web
 services that retrieves, transforms and delivers text snippets to the
-frontend using it.
+front end using it.
 
 In order to be really useful, the snippet APIs requires the search
 API, enabling you to discover what snippets there are. However, the
@@ -65,13 +64,13 @@ description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf)
 ## Text encoding
 
 Most texts are from collected works and are critical editions.
-All data and metadata available are in XML markup according Text Encoding Initiative, TEI, [Guidlines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
+All data and metadata available are in XML markup according Text Encoding Initiative, TEI, [Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
 
 ### The work
 
 Our Archive for Danish Literature, ADL, service uses a work concept
 developed together with the original service some 15 years ago by
-experienced reference librariance. It is completely pragmatic and
+experienced reference librarians. It is completely pragmatic and
 related to what their needs were when helping patrons by providing
 pointers to texts in the information desk.
 
@@ -138,11 +137,11 @@ look like
  </TEI>
 ```
 
-### Anchors, searchability and retrievability
+### Anchors, search ability and retrievable
 
 The XML text documents pass through a number of procedures before
 entering the system. The most important one is to add an xml:id
-attibute to each element in a document that has not got one to begin
+attribute to each element in a document that has not got one to begin
 with. Each element in the texts is then possible to use as an anchor
 for linking. For building a [cool
 service](https://www.w3.org/Provider/Style/URI.html) based on these
@@ -169,7 +168,7 @@ records are created taking
 * text from the appropriate level, and below.
 
 All work and text item records contain data on the xml:id of the
-containing element and the xml:id page number of the preceeding page
+containing element and the xml:id page number of the preceding page
 break.
 
 The text items are indexed in a way that a search result can address a single
@@ -178,11 +177,11 @@ The text items are indexed in a way that a search result can address a single
 * strophe in poetry 
 * speech in a play
 
-Please note that a strophe occuring inside speech are not recognized
+Please note that a strophe occurring inside speech are not recognised
 as poetry.
 
 Typically one volume contributes (obviously) one volume record, one to
-dozens of work records and houndreds or thousands of text items.
+dozens of work records and hundreds or thousands of text items.
 The records for works and text items import basic metadata and includes
 
 ## Snippet APIs for our texts
