@@ -54,13 +54,15 @@ they are obsoleted by other new contributions.
 I found [John Unsworth's _Scholarly Primitives: what methods do
 humanities researchers have in common, and how might our tools reflect
 this?_](http://people.virginia.edu/~jmu2m//Kings.5-00/primitives.html)
-particularly interesting, which inspired further thinking [_Digital
-Humanities
-Infrastructures_](http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml)
-and some ye olde ideas on text search and retrieval [_S:t Laurentius
+particularly interesting, which inspired me to further thinking on
+[_Digital Humanities
+Infrastructures_](http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml).
+Some ye olde ideas on text search and retrieval [_S:t Laurentius
 Digital Manuscript Library: An excursion along the border between
 resource discovery and resource
-description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf)
+description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf),
+which is about [Laurentius](http://laurentius.ub.lu.se/) which to my
+surprise still running.
 
 ## Text encoding
 
