@@ -187,10 +187,11 @@ The records for works and text items import basic metadata and includes
 
 ## Snippet APIs for our texts
 
-There are several scripts in the Snippet Server. We concentrate on
-one, present.xq. We use it for extracting snippets and transforming
-them. The html produced is fragments that can be included in your
-document as you like.
+There are several scripts in the Snippet Server. [The source code is free](https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets).
+
+We concentrate on one, present.xq. We use it for extracting snippets
+and transforming them. The html produced is mere fragments that you
+can include in your document just as you like it.
 
 Virtually all scripts work in a similarly, with the following arguments.
 
@@ -199,7 +200,7 @@ Virtually all scripts work in a similarly, with the following arguments.
   * [hcaeventyr02val.xml](http://labs.kb.dk/storage/adl/texts/hcaeventyr02val.xml)
   * [munp1.xml](http://labs.kb.dk/storage/adl/texts/munp1.xml)
   * [munp2.xml](http://labs.kb.dk/storage/adl/texts/munp2.xml)
-* op, targetOp  -- is the operation to be performed upon the document doc, targetOp is the operation to be performed in links inside the service. Possible values of op and targetOp are
+* op, targetOp  -- op is the operation to be performed upon the document doc, targetOp is the operation to be performed in links inside the service. Possible values of op and targetOp are
   * 'render' which implies that doc is transformed into HTML. 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render&q=samlede with an argument q giving a search string to be highlighted in the text, in this case _samlede_
