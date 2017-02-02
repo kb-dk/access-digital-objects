@@ -17,9 +17,26 @@ The APIs described here are provided with similar
 [caveats](README.md#caveats) and [legal restrictions](README.md#licences--legalese) as the other services
 described.
 
-These APIs are work in progress. The search interface is not described
-yet, basically because it is not available outside the applications. That will change, hopefully really soon.
+These APIs are work in progress. There are two kinds of services (and hence servers)
+
+* search service
+* snippet service
+
+The meaning of search service is obvious, the snippet service is less so.
+Snippet server is our internal nick name of a set of web services that retrieves, transforms and delivers text content to the frontend.
+
+The search service is not described yet, basically because it is not available outside the applications.
+That will change, hopefully really soon.
 The search system is based on [SOLR & Lucene](http://lucene.apache.org/solr/).
+
+### Links to related thinking
+
+* http://www.dlib.org/dlib/march99/maly/03maly.html
+* http://people.virginia.edu/~jmu2m//Kings.5-00/primitives.html
+* http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml
+* http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf
+* http://iiif.io/api/presentation/2.1/
+* http://iiif.io/api/search/1.0/
 
 ## Text encoding
 
@@ -96,10 +113,13 @@ look like
 
 ### Anchors, searchability and retrievability
 
-The XML texts pass through a number of procedures before entering the
-system. The most important one is to add an xml:id attibute to each
-element in a document that has not got one to begin with. Each element
-in the texts is then possible to use as an anchor for linking.
+The XML text documents pass through a number of procedures before
+entering the system. The most important one is to add an xml:id
+attibute to each element in a document that has not got one to begin
+with. Each element in the texts is then possible to use as an anchor
+for linking. For building a [cool
+service](https://www.w3.org/Provider/Style/URI.html) based on these
+documents, their names must never be changed, nor must the xml:id.
 
 There are TEI elements that containers and those that are empty. When
 indexing we concentrate on the latter, since they are the ones that we
@@ -108,7 +128,7 @@ called milestones, and the most important one is presumably page
 break, at least in a digitisation project.
 
 The indexing system (which you cannot use just yet see above), creates
-records corresponding to 
+records corresponding to three levels
 
 * volume
 * work
@@ -131,12 +151,15 @@ The records for works and text items import basic metadata and includes
 Most Snippet Server scripts support the following arguments
 
 * doc -- the name of the document to be rendered or transformed
-* c   -- if there are more sub-collections inside the data set, c is the name of the dirctory where doc is to be retrieved. Default is 'texts' for ADL, other are 'periods' and 'authors'
-* op  -- is the operation to be performed upon the document doc. Possible op are
-  * 'render' which implies that doc is transformed into HTML. http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render
+* op, targetOp  -- is the operation to be performed upon the document doc, targetOp is the operation to be performed in links inside the service. Possible values of op and targetOp are
+  * 'render' which implies that doc is transformed into HTML. 
+     * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render
+     * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render&q=samlede with an argument q giving a search string to be highlighted in the text, in this case _samlede_
   * 'solrize' which returns a solr <add> ... </add> which is ready to be sent to SOLR. C.f., http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=solrize
   * 'facsimile' which returns a HTML document with images of the pages. Since we introduced OSD, it is only used for PDF generation. http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=facsimile
-  * 'toc' returns a HTML table of contents http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc 
+  * 'toc' returns a HTML table of contents 
+     * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc 
+     * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render 
 * id  -- the id of a part inside the doc which is to be treated. 
 * q -- assuming that 'q' is the query, the present.xq is labelling the hits in the text
 
@@ -147,4 +170,4 @@ Some more examples
 * A single 'speak' in that play, 
   * as HTML http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render&id=idm140583366681648
   * or as SOLR doc http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=solrize&id=idm140583366681648
-* A TOC for a small work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&id=workid59384
+* A TOC for a small work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render&id=workid59384
