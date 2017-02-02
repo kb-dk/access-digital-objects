@@ -18,7 +18,8 @@ The APIs described here are provided with similar
 described.
 
 These APIs are work in progress. The search interface is not described
-yet, basically because it is not available outside the applications yet. It is based on [SOLR & Lucene](http://lucene.apache.org/solr/).
+yet, basically because it is not available outside the applications. That will change, hopefully really soon.
+The search system is based on [SOLR & Lucene](http://lucene.apache.org/solr/).
 
 ## Text encoding
 
@@ -27,25 +28,33 @@ All data and metadata available are in XML markup according Text Encoding Initia
 
 ### The work
 
-Our services use a work concept developed together with the original
+Our ADL service uses a work concept developed together with the original
 service som 15 years ago by experienced reference librariance. It is
-completely pragmatic and related to what their needs were when 
-providing pointers to texts as librarians.
+completely pragmatic and related to what their needs were when helping patrons by
+providing pointers to texts in the information desk.
 
-At the information desk, the most common questions about literature were about
+There the most common questions about literature were about
 
 * individual poems, songs and psalms
 * individual short stories
 * novels and other longer pieces of prose (basically: "books")
 * plays
 
-With the exception for novels, most of these works are text fragments inside volumes.
+With the exception for novels, most of these works are text fragments inside volumes, the unit delivered by the circulation desk.
 
-After discussions in the [TEI listserv, TEI-L](https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2)
+
+After discussions in the [TEI listserv,
+TEI-L](https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2)
 it seems that the simplest and most correct way seems to be to use
-[the decls attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2) which was suggested by [Lou Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
+[the decls
+attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2)
+which was suggested by [Lou
+Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
 
-Just about any structure in the text can be used as a __work__, by giving it a decls attribute which is an idref pointing to a bibl or biblStruct somewhere in sourceDesc in the teiHeader. The markup will look like
+Just about any structure in the text can be used as a __work__, by
+giving it a decls attribute which is an ___idref___ pointing to a bibl or
+biblStruct by it's ___xml:id___ somewhere in sourceDesc in the teiHeader. The markup will
+look like
 
 ```
  <?xml version="1.0" encoding="UTF-8" ?>
