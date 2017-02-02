@@ -203,7 +203,7 @@ Virtually all scripts work in a similarly, with the following arguments.
   * 'render' which implies that doc is transformed into HTML. 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render&q=samlede with an argument q giving a search string to be highlighted in the text, in this case _samlede_
-  * 'solrize' which returns a solr <add> ... </add> which is ready to be sent to SOLR. C.f., http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=solrize
+  * 'solrize' which returns a solr <add> ... </add> document, which is ready to be sent to SOLR. C.f., http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=solrize
   * 'toc' returns a HTML table of contents 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render 
