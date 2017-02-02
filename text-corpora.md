@@ -204,6 +204,7 @@ following arguments.
   * 'toc' returns a HTML table of contents 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render 
+     note the targetOp=render, which makes the toc script generate links to the _render_ed version of the doc.
 * id  -- the id of a part inside the doc which is to be treated. 
 * q -- assuming that 'q' is the query, the present.xq is labelling the hits in the text
 
