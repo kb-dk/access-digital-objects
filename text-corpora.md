@@ -52,8 +52,8 @@ which was suggested by [Lou
 Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
 
 Just about any structure in the text can be used as a __work__, by
-giving it a decls attribute which is an ___idref___ pointing to a bibl or
-biblStruct by it's ___xml:id___ somewhere in sourceDesc in the teiHeader. The markup will
+giving it a decls attribute which is an _idref_ pointing to a bibl or
+biblStruct by it's _xml:id_ somewhere in sourceDesc in the teiHeader. The markup will
 look like
 
 ```
