@@ -1,10 +1,18 @@
 [README](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
 
-# Access to text search, retrieval etc
+# Access to web services for text search, retrieval and other operations
 
 The Royal Danish Library provide access to some text and language
-resources. The text APIs are entirely new and demonstrate programmatic
-access to services like
+resources. Until recently these resources has been meant for users
+coming to a site for searching, browsing and basically reading.
+
+Now we want to complement these end user services with various text
+APIs.  These are entirely new and they are provided as is with no
+guarantee.  We hope that they are useful for students and scholars
+alike, and we also hope that this could lead to discussions on what
+kind APIs are useful within digital humanities and literary computing.
+
+The text resources are
 
 * [Archive for Danish Literature, ADL](http://www.adl.dk/). The APIs
   described in this document apply to this data set, but the new
@@ -19,24 +27,32 @@ described.
 
 These APIs are work in progress. There are two kinds of services (and hence servers)
 
-* search service
-* snippet service
+* search service API
+* snippet service API
 
-The meaning of search service is obvious, the snippet service is less so.
-Snippet server is our internal nick name of a set of web services that retrieves, transforms and delivers text content to the frontend.
+The meaning of search service is obvious, the snippet service is less
+so.  Snippet server is our internal nick name of a set of web services
+that retrieves, transforms and delivers text content to the frontend.
 
-The search service is not described yet, basically because it is not available outside the applications.
-That will change, hopefully really soon.
+In order to be really useful, the snippet APIs requires the search
+API. However the search service is not described yet, basically
+because it is not available outside the applications.  That will
+change, hopefully really soon.
 The search system is based on [SOLR & Lucene](http://lucene.apache.org/solr/).
 
-### Links to related thinking
-
-* http://www.dlib.org/dlib/march99/maly/03maly.html
-* http://people.virginia.edu/~jmu2m//Kings.5-00/primitives.html
-* http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml
-* http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf
-* http://iiif.io/api/presentation/2.1/
-* http://iiif.io/api/search/1.0/
+There has been previous discussions on what such APIs and
+infrastructures should be doing. I'll give three references, which I
+regard as embarrassing since two of them are my own, and all of them
+very old and I suppose that they are obsoleted by other stuff.  I
+found [John Unsworth's _Scholarly Primitives: what methods do
+humanities researchers have in common, and how might our tools reflect
+this?_](http://people.virginia.edu/~jmu2m//Kings.5-00/primitives.html)
+particularly interesting, which inspired further thinking [_Digital
+Humanities
+Infrastructures_](http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml)
+and some ye olde ideas on text search and retrieval
+[_S:t Laurentius Digital Manuscript Library: An excursion along the border between resource discovery and resource
+description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf)
 
 ## Text encoding
 
@@ -156,9 +172,11 @@ Typically one volume contributes (obviously) one volume record, one to
 dozens of work records and houndreds or thousands of text items.
 The records for works and text items import basic metadata and includes
 
-## API for our texts
+## Snippet APIs for our texts
 
-Most Snippet Server scripts support the following arguments
+There are several scripts in the Snippet Server. We concentrate on
+one, present.xq. Most of them works in a similar way, way with the
+following arguments.
 
 * doc -- the name of the document to be rendered or transformed
 * op, targetOp  -- is the operation to be performed upon the document doc, targetOp is the operation to be performed in links inside the service. Possible values of op and targetOp are
@@ -183,3 +201,4 @@ Some more examples
   * as HTML http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render&id=idm140583366681648
   * or as SOLR doc http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=solrize&id=idm140583366681648
 * A TOC for a small work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render&id=workid59384
+  * The page 27 (of the original volume) inside that work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render&id=workid593843#s27
