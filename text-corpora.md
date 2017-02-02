@@ -175,6 +175,9 @@ Most Snippet Server scripts support the following arguments
 Some more examples
 
 * Holberg, vol 3, HTML: http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render
+* Holberg, vol 3, page 18: http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render#s18
+* The TOC of the Den politiske Kandstøber http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=toc&targetOp=render&id=workid54980
+* The TOC of Den politiske Kandstøber, Actus II http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=toc&targetOp=render&id=idm140583366846000
 * Den politiske Kandstøber, Actus II http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render&id=idm140583366846000
 * A single 'speak' in that play, 
   * as HTML http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=render&id=idm140583366681648
