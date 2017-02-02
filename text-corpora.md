@@ -7,10 +7,11 @@ resources. Until recently these resources has been meant solely for
 users coming to a site using a browser for searching, browsing and
 reading.
 
-Recently we want to complement these end user services with various text
-APIs. We hope that they are useful for students and scholars
-alike, and we also hope that this could lead to discussions on what
-kind APIs are useful within digital humanities and literary computing.
+Recently we want to complement these end user services with various
+text APIs. We hope that they are useful for students and scholars
+alike, and we also hope that this could seen as a contribution to the
+discussions on what kind web services that APIs are useful within
+digital humanities and literary computing.
 
 The text resources are
 
@@ -187,8 +188,11 @@ The records for works and text items import basic metadata and includes
 ## Snippet APIs for our texts
 
 There are several scripts in the Snippet Server. We concentrate on
-one, present.xq. Most of them works in a similar way, way with the
-following arguments.
+one, present.xq. We use it for extracting snippets and transforming
+them. The html produced is fragments that can be included in your
+document as you like.
+
+Virtually all scripts work in a similarly, with the following arguments.
 
 * doc -- the name of the document to be rendered or transformed. Here are some examples of doc names you can test
   * [hcaeventyr01val.xml](http://labs.kb.dk/storage/adl/texts/hcaeventyr01val.xml)
