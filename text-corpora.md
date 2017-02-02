@@ -22,36 +22,44 @@ The text resources are
   set.
 
 The APIs described here are provided with similar
-[caveats](README.md#caveats) and [legal restrictions](README.md#licences--legalese) as the other services
-described.
+[caveats](README.md#caveats) and [legal
+restrictions](README.md#licences--legalese) as the other services
+described, and like them, these APIs are work in progress as public
+services. And again, they are a byproduct of other services and
+frontends.
 
-These APIs are work in progress. There are two kinds of services (and hence servers)
+There are two kinds of services (and thus servers)
 
 * search service API
 * snippet service API
 
 The meaning of search service is obvious, the snippet service is less
-so.  Snippet server is our internal nick name of a set of web services
-that retrieves, transforms and delivers text content to the frontend.
+so. _Snippet server_ is our internal nick name of a set of web
+services that retrieves, transforms and delivers text snippets to the
+frontend using it.
 
 In order to be really useful, the snippet APIs requires the search
-API. However the search service is not described yet, basically
-because it is not available outside the applications.  That will
-change, hopefully really soon.
-The search system is based on [SOLR & Lucene](http://lucene.apache.org/solr/).
+API, enabling you to discover what snippets there are. However, the
+search service is not described yet, basically because it is not
+available outside the applications.  That will change, and hopefully
+really soon.  The search system is based on [SOLR &
+Lucene](http://lucene.apache.org/solr/).
 
 There has been previous discussions on what such APIs and
-infrastructures should be doing. I'll give three references, which I
-regard as embarrassing since two of them are my own, and all of them
-very old and I suppose that they are obsoleted by other stuff.  I
-found [John Unsworth's _Scholarly Primitives: what methods do
+infrastructures in the humanities should be doing. I'll give three
+references, which I confess as being more or less embarrassing since
+two of them are my own, and all of them very old and I suppose (and hope) that
+they are obsoleted by other new contributions.
+
+I found [John Unsworth's _Scholarly Primitives: what methods do
 humanities researchers have in common, and how might our tools reflect
 this?_](http://people.virginia.edu/~jmu2m//Kings.5-00/primitives.html)
 particularly interesting, which inspired further thinking [_Digital
 Humanities
 Infrastructures_](http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml)
-and some ye olde ideas on text search and retrieval
-[_S:t Laurentius Digital Manuscript Library: An excursion along the border between resource discovery and resource
+and some ye olde ideas on text search and retrieval [_S:t Laurentius
+Digital Manuscript Library: An excursion along the border between
+resource discovery and resource
 description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf)
 
 ## Text encoding
@@ -61,10 +69,11 @@ All data and metadata available are in XML markup according Text Encoding Initia
 
 ### The work
 
-Our ADL service uses a work concept developed together with the original
-service som 15 years ago by experienced reference librariance. It is
-completely pragmatic and related to what their needs were when helping patrons by
-providing pointers to texts in the information desk.
+Our Archive for Danish Literature, ADL, service uses a work concept
+developed together with the original service some 15 years ago by
+experienced reference librariance. It is completely pragmatic and
+related to what their needs were when helping patrons by providing
+pointers to texts in the information desk.
 
 There the most common questions about literature were about
 
@@ -73,12 +82,14 @@ There the most common questions about literature were about
 * novels and other longer pieces of prose (basically: "books")
 * plays
 
-With the exception for novels, most of these works are text fragments inside volumes, the unit delivered by the circulation desk.
+With the exception for novels, most of these works are text fragments
+inside a volume, the unit delivered by the circulation desk.
 
+### Connecting works with metadata
 
 After discussions in the [TEI listserv,
 TEI-L](https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2)
-it seems that the simplest and most correct way seems to be to use
+it seems that the simplest and most correct way is use
 [the decls
 attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2)
 which was suggested by [Lou
@@ -138,10 +149,11 @@ service](https://www.w3.org/Provider/Style/URI.html) based on these
 documents, their names must never be changed, nor must the xml:id.
 
 There are TEI elements that containers and those that are empty. When
-indexing we concentrate on the latter, since they are the ones that we
+indexing we concentrate on the former, since they are the ones that we
 need to search. There are a very important class of empty elements
 called milestones, and the most important one is presumably page
-break, at least in a digitisation project.
+break, at least in a digitisation project (where we need to address
+facsimiles).
 
 The search system (which you cannot use just yet, see above), creates
 records corresponding to three levels
@@ -150,7 +162,8 @@ records corresponding to three levels
 * work
 * text item
 
-where volume and work is defined as described above. When indexing, records are created taking 
+where volume and work is defined as described above. When indexing,
+records are created taking
 
 * metadata from the TEI header given the reference in the decls attribute
 * text from the appropriate level, and below.
@@ -178,7 +191,11 @@ There are several scripts in the Snippet Server. We concentrate on
 one, present.xq. Most of them works in a similar way, way with the
 following arguments.
 
-* doc -- the name of the document to be rendered or transformed
+* doc -- the name of the document to be rendered or transformed. Here are some examples of doc names you can test
+  * [hcaeventyr01val.xml](http://labs.kb.dk/storage/adl/texts/hcaeventyr01val.xml)
+  * [hcaeventyr02val.xml](http://labs.kb.dk/storage/adl/texts/hcaeventyr02val.xml)
+  * [munp1.xml](http://labs.kb.dk/storage/adl/texts/munp1.xml)
+  * [munp2.xml](http://labs.kb.dk/storage/adl/texts/munp2.xml)
 * op, targetOp  -- is the operation to be performed upon the document doc, targetOp is the operation to be performed in links inside the service. Possible values of op and targetOp are
   * 'render' which implies that doc is transformed into HTML. 
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render
