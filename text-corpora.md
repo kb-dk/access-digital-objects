@@ -208,9 +208,9 @@ Virtually all scripts work in a similarly, with the following arguments.
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=render&q=samlede with an argument q giving a search string to be highlighted in the text, in this case _samlede_
   * 'solrize' which returns a solr <add> ... </add> document, which is ready to be sent to SOLR. C.f., http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=solrize
   * 'toc' returns a HTML table of contents 
-     * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc 
+     * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc If a 'toc' and a text generated through 'render' are included into one document, all internal links will work.
      * http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render 
-     note the targetOp=render, which makes the toc script generate links to the _render_ed version of the doc.
+     note the targetOp=render, which makes the toc script generate links to the _render_ed version of the doc. This is good for testing.
 * id  -- the id of a part inside the doc which is to be treated. 
 * q -- assuming that 'q' is the query, the present.xq is labelling the hits in the text
 

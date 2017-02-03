@@ -51,6 +51,7 @@ A brief introduction to the characters in the story
 + [Aerial Photography collection - DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
 + [Rex - our Integrated Library System](http://rex.kb.dk/) and Aleph - our OPAC
 + National Aggregator - A system run by us aggregating material from Danish libraries, museums and archives on behalf of Europeana
++ [Archive for Danish Literature](http://www.adl.dk/), ADL
 
 ### Dissemination of metadata
 
@@ -81,6 +82,10 @@ formats](metadata-formats.md).
 
 Virtually all content in COP is delivered as images; their delivery is
 described in a [separate document](image-delivery.md).
+
+### Text and literature
+
+Currently the whole [Archive for Danish Literature is available](text-corpora.md).
 
 ## Acknowledgements
 
