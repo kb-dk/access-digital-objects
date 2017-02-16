@@ -98,7 +98,9 @@ Note the @id in the json-ld above. Append '/full/!2000,/0/native.jpg' to that yo
 
 http://kb-images.kb.dk/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011/full/!2000,/0/native.jpg
 
-That is, you can dereference that URI to a 2000 px wide image.
+Dereference that and you will get a 2000 px wide image. The width of
+this particular image is 2940 and you can get all of that; you
+retrieve images up to 8000x8000px.
 
 Image URIs may appear in a few more formats. Note, for example, the
 htmlUrl in outlines of [Chresten Jensens
