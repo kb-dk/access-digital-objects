@@ -181,8 +181,8 @@ A majority of the digital objects in COP are "complex" in one way or
 another. By that we understand that we need to see more than one file
 to consume the entire object. The simplest case is a photograph
 requiring a digital image of each side, where there are essential
-informatation on the back. This means that we need a tables of
-contents just about every digital object in the service, and that TOC
+information on the back. This means that we need a table of
+contents (TOC) for every digital object in the service, and that TOC
 is delivered through the content service.
 
 Here is one for a fairly complex song book
