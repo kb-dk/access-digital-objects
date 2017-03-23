@@ -25,9 +25,12 @@ As you can notice in our [COP web portal](http://www.kb.dk/editions/any/2009/jul
  * and so on ...
 
 
-Example:
+Examples:
 
-+ Try to find any data about Søren Kierkegaard:
++ Find any data about Søren Kierkegaard:
   
   http://www.kb.dk/editions/any/2009/jul/editions/da/?searchAcrossEditions=true&query=Søren+kierkegaard
   
++ Find a list of all the "søkort" from Bornholm
+
++ Find all the småtry/partiprogrammer of the socialdemokraterne in the period 1900-1930
