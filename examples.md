@@ -25,7 +25,7 @@ As you can notice in our [COP web portal](http://www.kb.dk/editions/any/2009/jul
  * and so on ...
 
 
-her are a descriptions of three concrete examples:
+Three concretes examples:
 
 + If you want to find any data about Søren Kierkegaard:
   
