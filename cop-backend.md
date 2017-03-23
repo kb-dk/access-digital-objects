@@ -8,12 +8,10 @@
 
 ## Syndication service formats
 
-The syndication service is for search and retrieval. By default it
-delivers a search result set (or a retrieval, which is basically a
-search for a record ID) in [rss
+The syndication service is made for search and retrieval. By default it
+delivers a search result set (or a search for a record ID) in [rss
 2.0](https://cyber.harvard.edu/rss/rss.html).  The syndication service
-supports some other formats as well, the most important ones are mods
-and kml. You can "toggle" between the formats using the `format` CGI
+supports some  mods and kml as well. You can "toggle" between the formats using the `format` CGI
 parameter.
 
 | format | root element |
