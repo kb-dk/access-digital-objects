@@ -37,12 +37,13 @@ Three concretes examples:
 
 + Or get all the "småtry/partiprogrammer" of the "socialdemokraterne" in the period 1900-1930:
 
-  Get all object containing socialdemkraterne:
+  Get all object containing socialdemokraterne:
+  
   http://www.kb.dk/editions/any/2009/jul/editions/da/?searchAcrossEditions=true&query=socialdemokraterne
   
   Keep only the partiprogrammer:
   
   http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/?query=socialdemokraterne&orderBy
   
-  Refine your search by setting the notbefore, notafter parameters:
+  Refine your search by setting the notBefore, notAfter parameters:
   http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/?searchAcrossEditions=false&query=socialdemokraterne&orderBy=&title=&creator=&person=&location=&notBefore=1900&notAfter=1930#
