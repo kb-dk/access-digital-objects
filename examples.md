@@ -33,4 +33,4 @@ Three concretes examples:
   
 + If you want to get all the "søkort" from Bornholm:
 
-+ Or get all the småtry/partiprogrammer of the socialdemokraterne in the period 1900-1930:
++ Or get all the "småtry/partiprogrammer" of the "socialdemokraterne" in the period 1900-1930:
