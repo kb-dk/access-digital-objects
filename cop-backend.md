@@ -10,8 +10,8 @@
 
 The syndication service is made for search and retrieval. By default it
 delivers a search result set (or a search for a record ID) in [rss
-2.0](https://cyber.harvard.edu/rss/rss.html).  The syndication service
-supports some  mods and kml as well. You can "toggle" between the formats using the `format` CGI
+2.0](https://cyber.harvard.edu/rss/rss.html).  
+mods and kml format are supported as well. You can "toggle" between these formats using the `format` CGI
 parameter.
 
 | format | root element |
