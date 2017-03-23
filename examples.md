@@ -43,7 +43,7 @@ Three concretes examples:
   
   Keep only the partiprogrammer:
   
-  http://www.kb.dk/cop/syndication/pamphlets/dasmaa/2008/feb/partiprogrammer/da/?query=socialdemokraterne&orderBy
+  http://www.kb.dk/cop/syndication/pamphlets/dasmaa/2008/feb/partiprogrammer/da/?query=socialdemokraterne
   
   Refine your search by setting the notBefore, notAfter parameters:
-  http://www.kb.dk/cop/syndication/pamphlets/dasmaa/2008/feb/partiprogrammer/da/?query=socialdemokraterne&orderBy=&title=&creator=&person=&location=&notBefore=1900&notAfter=1930#
+  http://www.kb.dk/cop/syndication/pamphlets/dasmaa/2008/feb/partiprogrammer/da/?query=socialdemokraterne&notBefore=1900&notAfter=1930
