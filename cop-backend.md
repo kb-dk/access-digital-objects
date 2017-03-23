@@ -27,15 +27,14 @@ The formats rss and kml are used internally in our services. All search and retr
 is based on the former, the latter is tranlated to ```json``` and is then used in the
 client side rendering of maps [DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
 
-The rss and mods formats are equivalent in as much as the mods records
-are embedded in the rss.
+Note that mods records are embedded in the rss.
 
 ## Open Search
 
 Clients communicates with the server with Amazon A9.com [Open
 search](http://www.opensearch.org/Home) protocol.
 
-All formats supported include a Open search header for (used for
+All formats supported include a Open search header (used for
 resultset navigation) at the very beginning of each result set:
 
 ```
@@ -52,9 +51,8 @@ resultset navigation) at the very beginning of each result set:
       type="application/rss+xml"/>
 ```
 
-Note that from what you see above is that this search result starts
-with record 1 out of 104820 and that you obtain them in chunks of 40
-items. You adjust your retrieval using the `page` and `itemsPerPage` [CGI variables](cop-backend.md#query-parameters-in-cop)
+This search result starts with record 1 out of 104820, you obtain them in chunks of 40
+items. You can adjust your retrieval using the `page` and `itemsPerPage` [CGI variables](cop-backend.md#query-parameters-in-cop)
 
 ## Examples
 

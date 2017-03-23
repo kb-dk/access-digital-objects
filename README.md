@@ -48,7 +48,7 @@ strictly valid in relation to those documents.
 A brief introduction to the characters in the story
 
 + [Digital Editions - COP](http://www.kb.dk/editions/any/2009/jul/editions/en/), an acronym for which one possible interpretation could be **C**ommon **O**bject **P**ublishing platform. The word _Common_ would refer to that it is a platform which is common between different collections and media types. However, when it was released we intentionally never gave the service a brand name.
-+ [Aerial Photography collection - DSFL](http://www.kb.dk/danmarksetfraluften/) 
++ [Aerial Photography collection - DSFL](http://www.kb.dk/danmarksetfraluften/) (Danmark Set Fra Luften)
 + [Rex - our Integrated Library System](http://rex.kb.dk/) and Aleph - our Online public access catalog (OPAC)
 + National Aggregator - A system run by us aggregating material from Danish libraries, museums and archives on behalf of Europeana
 + [Archive for Danish Literature](http://www.adl.dk/), ADL
