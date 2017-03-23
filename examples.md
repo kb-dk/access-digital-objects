@@ -1,3 +1,5 @@
+# Examples
+
 Our web services were created some years ago to be able to build our digital collection web portal http://www.kb.dk/editions/any/2009/jul/editions/da/
 So here is a good place to start and explore our data.
 
@@ -17,10 +19,10 @@ http://www.kb.dk/images/billed/2010/okt/billeder/object76439/
 The data is structured by editions, an object is unique but can be in several editions.
 Each editions have categories, and each categories can have sub-categories.   
 As you can notice in our [COP web portal](http://www.kb.dk/editions/any/2009/jul/editions/da/) we have around 14 editions 
-Billede: http://www.kb.dk/images/billed/2010/okt/billeder/da/
-Partiprogrammer: http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/
-Judaistisk Samling: Tidlige & sjældne tryk: http://www.kb.dk/books/judsam/2010/maj/jstryk/da/
-and so on ...
+ * Billede: http://www.kb.dk/images/billed/2010/okt/billeder/da/
+ * Partiprogrammer: http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/
+ * Judaistisk Samling: Tidlige & sjældne tryk: http://www.kb.dk/books/judsam/2010/maj/jstryk/da/
+ * and so on ...
 
 
 Example:
