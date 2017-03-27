@@ -85,17 +85,18 @@ pretty-printed.
 
 Complete list of supported parameters in COP 
 
-| Parameter | Use in PATH | Use in CGI | Comment | Status|
-|-----------|:-------------|:------------|:--------|-------|
-|query | - | supported | Synonym to q | ok |
-|format | - | supported | kml, rss and mods | ok |
-|page | - | supported | | ok |
-|itemsPerPage | - | supported | |ok |
-|object | supported | - | | ok |
-|subject | supported | deprecated | Synonym to categories | ok |
-|bbo | - | supported | Bounding Box |
-|notBefore | - | supported | Not before a given date | - |
-|notAfter | - | supported | Not after a given date | - |
+| Parameter | Use in PATH | Use in CGI | Comment |
+|-----------|:-------------|:------------|:--------|
+|query | - | supported | queries all fields |
+|searchWide | - | supported | 'true' if searching all fields, 'false' otherwise |
+|format | - | supported | kml, rss and mods |
+|page | - | supported | |
+|itemsPerPage | - | supported | |
+|object | supported | - | |
+|subject | - | supported | deprecated | Synonym to categories |
+|bbo | - | - | supported | Bounding Box |
+|notBefore | - | supported | Not before a given date in iso format YYYY-MM-DD |
+|notAfter | - | supported | Not after a given date in iso format YYYY-MM-DD |
 
 Field candidates, mostly geographical ones
 
