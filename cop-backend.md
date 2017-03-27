@@ -93,7 +93,7 @@ Complete list of supported parameters in COP
 |page | - | supported | |
 |itemsPerPage | - | supported | |
 |object | supported | - | |
-|subject | - | supported | deprecated | Synonym to categories |
+|subject | supported | supported | deprecated |
 |bbo | - | - | supported | Bounding Box |
 |notBefore | - | supported | Not before a given date in iso format YYYY-MM-DD |
 |notAfter | - | supported | Not after a given date in iso format YYYY-MM-DD |
