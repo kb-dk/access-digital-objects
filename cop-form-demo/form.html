@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en">
+  <head>
+    <title>Form demonstration</title>
+    <meta http-equiv="Content-Type" 
+	  content="text/html;charset=UTF-8"/>
+  </head>
+  <body>
+    <h1>COP form demo</h1>
+    <form id="form" action="http://www.kb.dk/cop/syndication/letters/judsam/2011/mar/dsa/en/">
+      <dl>
+	<dt>Search for</dt>
+	<dd>
+	  <input name="query" value=""/>
+	</dd>
+	<dt>Edition</dt>
+	<dd>
+	  <select id="select_element" name="edition" onchange="">
+	    <option value="/letters/judsam/2011/mar/dsa">/letters/judsam/2011/mar/dsa</option>
+	    <option value="/manus/judsam/2010/maj/jsmss">/manus/judsam/2010/maj/jsmss</option>
+	    <option value="/pamphlets/dasmaa/2012/jul/smaatryk">/pamphlets/dasmaa/2012/jul/smaatryk</option>
+	    <option value="/maps/kortsa/2012/jul/kortatlas">/maps/kortsa/2012/jul/kortatlas</option>
+	    <option value="/pamphlets/dasmaa/2008/feb/partiprogrammer">/pamphlets/dasmaa/2008/feb/partiprogrammer</option>
+	    <option value="/images/billed/2010/okt/billeder">/images/billed/2010/okt/billeder</option>
+	    <option value="/manus/ortsam/2009/okt/orientalia">/manus/ortsam/2009/okt/orientalia</option>
+	    <option value="/pamphlets/dasmaa/2008/feb/daellsvarehus">/pamphlets/dasmaa/2008/feb/daellsvarehus</option>
+	    <option value="/books/judsam/2010/maj/jstryk">/books/judsam/2010/maj/jstryk</option>
+	    <option value="/manus/judsam/2009/sep/dsh">/manus/judsam/2009/sep/dsh</option>
+	    <option value="/books/ortsam/2011/mar/ostryk">/books/ortsam/2011/mar/ostryk</option>
+	    <option value="/manus/musman/2010/dec/viser">/manus/musman/2010/dec/viser</option>
+	    <option value="/images/billed/2014/jun/hca">/images/billed/2014/jun/hca</option>
+	    <option value="/manus/vmanus/2011/dec/ha">/manus/vmanus/2011/dec/ha</option>
+	  </select>
+	</dd>
+	<dt>format</dt>
+	<dd>
+	  <select id="metadata" name="format">
+	    <option value="rss">RSS 2.0</option>
+	    <option value="mods">MODS</option>
+	    <option value="kml">kml</option>
+	  </select>
+	</dd>
+	<dt>
+	  <input type="submit" value="Submit"/>
+	</dt>
+      </dl>
+      
+    </form>
+    <script type="application/javascript">
+      document.getElementById('select_element').onchange = function(){
+      document.getElementById('form').action = 'http://www.kb.dk/cop/syndication' + this.value + '/da/';
+      }
+    </script>
+
+  </body>
+</html>
