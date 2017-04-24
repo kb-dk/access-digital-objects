@@ -81,6 +81,10 @@ try to do clever things with the meta-characters (?& etc). The format
 option ensures that the retrieved document is nicely indented and
 pretty-printed.
 
+## Forms based example
+
+https://cdn.rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/cop-form-demo/form.html
+
 ## Query parameters in COP 
 
 Complete list of supported parameters in COP 
