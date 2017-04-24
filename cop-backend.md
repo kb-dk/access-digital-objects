@@ -83,7 +83,7 @@ pretty-printed.
 
 ## Forms based example
 
-https://cdn.rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/cop-form-demo/form.html
+https://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/cop-form-demo/form.html
 
 ## Query parameters in COP 
 
