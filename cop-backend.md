@@ -68,6 +68,8 @@ items. You adjust your retrieval using the `page` and `itemsPerPage` [CGI variab
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5&page=4
 + search "by querying", ordinary search -- for example
   http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=2&query=jesus&itemsPerPage=40
++ You can search for anything in any of the editions using a search form
+  http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/cop-form-demo/form.html
 
 To see what is going on in these examples, you have to view source, or
 you just see how your browser renders RSS. If you're using a computer
@@ -81,9 +83,7 @@ try to do clever things with the meta-characters (?& etc). The format
 option ensures that the retrieved document is nicely indented and
 pretty-printed.
 
-## Forms based example
 
-https://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/cop-form-demo/form.html
 
 ## Query parameters in COP 
 
