@@ -83,8 +83,6 @@ try to do clever things with the meta-characters (?& etc). The format
 option ensures that the retrieved document is nicely indented and
 pretty-printed.
 
-
-
 ## Query parameters in COP 
 
 Complete list of supported parameters in COP 
