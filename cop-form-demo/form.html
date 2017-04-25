@@ -6,13 +6,8 @@
 	  content="text/html;charset=UTF-8"/>
   </head>
   <body>
-    <h1>COP form demo</h1>
-    <form id="form" action="http://www.kb.dk/cop/syndication/letters/judsam/2011/mar/dsa/en/">
+    <h1>COP API form demo</h1>
       <dl>
-	<dt>Search for</dt>
-	<dd>
-	  <input name="query" value=""/>
-	</dd>
 	<dt>Edition</dt>
 	<dd>
 	  <select id="select_element" name="edition" onchange="">
@@ -33,6 +28,13 @@
 	    <option value="/manus/vmanus/2011/dec/ha">/manus/vmanus/2011/dec/ha</option>
 	  </select>
 	</dd>
+      </dl>
+      <form id="form" action="http://www.kb.dk/cop/syndication/letters/judsam/2011/mar/dsa/en/">
+	<dl>
+	<dt>Search for</dt>
+	<dd>
+	  <input name="query" value=""/>
+	</dd>
 	<dt>format</dt>
 	<dd>
 	  <select id="metadata" name="format">
@@ -45,13 +47,14 @@
 	  <input type="submit" value="Submit"/>
 	</dt>
       </dl>
-      
-    </form>
-    <script type="application/javascript">
-      document.getElementById('select_element').onchange = function(){
-      document.getElementById('form').action = 'http://www.kb.dk/cop/syndication' + this.value + '/da/';
-      }
-    </script>
-
+      </form>
+      <script type="application/javascript">
+	document.getElementById('select_element').onload = function(){
+	document.getElementById('form').action = 'http://www.kb.dk/cop/syndication' + this.value + '/da/';
+	}
+	document.getElementById('select_element').onchange = function(){
+	document.getElementById('form').action = 'http://www.kb.dk/cop/syndication' + this.value + '/da/';
+	}
+      </script>
   </body>
 </html>
