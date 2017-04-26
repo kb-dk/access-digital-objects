@@ -13,7 +13,7 @@ hope that the access points could be useful for a new category library
 patron whose research or studies would benefit from programmatic access
 to our digital collections.
 
-![Linked data](https://www.w3.org/DesignIssues/diagrams/lod/597992118v2_350x350_Back.jpg)
+![Linked data](https://www.w3.org/DesignIssues/diagrams/lod/597992118v2_350x350_Back.jpg) [linked data](https://www.w3.org/DesignIssues/LinkedData.html)
 
 
 ## Licences & Legalese
