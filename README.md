@@ -47,21 +47,31 @@ strictly valid in relation to those documents.
 
 ## Services by scope and purpose
 
+Our services builds upon the ideas
+
++ [COOL URIs](https://www.w3.org/Provider/Style/URI) 
+
+and
+
++ [linked data](https://www.w3.org/DesignIssues/LinkedData.html)
+
+as they are presented by Tim Berners-Lee. We don't promise that our
+links will persist for 2000 years, but we do our best to keep them and
+if we don't we promise to make redirects according to best practise.
+
+As you will see, we are slightly better than three on Berners-Lee's
+five grade scale. We do not provide access to RDF and SPARQL but RSS
+and OpenSearch. Few provide access to RDF these days, so perhaps W3C
+should redesign the cop (see above).
+
+Neither do we link to external sources.
+
 A brief introduction to the characters in the story
 
 + [Digital Editions - COP](http://www.kb.dk/editions/any/2009/jul/editions/en/), an acronym for which one possible interpretation could be **C**ommon **O**bject **P**ublishing platform. The word _Common_ would refer to that it is platform which is common between different collections and media types. However, when it was released we intentionally never gave the service a brand name.
 + [Aerial Photography collection - DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
 + National Aggregator - A system run by us aggregating material from Danish libraries, museums and archives on behalf of Europeana
 + [Archive for Danish Literature](http://www.adl.dk/), ADL
-
-### URI structure in COP
-
-COP builds upon the ideas of
-
-+ [COOL URIs](https://www.w3.org/Provider/Style/URI) 
-+ [linked data](https://www.w3.org/DesignIssues/LinkedData.html)
-
-as they are presented by Tim Berners-Lee.
 
 ### Dissemination of metadata
 
