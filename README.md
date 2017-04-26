@@ -13,6 +13,8 @@ hope that the access points could be useful for a new category library
 patron whose research or studies would benefit from programmatic access
 to our digital collections.
 
+https://www.w3.org/DesignIssues/diagrams/lod/597992118v2_350x350_Back.jpg
+
 
 ## Licences & Legalese
 
@@ -49,9 +51,17 @@ A brief introduction to the characters in the story
 
 + [Digital Editions - COP](http://www.kb.dk/editions/any/2009/jul/editions/en/), an acronym for which one possible interpretation could be **C**ommon **O**bject **P**ublishing platform. The word _Common_ would refer to that it is platform which is common between different collections and media types. However, when it was released we intentionally never gave the service a brand name.
 + [Aerial Photography collection - DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
-+ [Rex - our Integrated Library System](http://rex.kb.dk/) and Aleph - our OPAC
 + National Aggregator - A system run by us aggregating material from Danish libraries, museums and archives on behalf of Europeana
 + [Archive for Danish Literature](http://www.adl.dk/), ADL
+
+### URI structure in COP
+
+COP builds upon the ideas of
+
++ [COOL URIs](https://www.w3.org/Provider/Style/URI) 
++ [linked data](https://www.w3.org/DesignIssues/LinkedData.html)
+
+as they are presented by Tim Berners-Lee.
 
 ### Dissemination of metadata
 
