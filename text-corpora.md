@@ -3,15 +3,15 @@
 # Access to web services for text search, retrieval and other operations
 
 The Royal Danish Library provide access to some text and language
-resources. Until recently these resources has been meant solely for
+resources. Until recently these resources have been intended solely for
 users coming to a site using a browser for searching, browsing and
 reading.
 
-Recently we want to complement these end user services with various
-text APIs. We hope that they are useful for students and scholars
-alike, and we also hope that this could seen as a contribution to the
-discussions on what kind web services that APIs are useful within
-digital humanities and literary computing.
+Recently we have decided to complement these end user services with
+various text APIs. We hope that they are useful for students and
+scholars alike, and we also hope that this could seen as a
+contribution to the discussions on what kind web services and what
+APIs are useful within digital humanities and literary computing.
 
 The text resources are
 
@@ -36,7 +36,7 @@ There are two kinds of services (and thus servers)
 The meaning of search service is obvious, the snippet service is less
 so. _Snippet server_ is our internal nick name of a set of web
 services that retrieves, transforms and delivers text snippets to the
-front end using it.
+front end or other components using it.
 
 In order to be really useful, the snippet APIs requires the search
 API, enabling you to discover what snippets there are. However, the
@@ -66,8 +66,10 @@ still running.
 
 ## Text encoding
 
-Most texts are from collected works and are critical editions.
-All data and metadata available are in XML markup according Text Encoding Initiative, TEI, [Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
+Most texts are from collected works and are critical editions.  All
+data and metadata available are in XML markup according Text Encoding
+Initiative, TEI,
+[Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
 
 ### The work
 
@@ -108,18 +110,28 @@ look like
    <teiHeader>
      <fileDesc>
        <titleStmt>
-	 <title>
-	 </title>
+	 <title>Sang-Værk til den danske Kirke</title>
        </titleStmt>
        <publicationStmt>
 	 <publisher>
 	 </publisher>
        </publicationStmt>
        <sourceDesc>
+	 <bibl xml:id="idm140638899271024">
+	   <author n="1" xml:id="idm140638899270336">
+	     <name xml:id="idm140638899270080">
+	       <surname xml:id="idm140638899269952">Grundtvig</surname>,
+	       <forename xml:id="idm140638899269520">N. F. S.</forename>
+	     </name>
+	   </author>
+	   <title xml:id="idm140638899269264"> Sang-Værk til den danske Kirke. - 1944</title>
+	   <pubPlace xml:id="idm140638899268912">Kbh.</pubPlace>
+	   <date xml:id="idm140638899268432">1944-1964</date>
+	 </bibl>
 	 <listBibl>
-	   <bibl xml:id="bib101">
-	     <title>The name of the hymn</title>
-	     <author>The psalmist</author>
+	   <bibl xml:id="#biblid64544">
+	     <title>Kirken er som Himmerige</title>
+	     <author>N. F. S. Grundtvig</author>
 	   </bibl>
 	 </listBibl>
        </sourceDesc>
@@ -127,12 +139,40 @@ look like
    </teiHeader>
    <text>
      <body>
-       <div decls="#bib101" >
-	 <lg>
-	   <l>Angres det med ærlig Smerte,</l>
-	   <l>Vendes om med ydmyg Bøn,</l>
-	   <l>Kirken dog med Moder-Hjerte</l>
-	   <l>Favner den forlorne Søn!</l>
+       <div xml:id="workid64544" decls="#biblid64544">
+	 <head xml:id="idm140638897625920">
+            <hi rend="italics" xml:id="idm140638897625792">No. 19</hi>
+         </head>
+	 <lg xml:id="idm140638897624976">
+	   <l xml:id="idm140638897624720">Kirken er som Himmerige,</l>
+	   <l xml:id="idm140638897624288">Meget kan den lignes ved,</l>
+	   <l xml:id="idm140638897623856">Skiøndt paa Jord den har ei Lige,</l>
+	   <l xml:id="idm140638897623392">Som Guds Naade og Guds Fred!</l>
+	 </lg>
+	 <lg xml:id="idm140638897622832">
+	   <l xml:id="idm140638897622576">Mest dog lig en Barne-Moder,</l>
+	   <l xml:id="idm140638897622144">Herren kalder den sin Brud,</l>
+	   <l xml:id="idm140638897621712">Ved dens Mælk opvoxe Poder,</l>
+	   <l xml:id="idm140638897621248">Som ved Bække Pile-Skud!</l>
+	 </lg>
+	 <pb n="75" xml:id="s75" facs="adl/grundtvig/grundtvig11/grun11075"/>
+	 <lg xml:id="idm140638897619408">
+	   <l xml:id="idm140638897619152">Kirkens Favn og derfor kaldes</l>
+	   <l xml:id="idm140638897618720">Rettelig et Moder-Skiød,</l>
+	   <l xml:id="idm140638897618272">Naar der sørges, naar der faldes,</l>
+	   <l xml:id="idm140638897617808">Altid der er Hvilen sød!</l>
+	 </lg>
+	 <lg xml:id="idm140638897617232">
+	   <l xml:id="idm140638897616976">Kastes Vrag paa Kirkens Goder</l>
+	   <l xml:id="idm140638897616544">Af den Sjæl, som dem bar smagt,</l>
+	   <l xml:id="idm140638897616080">Da forhaaner Søn sin Moder,</l>
+	   <l xml:id="idm140638897615616">Og hans Dom er forudsagt.</l>
+	 </lg>
+	 <lg xml:id="idm140638897615056">
+	   <l xml:id="idm140638897614800">Angres det med ærlig Smerte,</l>
+	   <l xml:id="idm140638897614336">Vendes om med ydmyg Bøn,</l>
+	   <l xml:id="idm140638897613888">Kirken dog med Moder-Hjerte</l>
+	   <l xml:id="idm140638897613456">Favner den forlorne Søn!</l>
 	 </lg>
        </div>
      </body>
@@ -186,6 +226,14 @@ as poetry.
 Typically one volume contributes (obviously) one volume record, one to
 dozens of work records and hundreds or thousands of text items.
 The records for works and text items import basic metadata and includes
+
+## Connecting text with facsimile
+
+Our digital library have users interested in viewing the printed text,
+if not for any other reason than for checking the original when there
+is OCR errors.
+
+
 
 ## Snippet APIs for our texts
 
