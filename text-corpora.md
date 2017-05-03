@@ -97,6 +97,10 @@ attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CC
 which was suggested by [Lou
 Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
 
+> @decls identifies one or more declarable elements within the header,
+> which are understood to apply to the element bearing this attribute
+> and its content [@decls definition](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.declaring.html)
+
 Just about any structure in the text can be used as a __work__, by
 giving it a decls attribute which is an _idref_ pointing to a bibl or
 biblStruct by it's _xml:id_ somewhere in sourceDesc in the teiHeader. The markup will
