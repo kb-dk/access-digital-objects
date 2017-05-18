@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en">
+  <head>
+    <title>ADL text search API demonstration</title>
+    <meta http-equiv="Content-Type" 
+	  content="text/html;charset=UTF-8"/>
+  </head>
+  <body>
+    <h1>ADL text search API demonstration</h1>
+
+      <form id="form" action="http://index-test-01/solr/adl-core/select/">
+	<dl>
+	<dt>Search for</dt>
+	<dd>
+	  <textarea name="q" cols="50" rows="6">
+	    genre_ssi:play
+	    and
+	    subcollection_ssi:texts
+	    and
+	    author_name_tesim:jeppe
+	  </textarea>
+	</dd>
+        <dd><input name="wt" value="json"/></dd>
+        <dd><input name="defType" value="edismax"/></dd>
+	<dd><input name="indent" value="on"/></dd>
+	</dl>
+      </form>
+  </body>
+</html>
