@@ -28,22 +28,19 @@ restrictions](README.md#licences--legalese) as the other services
 described, and like them, these APIs are work in progress as public
 services. Also they are byproducts of our services and front ends.
 
-There are two kinds of services (and thus servers)
+There are two kinds of services (and thus servers hosting the corresponding APIs)
 
-* search service API
-* snippet service API
+* text search service API
+* text retrieval service API
 
-The meaning of search service is obvious, the snippet service is less
-so. _Snippet server_ is our internal nick name of a set of web
-services that retrieves, transforms and delivers text snippets to the
-front end or other components using it.
+The meaning of search service is obvious, the text retrieval service
+is somewhat less so. _Snippet server_ is our internal nick name of a
+set of web services that retrieves, transforms and delivers text
+snippets to the front end or other components using it.
 
-In order to be really useful, the snippet APIs requires the search
-API, enabling you to discover what snippets there are. However, the
-search service is not described yet, basically because it is not
-available outside the applications.  That will change, and hopefully
-really soon.  The search system is based on [SOLR &
-Lucene](http://lucene.apache.org/solr/).
+In order to be useful, the you need both search and retrieval APIs.
+Then you may search and discover what works and snippets there are,
+and retrieve and link to them.
 
 There has been previous discussions on what such APIs and
 infrastructures in the humanities should be doing. I'll give three
@@ -72,7 +69,7 @@ Initiative, TEI,
 [Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
 
 
-### Anchors, search ability and retrievable
+## Anchors, searchability and retrievability
 
 The search system (which you cannot use just yet, see above), creates
 records corresponding to three levels
@@ -110,11 +107,12 @@ Our digital library have users interested in viewing the printed text,
 if not for any other reason than for checking the original when there
 is OCR errors.
 
+## Text search
 
+## Retrieval APIs for our texts
 
-## Snippet APIs for our texts
-
-There are several scripts in the Snippet Server. [The source code is free](https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets).
+There are several text retrieval scripts in the Snippet Server.
+[The source code is free](https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets).
 
 We concentrate on one, present.xq. We use it for extracting snippets
 and transforming them. The html produced is mere fragments that you
@@ -151,3 +149,4 @@ Some more examples
   * or as SOLR doc http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=solrize&id=idm140583366681648
 * A TOC for a small work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render&id=workid59384
   * The page 27 (of the original volume) inside that work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render&id=workid593843#s27
+
