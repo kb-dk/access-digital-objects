@@ -69,7 +69,7 @@ items. You adjust your retrieval using the `page` and `itemsPerPage` [CGI variab
 + search "by querying", ordinary search -- for example
   http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=2&query=jesus&itemsPerPage=40
 + You can search for anything in any of the editions using a search form
-  http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/cop-form-demo/form.html
+  http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-form.html
 
 To see what is going on in these examples, you have to view source, or
 you just see how your browser renders RSS. If you're using a computer
