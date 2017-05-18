@@ -4,26 +4,85 @@
     <title>ADL text search API demonstration</title>
     <meta http-equiv="Content-Type" 
 	  content="text/html;charset=UTF-8"/>
+    <style type="text/css">
+      table, th, td {
+      border: black;
+      }
+    </style>
   </head>
   <body>
     <h1>ADL text search API demonstration</h1>
 
-      <form id="form" action="http://index-test-01/solr/adl-core/select/">
-	<dl>
+    <form style="float:left;" id="form" action="http://index-test-01/solr/adl-core/select/">
+      <dl>
 	<dt>Search for</dt>
 	<dd>
 	  <textarea name="q" cols="50" rows="6">
-	    genre_ssi:play
-	    and
-	    subcollection_ssi:texts
-	    and
-	    author_name_tesim:jeppe
+genre_ssi:play
+and
+subcollection_ssi:texts
+and
+author_name_tesim:jeppe
 	  </textarea>
 	</dd>
-        <dd><input name="wt" value="json"/></dd>
-        <dd><input name="defType" value="edismax"/></dd>
-	<dd><input name="indent" value="on"/></dd>
-	</dl>
-      </form>
+	<dt>result format</dt>
+	<dd>
+	  <select id="format" name="wt">
+	    <option value="json">json</option>
+	    <option value="xml">xml</option>
+	  </select>
+	</dd>
+	<dt>start record</dt>
+	<dd><input name="start" value="0"/></dd>
+	<dt>start record</dt>
+	<dd><input name="rows" value="10"/></dd>
+	<dt>Query parser</dt>
+	<dd>
+	  <select id="qeryparser" name="defType">
+	    <option value="edismax">edismax</option>
+	    <option value="dismax">dismax</option>
+	  </select>
+	  <input name="indent" type="hidden" value="on"/>
+	</dd>
+	<dt>
+	  <input type="submit" value="Submit"/>
+	</dt>
+      </dl>
+    </form>
+    <div style="float:left;">
+      <pre> 
+      </pre>
+    </div>
+    <div style="float:left;">
+      <h2>Filters</h2>
+      <table>
+	<tr>
+	  <th style="vertical-align:top;text-align:left;">label</th>
+	  <th style="vertical-align:top;text-align:left;">name</th>
+	  <th style="vertical-align:top;text-align:right;">values</th>
+	</tr>
+	<tr>
+	  <td style="vertical-align:top;text-align:left;"><pre>cat_ssi</pre></td>
+	  <td style="vertical-align:top;text-align:left;">category</td>
+	  <td style="vertical-align:top;text-align:right;">
+	    <pre>
+	      work
+	      author
+	      period
+	    </pre>
+	  </td>
+	</tr>
+	<tr>
+	  <td style="vertical-align:top;text-align:left;" ><pre>type_ssi</pre></td>
+	  <td style="vertical-align:top;text-align:left;" >node type in document</td>
+	  <td style="vertical-align:top;text-align:right;">
+	    <pre>
+	      trunk
+	      leaf
+	    </pre>
+	  </td>
+	</tr>
+    </table>
+    </div>
   </body>
 </html>
