@@ -13,11 +13,12 @@
   <body>
     <h1>ADL text search API demonstration</h1>
 
-    <form style="float:left;" id="form" action="http://index-test-01/solr/adl-core/select/">
+    <div style="float:left;width:47.5%;">
+    <form id="form" action="http://index-test-01/solr/adl-core/select/">
       <dl>
 	<dt>Search for</dt>
 	<dd>
-	  <textarea name="q" cols="50" rows="6">
+	  <textarea id="queryfield" name="q" cols="50" rows="6">
 genre_ssi:play
 and
 subcollection_ssi:texts
@@ -49,16 +50,108 @@ author_name_tesim:jeppe
 	</dt>
       </dl>
     </form>
-    <div style="float:left;">
+    </div>
+    <div style="float:left;width:1%;">
       <pre> 
       </pre>
     </div>
-    <div style="float:left;">
-      <h2>Filters</h2>
+    <div style="float:left;width:47.5%;">
+      <h2>Filter fields</h2>
       <table>
 	<tr>
 	  <th style="vertical-align:top;text-align:left;">label</th>
-	  <th style="vertical-align:top;text-align:left;">name</th>
+	  <th style="vertical-align:top;text-align:left;">description</th>
+	  <th style="vertical-align:top;text-align:right;">values</th>
+	</tr>
+	<tr id="cat_ssi">
+	  <td style="vertical-align:top;text-align:left;"><pre>cat_ssi</pre></td>
+	  <td style="vertical-align:top;text-align:left;">Category of
+	  a text. Use when limiting searches to works, omit
+	  otherwise.</td>
+	  <td style="vertical-align:top;text-align:right;">
+	    <pre>
+	      work
+	    </pre>
+	  </td>
+	</tr>
+	<tr id="type_ssi">
+	  <td style="vertical-align:top;text-align:left;" ><pre>type_ssi</pre></td>
+	  <td style="vertical-align:top;text-align:left;" >Node type
+	  in document. A trunk node can be a whole work, a chapter
+	  etc, whereas a leaf could a paragraph of prose, a stanza of
+	  poetry or a speak in a dialog in a scenic work.</td>
+	  <td style="vertical-align:top;text-align:right;">
+	    <pre>
+	      trunk
+	      leaf
+	    </pre>
+	  </td>
+	</tr>
+
+	<tr id="genre_ssi">
+	  <td style="vertical-align:top;text-align:left;" ><pre>genre_ssi</pre></td>
+	  <td style="vertical-align:top;text-align:left;" >Genre of a
+	  leaf node. Note that this is not the genre of a work, but
+	  the structure of the paragraph level markup.</td>
+	  <td style="vertical-align:top;text-align:right;">
+	    <pre>
+	      prose
+	      poetry
+	      play
+	    </pre>
+	  </td>
+	</tr>
+
+	<tr id="genre_ssi">
+	  <td style="vertical-align:top;text-align:left;" ><pre>subcollection_ssi</pre></td>
+	</tr>
+
+	<tr>
+	  <td colspan="3">
+	    <h2>Relation fields</h2>
+	  </td>
+	</tr>
+
+
+	<tr>
+	  <th style="vertical-align:top;text-align:left;">label</th>
+	  <th style="vertical-align:top;text-align:left;">description</th>
+	  <th style="vertical-align:top;text-align:right;">values</th>
+	</tr>
+	<tr>
+	  <td style="vertical-align:top;text-align:left;"><pre>part_of_ssim</pre></td>
+	  <td style="vertical-align:top;text-align:left;">Array of IDs
+	  of trunk nodes being containers the node at hand. Typically
+	  containing
+	  <ul>
+	    <li>One (or more) work(s) as a parent(s). Works may contain works.</li>
+	    <li>A volume as an ancestor</li>
+	  </ul>
+	  </td>
+	  <td style="vertical-align:top;text-align:right;">
+	    <pre>string</pre>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td style="vertical-align:top;text-align:left;"><pre>position_isi</pre></td>
+	  <td style="vertical-align:top;text-align:left;">The position
+	  of the current node along the sibling axis of the
+	  document. Sorting with respect to this field will guarantee
+	  that the result is presented in document order.</td>
+	  <td style="vertical-align:top;text-align:right;">
+	    <pre>integer</pre>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td colspan="3">
+	    <h2>Search fields</h2>
+	  </td>
+	</tr>
+	<tr>
+	  <th style="vertical-align:top;text-align:left;">label</th>
+	  <th style="vertical-align:top;text-align:left;">description</th>
 	  <th style="vertical-align:top;text-align:right;">values</th>
 	</tr>
 	<tr>
@@ -82,7 +175,29 @@ author_name_tesim:jeppe
 	    </pre>
 	  </td>
 	</tr>
-    </table>
+      </table>
+
+      <h2>Examples</h2>
+
+      <dl>
+	<dt>Find all strophes of poetry containing the words hjerte and smerte (heart and agony)</dt>
+	<dd>
+  	  <pre id="heart_agony">
+type_ssi:leaf
+and
+genre_ssi:poetry
+and
+subcollection_ssi:texts
+and
+author_name_tesim:grundtvig
+and
+text_tesim:hjerte
+and  
+text_tesim:smerte
+	  </pre>
+ <a href="#queryfield" onclick="var content = document.getElementById('heart_agony').innerHtml; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	</dd>
+      </dl>
     </div>
   </body>
 </html>
