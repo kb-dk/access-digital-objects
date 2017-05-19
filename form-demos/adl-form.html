@@ -10,7 +10,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="therootelement">
     <h1>ADL text search API demonstration</h1>
 
     <div style="float:left;width:47.5%;">
@@ -19,11 +19,7 @@
 	<dt>Search for</dt>
 	<dd>
 	  <textarea id="queryfield" name="q" cols="50" rows="6">
-genre_ssi:play
-and
-subcollection_ssi:texts
-and
-author_name_tesim:jeppe
+cat_ssi:work
 	  </textarea>
 	</dd>
 	<dt>result format</dt>
@@ -155,14 +151,11 @@ author_name_tesim:jeppe
 	  <th style="vertical-align:top;text-align:right;">values</th>
 	</tr>
 	<tr>
-	  <td style="vertical-align:top;text-align:left;"><pre>cat_ssi</pre></td>
-	  <td style="vertical-align:top;text-align:left;">category</td>
+	  <td style="vertical-align:top;text-align:left;"><pre>author_name_tesim</pre></td>
+	  <td style="vertical-align:top;text-align:left;"></td>
 	  <td style="vertical-align:top;text-align:right;">
-	    <pre>
-	      work
-	      author
-	      period
-	    </pre>
+	    just plain text
+	    <kbd>author_name_tesim:ludvig&#160;holberg</kbd>
 	  </td>
 	</tr>
 	<tr>
@@ -180,7 +173,28 @@ author_name_tesim:jeppe
       <h2>Examples</h2>
 
       <dl>
-	<dt>Find all strophes of poetry containing the words hjerte and smerte (heart and agony)</dt>
+	<dt>Find all works by Gustaf Munch-Petersen
+	  <a href="#therootelement" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	</dt>
+	<dd>
+	  <pre id="works_by_gustaf_munch_petersen">
+author_name_tesim:munch
+and
+cat_ssi:work
+	  </pre>
+	</dd>
+
+	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#therootelement" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dd>
+	  <pre id="plays_by_jeppe">
+genre_ssi:play
+and
+subcollection_ssi:texts
+and
+author_name_tesim:jeppe
+	  </pre>
+	</dd>
+	<dt>Find all strophes of poetry containing the words hjerte and smerte (heart and agony)  <a href="#therootelement" onclick="var content = document.getElementById('heart_agony').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
   	  <pre id="heart_agony">
 type_ssi:leaf
@@ -195,8 +209,24 @@ text_tesim:hjerte
 and  
 text_tesim:smerte
 	  </pre>
- <a href="#queryfield" onclick="var content = document.getElementById('heart_agony').innerHtml; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
 	</dd>
+
+	<dt>What characters in the plays by Holberg talks about Mester Erich <a href="#therootelement" onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dd>
+	  <pre id="who_talks_about_erich">
+genre_ssi:play
+and
+subcollection_ssi:texts
+and
+text_tesim:mester erich
+and
+author_name_tesim:holberg
+	  </pre>
+
+
+
+	</dd>
+
       </dl>
     </div>
   </body>
