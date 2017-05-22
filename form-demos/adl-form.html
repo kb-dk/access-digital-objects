@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       lang="en">
   <head>
-    <title>ADL text search API demonstration</title>
+    <title>ADL text search API</title>
     <meta http-equiv="Content-Type" 
 	  content="text/html;charset=UTF-8"/>
     <style type="text/css">
@@ -11,41 +11,41 @@
     </style>
   </head>
   <body id="therootelement">
-    <h1>ADL text search API demonstration</h1>
+    <h1>ADL text search API</h1>
 
     <div style="float:left;width:47.5%;">
-    <form id="form" action="http://index-test-01/solr/adl-core/select/">
-      <dl>
-	<dt>Search for</dt>
-	<dd>
-	  <textarea id="queryfield" name="q" cols="50" rows="6">
-cat_ssi:work
-	  </textarea>
-	</dd>
-	<dt>result format</dt>
-	<dd>
-	  <select id="format" name="wt">
-	    <option value="json">json</option>
-	    <option value="xml">xml</option>
-	  </select>
-	</dd>
-	<dt>start record</dt>
-	<dd><input name="start" value="0"/></dd>
-	<dt>start record</dt>
-	<dd><input name="rows" value="10"/></dd>
-	<dt>Query parser</dt>
-	<dd>
-	  <select id="qeryparser" name="defType">
-	    <option value="edismax">edismax</option>
-	    <option value="dismax">dismax</option>
-	  </select>
-	  <input name="indent" type="hidden" value="on"/>
-	</dd>
-	<dt>
-	  <input type="submit" value="Submit"/>
-	</dt>
-      </dl>
-    </form>
+      <form id="form" action="http://index-test-01/solr/adl-core/select/">
+	<dl>
+	  <dt>Search for</dt>
+	  <dd>
+	    <textarea id="queryfield" name="q" cols="50" rows="6">
+	      cat_ssi:work
+	    </textarea>
+	  </dd>
+	  <dt>result format</dt>
+	  <dd>
+	    <select id="format" name="wt">
+	      <option value="json">json</option>
+	      <option value="xml">xml</option>
+	    </select>
+	  </dd>
+	  <dt>start record</dt>
+	  <dd><input name="start" value="0"/></dd>
+	  <dt>start record</dt>
+	  <dd><input name="rows" value="10"/></dd>
+	  <dt>Query parser</dt>
+	  <dd>
+	    <select id="qeryparser" name="defType">
+	      <option value="edismax">edismax</option>
+	      <option value="dismax">dismax</option>
+	    </select>
+	    <input name="indent" type="hidden" value="on"/>
+	  </dd>
+	  <dt>
+	    <input type="submit" value="Submit"/>
+	  </dt>
+	</dl>
+      </form>
     </div>
     <div style="float:left;width:1%;">
       <pre> 
@@ -108,7 +108,7 @@ cat_ssi:work
 	  otherwise.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
-	      work
+work
 	    </pre>
 	  </td>
 	</tr>
@@ -121,8 +121,8 @@ cat_ssi:work
 	  work.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
-	      trunk
-	      leaf
+trunk
+leaf
 	    </pre>
 	  </td>
 	</tr>
@@ -134,9 +134,9 @@ cat_ssi:work
 	  the structure of the paragraph level markup.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
-	      prose
-	      poetry
-	      play
+prose
+poetry
+play
 	    </pre>
 	  </td>
 	</tr>
@@ -200,7 +200,7 @@ texts
 
       <dl>
 	<dt>Find all works
-	  <a href="#therootelement" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	<a href="#therootelement" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
 	</dt>
 	<dd>
 	  <pre id="all_works">
@@ -209,7 +209,7 @@ cat_ssi:work
 	</dd>
 
 	<dt>Find all works by Gustaf Munch-Petersen
-	  <a href="#therootelement" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	<a href="#therootelement" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
 	</dt>
 	<dd>
 	  <pre id="works_by_gustaf_munch_petersen">
@@ -270,11 +270,7 @@ text_tesim:mester erich
 and
 author_name_tesim:holberg
 	  </pre>
-
-
-
 	</dd>
-
       </dl>
     </div>
   </body>
