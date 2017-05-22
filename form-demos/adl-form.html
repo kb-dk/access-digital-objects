@@ -52,8 +52,50 @@ cat_ssi:work
       </pre>
     </div>
     <div style="float:left;width:47.5%;">
-      <h2>Filter fields</h2>
       <table>
+
+	<tr>
+	  <td colspan="3">
+	    <h2>ID and Relations fields</h2>
+	  </td>
+	</tr>
+
+	<tr>
+	  <th style="vertical-align:top;text-align:left;">label</th>
+	  <th style="vertical-align:top;text-align:left;">description</th>
+	  <th style="vertical-align:top;text-align:right;">values</th>
+	</tr>
+
+	<tr>
+	  <td style="vertical-align:top;text-align:left;"><pre>id</pre></td>
+	  <td style="vertical-align:top;text-align:left;">The ID
+	  of the record. It is the TEI file base name, or, unless the
+	  record isn't referring to a volume, constructed as a string
+	  concatenation of that basename with the sequence of xml:ids
+	  identifying the uniq xpath to the content indexed.</td>
+	</tr>
+
+	<tr>
+	  <td style="vertical-align:top;text-align:left;"><pre>part_of_ssim</pre></td>
+	  <td style="vertical-align:top;text-align:left;">Array of IDs
+	  of trunk nodes being containers the node at hand. Typically
+	  containing
+	  <ul>
+	    <li>One (or more) work(s) as a parent(s). Works may contain works.</li>
+	    <li>A volume as an ancestor</li>
+	  </ul>
+	  </td>
+	  <td style="vertical-align:top;text-align:right;">
+	    <pre>string</pre>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td colspan="3">
+	    <h2>Filter fields</h2>
+	  </td>
+	</tr>
+
 	<tr>
 	  <th style="vertical-align:top;text-align:left;">label</th>
 	  <th style="vertical-align:top;text-align:left;">description</th>
@@ -102,32 +144,6 @@ cat_ssi:work
 	  <td style="vertical-align:top;text-align:left;" ><pre>subcollection_ssi</pre></td>
 	</tr>
 
-	<tr>
-	  <td colspan="3">
-	    <h2>Relation fields</h2>
-	  </td>
-	</tr>
-
-
-	<tr>
-	  <th style="vertical-align:top;text-align:left;">label</th>
-	  <th style="vertical-align:top;text-align:left;">description</th>
-	  <th style="vertical-align:top;text-align:right;">values</th>
-	</tr>
-	<tr>
-	  <td style="vertical-align:top;text-align:left;"><pre>part_of_ssim</pre></td>
-	  <td style="vertical-align:top;text-align:left;">Array of IDs
-	  of trunk nodes being containers the node at hand. Typically
-	  containing
-	  <ul>
-	    <li>One (or more) work(s) as a parent(s). Works may contain works.</li>
-	    <li>A volume as an ancestor</li>
-	  </ul>
-	  </td>
-	  <td style="vertical-align:top;text-align:right;">
-	    <pre>string</pre>
-	  </td>
-	</tr>
 
 	<tr>
 	  <td style="vertical-align:top;text-align:left;"><pre>position_isi</pre></td>
@@ -145,34 +161,44 @@ cat_ssi:work
 	    <h2>Search fields</h2>
 	  </td>
 	</tr>
+
 	<tr>
 	  <th style="vertical-align:top;text-align:left;">label</th>
 	  <th style="vertical-align:top;text-align:left;">description</th>
 	  <th style="vertical-align:top;text-align:right;">values</th>
 	</tr>
 	<tr>
-	  <td style="vertical-align:top;text-align:left;"><pre>author_name_tesim</pre></td>
-	  <td style="vertical-align:top;text-align:left;"></td>
-	  <td style="vertical-align:top;text-align:right;">
-	    just plain text
-	    <kbd>author_name_tesim:ludvig&#160;holberg</kbd>
-	  </td>
+	  <td style="vertical-align:top;text-align:left;"><pre>work_title_tsim</pre></td>
+	  <td rowspan="3" style="vertical-align:top;text-align:left;">Misc. metadata
+	  fields. There are more of them, but they should be self
+	  explanatory.</td>
+	  <td rowspan="3" style="vertical-align:top;text-align:right;">just plain text</td>
 	</tr>
 	<tr>
-	  <td style="vertical-align:top;text-align:left;" ><pre>type_ssi</pre></td>
-	  <td style="vertical-align:top;text-align:left;" >node type in document</td>
-	  <td style="vertical-align:top;text-align:right;">
-	    <pre>
-	      trunk
-	      leaf
-	    </pre>
-	  </td>
+	  <td style="vertical-align:top;text-align:left;"><pre>volume_title_tsim</pre></td>
+	</tr>
+	<tr>
+	  <td style="vertical-align:top;text-align:left;"><pre>author_name_tesim</pre></td>
+	</tr>
+	<tr>
+	  <td style="vertical-align:top;text-align:left;" ><pre>text_tesim</pre> </td>
+	  <td style="vertical-align:top;text-align:left;">The text</td>
+	  <td style="vertical-align:top;text-align:right;">just plain text</td>
 	</tr>
       </table>
 
       <h2>Examples</h2>
 
       <dl>
+	<dt>Find all works
+	  <a href="#therootelement" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	</dt>
+	<dd>
+	  <pre id="all_works">
+cat_ssi:work
+	  </pre>
+	</dd>
+
 	<dt>Find all works by Gustaf Munch-Petersen
 	  <a href="#therootelement" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
 	</dt>
@@ -184,6 +210,7 @@ cat_ssi:work
 	  </pre>
 	</dd>
 
+
 	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#therootelement" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="plays_by_jeppe">
@@ -194,6 +221,18 @@ and
 author_name_tesim:jeppe
 	  </pre>
 	</dd>
+
+	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#therootelement" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dd>
+	  <pre id="spoken_by_jeppe">
+genre_ssi:play
+and
+subcollection_ssi:texts
+and
+speaker_tesim:jeppe
+	  </pre>
+	</dd>
+
 	<dt>Find all strophes of poetry containing the words hjerte and smerte (heart and agony)  <a href="#therootelement" onclick="var content = document.getElementById('heart_agony').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
   	  <pre id="heart_agony">
