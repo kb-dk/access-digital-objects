@@ -109,6 +109,31 @@ is OCR errors.
 
 ## Text search
 
+The search API is described in detail in a separate documents
+
+* We use [SOLR for searching](https://cwiki.apache.org/confluence/display/solr/Searching)
+* SOLR has its own [Common Query Parameters](https://cwiki.apache.org/confluence/display/solr/Common+Query+Parameters)
+* We provide a [document about what search fields there are and how to use them](http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/adl-form.html).
+
+A search can be returned in json or xml format. Here is an example, where we search  for works
+
+* which title contain Jerusalem
+* that are writen by Gustaf Munch-Petersen
+
+SOLR returns [JSON](http://public-index.kb.dk/solr/adl-core/select/?q=author_name_tesim%3AGustaf+Munch-Petersen%0D%0Aand%0D%0Acat_ssi%3Awork%0D%0Aand%0D%0Awork_title_tesim%3AJerusalem&wt=json&start=0&rows=10&defType=edismax&indent=on) or [XML](http://public-index.kb.dk/solr/adl-core/select/?q=author_name_tesim%3AGustaf+Munch-Petersen%0D%0Aand%0D%0Acat_ssi%3Awork%0D%0Aand%0D%0Awork_title_tesim%3AJerusalem&wt=xml&start=0&rows=10&defType=edismax&indent=on) and the returned is the same.
+
+The simplest way to retrieve the data is to look for the url_ssi. In the example linked to it contains the value "texts/munp1.xml#workid72997", which is the concatenation of three variables
+
+* collection (c) = texts
+* document (doc) = munp1.xml
+* id = workid72997
+
+You can now construct the retrieval URI using the three:
+
+[http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=render](http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=render)
+
+More on what you can do with the text using the parameters below.
+
 ## Retrieval APIs for our texts
 
 There are several text retrieval scripts in the Snippet Server.
