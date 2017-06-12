@@ -34,10 +34,11 @@ varous licenses, but the most common one is
 
 ## Caveats
 
-The APIs described have been used by us for many years. We, their
-developers, created each of them for getting a job done. They are
-usually well tested and works well, but they are neither polished, nor are
-there helpful error messages etc.
+The APIs described have been used successfully in projects (in some
+cases for many years). We, their users & developers, created each of
+them for getting a job done. They are usually well tested and works
+well, but they are neither polished, nor are there helpful error
+messages etc.
 
 The formats we are delivering are to a large extent based on
 standards. That means that in many places we refer to external

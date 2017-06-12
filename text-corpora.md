@@ -16,8 +16,7 @@ APIs are useful within digital humanities and literary computing.
 The text resources are
 
 * [Archive for Danish Literature, ADL](http://www.adl.dk/). The APIs
-  described in this document apply to this data set, but the new
-  service are not even released yet.
+  described in this document apply to this data set. The [literary texts used are available](https://github.com/Det-Kongelige-Bibliotek/public-adl-text-sources)
 * [Danmark's Breve](http://danmarksbreve.kb.dk/) use the basically the
   same APIs, but we have not decided to release the API on this data
   set.
@@ -41,25 +40,6 @@ snippets to the front end or other components using it.
 In order to be useful, the you need both search and retrieval APIs.
 Then you may search and discover what works and snippets there are,
 and retrieve and link to them.
-
-There has been previous discussions on what such APIs and
-infrastructures in the humanities should be doing. I'll give three
-references, which I confess as being more or less embarrassing since
-two of them are my own, and all of them very old and I suppose (and hope) that
-they are obsoleted by other new contributions.
-
-I found [John Unsworth's _Scholarly Primitives: what methods do
-humanities researchers have in common, and how might our tools reflect
-this?_](http://people.virginia.edu/~jmu2m//Kings.5-00/primitives.html)
-particularly interesting, which inspired me to further thinking on
-[_Digital Humanities
-Infrastructures_](http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml).
-Some ye olde ideas on text search and retrieval [_S:t Laurentius
-Digital Manuscript Library: An excursion along the border between
-resource discovery and resource
-description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf)
-about [Laurentius](http://laurentius.ub.lu.se/) which to my surprise
-still running.
 
 ## Text encoding
 
