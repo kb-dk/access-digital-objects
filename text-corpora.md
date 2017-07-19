@@ -48,7 +48,6 @@ data and metadata available are in XML markup according Text Encoding
 Initiative, TEI,
 [Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
 
-
 ## Anchors, searchability and retrievability
 
 The search system (which you cannot use just yet, see above), creates
