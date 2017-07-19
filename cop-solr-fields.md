@@ -29,12 +29,15 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 | rights_tsim |  DC translation of the MODS | Usually link to the appropriate CC license | 
 | coverage_tsim |  DC translation of the MODS | Can be place names, or lat log for aerial photography |
 | dcterms_spatial |  DC translation of the MODS | Can be place names, or lat log for aerial photography |
-| subject_tsim |  DC translation of the MODS |
+| subject_tesim, subject_tdsim, subject_tsim |  DC translation of the MODS |
 | pub_dat_tsim | | Buggy |
 | readable_dat_string_tsim | | Buggy |
-| local_id_ssi, local_id_fngsi | image URI | ID containing image file name. Use for connecting image to physical instance | 
+| local_id_ssi, local_id_fngsi | image URI | ID containing image file name. Use for connecting image to physical instance |
+| shelf_mark_tdsim, shelf_mark_tesim | | How to find the physical instance |
 | subject_topic_id_ssim | /md:mods/md:extension/h:div/h:a/@h:href | The list of IDs of the categories a given resource belong to |
 | subject_topic_facet_tesim, subject_topic_facet_tdsim | /md:mods/md:extension/h:div/h:a | The list of names of the categories a given resource belong to. The categories are either in Danish (tdsim) or English (tesim) |
+| mods_ts, processed_mods_ts || original XML blobs. processed_mods_ts is the complete one with some keywords and descriptions from external databases |
+| content_metadata_image_iiif_info_ssm || An array with URIs for images of all pages in a multipage document. See [Image delivery](image-delivery.md#constructing-iiif-uris)  |
 
  
 
