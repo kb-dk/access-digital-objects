@@ -18,9 +18,9 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 | cataloging_language_ssi | /md:mods/md:recordInfo/md:languageOfCataloging/md:languageTerm | 'da' or 'en' | default language for strings in the record ||
 | full_title_tsim | /md:mods/md:titleInfo/md:title || All titles concatenated |
 | title_tesim, title_tdsim, title_tsim | /md:mods/md:titleInfo/md:title || Lists of all titles in English (tesim), Danish (tdsim) or other languages (tsim), respectively | Isn't used in any clever way |
-| author_tsim, author_nasim, creator_tsim, creator_nasim, creator_tsi | ```/md:mods/md:name[md:role/md:roleTerm[@type='text']='creator' or
-md:role/md:roleTerm[@type='code']='cre' or
-md:role/md:roleTerm[@type='code']='aut']```  || author and creator are synonymous | nasim is **untokenized** and tsim **tokenized** text. The tsi fields contain the **first** instance of the field in the MODS record |
+| author_tsim, author_nasim, creator_tsim, creator_nasim, creator_tsi | `/md:mods/md:name[md:role/md:roleTerm[@type='text']='creator' or `
+| md:role/md:roleTerm[@type='code']='cre' or `|
+| md:role/md:roleTerm[@type='code']='aut']`  || author and creator are synonymous | nasim is **untokenized** and tsim **tokenized** text. The tsi fields contain the **first** instance of the field in the MODS record |
 | contributor_tesim, contributor_tdsim, contributor_tsim, contributor_tsi |  DC translation of the MODS name roles||| the tsi fields contain the **first** instance of the field in the MODS record |
 | publisher_tesim, publisher_tdsim, publisher_tsim, publisher_tsi |  DC translation of the MODS  name roles||| the tsi fields contain the **first** instance of the field in the MODS record |
 | medium_ssi | Record ID | images, letters, maps, manus, pamphlets, books, editions, categories |
