@@ -16,9 +16,7 @@ The source, when given, is the xpath to where it is stored in the MODS
 | cataloging_language_ssi | /md:mods/md:recordInfo/md:languageOfCataloging/md:languageTerm | 'da' or 'en' | default language for strings in the record ||
 | full_title_tsim | /md:mods/md:titleInfo/md:title || All titles concatenated |
 | title_tesim, title_tdsim, title_tsim | /md:mods/md:titleInfo/md:title | Lists of all titles in English (tesim), Danish (tdsim) or other languages (tsim) | Isn't used in any clever way |
-| author_tsim, author_nasim, creator_tsim, creator_nasim | /md:mods/md:name[md:role/md:roleTerm[@type='text']='creator' or 
-md:role/md:roleTerm[@type='code']='cre' or
-md:role/md:roleTerm[@type='code']='aut']  |
+| author_tsim, author_nasim, creator_tsim, creator_nasim | /md:mods/md:name[md:role/md:roleTerm[@type='text']='creator' or md:role/md:roleTerm[@type='code']='cre' or md:role/md:roleTerm[@type='code']='aut']  |
 
 
 
