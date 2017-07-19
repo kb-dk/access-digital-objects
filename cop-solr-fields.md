@@ -10,8 +10,10 @@ The index contains
 
 The source, when given, is the xpath to where it is stored in the MODS
 
-| field(s) | source | semantics | purpose |
-|:---------|:-------|:----------|:--------|
-| id | /md:mods/md:recordInfo/md:recordIdentifier |||
+| field(s) | source | value examples | semantics | purpose |
+|:---------|:-------|:----------|:--------|:--------|
+| id | /md:mods/md:recordInfo/md:recordIdentifier |
+| cataloging_language_ssi | /md:mods/md:recordInfo/md:languageOfCataloging/md:languageTerm | 'da' or 'en' |
+
 
 
