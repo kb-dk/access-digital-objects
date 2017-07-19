@@ -26,7 +26,11 @@ The source, when given, is the xpath to where it is stored in the MODS
 | language_tsim |  DC translation of the MODS | Usually a RFC 4646 language tag |
 | rights_tsim |  DC translation of the MODS | Usually link to the appropriate CC license | 
 | coverage_tsim |  DC translation of the MODS | Can be place names, or lat log for aerial photography |
+| dcterms_spatial |  DC translation of the MODS | Can be place names, or lat log for aerial photography |
 | subject_tsim |  DC translation of the MODS |
+| pub_dat_tsim | | Buggy |
+| readable_dat_string_tsim | | Buggy |
+| local_id_ssi, local_id_fngsi | image URI | ID containing image file name. Use for connecting image to physical instance | 
 
  
 
