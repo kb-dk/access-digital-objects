@@ -8,7 +8,9 @@ The index contains
 2. fairly course grained fields having  [Dublin Core](http://dublincore.org/documents/dces/) or [ESE](http://pro.europeana.eu/page/ese-documentation) semantics
 3. fine grained fields for access to some data in the MODS
 
-The source, when given, is the xpath to where it is stored in the MODS
+The source, when given, is the xpath to where it is stored in the
+MODS. In the xpaths we occasionally refer to xml namespace for mods
+(md), dc and xhtml (h).
 
 | field(s) | source | value examples | semantics | purpose |
 |:---------|:-------|:----------|:--------|:--------|
@@ -31,6 +33,8 @@ The source, when given, is the xpath to where it is stored in the MODS
 | pub_dat_tsim | | Buggy |
 | readable_dat_string_tsim | | Buggy |
 | local_id_ssi, local_id_fngsi | image URI | ID containing image file name. Use for connecting image to physical instance | 
+| subject_topic_id_ssim | /md:mods/md:extension/h:div/h:a/@h:href | The list of IDs of the categories a given resource belong to |
+| subject_topic_facet_tesim, subject_topic_facet_tdsim | /md:mods/md:extension/h:div/h:a | The list of names of the categories a given resource belong to. The categories are either in Danish (tdsim) or English (tesim) |
 
  
 
