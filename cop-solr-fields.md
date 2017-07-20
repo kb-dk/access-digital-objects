@@ -8,6 +8,8 @@ The index contains
 2. fairly course grained fields having  [Dublin Core](http://dublincore.org/documents/dces/), [ESE](http://pro.europeana.eu/page/ese-documentation) semantics or TEI semantics
 3. fine grained fields for access to some data in the MODS
 
+__NB:__ The fields here are also available for use through [COP web services](cop-backend.md#query-parameters-in-cop)
+
 The source, when given, is the xpath to where it is stored in the
 MODS. In the xpaths we occasionally refer to xml namespace for mods
 (md), dc and xhtml (h).

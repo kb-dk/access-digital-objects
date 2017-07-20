@@ -32,6 +32,8 @@ are embedded in the rss.
 
 ## Open Search
 
+__NB:__ As an alternative way of searching, it is now possible to use our public [SOLR index for searching](cop-solr-fields.md).
+
 Clients communicates with the server with Amazon A9.com [Open
 search](http://www.opensearch.org/Home) protocol.
 
