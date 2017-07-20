@@ -59,13 +59,13 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 | cobject_correctness_isi || Indicator of whether crowd sourcing is pending (0) or completed (1) |
 | cobject_interestingness_isi || An integer [0.. 10] indicating how much interest or effort the object has generated among users |
 | cobject_last_modified_lsi || Long integer. Unix date |
-| area_area_tsim | Encoded as a hierarchicalGeographic subject in MODS. See below. | Usually a comma seperated list of places from more general to more specific like "Danmark, Sjælland, Arnøje" which together specifies a place. |
-| area_cadastre_tsim || matrikelnummer in Denmark |
-| area_parish_tsim || Sogn in Denmark |
-| area_building_tsim || 
-| citySection_zipcode_tsim |
-| citySection_housenumber_tsim |
-| citySection_street_tsim |
+| area_area_tsim | Encoded as a hierarchicalGeographic subject in MODS. See Appendix below. | Usually a comma seperated list of places from more general to more specific like "Danmark, Sjælland, Arnøje" which together specifies a place. |
+| area_cadastre_tsim | See Appendix below | matrikelnummer in Denmark |
+| area_parish_tsim | See Appendix below | Sogn in Denmark |
+| area_building_tsim | See Appendix below | Overlaps with cobject_building_ssim above, but seems to be more precise |
+| citySection_zipcode_tsim | See Appendix below | Postnummer |
+| citySection_housenumber_tsim | See Appendix below |
+| citySection_street_tsim | See Appendix below |
 
 
 
