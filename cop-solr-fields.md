@@ -5,7 +5,7 @@ It is built based on a much more fine grained description in MODS.
 The index contains 
 
 1. fields required by SOLR and related functions
-2. fairly course grained fields having  [Dublin Core](http://dublincore.org/documents/dces/) or [ESE](http://pro.europeana.eu/page/ese-documentation) semantics
+2. fairly course grained fields having  [Dublin Core](http://dublincore.org/documents/dces/), [ESE](http://pro.europeana.eu/page/ese-documentation) semantics or TEI semantics
 3. fine grained fields for access to some data in the MODS
 
 The source, when given, is the xpath to where it is stored in the
@@ -39,9 +39,27 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 | mods_ts, processed_mods_ts || original XML blobs. processed_mods_ts is the complete one with some keywords and descriptions from external databases |
 | content_metadata_image_iiif_info_ssm || An array with URIs for images of all pages in a multipage document. See [Image delivery](image-delivery.md#constructing-iiif-uris)  |
 
- 
+| cobject_not_before_dtsi | /md:mods/md:originInfo/md:dateCreated/@t:notBefore | [Using TEI date model](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) |
+| cobject_not_after_dtsi | /md:mods/md:originInfo/md:dateCreated/@t:notAfter | [Using TEI date model](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) |
+| cobject_edition_ssi | assigned during ingest |
+| cobject_title_ssi | extracted from MODS during ingest |
+| cobject_id_ssi || synonym to id |
+| cobject_bookmark_ssi || currently not used|
+| cobject_random_number_dbsi | generated on database ingest | used for various sorting and selection tasks |
 
- 
+| cobject_building | 
+| cobject_location | 
+| cobject_correctness |
+| cobject_interestingness |
+| cobject_person |
+| cobject_last_modified |
+| area_area |
+| area_cadastre |
+| area_parish |
+| area_building |
+| citySection_zipcode |
+| citySection_housenumber |
+| citySection_street |
 
-
-
+"luftfo_type_ssim":["Skråfoto"],
+        "luftfo_type_tdsim":["Skråfoto"],
