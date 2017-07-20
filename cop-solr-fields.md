@@ -16,7 +16,7 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 
 | field(s) | source | Comments |
 |:---------|:-------|:---------|
-| id | /md:mods/md:recordInfo/md:recordIdentifier |
+| id || as everywhere else ;) |
 | medium_ssi | Record ID | For resources images, letters, maps, manus, pamphlets, books. Then medium_ssi can be editions and categories for whole collections and subject areas, respectively |
 
 medium_ssi is categories, editions we can retrieve information about topics and collections respectively;
@@ -24,8 +24,10 @@ the remaining medium_ssi values return to actual resources.
 
 ## Edition fields 
 
-| id || /pamphlets/dasmaa/2012/jul/smaatryk
-| medium_ssi || Always 'editions' for editions :) |
+| field(s) | source | Comments |
+|:---------|:-------|:---------|
+| id || as everywhere else ;) |
+| medium_ssi || Always 'editions' for editions, what else could it be? |
 | name_ssi, name_en_ssi || Name of the edition in Danish and English respectively |
 | top_cat_ssi || Category ID of the subject being the root of the editions subject tree |  
 | description_tdsim, description_tesim || Sequence of paragraphs descripting the resource in Danish and English, respectively | 
@@ -37,8 +39,8 @@ the remaining medium_ssi values return to actual resources.
 
 | field(s) | source | Comments |
 |:---------|:-------|:---------|
-| id || as everywhere else :) |
-| medium_ssi || always 'categories' for subject matter
+| id | /md:mods/md:recordInfo/md:recordIdentifier | The record ID as given in the MODS record |
+| medium_ssi || Always 'categories' for subject matter. Surprised? |
 | parent_ssi || id of parent node in the tree
 | node_tdsi || Danish name of the node
 | node_tesi || English name of the node
