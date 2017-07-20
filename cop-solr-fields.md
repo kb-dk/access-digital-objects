@@ -47,22 +47,41 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 | cobject_id_ssi || synonym to id |
 | cobject_person_tsim, cobject_person_ssim | /md:mods/md:name[@type='personal']/md:namePart | Name of persons regardless of their relation to the work |
 | cobject_location_tsi, cobject_location_tsim, cobject_location_ssim | /md:mods/md:subject/md:geographic/md:location | Place as a subject |
+| cobject_random_number_dbsi | generated on database ingest | used for various sorting and selection tasks |
 
 ## Crowd sourced fields in Aerial photography
 
 | field(s) | source | Comments |
 |:---------|:-------|:---------|
-| cobject_bookmark_ssi || currently not used|
-| cobject_random_number_dbsi | generated on database ingest | used for various sorting and selection tasks |
-| cobject_building | 
-| cobject_correctness |
-| cobject_interestingness |
-| cobject_last_modified |
-| area_area |
-| area_cadastre |
-| area_parish |
-| area_building |
-| citySection_zipcode |
-| citySection_housenumber |
-| citySection_street |
 | luftfo_type_ssim, luftfo_type_tdsim |
+| cobject_bookmark_ssi || currently not used|
+| cobject_building_ssim, cobject_building_tsim || Name of a building |
+| cobject_correctness_isi || Indicator of whether crowd sourcing is pending (0) or completed (1) |
+| cobject_interestingness_isi || An integer [0.. 10] indicating how much interest or effort the object has generated among users |
+| cobject_last_modified_lsi || Long integer. Unix date |
+| area_area_tsim | Encoded as a hierarchicalGeographic subject in MODS. See below. | Usually a comma seperated list of places from more general to more specific like "Danmark, Sjælland, Arnøje" which together specifies a place. |
+| area_cadastre_tsim || matrikelnummer in Denmark |
+| area_parish_tsim || Sogn in Denmark |
+| area_building_tsim || 
+| citySection_zipcode_tsim |
+| citySection_housenumber_tsim |
+| citySection_street_tsim |
+
+
+
+
+### Appendix: Hierarchical geographic subject
+```
+    <md:subject xml:lang="da">
+      <md:hierarchicalGeographic>
+        <md:area areaType="area" displayLabel="lokalitet">Havrebjerg</md:area>
+        <md:area areaType="cadastre" displayLabel="matrikelnummer">34</md:area>
+        <md:area areaType="parish" displayLabel="sogn">Havrebjerg</md:area>
+        <md:area areaType="building" displayLabel="Bygningsnavn">Havrebjerg Brugsforening</md:area>
+        <md:citySection citySectionType="zipcode" displayLabel="postnummer">4200</md:citySection>
+        <md:citySection citySectionType="housenumber" displayLabel="husnummer">69</md:citySection>
+        <md:citySection citySectionType="street" displayLabel="vejnavn">Krænkerupvej</md:citySection>
+        <md:city>Slagelse</md:city>
+      </md:hierarchicalGeographic>
+    </md:subject>
+```
