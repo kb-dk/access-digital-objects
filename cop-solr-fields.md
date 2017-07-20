@@ -12,6 +12,8 @@ The source, when given, is the xpath to where it is stored in the
 MODS. In the xpaths we occasionally refer to xml namespace for mods
 (md), dc and xhtml (h).
 
+## Common fields for COP and Aerial photography
+
 | field(s) | source | Comments |
 |:---------|:-------|:---------|
 | id | /md:mods/md:recordInfo/md:recordIdentifier |
@@ -38,20 +40,23 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 | subject_topic_facet_tesim, subject_topic_facet_tdsim | /md:mods/md:extension/h:div/h:a | The list of names of the categories a given resource belong to. The categories are either in Danish (tdsim) or English (tesim) |
 | mods_ts, processed_mods_ts || original XML blobs. processed_mods_ts is the complete one with some keywords and descriptions from external databases |
 | content_metadata_image_iiif_info_ssm || An array with URIs for images of all pages in a multipage document. See [Image delivery](image-delivery.md#constructing-iiif-uris)  |
-
 | cobject_not_before_dtsi | /md:mods/md:originInfo/md:dateCreated/@t:notBefore | [Using TEI date model](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) |
 | cobject_not_after_dtsi | /md:mods/md:originInfo/md:dateCreated/@t:notAfter | [Using TEI date model](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) |
 | cobject_edition_ssi | assigned during ingest |
 | cobject_title_ssi | extracted from MODS during ingest |
 | cobject_id_ssi || synonym to id |
+| cobject_person_tsim, cobject_person_ssim | /md:mods/md:name[@type='personal']/md:namePart | Name of persons regardless of their relation to the work |
+| cobject_location_tsi, cobject_location_tsim, cobject_location_ssim | /md:mods/md:subject/md:geographic/md:location | Place as a subject |
+
+## Crowd sourced fields in Aerial photography
+
+| field(s) | source | Comments |
+|:---------|:-------|:---------|
 | cobject_bookmark_ssi || currently not used|
 | cobject_random_number_dbsi | generated on database ingest | used for various sorting and selection tasks |
-
 | cobject_building | 
-| cobject_location | 
 | cobject_correctness |
 | cobject_interestingness |
-| cobject_person |
 | cobject_last_modified |
 | area_area |
 | area_cadastre |
@@ -60,6 +65,4 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 | citySection_zipcode |
 | citySection_housenumber |
 | citySection_street |
-
-"luftfo_type_ssim":["Skråfoto"],
-        "luftfo_type_tdsim":["Skråfoto"],
+| luftfo_type_ssim, luftfo_type_tdsim |
