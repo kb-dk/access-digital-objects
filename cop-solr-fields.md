@@ -12,18 +12,48 @@ The source, when given, is the xpath to where it is stored in the
 MODS. In the xpaths we occasionally refer to xml namespace for mods
 (md), dc and xhtml (h).
 
-## Common fields for COP and Aerial photography
+## Global fields 
 
 | field(s) | source | Comments |
 |:---------|:-------|:---------|
 | id | /md:mods/md:recordInfo/md:recordIdentifier |
+| medium_ssi | Record ID | For resources images, letters, maps, manus, pamphlets, books. Then medium_ssi can be editions and categories for whole collections and subject areas, respectively |
+
+medium_ssi is categories, editions we can retrieve information about topics and collections respectively;
+the remaining medium_ssi values return to actual resources.
+
+## Edition fields 
+
+| id || /pamphlets/dasmaa/2012/jul/smaatryk
+| medium_ssi || Always 'editions' for editions :) |
+| name_ssi, name_en_ssi || Name of the edition in Danish and English respectively |
+| top_cat_ssi || Category ID of the subject being the root of the editions subject tree |  
+| description_tdsim, description_tesim || Sequence of paragraphs descripting the resource in Danish and English, respectively | 
+| collection_da_ssi, collection_en_ssi || The name of the library collection from where the edition emanates |
+| department_da_ssi, department_en_ssi || The the English and Danish names of the organisational unit whithin the library responsible for that collection |
+| contact_email_ssi || Contact information for that unit | 
+
+## Category fields 
+
+| field(s) | source | Comments |
+|:---------|:-------|:---------|
+| id || as everywhere else :) |
+| medium_ssi || always 'categories' for subject matter
+| parent_ssi || id of parent node in the tree
+| node_tdsi || Danish name of the node
+| node_tesi || English name of the node
+| bread_crumb_ssim || array of category ids starting from the parent_ssi, through to the id of the edition |
+
+## Fields for COP and Aerial photography resources
+
+| field(s) | source | Comments |
+|:---------|:-------|:---------|
 | cataloging_language_ssi | /md:mods/md:recordInfo/md:languageOfCataloging/md:languageTerm | 'da' or 'en', i.e., the  default language for strings in the record |
 | full_title_tsim | /md:mods/md:titleInfo/md:title | All titles concatenated |
 | title_tesim, title_tdsim, title_tsim | /md:mods/md:titleInfo/md:title | Lists of all titles in English (tesim), Danish (tdsim) or other languages (tsim), respectively. Isn't used in any clever way |
 | author_tsim, author_nasim, creator_tsim, creator_nasim, creator_tsi | /md:mods/md:name[md:role/md:roleTerm[@type='text']='creator' or <br> md:role/md:roleTerm[@type='code']='cre' or <br> md:role/md:roleTerm[@type='code']='aut']  | Author and creator are synonymous. nasim is **untokenized** and tsim **tokenized** text. The tsi fields contain the **first** instance of the field in the MODS record |
 | contributor_tesim, contributor_tdsim, contributor_tsim, contributor_tsi |  DC translation of the MODS name roles| The tsi fields contain the **first** instance of the field in the MODS record |
 | publisher_tesim, publisher_tdsim, publisher_tsim, publisher_tsi |  DC translation of the MODS  name roles| the tsi fields contain the **first** instance of the field in the MODS record |
-| medium_ssi | Record ID | images, letters, maps, manus, pamphlets, books, editions, categories |
 | description_tesim, description_tdsim, description_tsim  | DC translation of the MODS |
 | format_tesim, format_tdsim, format_tsim | DC translation of the MODS |
 | type_tesim, type_tdsim, type_tsim | DC translation of the MODS |
@@ -49,7 +79,7 @@ MODS. In the xpaths we occasionally refer to xml namespace for mods
 | cobject_location_tsi, cobject_location_tsim, cobject_location_ssim | /md:mods/md:subject/md:geographic/md:location | Place as a subject |
 | cobject_random_number_dbsi | generated on database ingest | used for various sorting and selection tasks |
 
-## Crowd sourced fields in Aerial photography
+### Crowd sourced fields in Aerial photography
 
 | field(s) | source | Comments |
 |:---------|:-------|:---------|
