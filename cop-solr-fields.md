@@ -60,6 +60,7 @@ the remaining medium_ssi values return to actual resources.
 | publisher_tesim, publisher_tdsim, publisher_tsim, publisher_tsi, publisher_nasim | MODS  | Currently not used because of the nature of the collections in the service |
 | description_tesim, description_tdsim, description_tsim  | DC translation of the MODS descriptions |
 | format_tesim, format_tdsim, format_tsim | DC translation of the MODS |
+| read_direction_ssi || LTR or RTL, used for describing whether a text is left to right or the other way around. RTL means that pages should be browsed from RTL | 
 | type_tesim, type_tdsim, type_tsim | DC translation of the MODS | **messy** |
 | dc_type_tesim, dc_type_tdsim, dc_type_tsim | Translated directly from MODS | **messy** |
 | language_tsim |  DC translation of the MODS | Usually a RFC 4646 language tag |
@@ -74,6 +75,7 @@ the remaining medium_ssi values return to actual resources.
 | subject_topic_id_ssim | /md:mods/md:extension/h:div/h:a/@h:href | The list of IDs of the categories a given resource belong to |
 | subject_topic_facet_tesim, subject_topic_facet_tdsim | /md:mods/md:extension/h:div/h:a | The list of names of the categories a given resource belong to. The categories are either in Danish (tdsim) or English (tesim) |
 | mods_ts, processed_mods_ts || original XML blobs. processed_mods_ts is the complete one with some keywords and descriptions from external databases |
+| mods_uri_tsim || The URI of the MODS record used for generating the SOLR one |
 | thumbnail_square_url_ssm || An array of one square image URI for the resource |
 | thumbnail_url_ssm || An array of one image URI for the resource |
 | content_metadata_image_iiif_info_ssm || An array with URIs for images of all pages in a multipage document. See [Image delivery](image-delivery.md#constructing-iiif-uris)  |
@@ -107,9 +109,6 @@ the remaining medium_ssi values return to actual resources.
 | citySection_zipcode_tsim | See Appendix below | Postnummer |
 | citySection_housenumber_tsim | See Appendix below |
 | citySection_street_tsim | See Appendix below |
-
-
-
 
 ### Appendix: Hierarchical geographic subject
 ```
