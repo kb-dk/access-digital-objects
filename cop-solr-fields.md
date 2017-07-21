@@ -85,6 +85,10 @@ the remaining medium_ssi values return to actual resources.
 | cobject_location_tsi, cobject_location_tsim, cobject_location_ssim | /md:mods/md:subject/md:geographic/md:location | Place as a subject |
 | cobject_random_number_dbsi | generated on database ingest | used for various sorting and selection tasks |
 
+### Fields added for Spotlight exhibitions
+
+| spotlight_exhibition_ssi || The name the exhibition in which the object appear. |
+
 ### Crowd sourced fields in Aerial photography
 
 | field(s) | source | Comments |
