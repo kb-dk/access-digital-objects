@@ -8,7 +8,7 @@ The index contains
 2. fairly course grained fields having  [Dublin Core](http://dublincore.org/documents/dces/), [ESE](http://pro.europeana.eu/page/ese-documentation) semantics or TEI semantics
 3. fine grained fields for access to some data in the MODS
 
-__NB:__ The fields here are also available for use through [COP web services](cop-backend.md#query-parameters-in-cop)
+__NB:__ The fields here are also available for use through [COP web services](cop-backend.md)
 
 The source, when given, is the xpath to where it is stored in the
 MODS. In the xpaths we occasionally refer to xml namespace for mods
@@ -56,15 +56,15 @@ the remaining medium_ssi values return to actual resources.
 | full_title_tsim | /md:mods/md:titleInfo/md:title | All titles concatenated |
 | title_tesim, title_tdsim, title_tsim | /md:mods/md:titleInfo/md:title | Lists of all titles in English (tesim), Danish (tdsim) or other languages (tsim), respectively. Isn't used in any clever way |
 | author_tsim, author_nasim, creator_tsim, creator_nasim, creator_tsi | /md:mods/md:name[md:role/md:roleTerm[@type='text']='creator' or <br> md:role/md:roleTerm[@type='code']='cre' or <br> md:role/md:roleTerm[@type='code']='aut']  | Author and creator are synonymous. nasim is **untokenized** and tsim **tokenized** text. The tsi fields contain the **first** instance of the field in the MODS record |
-| contributor_tesim, contributor_tdsim, contributor_tsim, contributor_tsi |  DC translation of the MODS name roles| The tsi fields contain the **first** instance of the field in the MODS record |
-| publisher_tesim, publisher_tdsim, publisher_tsim, publisher_tsi |  DC translation of the MODS  name roles| the tsi fields contain the **first** instance of the field in the MODS record |
+| contributor_tesim, contributor_tdsim, contributor_tsim, contributor_tsi, contributor_nasim |  DC translation of the MODS name roles| The tsi fields contain the **first** instance of the field in the MODS record |
+| publisher_tesim, publisher_tdsim, publisher_tsim, publisher_tsi, publisher_nasim | MODS  | Currently not used because of the nature of the collections in the service |
 | description_tesim, description_tdsim, description_tsim  | DC translation of the MODS |
 | format_tesim, format_tdsim, format_tsim | DC translation of the MODS |
 | type_tesim, type_tdsim, type_tsim | DC translation of the MODS |
 | language_tsim |  DC translation of the MODS | Usually a RFC 4646 language tag |
 | rights_tsim |  DC translation of the MODS | Usually link to the appropriate CC license | 
-| coverage_tsim |  DC translation of the MODS | Can be place names, or lat log for aerial photography |
-| dcterms_spatial |  DC translation of the MODS | Can be place names, or lat log for aerial photography |
+| coverage_tdsim, coverage_tesim |  DC translation of the MODS | Can be place names |
+| dcterms_spatial |  DC translation of the MODS | lat long, especially for aerial photography |
 | subject_tesim, subject_tdsim, subject_tsim |  DC translation of the MODS |
 | pub_dat_tsim || Buggy |
 | readable_dat_string_tsim || Buggy |
@@ -73,6 +73,8 @@ the remaining medium_ssi values return to actual resources.
 | subject_topic_id_ssim | /md:mods/md:extension/h:div/h:a/@h:href | The list of IDs of the categories a given resource belong to |
 | subject_topic_facet_tesim, subject_topic_facet_tdsim | /md:mods/md:extension/h:div/h:a | The list of names of the categories a given resource belong to. The categories are either in Danish (tdsim) or English (tesim) |
 | mods_ts, processed_mods_ts || original XML blobs. processed_mods_ts is the complete one with some keywords and descriptions from external databases |
+| thumbnail_square_url_ssm || An array of one square image URI for the resource |
+| thumbnail_url_ssm || An array of one image URI for the resource |
 | content_metadata_image_iiif_info_ssm || An array with URIs for images of all pages in a multipage document. See [Image delivery](image-delivery.md#constructing-iiif-uris)  |
 | cobject_not_before_dtsi | /md:mods/md:originInfo/md:dateCreated/@t:notBefore | [Using TEI date model](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) |
 | cobject_not_after_dtsi | /md:mods/md:originInfo/md:dateCreated/@t:notAfter | [Using TEI date model](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) |
