@@ -58,9 +58,10 @@ the remaining medium_ssi values return to actual resources.
 | author_tsim, author_nasim, creator_tsim, creator_nasim, creator_tsi | /md:mods/md:name[md:role/md:roleTerm[@type='text']='creator' or <br> md:role/md:roleTerm[@type='code']='cre' or <br> md:role/md:roleTerm[@type='code']='aut']  | Author and creator are synonymous. nasim is **untokenized** and tsim **tokenized** text. The tsi fields contain the **first** instance of the field in the MODS record |
 | contributor_tesim, contributor_tdsim, contributor_tsim, contributor_tsi, contributor_nasim |  DC translation of the MODS name roles| The tsi fields contain the **first** instance of the field in the MODS record |
 | publisher_tesim, publisher_tdsim, publisher_tsim, publisher_tsi, publisher_nasim | MODS  | Currently not used because of the nature of the collections in the service |
-| description_tesim, description_tdsim, description_tsim  | DC translation of the MODS |
+| description_tesim, description_tdsim, description_tsim  | DC translation of the MODS descriptions |
 | format_tesim, format_tdsim, format_tsim | DC translation of the MODS |
-| type_tesim, type_tdsim, type_tsim | DC translation of the MODS |
+| type_tesim, type_tdsim, type_tsim | DC translation of the MODS | **messy** |
+| dc_type_tesim, dc_type_tdsim, dc_type_tsim | Translated directly from MODS | **messy** |
 | language_tsim |  DC translation of the MODS | Usually a RFC 4646 language tag |
 | rights_tsim |  DC translation of the MODS | Usually link to the appropriate CC license | 
 | coverage_tdsim, coverage_tesim |  DC translation of the MODS | Can be place names |
