@@ -3,7 +3,7 @@
 # The Metadata Formats Used in Syndication and Dissemination 
 
 Through the `format` CGI variable, data can be syndicated in the
-following formats: `kml`, `rss` and `mods`
+following formats: `kml`, `rss`, `solr` and `mods`.
 
 ## format=kml
 
@@ -201,6 +201,27 @@ object](http://www.kb.dk/cop/syndication/manus/musman/2010/dec/viser/object23942
           </md:titleInfo>
         </md:relatedItem>
 ```
+
+## format=solr
+
+The cop backend/crud engine is now capable indexing its databases using SOLR. The procedure is 
+
+1. dumb down the record to DC and ESE
+2. create elements directly from mods for data which has to be a little bit smarter
+3. load the result into SOLR.
+
+```
+http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/object67582/da/?format=solr
+```
+
+The same record as delivered from our public index
+
+```
+http://public-index.kb.dk/solr/cop-editions/select?defType=edismax&indent=on&q=id:/images/billed/2010/okt/billeder/object67582&wt=json
+```
+
+The semantics of the fields are outlined in the [COP SOLR fields](cop-solr-fields.md) documentation.
+
 
 ## Europeana Semantic Elements (ESE)
 

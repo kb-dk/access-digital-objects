@@ -67,6 +67,9 @@ the remaining medium_ssi values return to actual resources.
 | rights_tsim |  DC translation of the MODS | Usually link to the appropriate CC license | 
 | coverage_tdsim, coverage_tesim |  DC translation of the MODS | Can be place names |
 | dcterms_spatial |  DC translation of the MODS | lat long, especially for aerial photography |
+| cobject_location_tsi, cobject_location_tsim, cobject_location_ssim | /md:mods/md:subject/md:geographic/md:location | Place as a subject |
+| person_residence_tsim || Place as in the recidence of a sender or recipient |
+| origin_place_tsim || Place as in place of origin i.e., publication |
 | subject_tesim, subject_tdsim, subject_tsim |  DC translation of the MODS |
 | pub_dat_tsim || Buggy |
 | readable_dat_string_tsim || Buggy |
@@ -85,7 +88,6 @@ the remaining medium_ssi values return to actual resources.
 | cobject_title_ssi | extracted from MODS during ingest |
 | cobject_id_ssi || synonym to id |
 | cobject_person_tsim, cobject_person_ssim | /md:mods/md:name[@type='personal']/md:namePart | Name of persons regardless of their relation to the work |
-| cobject_location_tsi, cobject_location_tsim, cobject_location_ssim | /md:mods/md:subject/md:geographic/md:location | Place as a subject |
 | cobject_random_number_dbsi | generated on database ingest | used for various sorting and selection tasks |
 
 ### Fields added for Spotlight exhibitions
