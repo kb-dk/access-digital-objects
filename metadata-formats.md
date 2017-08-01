@@ -220,7 +220,8 @@ The same record as delivered from our public index
 http://public-index.kb.dk/solr/cop-editions/select?defType=edismax&indent=on&q=id:/images/billed/2010/okt/billeder/object67582&wt=json
 
 
-The semantics of the fields are outlined in the [COP SOLR fields](cop-solr-fields.md) documentation.
+The semantics of the fields are outlined in the [COP SOLR fields](cop-solr-fields.md) documentation. 
+We have  [a brief demo](http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-solr-form.html)  on how to use them.
 
 
 ## Europeana Semantic Elements (ESE)
