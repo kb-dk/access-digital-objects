@@ -12,7 +12,7 @@ __NB:__ The fields here are also available for use through [COP web services](co
 
 The source, when given, is the xpath to where it is stored in the
 MODS. In the xpaths we occasionally refer to xml namespace for mods
-(md), dc and xhtml (h).
+(md), dc, ese, tei (t) and xhtml (h).
 
 We have  [a brief demo](http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-solr-form.html)  on how to use these fields in our cop-editions index.
 
