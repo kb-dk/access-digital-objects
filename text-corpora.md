@@ -92,7 +92,7 @@ whenever one finds a page break in the XML text, that is, a
 
 ```
  &lt;pb n="4" facs="adl/heibergpa/heibergpa01/heibergpa1004" xml:id="idm140167182645744"/>
-'''
+```
 
 An image URI is constructed by prepending
 "http://kb-images.kb.dk/public/" and appending
