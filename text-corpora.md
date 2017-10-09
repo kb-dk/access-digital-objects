@@ -112,7 +112,7 @@ You can now construct the retrieval URI using the script present.xq and the thre
 * [http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=render](http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=render)
 * [http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=toc&targetOp=render](http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=toc&targetOp=render)
 
-More on what you can do with the text using the parameters below.
+More on what you can do with the texts using the parameters below.
 
 ## Retrieval APIs for our texts
 
@@ -124,7 +124,8 @@ and transforming them. The html produced is mere fragments that you
 can include in your document just as you like it.
 
 There is an alternative script, present-text.xq which does the same as
-present.xq, except that it delivers the script as pure text.
+present.xq, except that it delivers the script as pure text with
+neither XML nor HTML markup.
 
 Virtually all scripts work in a similarly, with the following arguments.
 
