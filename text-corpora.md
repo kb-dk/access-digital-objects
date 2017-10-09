@@ -107,7 +107,7 @@ The simplest way to retrieve the data is to look for the url_ssi. In the example
 * document (doc) = munp1.xml
 * id = workid72997
 
-You can now construct the retrieval URI using the three:
+You can now construct the retrieval URI using the script present.xq and the three parameters:
 
 * [http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=render](http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=render)
 * [http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=toc&targetOp=render](http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=toc&targetOp=render)
@@ -119,9 +119,12 @@ More on what you can do with the text using the parameters below.
 There are several text retrieval scripts in the Snippet Server.
 [The source code is free](https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets).
 
-We concentrate on one, present.xq. We use it for extracting snippets
+We concentrate on two, present.xq. We use it for extracting snippets
 and transforming them. The html produced is mere fragments that you
 can include in your document just as you like it.
+
+There is an alternative script, present-text.xq which does the same as
+present.xq, except that it delivers the script as pure text.
 
 Virtually all scripts work in a similarly, with the following arguments.
 
