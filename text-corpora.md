@@ -86,6 +86,26 @@ Our digital library have users interested in viewing the printed text,
 if not for any other reason than for checking the original when there
 is OCR errors.
 
+Facsimiles are delivered through our IIIF server. A page is turned
+whenever one finds a page break in the XML text, that is, a
+&lt;pb/&gt; element. It looks like
+
+```
+ &lt;pb n="4" facs="adl/heibergpa/heibergpa01/heibergpa1004" xml:id="idm140167182645744"/>
+'''
+
+An image URI is constructed by prepending
+"http://kb-images.kb.dk/public/" and appending
+"/full/,750/0/native.jpg" to the content of the facs attribute in the page break.
+
+http://kb-images.kb.dk/public/adl/grundtvig/grundtvig08/grun8136/full/,750/0/native.jpg
+
+All images connected to a given snippet can be retrieved as an HTML
+document through the facsimile web service
+
+http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=grundtvig08val.xml&id=workid80553&op=facsimile
+
+
 ## Text search
 
 The search API is described in detail in a separate documents
