@@ -96,7 +96,8 @@ whenever one finds a page break in the XML text, that is, a
 
 An image URI is constructed by prepending
 `http://kb-images.kb.dk/public/` and appending
-`/full/,750/0/native.jpg` to the content of the facs attribute in the page break.
+`/full/,750/0/native.jpg` to the content of the facs attribute in the
+page break, resulting in an URI on this form:
 
 http://kb-images.kb.dk/public/adl/grundtvig/grundtvig08/grun8136/full/,750/0/native.jpg
 
