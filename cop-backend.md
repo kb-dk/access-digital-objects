@@ -1,4 +1,4 @@
-[READ ME](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
+[READ ME](README.md) - [OAI Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
 
 # Web services in COP
 
@@ -26,6 +26,10 @@ is based on the former, the latter is tranlated to ```json``` and is then used i
 client side rendering of maps [DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
 
 Note that mods records are embedded in the rss.
+
+## SOLR Search
+
+It is now possible to use our public [SOLR index for searching](cop-solr-fields.md). We have  [a brief demo](http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-solr-form.html)  on how to use them.
 
 ## Open Search
 
@@ -64,6 +68,8 @@ items. You can adjust your retrieval using the `page` and `itemsPerPage` [CGI va
   + http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/subject2109/en/?itemsPerPage=5&page=4
 + search "by querying", ordinary search -- for example
   http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/en/?page=2&query=jesus&itemsPerPage=40
++ You can search for anything in any of the editions using a search form
+  http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-form.html
 
 To see what is going on in these examples, you have to view source, or
 you just see how your browser renders RSS. If you're using a computer
@@ -81,17 +87,18 @@ pretty-printed.
 
 Complete list of supported parameters in COP 
 
-| Parameter | Use in PATH | Use in CGI | Comment | Status|
-|-----------|:-------------|:------------|:--------|-------|
-|query | - | supported | Synonym to q | ok |
-|format | - | supported | kml, rss and mods | ok |
-|page | - | supported | | ok |
-|itemsPerPage | - | supported | |ok |
-|object | supported | - | | ok |
-|subject | supported | deprecated | Synonym to categories | ok |
-|bbo | - | supported | Bounding Box |
-|notBefore | - | supported | Not before a given date | - |
-|notAfter | - | supported | Not after a given date | - |
+| Parameter | Use in PATH | Use in CGI | Comment |
+|-----------|:-------------|:------------|:--------|
+|query | - | supported | queries all fields |
+|searchWide | - | supported | 'true' if searching all fields, 'false' otherwise |
+|format | - | supported | kml, rss and mods |
+|page | - | supported | |
+|itemsPerPage | - | supported | |
+|object | supported | - | |
+|subject | supported | supported | deprecated |
+|bbo | - | - | supported | Bounding Box |
+|notBefore | - | supported | Not before a given date in iso format YYYY-MM-DD |
+|notAfter | - | supported | Not after a given date in iso format YYYY-MM-DD |
 
 Field candidates, mostly geographical ones
 

@@ -1,6 +1,6 @@
-[READ ME](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
+[READ ME](README.md) - [OAI Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
 
-# Dissemination API
+# OAI Dissemination API
 
 Our dissemination API is OAI-PMH, and our targets are COP, Aleph (our
 OPAC) and the National aggregator. The most important aggregators are,

@@ -1,4 +1,4 @@
-[READ ME](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
+[READ ME](README.md) - [OAI Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
 
 # Access digital objects!
 
@@ -12,6 +12,8 @@ ourselves to provide access to our data to library patrons, in the
 hope that the access points could be useful for a new category library
 patron whose research or studies would benefit from programmatic access
 to our digital collections.
+
+![Linked data](https://www.w3.org/DesignIssues/diagrams/lod/597992118v2_350x350_Back.jpg) [linked data](https://www.w3.org/DesignIssues/LinkedData.html)
 
 
 ## Licences & Legalese
@@ -32,10 +34,11 @@ varous licenses, but the most common one is
 
 ## Caveats
 
-The APIs described have been used by us for many years. We, their
-developers, created each of them for getting a job done. They are
-usually well tested and works well, but they are neither polished, nor are
-there helpful error messages etc.
+The APIs described have been used successfully in projects (in some
+cases for many years). We, their users & developers, created each of
+them for getting a job done. They are usually well tested and works
+well, but they are neither polished, nor are there helpful error
+messages etc.
 
 The formats we are delivering are to a large extent based on
 standards. That means that in many places we refer to external
@@ -44,6 +47,25 @@ concerning the external information sources, nor that our data are
 strictly valid in relation to those documents.
 
 ## Services by scope and purpose
+
+Our services builds upon the ideas
+
++ [COOL URIs](https://www.w3.org/Provider/Style/URI) 
+
+and
+
++ [linked data](https://www.w3.org/DesignIssues/LinkedData.html)
+
+as they are presented by Tim Berners-Lee. We don't promise that our
+links will persist for 2000 years, but we do our best to keep them and
+if we don't we promise to make redirects according to best practise.
+
+As you will see, we are slightly better than three on Berners-Lee's
+five grade scale. We do not provide access to RDF and SPARQL but RSS
+and OpenSearch. Few provide access to RDF these days, so perhaps W3C
+should redesign the cop (see above).
+
+Neither do we link to external sources.
 
 A brief introduction to the characters in the story
 

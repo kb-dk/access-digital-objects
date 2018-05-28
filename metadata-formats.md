@@ -1,9 +1,9 @@
-[READ ME](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
+[READ ME](README.md) - [OAI Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
 
 # The Metadata Formats Used in Syndication and Dissemination 
 
 Through the `format` CGI variable, data can be syndicated in the
-following formats: `kml`, `rss` and `mods`
+following formats: `kml`, `rss`, `solr` and `mods`.
 
 ## format=kml
 
@@ -201,6 +201,28 @@ object](http://www.kb.dk/cop/syndication/manus/musman/2010/dec/viser/object23942
           </md:titleInfo>
         </md:relatedItem>
 ```
+
+## format=solr
+
+The cop backend/crud engine is now capable indexing its databases using SOLR. The procedure is 
+
+1. dumb down the record to DC and ESE
+2. create elements directly from mods for data which has to be a little bit smarter
+3. load the result into SOLR.
+
+
+http://www.kb.dk/cop/syndication/images/billed/2010/okt/billeder/object67582/da/?format=solr
+
+
+The same record as delivered from our public index
+
+
+http://public-index.kb.dk/solr/cop-editions/select?defType=edismax&indent=on&q=id:/images/billed/2010/okt/billeder/object67582&wt=json
+
+
+The semantics of the fields are outlined in the [COP SOLR fields](cop-solr-fields.md) documentation. 
+We have  [a brief demo](http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-solr-form.html)  on how to use them.
+
 
 ## Europeana Semantic Elements (ESE)
 

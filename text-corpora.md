@@ -1,23 +1,22 @@
-[READ ME](README.md) - [Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
+[READ ME](README.md) - [OAI Dissemination](oai-pmh.md) - [Web services in COP](cop-backend.md) - [Aerial Photography](geographic-data.md) - [Image delivery](image-delivery.md) - [Metadata Formats](metadata-formats.md) - [Text Corpora](text-corpora.md)
 
 # Access to web services for text search, retrieval and other operations
 
 The Royal Danish Library provide access to some text and language
-resources. Until recently these resources has been meant solely for
+resources. Until recently these resources have been intended solely for
 users coming to a site using a browser for searching, browsing and
 reading.
 
-Recently we want to complement these end user services with various
-text APIs. We hope that they are useful for students and scholars
-alike, and we also hope that this could seen as a contribution to the
-discussions on what kind web services that APIs are useful within
-digital humanities and literary computing.
+Recently we have decided to complement these end user services with
+various text APIs. We hope that they are useful for students and
+scholars alike, and we also hope that this could seen as a
+contribution to the discussions on what kind web services and what
+APIs are useful within digital humanities and literary computing.
 
 The text resources are
 
 * [Archive for Danish Literature, ADL](http://www.adl.dk/). The APIs
-  described in this document apply to this data set, but the new
-  service are not even released yet.
+  described in this document apply to this data set. The [literary texts used are available](https://github.com/Det-Kongelige-Bibliotek/public-adl-text-sources)
 * [Danmark's Breve](http://danmarksbreve.kb.dk/) use the basically the
   same APIs, but we have not decided to release the API on this data
   set.
@@ -28,134 +27,28 @@ restrictions](README.md#licences--legalese) as the other services
 described, and like them, these APIs are work in progress as public
 services. Also they are byproducts of our services and front ends.
 
-There are two kinds of services (and thus servers)
+There are two kinds of services (and thus servers hosting the corresponding APIs)
 
-* search service API
-* snippet service API
+* text search service API
+* text retrieval service API
 
-The meaning of search service is obvious, the snippet service is less
-so. _Snippet server_ is our internal nick name of a set of web
-services that retrieves, transforms and delivers text snippets to the
-front end using it.
+The meaning of search service is obvious, the text retrieval service
+is somewhat less so. _Snippet server_ is our internal nick name of a
+set of web services that retrieves, transforms and delivers text
+snippets to the front end or other components using it.
 
-In order to be really useful, the snippet APIs requires the search
-API, enabling you to discover what snippets there are. However, the
-search service is not described yet, basically because it is not
-available outside the applications.  That will change, and hopefully
-really soon.  The search system is based on [SOLR &
-Lucene](http://lucene.apache.org/solr/).
-
-There has been previous discussions on what such APIs and
-infrastructures in the humanities should be doing. I'll give three
-references, which I confess as being more or less embarrassing since
-two of them are my own, and all of them very old and I suppose (and hope) that
-they are obsoleted by other new contributions.
-
-I found [John Unsworth's _Scholarly Primitives: what methods do
-humanities researchers have in common, and how might our tools reflect
-this?_](http://people.virginia.edu/~jmu2m//Kings.5-00/primitives.html)
-particularly interesting, which inspired me to further thinking on
-[_Digital Humanities
-Infrastructures_](http://sigfrid-lundberg.se/2008/dighum/digital_humanities.xml).
-Some ye olde ideas on text search and retrieval [_S:t Laurentius
-Digital Manuscript Library: An excursion along the border between
-resource discovery and resource
-description_](http://sigfrid-lundberg.se/2002/Laurentius/laurentius.pdf)
-about [Laurentius](http://laurentius.ub.lu.se/) which to my surprise
-still running.
+In order to be useful, the you need both search and retrieval APIs.
+Then you may search and discover what works and snippets there are,
+and retrieve and link to them.
 
 ## Text encoding
 
-Most texts are from collected works and are critical editions.
-All data and metadata available are in XML markup according Text Encoding Initiative, TEI, [Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
+Most texts are from collected works and are critical editions.  All
+data and metadata available are in XML markup according Text Encoding
+Initiative, TEI,
+[Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/).
 
-### The work
-
-Our Archive for Danish Literature, ADL, service uses a work concept
-developed together with the original service some 15 years ago by
-experienced reference librarians. It is completely pragmatic and
-related to what their needs were when helping patrons by providing
-pointers to texts in the information desk.
-
-There the most common questions about literature were about
-
-* individual poems, songs and psalms
-* individual short stories
-* novels and other longer pieces of prose (basically: "books")
-* plays
-
-With the exception for novels, most of these works are text fragments
-inside a volume, the unit delivered by the circulation desk.
-
-### Connecting works with metadata
-
-After discussions in the [TEI listserv,
-TEI-L](https://listserv.brown.edu/archives/cgi-bin/wa?A1=ind1408&L=TEI-L#2)
-it seems that the simplest and most correct way is use
-[the decls
-attribute](http://www.tei-c.org/Vault/P5/2.5.0/doc/tei-p5-doc/en/html/CC.html#CCAS2)
-which was suggested by [Lou
-Bournard](https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind1408&L=TEI-L&F=&S=&P=58469).
-
-Just about any structure in the text can be used as a __work__, by
-giving it a decls attribute which is an _idref_ pointing to a bibl or
-biblStruct by it's _xml:id_ somewhere in sourceDesc in the teiHeader. The markup will
-look like
-
-```
- <?xml version="1.0" encoding="UTF-8" ?>
- <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader>
-     <fileDesc>
-       <titleStmt>
-	 <title>
-	 </title>
-       </titleStmt>
-       <publicationStmt>
-	 <publisher>
-	 </publisher>
-       </publicationStmt>
-       <sourceDesc>
-	 <listBibl>
-	   <bibl xml:id="bib101">
-	     <title>The name of the hymn</title>
-	     <author>The psalmist</author>
-	   </bibl>
-	 </listBibl>
-       </sourceDesc>
-     </fileDesc>
-   </teiHeader>
-   <text>
-     <body>
-       <div decls="#bib101" >
-	 <lg>
-	   <l>Angres det med ærlig Smerte,</l>
-	   <l>Vendes om med ydmyg Bøn,</l>
-	   <l>Kirken dog med Moder-Hjerte</l>
-	   <l>Favner den forlorne Søn!</l>
-	 </lg>
-       </div>
-     </body>
-   </text>
- </TEI>
-```
-
-### Anchors, search ability and retrievable
-
-The XML text documents pass through a number of procedures before
-entering the system. The most important one is to add an xml:id
-attribute to each element in a document that has not got one to begin
-with. Each element in the texts is then possible to use as an anchor
-for linking. For building a [cool
-service](https://www.w3.org/Provider/Style/URI.html) based on these
-documents, their names must never be changed, nor must the xml:id.
-
-There are TEI elements that containers and those that are empty. When
-indexing we concentrate on the former, since they are the ones that we
-need to search. There are a very important class of empty elements
-called milestones, and the most important one is presumably page
-break, at least in a digitisation project (where we need to address
-facsimiles).
+## Anchors, searchability and retrievability
 
 The search system (which you cannot use just yet, see above), creates
 records corresponding to three levels
@@ -187,13 +80,73 @@ Typically one volume contributes (obviously) one volume record, one to
 dozens of work records and hundreds or thousands of text items.
 The records for works and text items import basic metadata and includes
 
-## Snippet APIs for our texts
+## Connecting text with facsimile
 
-There are several scripts in the Snippet Server. [The source code is free](https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets).
+Our digital library have users interested in viewing the printed text,
+if not for any other reason than for checking the original when there
+is OCR errors.
 
-We concentrate on one, present.xq. We use it for extracting snippets
+Facsimiles are delivered through our IIIF server. A page is turned
+whenever one finds a page break in the XML text, that is, a
+&lt;pb/&gt; element. It looks like
+
+```
+ <pb n="4" facs="adl/heibergpa/heibergpa01/heibergpa1004" xml:id="idm140167182645744"/>
+```
+
+An image URI is constructed by prepending
+`http://kb-images.kb.dk/public/` and appending
+`/full/,750/0/native.jpg` to the content of the facs attribute in the
+page break, resulting in an URI on this form:
+
+http://kb-images.kb.dk/public/adl/grundtvig/grundtvig08/grun8136/full/,750/0/native.jpg
+
+All images connected to a given snippet can be retrieved as an HTML
+document through the facsimile web service
+
+http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=grundtvig08val.xml&id=workid80553&op=facsimile
+
+
+## Text search
+
+The search API is described in detail in a separate documents
+
+* We use [SOLR for searching](https://cwiki.apache.org/confluence/display/solr/Searching)
+* SOLR has its own [Common Query Parameters](https://cwiki.apache.org/confluence/display/solr/Common+Query+Parameters)
+* We provide a [document about what search fields there are and how to use them](http://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/adl-form.html).
+
+A search can be returned in json or xml format. Here is an example, where we search  for works
+
+* which title contain Jerusalem
+* that are writen by Gustaf Munch-Petersen
+
+SOLR returns [JSON](http://public-index.kb.dk/solr/adl-core/select/?q=author_name_tesim%3AGustaf+Munch-Petersen%0D%0Aand%0D%0Acat_ssi%3Awork%0D%0Aand%0D%0Awork_title_tesim%3AJerusalem&wt=json&start=0&rows=10&defType=edismax&indent=on) or [XML](http://public-index.kb.dk/solr/adl-core/select/?q=author_name_tesim%3AGustaf+Munch-Petersen%0D%0Aand%0D%0Acat_ssi%3Awork%0D%0Aand%0D%0Awork_title_tesim%3AJerusalem&wt=xml&start=0&rows=10&defType=edismax&indent=on) and the returned is the same.
+
+The simplest way to retrieve the data is to look for the url_ssi. In the example linked to it contains the value "texts/munp1.xml#workid72997", which is the concatenation of three variables
+
+* collection (c) = texts
+* document (doc) = munp1.xml
+* id = workid72997
+
+You can now construct the retrieval URI using the script present.xq and the three parameters:
+
+* [http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=render](http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=render)
+* [http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=toc&targetOp=render](http://labs.kb.dk/storage/adl/present.xq?c=texts&doc=munp1.xml&id=workid72997&op=toc&targetOp=render)
+
+More on what you can do with the texts using the parameters below.
+
+## Retrieval APIs for our texts
+
+There are several text retrieval scripts in the Snippet Server.
+[The source code is free](https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets).
+
+We concentrate on two, present.xq. We use it for extracting snippets
 and transforming them. The html produced is mere fragments that you
 can include in your document just as you like it.
+
+There is an alternative script, present-text.xq which does the same as
+present.xq, except that it delivers the script as pure text with
+neither XML nor HTML markup.
 
 Virtually all scripts work in a similarly, with the following arguments.
 
@@ -226,3 +179,4 @@ Some more examples
   * or as SOLR doc http://labs.kb.dk/storage/adl/present.xq?doc=holb03val.xml&op=solrize&id=idm140583366681648
 * A TOC for a small work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render&id=workid59384
   * The page 27 (of the original volume) inside that work http://labs.kb.dk/storage/adl/present.xq?doc=aakjaer01val.xml&op=toc&targetOp=render&id=workid593843#s27
+

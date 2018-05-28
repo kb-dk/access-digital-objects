@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en">
+  <head>
+    <title>COP search API</title>
+    <meta http-equiv="Content-Type" 
+	  content="text/html;charset=UTF-8"/>
+  </head>
+  <body id="therootelement">
+    <div style="float:left;width:30%;">
+      <h1>COP search API</h1>
+
+      <p>This document is a part of <a href="http://www.kb.dk/">Royal
+      Danish Library</a>'s APIs, and in particular <a
+      href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/cop-backend.md">The
+      documentation on how use our image based resources.</a>. See also <a
+      href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/README.md#licences--legalese">Licences
+      &amp; Legalese</a> and
+      <a href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/README.md#caveats">Caveats</a></p>
+
+      <form id="form" action="http://public-index.kb.dk/solr/cop-editions/select/">
+	<dl>
+	  <dt>Search for</dt>
+	  <dd>
+	    <textarea id="queryfield" name="q" cols="30" rows="10">
+medium_ssi:manus AND author_tsim:אברהם בן משה בן מימון
+	    </textarea>
+	  </dd>
+	  <dt>result format</dt>
+	  <dd>
+	    <select id="format" name="wt">
+	      <option value="json">json</option>
+	      <option value="xml">xml</option>
+	    </select>
+	  </dd>
+	  <dt>start record</dt>
+	  <dd><input name="start" value="0"/></dd>
+	  <dt>number of records</dt>
+	  <dd><input name="rows" value="10"/></dd>
+	  <dt>Query parser</dt>
+	  <dd>
+	    <select id="qeryparser" name="defType">
+	      <option value="edismax">edismax</option>
+	      <option value="dismax">dismax</option>
+	    </select>
+	    <input name="indent" type="hidden" value="on"/>
+	  </dd>
+	  <dt>
+	    <input type="submit" value="Submit"/>
+	  </dt>
+	</dl>
+      </form>
+    </div>
+    <div style="float:left;width:1%;">
+      <pre> 
+      </pre>
+    </div>
+    <div style="float:left;width:60%;">
+
+      <h2>Fields to search</h2>
+
+      <p>More to come</p>
+
+      <p>See <a
+      href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/cop-solr-fields.md">COP
+      SOLR data</a> in our public index.</p>
+
+    </div>
+  </body>
+</html>
