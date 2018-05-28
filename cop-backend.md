@@ -8,12 +8,10 @@
 
 ## Syndication service formats
 
-The syndication service is for search and retrieval. By default it
-delivers a search result set (or a retrieval, which is basically a
-search for a record ID) in [rss
-2.0](https://cyber.harvard.edu/rss/rss.html).  The syndication service
-supports some other formats as well, the most important ones are mods
-and kml. You can "toggle" between the formats using the `format` CGI
+The syndication service is made for search and retrieval. By default it
+delivers a search result set (or a search for a record ID) in [rss
+2.0](https://cyber.harvard.edu/rss/rss.html).  
+mods and kml format are supported as well. You can "toggle" between these formats using the `format` CGI
 parameter.
 
 | format | root element |
@@ -27,8 +25,7 @@ The formats rss and kml are used internally in our services. All search and retr
 is based on the former, the latter is tranlated to ```json``` and is then used in the
 client side rendering of maps [DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
 
-The rss and mods formats are equivalent in as much as the mods records
-are embedded in the rss.
+Note that mods records are embedded in the rss.
 
 ## SOLR Search
 
@@ -39,7 +36,7 @@ It is now possible to use our public [SOLR index for searching](cop-solr-fields.
 Clients communicates with the server with Amazon A9.com [Open
 search](http://www.opensearch.org/Home) protocol.
 
-All formats supported include a Open search header for (used for
+All formats supported include a Open search header (used for
 resultset navigation) at the very beginning of each result set:
 
 ```
@@ -56,9 +53,8 @@ resultset navigation) at the very beginning of each result set:
       type="application/rss+xml"/>
 ```
 
-Note that from what you see above is that this search result starts
-with record 1 out of 104820 and that you obtain them in chunks of 40
-items. You adjust your retrieval using the `page` and `itemsPerPage` [CGI variables](cop-backend.md#query-parameters-in-cop)
+This search result starts with record 1 out of 104820, you obtain them in chunks of 40
+items. You can adjust your retrieval using the `page` and `itemsPerPage` [CGI variables](cop-backend.md#query-parameters-in-cop)
 
 ## Examples
 
@@ -188,8 +184,8 @@ A majority of the digital objects in COP are "complex" in one way or
 another. By that we understand that we need to see more than one file
 to consume the entire object. The simplest case is a photograph
 requiring a digital image of each side, where there are essential
-informatation on the back. This means that we need a tables of
-contents just about every digital object in the service, and that TOC
+information on the back. This means that we need a table of
+contents (TOC) for every digital object in the service, and that TOC
 is delivered through the content service.
 
 Here is one for a fairly complex song book

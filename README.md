@@ -69,8 +69,9 @@ Neither do we link to external sources.
 
 A brief introduction to the characters in the story
 
-+ [Digital Editions - COP](http://www.kb.dk/editions/any/2009/jul/editions/en/), an acronym for which one possible interpretation could be **C**ommon **O**bject **P**ublishing platform. The word _Common_ would refer to that it is platform which is common between different collections and media types. However, when it was released we intentionally never gave the service a brand name.
-+ [Aerial Photography collection - DSFL](http://www.kb.dk/danmarksetfraluften/) (DFSL)
++ [Digital Editions - COP](http://www.kb.dk/editions/any/2009/jul/editions/en/), an acronym for which one possible interpretation could be **C**ommon **O**bject **P**ublishing platform. The word _Common_ would refer to that it is a platform which is common between different collections and media types. However, when it was released we intentionally never gave the service a brand name.
++ [Aerial Photography collection - DSFL](http://www.kb.dk/danmarksetfraluften/) (Danmark Set Fra Luften)
++ [Rex - our Integrated Library System](http://rex.kb.dk/) and Aleph - our Online public access catalog (OPAC)
 + National Aggregator - A system run by us aggregating material from Danish libraries, museums and archives on behalf of Europeana
 + [Archive for Danish Literature](http://www.adl.dk/), ADL
 
@@ -78,8 +79,8 @@ A brief introduction to the characters in the story
 
 The purpose of our dissemination is to enable us to synchronize data
 between our own systems, but also to share our data with Cultural
-Heritage communities at large. The dissemination services are aimed at
-aggregator services of various kinds. Our dissemination [API is OAI-PMH](oai-pmh.md)
+Heritage communities at large. The dissemination services are aimed as
+aggregator services of various kinds. Our dissemination API is [OAI-PMH](oai-pmh.md)
 
 ### Search and retrieval
 
@@ -88,7 +89,7 @@ The metadata and objects in COP are accessible from two front ends
 + [Digital Editions](http://www.kb.dk/editions/any/2009/jul/editions/en/)
 + Aerial Photography Collection, [Danmark set fra Luften](http://www.kb.dk/danmarksetfraluften/) (DFSL)
 
-The both services use the same web services, but DFSL has some
+Both services use the same web service, but DFSL has some
 geographical extensions in order to run its map based interface
 
 + [General COP web services](cop-backend.md)
@@ -101,7 +102,7 @@ formats](metadata-formats.md).
 
 ### Content formats 
 
-Virtually all content in COP is delivered as images; their delivery is
+Virtually all content in COP is delivered as images; delivery is
 described in a [separate document](image-delivery.md).
 
 ### Text and literature

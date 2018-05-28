@@ -46,7 +46,7 @@ http://www.kb.dk/imageService/w150/h150/online_master_arkiv_6/non-archival/Image
 and return 1024 and 150 px wide images, respectively.
 
 These forms are old and deprecated and predate our implementation of IIIF. The
-image's width and height ca be set using the parameters w and h in the
+image's width and height can be set using the parameters w and h in the
 URI path. Only one of them are needed. E.g.,
 
 http://www.kb.dk/imageService/w640/online_master_arkiv_6/non-archival/Images/BILLED/2008/Billede/dk_eksp_album_191/kbb_alb_2_191_friis_011.jpg
