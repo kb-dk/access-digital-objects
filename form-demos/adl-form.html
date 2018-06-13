@@ -42,6 +42,8 @@ cat_ssi:work
 	  <dd><input name="start" value="0"/></dd>
 	  <dt>number of records</dt>
 	  <dd><input name="rows" value="10"/></dd>
+	  <dt>Sort by</dt>
+	  <dd><input id="sortfield" name="sort" value=""/></dd>
 	  <dt>Query parser</dt> <!-- the dismax parser doesn't work, it seems -->
 	  <dd>
 	    <select id="queryparser" name="defType">
@@ -176,9 +178,11 @@ sks
 	  <td style="vertical-align:top;text-align:left;">The position
 	  of the current node along the sibling axis of the
 	  document. Sorting with respect to this field will guarantee
-	  that the result is presented in document order.</td>
+	  that the result is presented in document order. (We cannot use page number, which might be a roman numeral or an arabic one).</td>
 	  <td style="vertical-align:top;text-align:right;">
-	    <pre>integer</pre>
+	    <pre>
+integer
+	    </pre>
 	  </td>
 	</tr>
 
@@ -288,20 +292,86 @@ AND
 author_name_tesim:holberg
 	  </pre>
 	</dd>
+      </dl>
+      <h2>Filter and sort examples</h2>
+      <dl>
+	<dt>Find all works by Holberg containing poetry <a href="#therootelement" onclick="var c1 = document.getElementById('holberg_poetry').innerHTML; document.getElementById('queryfield').value = c1; console.log(c1);var c2 = document.getElementById('holbgenrepoetry').innerHTML; document.getElementById('filterquery').value = c2; "><strong>try it!</strong></a>. Steps in the search:</dt>  
+	<dd>Search for author</dd>
+	<dd><pre id="holberg_poetry">
+	  author_name_tesim:holberg
+	</pre></dd>
+	<dd> Filter by <kbd>genre_ssi:poetry</kbd>, but return the record corresponding to the containing work rather than to the leaf node corresponding to a piece of poetry. Requires a database join:</dd>
+	<dd><pre id="holbgenrepoetry">
+	  {!join to=id from=part_of_ssim}genre_ssi:poetry
+	</pre>
+	</dd>
 
-	<dt><strong>Cannot get joins to work this way, at least</strong>
-	Find all works by Holberg containing poetry <a href="#therootelement" onclick="var content = document.getElementById('holberg_poetry').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all occurences of "regn" (i.e., rain) in strophes of
+	poetry in volume 1 of Gustaf Munch Petersen's collected
+	works.</dt>
+	<dt>Sort the result set in inverse document order 
+
+	<a href="#therootelement" onclick="var c1 = document.getElementById('munpregn1').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn1sort').innerHTML; document.getElementById('sortfield').value = c2;"><strong>Try it!</strong></a>
+	</dt>
+
+	<dd>The actual search</dd>
+
 	<dd>
-	  <pre id="holberg_poetry">
-{!join to=id from=part_of_ssim}author_name_tesim:holberg
-AND genre_ssi:poetry
+	  <pre id="munpregn1">
+volume_id_ssi:adl-texts-munp1-root
+AND
+text_tesim:regn
+AND
+genre_ssi:poetry
+	  </pre>
+	</dd>
+	
+	<dd>The sort</dd>
+
+	<dd>
+	  <pre id="munpregn1sort">
+position_isi desc
 	  </pre>
 	</dd>
 
-{!join to=id from=part_of_ssim}
+
+	<dt>Find all poems (i.e., works) containing strophes with "regn" (i.e., rain) in volume 1 of Gustaf Munch Petersen's collected
+	works.</dt>
+	<dt>Sort the result set in the actual document order 
+
+	<a href="#therootelement" onclick="var c1 = document.getElementById('munpregn2').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn2sort').innerHTML; document.getElementById('sortfield').value = c2; var c3 = document.getElementById('munp_join').innerHTML; document.getElementById('filterquery').value = c3;"><strong>Try it!</strong></a>
+	</dt>
+
+	<dd>The actual search</dd>
+
+	<dd>
+	  <pre id="munpregn2">
+volume_id_ssi:adl-texts-munp1-root
+AND
+text_tesim:regn
+	  </pre>
+	</dd>
+
+	<dd><pre id="munp_join">
+{!join to=id from=part_of_ssim}genre_ssi:poetry
+	</pre>
+	</dd>
+	
+	<dd>The sort</dd>
+
+	<dd>
+	  <pre id="munpregn2sort">
+position_isi asc
+	  </pre>
+	</dd>
+
 
 
       </dl>
+
+
+
+
     </div>
   </body>
 </html>
