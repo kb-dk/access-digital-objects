@@ -231,7 +231,7 @@ integer
 
       <dl>
 	<dt>Find all works
-	<a href="#therootelement" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a> (clicking on try it fills in the form to the left such that you may submit the search and then customize the search for your purposes).
+	<a href="#form" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a> (clicking on try it fills in the form to the left such that you may submit the search and then customize the search for your purposes).
 	</dt>
 	<dd>
 	  <pre id="all_works">
@@ -240,7 +240,7 @@ cat_ssi:work
 	</dd>
 
 	<dt>Find all works by Gustaf Munch-Petersen
-	<a href="#therootelement" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	<a href="#form" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
 	</dt>
 	<dd>
 	  <pre id="works_by_gustaf_munch_petersen">
@@ -251,7 +251,7 @@ cat_ssi:work
 	</dd>
 
 
-	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#therootelement" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#form" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="plays_by_jeppe">
 genre_ssi:play
@@ -262,7 +262,7 @@ author_name_tesim:jeppe
 	  </pre>
 	</dd>
 
-	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#therootelement" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#form" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="spoken_by_jeppe">
 genre_ssi:play
@@ -273,7 +273,7 @@ speaker_tesim:jeppe
 	  </pre>
 	</dd>
 
-	<dt>Find all strophes of poetry by Nikolaj Frederik Severin Grundtvig containing the words hjerte and smerte (heart and agony)  <a href="#therootelement" onclick="var content = document.getElementById('heart_agony').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all strophes of poetry by Nikolaj Frederik Severin Grundtvig containing the words hjerte and smerte (heart and agony)  <a href="#form" onclick="var content = document.getElementById('heart_agony').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
   	  <pre id="heart_agony">
 type_ssi:leaf
@@ -290,7 +290,7 @@ text_tesim:smerte
 	  </pre>
 	</dd>
 
-	<dt>Find all dialogues in the plays by Holberg where someone is talking about Mester Erich <a href="#therootelement" onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all dialogues in the plays by Holberg where someone is talking about Mester Erich <a href="#form" onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="who_talks_about_erich">
 genre_ssi:play
@@ -305,7 +305,7 @@ author_name_tesim:holberg
       </dl>
       <h2>Filter and sort examples</h2>
       <dl>
-	<dt>Find all works by Holberg containing poetry <a href="#therootelement" onclick="var c1 = document.getElementById('holberg_poetry').innerHTML; document.getElementById('queryfield').value = c1; console.log(c1);var c2 = document.getElementById('holbgenrepoetry').innerHTML; document.getElementById('filterquery').value = c2; "><strong>try it!</strong></a>. Steps in the search:</dt>  
+	<dt>Find all works by Holberg containing poetry <a href="#form" onclick="var c1 = document.getElementById('holberg_poetry').innerHTML; document.getElementById('queryfield').value = c1; console.log(c1);var c2 = document.getElementById('holbgenrepoetry').innerHTML; document.getElementById('filterquery').value = c2; "><strong>try it!</strong></a>. Steps in the search:</dt>  
 	<dd>Search for author</dd>
 	<dd><pre id="holberg_poetry">
 author_name_tesim:holberg
@@ -321,7 +321,7 @@ author_name_tesim:holberg
 	works.</dt>
 	<dt>Sort the result set in inverse document order 
 
-	<a href="#therootelement" onclick="var c1 = document.getElementById('munpregn1').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn1sort').innerHTML; document.getElementById('sortfield').value = c2;"><strong>Try it!</strong></a>
+	<a href="#form" onclick="var c1 = document.getElementById('munpregn1').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn1sort').innerHTML; document.getElementById('sortfield').value = c2;"><strong>Try it!</strong></a>
 	</dt>
 
 	<dd>The actual search</dd>
@@ -349,7 +349,7 @@ position_isi desc
 	works.</dt>
 	<dt>Sort the result set in the actual document order 
 
-	<a href="#therootelement" onclick="var c1 = document.getElementById('munpregn2').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn2sort').innerHTML; document.getElementById('sortfield').value = c2; var c3 = document.getElementById('munp_join').innerHTML; document.getElementById('filterquery').value = c3;"><strong>Try it!</strong></a>
+	<a href="#form" onclick="var c1 = document.getElementById('munpregn2').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn2sort').innerHTML; document.getElementById('sortfield').value = c2; var c3 = document.getElementById('munp_join').innerHTML; document.getElementById('filterquery').value = c3;"><strong>Try it!</strong></a>
 	</dt>
 
 	<dd>The actual search</dd>
