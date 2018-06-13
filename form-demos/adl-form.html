@@ -27,7 +27,7 @@ cat_ssi:work
 	  </dd>
 	  <dt>filter query</dt>
 	  <dd> 
-	    <textarea id="filterquery" name="q" cols="30" rows="2">
+	    <textarea id="filterquery" name="fq" cols="30" rows="2">
 
 	    </textarea>
 	  </dd>
@@ -42,11 +42,10 @@ cat_ssi:work
 	  <dd><input name="start" value="0"/></dd>
 	  <dt>number of records</dt>
 	  <dd><input name="rows" value="10"/></dd>
-	  <dt>Query parser</dt>
+	  <dt>Query parser</dt> <!-- the dismax parser doesn't work, it seems -->
 	  <dd>
-	    <select id="qeryparser" name="defType">
+	    <select id="queryparser" name="defType">
 	      <option value="edismax">edismax</option>
-	      <option value="dismax">dismax</option>
 	    </select>
 	    <input name="indent" type="hidden" value="on"/>
 	  </dd>
@@ -113,11 +112,14 @@ cat_ssi:work
 	<tr id="cat_ssi">
 	  <td style="vertical-align:top;text-align:left;"><pre>cat_ssi</pre></td>
 	  <td style="vertical-align:top;text-align:left;">Category of
-	  a text. Use when limiting searches to works, omit
+	  a text. Use when limiting searches to works or to find volumes or find author portraits (biographies), omit
 	  otherwise.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
 work
+volume
+author
+period
 	    </pre>
 	  </td>
 	</tr>
@@ -127,9 +129,10 @@ work
 	  in document. A trunk node can be a whole work, a chapter
 	  etc, whereas a leaf could a paragraph of prose, a stanza (or
 	  strophe) of poetry or a speak in a dialog in a scenic
-	  work.</td>
+	  work. For historical reasons, whole texts describing authors and periods are given type_ssi:work.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
+work
 trunk
 leaf
 	    </pre>
@@ -152,13 +155,18 @@ play
 
 	<tr id="genre_ssi">
 	  <td style="vertical-align:top;text-align:left;" ><pre>subcollection_ssi</pre></td>
-	  <td style="vertical-align:top;text-align:left;">Filter with respect to ADL section</td>
+	  <td style="vertical-align:top;text-align:left;">Filter with respect to section</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
-authors
-periods
-texts
+adl
+sks
 	    </pre>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td colspan="3">
+	    <h2>Sort fields</h2>
 	  </td>
 	</tr>
 
@@ -223,7 +231,7 @@ cat_ssi:work
 	<dd>
 	  <pre id="works_by_gustaf_munch_petersen">
 author_name_tesim:munch
-and
+AND
 cat_ssi:work
 	  </pre>
 	</dd>
@@ -233,9 +241,9 @@ cat_ssi:work
 	<dd>
 	  <pre id="plays_by_jeppe">
 genre_ssi:play
-and
-subcollection_ssi:texts
-and
+AND
+subcollection_ssi:adl
+AND
 author_name_tesim:jeppe
 	  </pre>
 	</dd>
@@ -244,9 +252,9 @@ author_name_tesim:jeppe
 	<dd>
 	  <pre id="spoken_by_jeppe">
 genre_ssi:play
-and
-subcollection_ssi:texts
-and
+AND
+subcollection_ssi:adl
+AND
 speaker_tesim:jeppe
 	  </pre>
 	</dd>
@@ -255,15 +263,15 @@ speaker_tesim:jeppe
 	<dd>
   	  <pre id="heart_agony">
 type_ssi:leaf
-and
+AND
 genre_ssi:poetry
-and
-subcollection_ssi:texts
-and
+AND
+subcollection_ssi:adl
+AND
 author_name_tesim:grundtvig
-and
+AND
 text_tesim:hjerte
-and  
+AND  
 text_tesim:smerte
 	  </pre>
 	</dd>
@@ -272,11 +280,11 @@ text_tesim:smerte
 	<dd>
 	  <pre id="who_talks_about_erich">
 genre_ssi:play
-and
-subcollection_ssi:texts
-and
+AND
+subcollection_ssi:adl
+AND
 text_tesim:mester erich
-and
+AND
 author_name_tesim:holberg
 	  </pre>
 	</dd>
@@ -286,9 +294,12 @@ author_name_tesim:holberg
 	<dd>
 	  <pre id="holberg_poetry">
 {!join to=id from=part_of_ssim}author_name_tesim:holberg
-and genre_ssi:poetry
+AND genre_ssi:poetry
 	  </pre>
 	</dd>
+
+{!join to=id from=part_of_ssim}
+
 
       </dl>
     </div>
