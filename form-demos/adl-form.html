@@ -6,7 +6,7 @@
 	  content="text/html;charset=UTF-8"/>
   </head>
   <body id="therootelement">
-    <div style="float:left;width:30%;">
+    <div style="float:left;width:30%; ">
       <h1>Text corpus search API</h1>
 
       <p>This document is a part of <a href="http://www.kb.dk/">Royal
@@ -17,7 +17,7 @@
       &amp; Legalese</a> and
       <a href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/README.md#caveats">Caveats</a></p>
 
-      <form id="form" action="http://public-index.kb.dk/solr/text-retriever-core/select/">
+      <form style="position:fixed;" id="form" action="http://public-index.kb.dk/solr/text-retriever-core/select/">
 	<dl>
 	  <dt>Search for</dt>
 	  <dd>
@@ -231,7 +231,7 @@ integer
 
       <dl>
 	<dt>Find all works
-	<a href="#therootelement" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	<a href="#therootelement" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a> (clicking on try it fills in the form to the left such that you may submit the search and then customize the search for your purposes).
 	</dt>
 	<dd>
 	  <pre id="all_works">
