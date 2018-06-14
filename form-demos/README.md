@@ -4,4 +4,5 @@
 # These forms on rawgit
 
 * https://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/adl-form.html
+* https://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-solr-form.html
 * https://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-form.html
