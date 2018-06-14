@@ -1,13 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       lang="en">
   <head>
-    <title>ADL text search API</title>
+    <title>Text corpus search API</title>
     <meta http-equiv="Content-Type" 
 	  content="text/html;charset=UTF-8"/>
   </head>
   <body id="therootelement">
-    <div style="float:left;width:30%;">
-      <h1>ADL text search API</h1>
+    <div style="float:left;width:30%; ">
+      <h1>Text corpus search API</h1>
 
       <p>This document is a part of <a href="http://www.kb.dk/">Royal
       Danish Library</a>'s APIs, and in particular <a
@@ -17,12 +17,23 @@
       &amp; Legalese</a> and
       <a href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/README.md#caveats">Caveats</a></p>
 
-      <form id="form" action="http://public-index.kb.dk/solr/adl-core/select/">
+      <p>All the texts that can be searched in using the API are in <a
+      href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Text
+      Encoding Initiative</a>, TEI for short, markup.</p>
+
+      <form style="position:fixed;" id="form" action="http://public-index.kb.dk/solr/text-retriever-core/select/">
+	<h2>Try out the API here</h2>
 	<dl>
 	  <dt>Search for</dt>
 	  <dd>
 	    <textarea id="queryfield" name="q" cols="30" rows="10">
 cat_ssi:work
+	    </textarea>
+	  </dd>
+	  <dt>filter query</dt>
+	  <dd> 
+	    <textarea id="filterquery" name="fq" cols="30" rows="2">
+
 	    </textarea>
 	  </dd>
 	  <dt>result format</dt>
@@ -36,16 +47,17 @@ cat_ssi:work
 	  <dd><input name="start" value="0"/></dd>
 	  <dt>number of records</dt>
 	  <dd><input name="rows" value="10"/></dd>
-	  <dt>Query parser</dt>
-	  <dd>
-	    <select id="qeryparser" name="defType">
+	  <dt>Sort by</dt>
+	  <dd><input id="sortfield" name="sort" value=""/></dd>
+	  <dt>Query parser</dt> <!-- the dismax parser doesn't work, it seems -->
+	  <dt>
+	    <select id="queryparser" name="defType">
 	      <option value="edismax">edismax</option>
-	      <option value="dismax">dismax</option>
 	    </select>
 	    <input name="indent" type="hidden" value="on"/>
-	  </dd>
-	  <dt>
-	    <input type="submit" value="Submit"/>
+	  </dt>
+	  <dt><br/>
+	    <input type="submit" value="Submit"/> <a href="#form" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);document.getElementById('filterquery').value = '';"><strong>Reset form!</strong></a>
 	  </dt>
 	</dl>
       </form>
@@ -71,11 +83,11 @@ cat_ssi:work
 
 	<tr>
 	  <td style="vertical-align:top;text-align:left;"><pre>id</pre></td>
-	  <td style="vertical-align:top;text-align:left;">The ID
-	  of the record. It is the TEI file base name, or, unless the
-	  record isn't referring to a volume, constructed as a string
-	  concatenation of that basename with the sequence of xml:ids
-	  identifying the uniq xpath to the content indexed.</td>
+	  <td style="vertical-align:top;text-align:left;">The ID of
+	  the record. It identifies the collection, the TEI file and
+	  is constructed as a string concatenation of that basename
+	  with the sequence of xml:ids identifying the uniq xpath to
+	  the content indexed.</td>
 	</tr>
 
 	<tr>
@@ -107,11 +119,14 @@ cat_ssi:work
 	<tr id="cat_ssi">
 	  <td style="vertical-align:top;text-align:left;"><pre>cat_ssi</pre></td>
 	  <td style="vertical-align:top;text-align:left;">Category of
-	  a text. Use when limiting searches to works, omit
+	  a text. Use when limiting searches to works or to find volumes or find author portraits (biographies), omit
 	  otherwise.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
 work
+volume
+author
+period
 	    </pre>
 	  </td>
 	</tr>
@@ -121,9 +136,10 @@ work
 	  in document. A trunk node can be a whole work, a chapter
 	  etc, whereas a leaf could a paragraph of prose, a stanza (or
 	  strophe) of poetry or a speak in a dialog in a scenic
-	  work.</td>
+	  work. For historical reasons, whole texts describing authors and periods are given type_ssi:work.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
+work
 trunk
 leaf
 	    </pre>
@@ -146,28 +162,41 @@ play
 
 	<tr id="genre_ssi">
 	  <td style="vertical-align:top;text-align:left;" ><pre>subcollection_ssi</pre></td>
-	  <td style="vertical-align:top;text-align:left;">Filter with respect to ADL section</td>
+	  <td style="vertical-align:top;text-align:left;">Filter with respect to section</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
-authors
-periods
-texts
+adl
+sks
 	    </pre>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td colspan="3">
+	    <h2>Sort fields</h2>
 	  </td>
 	</tr>
 
 
 	<tr>
-	  <td style="vertical-align:top;text-align:left;"><pre>position_isi</pre></td>
+	  <td style="vertical-align:top;text-align:left;">
+	  <pre>
+position_isi
+	  </pre>
+	  </td>
 	  <td style="vertical-align:top;text-align:left;">The position
 	  of the current node along the sibling axis of the
 	  document. Sorting with respect to this field will guarantee
-	  that the result is presented in document order.</td>
+	  that the result is presented in document order. (We cannot
+	  use page number, which might be a roman numeral or an arabic
+	  one).</td>
 	  <td style="vertical-align:top;text-align:right;">
-	    <pre>integer</pre>
+	    <pre>
+integer
+	    </pre>
 	  </td>
 	</tr>
-
+	<tr><td><br/></td></tr>
 	<tr>
 	  <td colspan="3">
 	    <h2>Search fields</h2>
@@ -184,10 +213,13 @@ texts
 	  <td rowspan="3" style="vertical-align:top;text-align:left;">Misc. metadata
 	  fields. There are more of them, but they should be self
 	  explanatory.</td>
-	  <td rowspan="3" style="vertical-align:top;text-align:right;">just plain text</td>
+	  <td rowspan="4" style="vertical-align:top;text-align:right;"> <pre>just plain text</pre></td>
 	</tr>
 	<tr>
 	  <td style="vertical-align:top;text-align:left;"><pre>volume_title_tesim</pre></td>
+	</tr>
+	<tr>
+	  <td style="vertical-align:top;text-align:left;"><pre>work_title_tesim</pre></td>
 	</tr>
 	<tr>
 	  <td style="vertical-align:top;text-align:left;"><pre>author_name_tesim</pre></td>
@@ -195,7 +227,13 @@ texts
 	<tr>
 	  <td style="vertical-align:top;text-align:left;" ><pre>text_tesim</pre> </td>
 	  <td style="vertical-align:top;text-align:left;">The text</td>
-	  <td style="vertical-align:top;text-align:right;">just plain text</td>
+	  <td style="vertical-align:top;text-align:right;"> <pre>just plain text</pre></td>
+	</tr>
+
+	<tr>
+	  <td style="vertical-align:top;text-align:left;" ><pre>speaker_tesim</pre> </td>
+	  <td style="vertical-align:top;text-align:left;" >The name of a character uttering something in a dialogue</td>
+	  <td style="vertical-align:top;text-align:right;"> <pre>just plain text</pre></td>
 	</tr>
       </table>
 
@@ -203,7 +241,7 @@ texts
 
       <dl>
 	<dt>Find all works
-	<a href="#therootelement" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	<a href="#form" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a> (clicking on try it fills in the form to the left such that you may submit the search and then customize the search for your purposes).
 	</dt>
 	<dd>
 	  <pre id="all_works">
@@ -212,79 +250,154 @@ cat_ssi:work
 	</dd>
 
 	<dt>Find all works by Gustaf Munch-Petersen
-	<a href="#therootelement" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	<a href="#form" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
 	</dt>
 	<dd>
 	  <pre id="works_by_gustaf_munch_petersen">
 author_name_tesim:munch
-and
+AND
 cat_ssi:work
 	  </pre>
 	</dd>
 
 
-	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#therootelement" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all texts in dialogs (TEI &lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#form" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="plays_by_jeppe">
 genre_ssi:play
-and
-subcollection_ssi:texts
-and
+AND
+subcollection_ssi:adl
+AND
 author_name_tesim:jeppe
 	  </pre>
 	</dd>
 
-	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#therootelement" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#form" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="spoken_by_jeppe">
 genre_ssi:play
-and
-subcollection_ssi:texts
-and
+AND
+subcollection_ssi:adl
+AND
 speaker_tesim:jeppe
 	  </pre>
 	</dd>
 
-	<dt>Find all strophes of poetry containing the words hjerte and smerte (heart and agony)  <a href="#therootelement" onclick="var content = document.getElementById('heart_agony').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all strophes of poetry by Nikolaj Frederik Severin Grundtvig containing the words hjerte and smerte (heart and agony)  <a href="#form" onclick="var content = document.getElementById('heart_agony').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
   	  <pre id="heart_agony">
 type_ssi:leaf
-and
+AND
 genre_ssi:poetry
-and
-subcollection_ssi:texts
-and
+AND
+subcollection_ssi:adl
+AND
 author_name_tesim:grundtvig
-and
+AND
 text_tesim:hjerte
-and  
+AND  
 text_tesim:smerte
 	  </pre>
 	</dd>
 
-	<dt>What characters in the plays by Holberg talks about Mester Erich <a href="#therootelement" onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all dialogues in the plays by Holberg where someone is talking about Mester Erich <a href="#form" onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="who_talks_about_erich">
 genre_ssi:play
-and
-subcollection_ssi:texts
-and
+AND
+subcollection_ssi:adl
+AND
 text_tesim:mester erich
-and
+AND
 author_name_tesim:holberg
 	  </pre>
 	</dd>
+      </dl>
+      <h2>Filter and sort examples</h2>
+      <dl>
+	<dt>Find all works by Holberg containing poetry <a href="#form" onclick="var c1 = document.getElementById('holberg_poetry').innerHTML; document.getElementById('queryfield').value = c1; console.log(c1);var c2 = document.getElementById('holbgenrepoetry').innerHTML; document.getElementById('filterquery').value = c2; "><strong>try it!</strong></a>. Steps in the search:</dt>  
+	<dd>Search for author</dd>
+	<dd><pre id="holberg_poetry">
+author_name_tesim:holberg
+	</pre></dd>
+	<dd> Filter by <kbd>genre_ssi:poetry</kbd>, but return the record corresponding to the containing work rather than to the leaf node corresponding to a piece of poetry. Requires a database join:</dd>
+	<dd><pre id="holbgenrepoetry">
+{!join to=id from=part_of_ssim}genre_ssi:poetry
+	</pre>
+	</dd>
 
-	<dt><strong>Cannot get joins to work this way, at least</strong>
-	Find all works by Holberg containing poetry <a href="#therootelement" onclick="var content = document.getElementById('holberg_poetry').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Poetry often consists of strophes containing lines (which
+	may or may not contain rhymes and rythm). In TEI, strophes are
+	lines in a line group element (&lt;lg&gt;). Find all strophes
+	containing "regn" (i.e., rain) in poetry in volume 1 of Gustaf
+	Munch Petersen's collected works.</dt>
+	<dt>Sort the result set in inverse document order 
+
+	<a href="#form" onclick="var c1 = document.getElementById('munpregn1').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn1sort').innerHTML; document.getElementById('sortfield').value = c2;"><strong>Try it!</strong></a>
+	</dt>
+
+	<dd>The actual search</dd>
+
 	<dd>
-	  <pre id="holberg_poetry">
-{!join to=id from=part_of_ssim}author_name_tesim:holberg
-and genre_ssi:poetry
+	  <pre id="munpregn1">
+volume_id_ssi:adl-texts-munp1-root
+AND
+text_tesim:regn
+AND
+genre_ssi:poetry
+	  </pre>
+	</dd>
+	
+	<dd>The sort</dd>
+
+	<dd>
+	  <pre id="munpregn1sort">
+position_isi desc
 	  </pre>
 	</dd>
 
+
+	<dt>A poem is, technically in TEI, a sequence of line groups
+	(see above). Find all poems (i.e., works) containing strophes
+	with "regn" (i.e., rain) in volume 1 of Gustaf Munch
+	Petersen's collected works.</dt>
+	<dt>Sort the result set in the actual document order 
+
+	<a href="#form" onclick="var c1 = document.getElementById('munpregn2').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn2sort').innerHTML; document.getElementById('sortfield').value = c2; var c3 = document.getElementById('munp_join').innerHTML; document.getElementById('filterquery').value = c3;"><strong>Try it!</strong></a>
+	</dt>
+
+	<dd>The actual search</dd>
+
+	<dd>
+	  <pre id="munpregn2">
+volume_id_ssi:adl-texts-munp1-root
+AND
+text_tesim:regn
+	  </pre>
+	</dd>
+
+	<dd>The join</dd>
+
+	<dd><pre id="munp_join">
+{!join to=id from=part_of_ssim}genre_ssi:poetry
+	</pre>
+	</dd>
+	
+	<dd>The sort</dd>
+
+	<dd>
+	  <pre id="munpregn2sort">
+position_isi asc
+	  </pre>
+	</dd>
+
+
+
       </dl>
+
+
+
+
     </div>
   </body>
 </html>
