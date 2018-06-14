@@ -17,6 +17,10 @@
       &amp; Legalese</a> and
       <a href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/README.md#caveats">Caveats</a></p>
 
+      <p>All the texts that can be searched in using the API are in <a
+      href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Text
+      Encoding Initiative</a>, TEI for short, markup.</p>
+
       <form style="position:fixed;" id="form" action="http://public-index.kb.dk/solr/text-retriever-core/select/">
 	<h2>Try out the API here</h2>
 	<dl>
@@ -252,7 +256,7 @@ cat_ssi:work
 	</dd>
 
 
-	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#form" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all texts in dialogs (TEI &lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#form" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="plays_by_jeppe">
 genre_ssi:play
@@ -317,9 +321,11 @@ author_name_tesim:holberg
 	</pre>
 	</dd>
 
-	<dt>Find all strophes containing "regn" (i.e., rain) in 
-	poetry in volume 1 of Gustaf Munch Petersen's collected
-	works.</dt>
+	<dt>Poetry often consists of strophes containing lines (which
+	may or may not contain rhymes and rythm). In TEI, strophes are
+	lines in a line group element (&lt;lg&gt;). Find all strophes
+	containing "regn" (i.e., rain) in poetry in volume 1 of Gustaf
+	Munch Petersen's collected works.</dt>
 	<dt>Sort the result set in inverse document order 
 
 	<a href="#form" onclick="var c1 = document.getElementById('munpregn1').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn1sort').innerHTML; document.getElementById('sortfield').value = c2;"><strong>Try it!</strong></a>
@@ -346,8 +352,10 @@ position_isi desc
 	</dd>
 
 
-	<dt>Find all poems (i.e., works) containing strophes with "regn" (i.e., rain) in volume 1 of Gustaf Munch Petersen's collected
-	works.</dt>
+	<dt>A poem is, technically in TEI, a sequence of line groups
+	(see above). Find all poems (i.e., works) containing strophes
+	with "regn" (i.e., rain) in volume 1 of Gustaf Munch
+	Petersen's collected works.</dt>
 	<dt>Sort the result set in the actual document order 
 
 	<a href="#form" onclick="var c1 = document.getElementById('munpregn2').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn2sort').innerHTML; document.getElementById('sortfield').value = c2; var c3 = document.getElementById('munp_join').innerHTML; document.getElementById('filterquery').value = c3;"><strong>Try it!</strong></a>
