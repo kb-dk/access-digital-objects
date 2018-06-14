@@ -17,10 +17,7 @@
       &amp; Legalese</a> and
       <a href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/README.md#caveats">Caveats</a></p>
 
-      <p>All the texts that can be searched in using the API are in <a
-      href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Text
-      Encoding Initiative</a>, TEI for short, markup.</p>
-
+     
       <form style="position:fixed;" id="form" action="http://public-index.kb.dk/solr/text-retriever-core/select/" target="_blank">
 	<h2>Try out the API here</h2>
 	<dl>
@@ -67,6 +64,34 @@ cat_ssi:work
       </pre>
     </div>
     <div style="float:left;width:60%;">
+
+ <div>
+	<h2>Properties of the search index</h2>
+
+	<p>All the texts that can be searched in using the API are in <a
+	href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Text
+	Encoding Initiative</a>, TEI for short, markup.</p>
+
+	<ul>	
+	  <li>
+	    All text is indexed down to paragraph level, which implies
+	    <ul>
+	      <li>Paragraph in prose: <kbd>&lt;p&gt; ... &lt;/p&gt;</kbd></li>
+	      <li>Speech in drama: <kbd>&lt;sp&gt; ... &lt;/sp&gt;</kbd></li>
+	      <li>Strophe in poetry: <kbd>&lt;lg&gt; ... &lt;/lg&gt;</kbd></li>
+	    </ul>
+	  </li>
+	  <li>The same text may appear on multiple levels in the
+	  index, and hence be addressed as, for example, paragraph,
+	  chapter and volume.</li>
+	  <li>The index granularity differes between literary
+	  genres. For instance can poems and individual short stories
+	  or essays be treated as individual works, and a single
+	  volume contain hundreds of such items, whereas the might
+	  only be one novel in a volume.</li>
+	</ul>
+      </div>
+
       <table>
 
 	<tr>
