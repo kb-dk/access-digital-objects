@@ -120,7 +120,7 @@ A search can be returned in json or xml format. Here is an example, where we sea
 * which title contain Jerusalem
 * that are writen by Gustaf Munch-Petersen
 
-SOLR returns [JSON](http://public-index.kb.dk/solr/adl-core/select/?q=author_name_tesim%3AGustaf+Munch-Petersen%0D%0Aand%0D%0Acat_ssi%3Awork%0D%0Aand%0D%0Awork_title_tesim%3AJerusalem&wt=json&start=0&rows=10&defType=edismax&indent=on) or [XML](http://public-index.kb.dk/solr/adl-core/select/?q=author_name_tesim%3AGustaf+Munch-Petersen%0D%0Aand%0D%0Acat_ssi%3Awork%0D%0Aand%0D%0Awork_title_tesim%3AJerusalem&wt=xml&start=0&rows=10&defType=edismax&indent=on) and the returned is the same.
+SOLR returns [JSON](http://public-index.kb.dk/solr/text-retriever-core/select/?q=author_name_tesim%3AGustaf+Munch-Petersen%0D%0Aand%0D%0Acat_ssi%3Awork%0D%0Aand%0D%0Awork_title_tesim%3AJerusalem&wt=json&start=0&rows=10&defType=edismax&indent=on) or [XML](http://public-index.kb.dk/solr/text-retriever-core/select/?q=author_name_tesim%3AGustaf+Munch-Petersen%0D%0Aand%0D%0Acat_ssi%3Awork%0D%0Aand%0D%0Awork_title_tesim%3AJerusalem&wt=xml&start=0&rows=10&defType=edismax&indent=on) and the returned is the same.
 
 The simplest way to retrieve the data is to look for the url_ssi. In the example linked to it contains the value "texts/munp1.xml#workid72997", which is the concatenation of three variables
 
