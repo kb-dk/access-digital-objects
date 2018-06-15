@@ -3,7 +3,7 @@
 
 # Try these forms
 
-The forms are HTML. You can try them here.
+The forms are in HTML. You need to go elsewhere to try them, for example here:
 
 * [text corpus search](https://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/adl-form.html)
 * [cop solr form](https://rawgit.com/Det-Kongelige-Bibliotek/access-digital-objects/master/form-demos/cop-solr-form.html)
