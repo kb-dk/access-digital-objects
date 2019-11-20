@@ -4,7 +4,7 @@
 
 The Royal Library, Copenhagen, has been digitizing Cultural Heritage
 Objects in its collections since well over two decades. More recently,
-the last 6-7 years, we have tried to build our dissemination platforms
+the last 8-10 years, we have tried to build our dissemination platforms
 using a REST based architecture.
 
 This collection of documents describes the various APIs we are using
