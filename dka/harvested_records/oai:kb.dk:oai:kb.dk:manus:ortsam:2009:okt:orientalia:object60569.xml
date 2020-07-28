@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>شيرين و خسرو; Širīn va Xosrav</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>شيرين و خسرو<br/>Širīn va Xosrav</h4>
+        <p><strong>Beskrivelse</strong><br/>The text is a rendition of the love story between Khosrav Parvīz and princess Širīn.
+		  With 29 illustrations in watercolours.
+		  Love story in poetry
+		  Nasta'līq
+		  Kurdish in Persian script
+		  </p>
+        <p><strong>Format</strong><br/>229 fols.21 x 17 x 3 cm</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object60569/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/manus/ortsam/2009/okt/orientalia/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="شيرين و خسرو" src="http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/mar/codpersadd54/codpersadd54_456.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object60569/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators/>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Poetry</Tag>
+    <Tag>Cod. Pers. Add. 0054</Tag>
+  </Tags>
+</DKA>

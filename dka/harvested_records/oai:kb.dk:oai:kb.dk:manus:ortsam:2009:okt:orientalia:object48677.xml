@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Khorda Avesta; Hormazd yast; Sarósh yast hadoqt; Māh Nyāish; Mihr Nyāish</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Khorda Avesta<br/>Hormazd yast<br/>Sarósh yast hadoqt<br/>Māh Nyāish<br/>Mihr Nyāish</h4>
+        <p><strong>Beskrivelse</strong><br/>The accompanying translation is partly in Pahlavi and partly in Farsi.
+		  19 lines to the page.
+		  Purchased by Rasmus Rask in Bombay in 1820.
+		  Liturgy
+		  Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 113-114
+		  </p>
+        <p><strong>Format</strong><br/>277 pages25 x 14 cm</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object48677/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/manus/ortsam/2009/okt/orientalia/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Khorda Avesta" src="http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2009/okt/codiran_18/codiran_18_00312.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object48677/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators/>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Prayers</Tag>
+    <Tag>Liturgy</Tag>
+    <Tag>Cod. Iran. 018</Tag>
+  </Tags>
+</DKA>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Erhvervsliv i 70'erne</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Erhvervsliv i 70'erne</h4>
+        <p><strong>Beskrivelse</strong><br/>Handelsminister Knud Thomsens tale i Folketinget 28. januar 1971 ved forespørgselsdebatten om "Hvilke erfaringer har regeringen draget af en række store virksomheders økonomiske vanskeligheder i de senere måneder?"
+		  </p>
+        <p><strong>Kolofon</strong><br/>Knud Thomsen,  og Det konservative Folkeparti</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object56799/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Erhvervsliv i 70'erne" src="http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Pamphlets/DASMAA/2009/dec/Konservative/ko3-1971/ko3-1971_001.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object56799/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators>
+    <Creator Role="creator" Name="Knud Thomsen"/>
+    <Creator Role="creator" Name="Det konservative Folkeparti"/>
+  </Creators>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Partiprogram, partiprogrammer, program</Tag>
+    <Tag>Partiprogrammer</Tag>
+    <Tag>Det konservative Folkeparti</Tag>
+    <Tag>1971</Tag>
+    <Tag>Erhvervsliv i 70'erne</Tag>
+  </Tags>
+</DKA>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>مقامات الحريري; Maqāmāt al-Ḥarīrī</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>مقامات الحريري<br/>Maqāmāt al-Ḥarīrī</h4>
+        <p><strong>Beskrivelse</strong><br/>Rhymed prose tale
+		  Nashi script
+		  Title and other details in Kufi script
+		  Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 1416-1421]
+		  </p>
+        <p><strong>Format</strong><br/>154 fols.25,7 x 19,0 x 3,8 cm</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object48364/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/manus/ortsam/2009/okt/orientalia/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="مقامات الحريري" src="http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2009/apr/codarab83/codarab83_00326.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object48364/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators/>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Adab</Tag>
+    <Tag>Cod. Arab. Add. 0083</Tag>
+  </Tags>
+</DKA>

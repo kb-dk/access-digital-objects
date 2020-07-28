@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Den sydøst- og sydeuropæiske Krigsskueplads</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Den sydøst- og sydeuropæiske Krigsskueplads</h4>
+        <p><strong>Beskrivelse</strong><br/>Europeana Collections 1914-1918
+		  </p>
+        <p><strong>Format</strong><br/>68 x 94 cm</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/object59614/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Den sydøst- og sydeuropæiske Krigsskueplads" src="http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/KORTSA/1_verdenskrig_DK/dk005226.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/object59614/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators/>
+  <TechnicalComment/>
+  <Location>1:2 000 000Europa</Location>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>1. Verdenskrig</Tag>
+    <Tag>Albanien</Tag>
+    <Tag>Bosperusstrædet</Tag>
+    <Tag>Bulgarien</Tag>
+    <Tag>Grækenland</Tag>
+    <Tag>Italien</Tag>
+    <Tag>Istanbul</Tag>
+    <Tag>Konstantinopel</Tag>
+    <Tag>Lilleasien</Tag>
+    <Tag>Malta</Tag>
+    <Tag>Militærvæsen</Tag>
+    <Tag>Montenegro</Tag>
+    <Tag>Odessa</Tag>
+    <Tag>Rumænien</Tag>
+    <Tag>Saros Bugten</Tag>
+    <Tag>Schweiz</Tag>
+    <Tag>Serbien</Tag>
+    <Tag>Triest</Tag>
+    <Tag>Tyrkiet</Tag>
+    <Tag>Verdenskrigen 1914-1918</Tag>
+    <Tag>Østrig - Ungarn</Tag>
+    <Tag>The Military</Tag>
+    <Tag>World War I (WWI)</Tag>
+    <Tag>World War I (1914-1918)</Tag>
+    <Tag> sh85148236</Tag>
+  </Tags>
+</DKA>

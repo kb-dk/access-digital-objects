@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Arbejderklassen og EF</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Arbejderklassen og EF</h4>
+        <p><strong>Kolofon</strong><br/>Venstresocialisterne - VS</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object39077/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Arbejderklassen og EF" src="http://www.kb.dk/imageService/online_master_arkiv_2/non-archival/PLG/Partiprogrammer/vs/vs19727/vs19727_001.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object39077/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators>
+    <Creator Role="creator" Name="Venstresocialisterne - VS"/>
+  </Creators>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Partiprogrammer</Tag>
+    <Tag>Venstresocialisterne - VS</Tag>
+    <Tag>1972</Tag>
+    <Tag>Arbejderklassen og EF</Tag>
+  </Tags>
+</DKA>

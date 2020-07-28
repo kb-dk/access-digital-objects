@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Der Weg zum Frieden</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Der Weg zum Frieden</h4>
+        <p><strong>Beskrivelse</strong><br/>Plakat trykt på Kaiserlich und Königlich Druckerei i den italienske by Udine 14. september 1918, mens byen var besat af Østrig - Ungarn.
+		  Europeana Collections 1914-1918
+		  </p>
+        <p><strong>Format</strong><br/>7 kort, 20 x 16 cm eller mindre, på ark 81 x 55 cm</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/object59598/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Der Weg zum Frieden" src="http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/KORTSA/1_verdenskrig_DK/dk005212.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/object59598/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators/>
+  <TechnicalComment/>
+  <Location>Europa</Location>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>1. Verdenskrig</Tag>
+    <Tag>Militærvæsen</Tag>
+    <Tag>Plakater</Tag>
+    <Tag>Propaganda</Tag>
+    <Tag>Verdenskrigen 1914-1918</Tag>
+    <Tag>Østrig - Ungarn</Tag>
+    <Tag>The Military</Tag>
+    <Tag>World War I (WWI)</Tag>
+    <Tag>World War I (1914-1918)</Tag>
+    <Tag> sh85148236</Tag>
+  </Tags>
+</DKA>

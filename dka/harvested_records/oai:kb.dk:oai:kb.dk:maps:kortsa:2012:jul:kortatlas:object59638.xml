@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Kort over Nordsøen med Doggerbankerne hvor Søslaget stod</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Kort over Nordsøen med Doggerbankerne hvor Søslaget stod</h4>
+        <p><strong>Beskrivelse</strong><br/>Skænket af Politiken.
+		  Europeana Collections 1914-1918
+		  </p>
+        <p><strong>Format</strong><br/>33 x 30 cm</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/object59638/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Kort over Nordsøen med Doggerbankerne hvor Søslaget stod" src="http://www.kb.dk/imageService/online_master_arkiv_10/non-archival/Maps/KORTSA/1_verdenskrig_DK/dk005252.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/maps/kortsa/2012/jul/kortatlas/object59638/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators/>
+  <TechnicalComment/>
+  <Location>Nordsøen</Location>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>1. Verdenskrig</Tag>
+    <Tag>Doggerbanke</Tag>
+    <Tag>Militærvæsen</Tag>
+    <Tag>Verdenskrigen 1914-1918</Tag>
+    <Tag>The Military</Tag>
+    <Tag>World War I (WWI)</Tag>
+    <Tag>World War I (1914-1918)</Tag>
+    <Tag> sh85148236</Tag>
+  </Tags>
+</DKA>

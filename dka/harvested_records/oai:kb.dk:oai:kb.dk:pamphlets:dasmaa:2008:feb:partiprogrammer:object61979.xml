@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Krigen skal ikke komme</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Krigen skal ikke komme</h4>
+        <p><strong>Kolofon</strong><br/>Danmarks Kommunistiske Parti - DKP</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object61979/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Krigen skal ikke komme" src="http://www.kb.dk/imageService/online_master_arkiv_9/non-archival/Pamphlets/DASMAA/2010/aug/dkp/dkp1963/dkp1963_001.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object61979/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators>
+    <Creator Role="creator" Name="Danmarks Kommunistiske Parti - DKP"/>
+  </Creators>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Partiprogrammer</Tag>
+    <Tag>Danmarks Kommunistiske Parti - DKP</Tag>
+    <Tag>1963</Tag>
+    <Tag>Krigen skal ikke komme</Tag>
+  </Tags>
+</DKA>

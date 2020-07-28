@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/  http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2012-12-03T08:30:09Z</responseDate>
+  <request verb="ListRecords" set="kb.orientalmss" metadataPrefix="ese">http://oai.kb.dk:8080/oai/provider</request>
+  <ListRecords>
+    <record>
+      <header status="deleted">
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object63554</identifier>
+        <datestamp>2012-08-31T07:53:04Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+    </record>
+    <record>
+      <header status="deleted">
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object63555</identifier>
+        <datestamp>2012-08-31T07:53:04Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object65997</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object65997/en/</dc:identifier>
+          <dc:title>Rivayat etc.</dc:title>
+          <dc:description>Four different texts:</dc:description>
+          <dc:description>1. Rivayat (fol. 4-183)</dc:description>
+          <dc:description>2. Nirang-din (Nīrang-farīn) (fol. 184-197)</dc:description>
+          <dc:description>3. Extract from Vandidad (fol. 198-199a)</dc:description>
+          <dc:description>4. Pahlavi word list (fol. 199b-245)</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Ceremonial rites</dc:description>
+          <dc:subject xml:lang="en">Ceremonial rites</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 030</dc:subject>
+          <dc:format>246 fols.</dc:format>
+          <dc:format>28.3 x 18.2 x 4.3 cm</dc:format>
+          <dc:language>PAL</dc:language>
+          <dc:language>FA</dc:language>
+          <dc:language>SA</dc:language>
+          <dc:description>Pahlavi</dc:description>
+          <dc:description>Pahlavi, notes in Farsi and Sanskrit (upside down)</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 115</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/jun/codiran30/codiran30_512.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object65997/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object55008</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object55008/en/</dc:identifier>
+          <dc:title>تصوير صور الكواكب</dc:title>
+          <dc:title>Taṣwīr ṣuwar al-kawākib</dc:title>
+          <dc:description>Illuminations on 75 pages: stars pictured by drawings in colour.</dc:description>
+          <dc:description>Bought either by Carsten Niebuhr (d. 1815) or Peter Forsskål (d. 1763) who were members of the Carsten Niebuhr expedition 1761-1767.</dc:description>
+          <dc:description>Book on astronomy</dc:description>
+          <dc:subject xml:lang="en">Astronomy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0083</dc:subject>
+          <dc:format>128 fols.</dc:format>
+          <dc:format>30 x 22.2 x 2.5 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nashi script</dc:description>
+          <dc:description>Chapter headings in red</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 290-294]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_5/non-archival/Manus/ORTSAM/2010/maj/codarab83/codarab83_260.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object55008/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object49324</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object49324/en/</dc:identifier>
+          <dc:title>Vajracchedikā</dc:title>
+          <dc:title>Ārya-Vajracchedikā-prajñāpāramitā-nāma-mahāyānasūtra</dc:title>
+          <dc:title>'Phags pa śes rab kyi pha rol tu phyin pa rdo rje gcod pa źes bya ba theg pa chen po'i mdo</dc:title>
+          <dc:title>rDo rje gcod pa</dc:title>
+          <dc:description>Text areas in red frames; red and silver circles indicating imaginary string holes.</dc:description>
+          <dc:description>Diamond sutra</dc:description>
+          <dc:subject xml:lang="en">Buddhist sutra text</dc:subject>
+          <dc:subject xml:lang="en">Tib. B4</dc:subject>
+          <dc:format>51 fols.</dc:format>
+          <dc:format>40,7 x 11 cm</dc:format>
+          <dc:language>bo-Tibt</dc:language>
+          <dc:description>dbu can script</dc:description>
+          <dc:description>In gold and silver</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 6,1 [p. 10]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2009/nov/tib_b4/tib_b4_002.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object49324/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object57666</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object57666/en/</dc:identifier>
+          <dc:title>[昔日中國商店幌子彩圖]</dc:title>
+          <dc:title>[商店幌子彩圖]</dc:title>
+          <dc:title>[Xiri Zhongguo shangdian huangzi caitu]</dc:title>
+          <dc:description>Watercolours of Shop signs in Beijing by the workshop of Zhou Peichun</dc:description>
+          <dc:description>Chinese shops signs</dc:description>
+          <dc:subject xml:lang="en">Decorative art - Chinese Shop signs</dc:subject>
+          <dc:subject xml:lang="en">OA 102-2010-7</dc:subject>
+          <dc:format>18 fols.</dc:format>
+          <dc:format>26 x 35 cm</dc:format>
+          <dc:language>zh</dc:language>
+          <dc:description>Kaishu</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_9/non-archival/Manus/ORTSAM/2010/okt/oa102-2010-7_ms/oa102-2010-7_ms_40.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object57666/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object54196</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object54196/en/</dc:identifier>
+          <dc:title>جداول النسبة الستنية على التمام والكامل</dc:title>
+          <dc:title>Ğadāwil al-nisbah al-sitt[ī]nīyah ʿalā al-tamām wal-kamāl</dc:title>
+          <dc:description>Bought by either Carsten Niebuhr or Peter Forsskål ca. 1762</dc:description>
+          <dc:description>Calculation tables, where numbers are replaced with letters</dc:description>
+          <dc:subject xml:lang="en">Mathematics</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0085</dc:subject>
+          <dc:format>18 fols.</dc:format>
+          <dc:format>21,2 x 15,6 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nashi script</dc:description>
+          <dc:description>Black and red ink</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 299-302]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2010/mar/codarab85/codarab85_040.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object54196/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object65189</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object65189/en/</dc:identifier>
+          <dc:title>Sifat-i-sirozah</dc:title>
+          <dc:description>Auspicious/inauspicious days</dc:description>
+          <dc:description>Dream interpretations</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>According to Rasmus Rask written down in a little before 1820.</dc:description>
+          <dc:description>Auspicious/inauspicious days</dc:description>
+          <dc:subject xml:lang="en">Fortune telling</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 024</dc:subject>
+          <dc:format>40 fols.</dc:format>
+          <dc:format>26.3 x 15,9 x 0.8 cm (no binding)</dc:format>
+          <dc:language>PAL</dc:language>
+          <dc:description>Pahlavi</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 114</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/jun/codiran24/codiran24_080.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object65189/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object59387</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object59387/en/</dc:identifier>
+          <dc:title>تحفة الالباب ونحبة الاعجاب</dc:title>
+          <dc:title>Tuḥfat al-albāb [wa-nuḥbat al-a'ǧāb]</dc:title>
+          <dc:description>The text is partly based on the author's own travels</dc:description>
+          <dc:description>Geography</dc:description>
+          <dc:subject xml:lang="en">Geography</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0092</dc:subject>
+          <dc:format>30 fols.</dc:format>
+          <dc:format>31,5 x 22 x 0,9 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Maġribī script</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 341-342]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/feb/codarab92/codarab92_068.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object59387/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object54218</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object54218/en/</dc:identifier>
+          <dc:title>الجوهرة اللامعة والنتيجة الجامعة</dc:title>
+          <dc:title>Al-Ǧawharah al-lāmiʿah wal-natīǧah al-ǧāmiʿah</dc:title>
+          <dc:description>Table of the Coptic months and a table of the rising and setting stars in the year 1090 H [1679/80 CE].</dc:description>
+          <dc:description>Brought by either Carsten Niebuhr or Peter Forsskål ca. 1762</dc:description>
+          <dc:description>Various astronomical tables</dc:description>
+          <dc:subject xml:lang="en">Astronomy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0088</dc:subject>
+          <dc:format>94 fols.</dc:format>
+          <dc:format>20,5 x 15,3 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nashi script</dc:description>
+          <dc:description>Black, red and green ink</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 323-326]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2010/mar/codarab88/codarab88_200.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object54218/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object59971</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object59971/en/</dc:identifier>
+          <dc:title>دلائل الخيرات وسوارق الانوار فى ذكر الصلاة على النبي المختار</dc:title>
+          <dc:title>Dalā'il al-h̬ayrāt wa-sawāriq al-anwār fī d̠̠ikr al-ṣalāt 'alā al-nabī al-muh̬tār</dc:title>
+          <dc:description>Praying for the Prophet.</dc:description>
+          <dc:description>Illuminations of Makkah and Medhīnah.</dc:description>
+          <dc:description>Illuminated panels and medallions in the margins.</dc:description>
+          <dc:description>Devotional text</dc:description>
+          <dc:subject xml:lang="en">Devotion</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. Add. 0053</dc:subject>
+          <dc:format>146 p.</dc:format>
+          <dc:format>15.9 x 10,2 x 1.0 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nash̬ī</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 1284-1288]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/mar/codarabadd53/codarabadd53_152.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object59971/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object79158</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object79158/en/</dc:identifier>
+          <dc:title>Chinese Opera llustrations</dc:title>
+          <dc:title>戲齣年畫</dc:title>
+          <dc:title>Xichu nianhua</dc:title>
+          <dc:description>Eight hand painted illustrations from a Chinese Opera</dc:description>
+          <dc:description>(from the novel: 封神演義-?)</dc:description>
+          <dc:description>Chinese Opera illustrations</dc:description>
+          <dc:subject xml:lang="en">New Year prints</dc:subject>
+          <dc:subject xml:lang="en">Chinese Opera</dc:subject>
+          <dc:subject xml:lang="en">OA 102-4196</dc:subject>
+          <dc:format>8 scrolls</dc:format>
+          <dc:format>136 x 34.5 cm</dc:format>
+          <dc:language>zh</dc:language>
+          <dc:description>Kaishu</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_11/non-archival/Manus/ORTSAM/2012/maj/OA_102-4196/AO_102-4196_1.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object79158/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object68131</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object68131/en/</dc:identifier>
+          <dc:title>Dādistān-ē Dīnīk</dc:title>
+          <dc:title>Rivāyat</dc:title>
+          <dc:title>Mānūshtshīhar</dc:title>
+          <dc:title>Zād-sparam</dc:title>
+          <dc:description>According to N. L. Westergaard (1815-1878), the manuscript (incomplete) was copied in 1572.</dc:description>
+          <dc:description>Purchased in Kirmān (Kermān), Iran by N. L. Westergaard in 1843.</dc:description>
+          <dc:description>Letter on "Dadistani divi" from Edward William West (1824-1905)  dated to June 4th 1878 is attached in the beginning of the book.</dc:description>
+          <dc:description>Religious texts</dc:description>
+          <dc:subject xml:lang="en">Religious texts</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 035</dc:subject>
+          <dc:format>254 fols.</dc:format>
+          <dc:format>25,5 x 17,9 x 4 cm.</dc:format>
+          <dc:language>pa</dc:language>
+          <dc:description>Pahlavi</dc:description>
+          <dc:description>with high-lights in green and red</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2011/august/codiran35/codiran35_378.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object68131/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object68506</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object68506/en/</dc:identifier>
+          <dc:title>Yasna</dc:title>
+          <dc:title>Yaçna</dc:title>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Interpretation in Sanskrit by Niriosängh</dc:description>
+          <dc:description>Liturgy</dc:description>
+          <dc:subject xml:lang="en">Liturgy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 006</dc:subject>
+          <dc:format>437 fols.</dc:format>
+          <dc:format>24 x 17,5 x 7 cm</dc:format>
+          <dc:language>ae</dc:language>
+          <dc:language>sa</dc:language>
+          <dc:description>Avesta and Sanskrit</dc:description>
+          <dc:description>high-lights in red. Sanskrit up-side down</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2011/august/codiran06/codiran06_892.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object68506/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object62881</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object62881/en/</dc:identifier>
+          <dc:title>Farwardin Yasht</dc:title>
+          <dc:description>With some few notes in Sanskrit.</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Hymn</dc:description>
+          <dc:subject xml:lang="en">Cod. Iran. 014</dc:subject>
+          <dc:format>41 fols.</dc:format>
+          <dc:format>19.8 x 15.8 x 1.4 cm</dc:format>
+          <dc:language>ae</dc:language>
+          <dc:language>sa</dc:language>
+          <dc:description>Avestan and Sanskrit</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 113</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/maj/codiran14/codiran14_096.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object62881/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object63121</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object63121/en/</dc:identifier>
+          <dc:title>Khorda Avesta</dc:title>
+          <dc:description>The text include the whole Baj (fols. 1-170) and Barsam (Patet pashemani) (fols. 171-175).</dc:description>
+          <dc:description>Part of Izeshne-rafitwan.</dc:description>
+          <dc:description>Text in Avestan, commentary in Sanskrit.</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Book of Common Prayer</dc:description>
+          <dc:subject xml:lang="en">Devotion</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 017</dc:subject>
+          <dc:format>209 fols.</dc:format>
+          <dc:format>23.8 x 13 x 3.4 cm</dc:format>
+          <dc:language>ae</dc:language>
+          <dc:language>sa</dc:language>
+          <dc:description>Avestan and Sanskrit</dc:description>
+          <dc:description>Sanskrit in between Avestan upside-down</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 113</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/maj/codiran17/codiran17_438.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object63121/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object59041</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object59041/en/</dc:identifier>
+          <dc:title>شرح كتاب الجغميني المسمى بالملخص في علم الهيئة</dc:title>
+          <dc:title>Šarḥ [kitāb] al-Ǧiġmīni al-musammā bil-Mulah̬h̬as͎ fī 'ilm al-hay'ah</dc:title>
+          <dc:description>The text is a commentary to the astronomical compendium al-Mulah̬h̬as͎ fī 'ilm al-hay'ah written by Maḥmūd ibn Muḥammad ibn 'Umar al-Ǧiġmīni al-H̬wārizmī.</dc:description>
+          <dc:description>Astronomy</dc:description>
+          <dc:subject xml:lang="en">Astronomy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0084</dc:subject>
+          <dc:format>155 fols.</dc:format>
+          <dc:format>20,5 x 16,3 x 2,7 cm.</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Ta'līq</dc:description>
+          <dc:description>Headings in red and the commented text marked with a read line</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 295-298]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2010/nov/codarab84/codarab84_327.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object59041/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object54448</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object54448/en/</dc:identifier>
+          <dc:title>بغية النفس في حل الشمس</dc:title>
+          <dc:title>Buġyat al-nafs fī ḥall al-šams</dc:title>
+          <dc:description>Bought by either Carsten Niebuhr or Peter Forsskål ca. 1762</dc:description>
+          <dc:description>Astronomy table</dc:description>
+          <dc:subject xml:lang="en">Astronomy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0089</dc:subject>
+          <dc:format>26 fols.</dc:format>
+          <dc:format>21,5 x 15,7 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nashi script</dc:description>
+          <dc:description>Black and red ink</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 327-331]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2010/mar/codarab89/codarab89_056.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object54448/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object64031</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object64031/en/</dc:identifier>
+          <dc:title>Minoqäräd</dc:title>
+          <dc:title>Sarosh-yast (Sarosh-yast hadoqt)</dc:title>
+          <dc:description>First part consists of a Pahlavi text by Mainyō-i-Khard with a translation to Sanskrit by Neriosengh.</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Liturgy</dc:description>
+          <dc:subject xml:lang="en">Liturgy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 022</dc:subject>
+          <dc:format>47 fols.</dc:format>
+          <dc:format>26.4 x 18.5 x 1.6 cm</dc:format>
+          <dc:language>pal</dc:language>
+          <dc:language>sa</dc:language>
+          <dc:description>Pahlavi and Sanskrit</dc:description>
+          <dc:description>Pahlavi and Sanskrit in between, Sanskrit upside-down</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 114</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/maj/codiran22/codiran22_126.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object64031/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object69517</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object69517/en/</dc:identifier>
+          <dc:title>性命雙修萬神圭旨亨集</dc:title>
+          <dc:title>Xingming shuangxiu wanshen guizhi heng ji</dc:title>
+          <dc:description>Daoistisk work from the late Ming Dynasty e.g. 1622. This manuscript has been copied in Korea in the 18th century, possibly from a Chinese printed edition. It includes 11 illustrations in typical line drawing style.</dc:description>
+          <dc:description>Daoist alchemy and sexual hygiene</dc:description>
+          <dc:subject xml:lang="en">Daoist alchemy and sexual hygiene</dc:subject>
+          <dc:subject xml:lang="en">OA 102-1975-162</dc:subject>
+          <dc:format>98 pages</dc:format>
+          <dc:format>25,2 x 25,8 cm.</dc:format>
+          <dc:language>zh</dc:language>
+          <dc:description>Kaishu</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_4/non-archival/Manus/ORTSAM/2011/okt/OA_102-1975-162/OA_102-1975-162_102.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object69517/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object57581</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object57581/en/</dc:identifier>
+          <dc:title>الاصول</dc:title>
+          <dc:title>Elementa</dc:title>
+          <dc:title>al-Uṣūl</dc:title>
+          <dc:description>Books 14-15 [fols. 202b-214b] have been ascribed to Hypsicles [Ibsiqlā[wu]s]</dc:description>
+          <dc:description>Books 3-15 of Euclid's Elements</dc:description>
+          <dc:subject xml:lang="en">Geometry</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0081</dc:subject>
+          <dc:format>214 fol.</dc:format>
+          <dc:format>26.6 x 18.5 x 4.3 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>ar</dc:description>
+          <dc:description>Naskhi</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,1 [pp. 281-285]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_9/non-archival/Manus/ORTSAM/2010/okt/codarab81/codarab81_436.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object57581/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object59528</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object59528/en/</dc:identifier>
+          <dc:title>خريدة العجائب وفريدة الفرائب</dc:title>
+          <dc:title>Harīdat al-'aǧā'ib wa-farīdat al-ġarā'ib</dc:title>
+          <dc:description>Bought in Cairo 1761/62 by the Danish philologist Frederik Christian von Haven (d. 1763), a member of the Carsten Niebuhr expedition 1761-1767.</dc:description>
+          <dc:description>Geography and natural history</dc:description>
+          <dc:subject xml:lang="en">Geography and natural history</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0093</dc:subject>
+          <dc:format>20,3 x 15,8 x 3,5 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nash̬ī script</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 345-349]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/feb/codarab93/codarab93_432.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object59528/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object60039</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object60039/en/</dc:identifier>
+          <dc:title>قصه بى نظير و بدر منير</dc:title>
+          <dc:title>سحر البيان</dc:title>
+          <dc:title>Sihr al-bayan</dc:title>
+          <dc:title>Qissai Benazir aur Badremunir</dc:title>
+          <dc:description>Romance of Prince Bi-Nazir and Princess Badr-i-Munir in Urdu.</dc:description>
+          <dc:description>The text in black is framed by one blue line followed by two red. Some chapter headings in red. Gilded Onvan.</dc:description>
+          <dc:description>40 polychrome minuatures of varying sizes; one over two pages.</dc:description>
+          <dc:description>Narrative work in rhyming couplets</dc:description>
+          <dc:subject xml:lang="en">Romance</dc:subject>
+          <dc:subject xml:lang="en">Cod. Hind. Add. 001</dc:subject>
+          <dc:format>279 s.</dc:format>
+          <dc:format>20.5 x 13.5 x 2,5 cm.</dc:format>
+          <dc:language>ur</dc:language>
+          <dc:description>Nastaliq</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/mar/codhindadd1/codhindadd1_300.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object60039/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object65491</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object65491/en/</dc:identifier>
+          <dc:title>Sifat-i-sirozah</dc:title>
+          <dc:title>Pahlavicum</dc:title>
+          <dc:title>Izeshne rafitwan</dc:title>
+          <dc:title>Afrigan rapithwan</dc:title>
+          <dc:title>Afrin i Zartust paigambar</dc:title>
+          <dc:title>Sirozah e Qorda Avesta</dc:title>
+          <dc:description>Six different texts</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Ceremony</dc:description>
+          <dc:subject xml:lang="en">Ceremony etc.</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 025</dc:subject>
+          <dc:format>135 fols.</dc:format>
+          <dc:format>23.5 x 18,5 x 3.0 cm</dc:format>
+          <dc:language>PAL</dc:language>
+          <dc:description>Pahlavi</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 114</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/jun/codiran25/codiran25_298.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object65491/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object58455</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object58455/en/</dc:identifier>
+          <dc:title>[Selections of verses of the Qur'ān and du'ā' prayers]</dc:title>
+          <dc:description>The manuscript contains a selection of sūrahs of the Qur'ān and du'ā' prayers</dc:description>
+          <dc:description>Pages 192-236 consist of miniatures and specimens of calligraphy</dc:description>
+          <dc:description>Devotion</dc:description>
+          <dc:subject xml:lang="en">Devotion</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. Add. 0057</dc:subject>
+          <dc:format>141 fols.</dc:format>
+          <dc:format>18,4 x 11,5 x 2 cm.</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Vocalised Nash̬ī in black</dc:description>
+          <dc:description>Headings in white, verse markers gold with small red, black and white dots</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 1304-1308]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2010/nov/codarab_add_57/codarab_add_57_290.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object58455/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object79867</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object79867/en/</dc:identifier>
+          <dc:title>Tibb-i Shihab</dc:title>
+          <dc:title>Tibb-i Shihabi</dc:title>
+          <dc:description>Provisional description (Sept. 2012)</dc:description>
+          <dc:subject xml:lang="en">Medicine</dc:subject>
+          <dc:subject xml:lang="en">Cod. Pers. 023</dc:subject>
+          <dc:format>112 fols.</dc:format>
+          <dc:format>23 x 13,5 cm</dc:format>
+          <dc:language>fa</dc:language>
+          <dc:description>Ta'liq script</dc:description>
+          <dc:description>Vestergaard &amp; Mehren: Codices Orientales Bibliothecæ Regiæ Havniensis ... Vol. III: Codices Persici, Turcici, Hindustanici variique alii; enumerati et descripti ab A. F. Mehren, Copenhagen 1857, p. 11.</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_11/non-archival/Manus/ORTSAM/2012/sep/cod_pers_23/cod_pers_23-236.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object79867/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object63895</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object63895/en/</dc:identifier>
+          <dc:title>Viraf-namah, Bundähäsh etc.</dc:title>
+          <dc:title>Arda Viraf Namak (Book of Arda Viraf)</dc:title>
+          <dc:title>Bundanishn</dc:title>
+          <dc:description>According to Rasmus Rask the copy was made by Dastur Darap from Cod. Iran. 20.</dc:description>
+          <dc:description>Pahlavi text with few notes in Farsi.</dc:description>
+          <dc:description>Journey of Arda Viraf to hell and heaven. Zoroastrian cosnogony and cosmology</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Story of Hell and Heaven. Creation myth.</dc:description>
+          <dc:subject xml:lang="en">Epic story and Creation myth</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 021</dc:subject>
+          <dc:format>172 fols.</dc:format>
+          <dc:format>28.9 x 26.9 x 3.2 cm</dc:format>
+          <dc:language>pal</dc:language>
+          <dc:language>fa</dc:language>
+          <dc:description>Pahlavi</dc:description>
+          <dc:description>Pahlavi with Farsi on margins</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 114</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/maj/codiran21/codiran21_350.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object63895/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object61274</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object61274/en/</dc:identifier>
+          <dc:title>دلائل الخيرات وسوارق الانوار فى ذكر الصلاة على النبى المختار</dc:title>
+          <dc:title>Dalā'il al-h̬ayrāt wa-sawāriq al-anwār fī d̠̠ikr al-ṣalāt 'alā al-nabī al-muh̬tār</dc:title>
+          <dc:description>Prayers for the Prophet.</dc:description>
+          <dc:description>Illuminations of Makkah and Medhīnah in Western Sudanese style.</dc:description>
+          <dc:description>Devotional text</dc:description>
+          <dc:subject xml:lang="en">Devotion</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0050</dc:subject>
+          <dc:format>136 fols.</dc:format>
+          <dc:format>12.1 x 13 x 14 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Maġribī</dc:description>
+          <dc:description>Important words in red, yellow and blue</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 147-152]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/apr/codarab50/codarab50_001.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object61274/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object58342</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object58342/en/</dc:identifier>
+          <dc:title>Arshtat and Patīt-ī-Irānīk</dc:title>
+          <dc:title>Ashtād</dc:title>
+          <dc:description>According to N. L. Westergaard (1815-1878), the manuscript was copied in 1818</dc:description>
+          <dc:description>Purchased in Iran by N. L. Westergaard in 1843</dc:description>
+          <dc:description>Hymn to Arshtat and Repentance formula</dc:description>
+          <dc:subject xml:lang="en">Liturgy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 039</dc:subject>
+          <dc:format>56 fols.</dc:format>
+          <dc:format>15,5 x 11,5 cm</dc:format>
+          <dc:language>pal</dc:language>
+          <dc:description>Script in black with red pause markers</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2010/nov/codiran39/codiran39_126.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object58342/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object61539</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object61539/en/</dc:identifier>
+          <dc:title>دلائل الخيرات وسوارق الانوار فى ذكر الصلاة على النبى المختار</dc:title>
+          <dc:title>Dalā'il al-h̬ayrāt wa-sawāriq al-anwār fī d̠̠ikr al-ṣalāt 'alā al-nabī al-muh̬tār</dc:title>
+          <dc:description>Praying for the Prophet.</dc:description>
+          <dc:description>Devotional text</dc:description>
+          <dc:subject xml:lang="en">Devotion</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. Add. 0031</dc:subject>
+          <dc:format>93 fols.</dc:format>
+          <dc:format>13.3 x 10 x 2 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Maġribī</dc:description>
+          <dc:description>Black ink, significant words in red, the prophet Muḥammad's name in red and green</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,1 [pp. 32 and 94]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/maj/codarabadd31/codarabadd31_190.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object61539/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object48364</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object48364/en/</dc:identifier>
+          <dc:title>مقامات الحريري</dc:title>
+          <dc:title>Maqāmāt al-Ḥarīrī</dc:title>
+          <dc:description>Rhymed prose tale</dc:description>
+          <dc:subject xml:lang="en">Adab</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. Add. 0083</dc:subject>
+          <dc:format>154 fols.</dc:format>
+          <dc:format>25,7 x 19,0 x 3,8 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nashi script</dc:description>
+          <dc:description>Title and other details in Kufi script</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 1416-1421]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2009/apr/codarab83/codarab83_00326.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object48364/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object57589</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object57589/en/</dc:identifier>
+          <dc:title>[تقويم السنة الشمسية]</dc:title>
+          <dc:title>[Taqwīm al-sanah al-šamsīyah]</dc:title>
+          <dc:description>First date mentioned is 14 Ṣafar 1057 H [21.3.1647 CE], the last year is 1099 H [1688 CE]</dc:description>
+          <dc:description>Astronomical and other calendar information</dc:description>
+          <dc:subject xml:lang="en">Astronomy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. 0090</dc:subject>
+          <dc:format>75 fols.</dc:format>
+          <dc:format>28 x 20 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Naskhi</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 332-336]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_9/non-archival/Manus/ORTSAM/2010/okt/codarb90/codarb90_154.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object57589/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object64782</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object64782/en/</dc:identifier>
+          <dc:title>Minoqäräd</dc:title>
+          <dc:description>Text in Pahlavi with translation in Gujarati.</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Liturgy</dc:description>
+          <dc:subject xml:lang="en">Liturgy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 023</dc:subject>
+          <dc:format>168 fols.</dc:format>
+          <dc:format>21,8 x 12,1 x 2,3 cm</dc:format>
+          <dc:language>pal</dc:language>
+          <dc:language>gu</dc:language>
+          <dc:description>Pahlavi and Gujarati</dc:description>
+          <dc:description>Gujarati in between Pahlavi and upside-down</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 114</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/jun/codiran23/codiran23_360.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object64782/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object62974</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object62974/en/</dc:identifier>
+          <dc:title>Yasht</dc:title>
+          <dc:title>(Warharan, Hordad, Den, Ashtad and Ram)</dc:title>
+          <dc:description>Five hymns from Yasth:</dc:description>
+          <dc:description>Warharan, Hordad, Den, Ashtad and Ram.</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Hymns</dc:description>
+          <dc:subject xml:lang="en">Cod. Iran. 016</dc:subject>
+          <dc:format>63 fols.</dc:format>
+          <dc:format>12.7 x 14.9 x 1.4 cm</dc:format>
+          <dc:language>ae</dc:language>
+          <dc:description>Avesta</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 113</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/maj/codiran16/codiran16_146.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object62974/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object62811</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object62811/en/</dc:identifier>
+          <dc:title>Farwardin yasht</dc:title>
+          <dc:description>According to Rasmus Rask the copy was made by Dastur Jamasp.</dc:description>
+          <dc:description>Notes in Farsi and Sanskrit.</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Hymn</dc:description>
+          <dc:subject xml:lang="en">Cod. Iran. 013</dc:subject>
+          <dc:format>51 fols.</dc:format>
+          <dc:format>20.2 x 12.5 x 1.5 cm</dc:format>
+          <dc:language>ae</dc:language>
+          <dc:language>fa</dc:language>
+          <dc:language>sa</dc:language>
+          <dc:description>Avestan, Farsi and Sanskrit</dc:description>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 113</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2011/maj/codiran13/codiran13_136.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object62811/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object49325</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object49325/en/</dc:identifier>
+          <dc:title>[Manual of calendrical information]</dc:title>
+          <dc:title>... jˇula nere-tü litu buyu</dc:title>
+          <dc:description>Paper very browned and apparently burned at edges. Front cover munch reduced in size. Text perhaps incomplete. Fol. 35 missing. Undated, but an old MS.</dc:description>
+          <dc:description>Twelve month calender with illustrations. Giving first general information about the place of the month in different calendars and then information regarding each day.</dc:description>
+          <dc:subject xml:lang="en">Calender</dc:subject>
+          <dc:subject xml:lang="en">Mong 326</dc:subject>
+          <dc:format>55 fols.</dc:format>
+          <dc:format>9,5 x 32,5 cm</dc:format>
+          <dc:language>mn</dc:language>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, Vol. 3 [pp. 185-187]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2009/dec/mong326/mong326_001.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object49325/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object61540</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object61540/en/</dc:identifier>
+          <dc:title>دلائل الخيرات وسوارق الانوار فى ذكر الصلاة على النبى المختار</dc:title>
+          <dc:title>Dalā'il al-h̬ayrāt wa-sawāriq al-anwār fī d̠̠ikr al-ṣalāt 'alā al-nabī al-muh̬tār</dc:title>
+          <dc:description>Praying for the Prophet.</dc:description>
+          <dc:description>Illuminations of Makkah and Medhīnah.</dc:description>
+          <dc:description>Devotional text</dc:description>
+          <dc:subject xml:lang="en">Devotion</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. Add. 0035</dc:subject>
+          <dc:format>192 pp.</dc:format>
+          <dc:format>17.2 x 12.3 x 1.2 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nash̬ī</dc:description>
+          <dc:description>Nash̬ī</dc:description>
+          <dc:description>Nash̬ī</dc:description>
+          <dc:description>Nash̬ī</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,1 [pp. 33-34 and 99-101]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/apr/codarabadd35/codarabadd35_200.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object61540/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object49435</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object49435/en/</dc:identifier>
+          <dc:title>[Manual of astrology]</dc:title>
+          <dc:title>Kedün jˇil-ün üjˇilge orusibai</dc:title>
+          <dc:description>The manuscript is complete. It has been digitized according to the order of the leaves, as kept in the stacks, but the leaves may not be in correct order.</dc:description>
+          <dc:description>Predictions and prescriptions for circumstances and actions of all kinds are given, based both upon astrological and other data</dc:description>
+          <dc:subject xml:lang="en">Astrology</dc:subject>
+          <dc:subject xml:lang="en">Mong 375</dc:subject>
+          <dc:format>70 fols.</dc:format>
+          <dc:format>9 x 24,5 cm</dc:format>
+          <dc:language>mn</dc:language>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, Vol. 3 [pp. 171-175]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2009/dec/mong375/mong375_001.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object49435/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object60025</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object60025/en/</dc:identifier>
+          <dc:title>دلائل الخيرات وسوارق الانوار فى ذكر الصلاة على النبي المختار</dc:title>
+          <dc:title>Dalā'il al-h̬ayrāt wa-sawāriq al-anwār fī d̠̠ikr al-ṣalāt 'alā al-nabī al-muh̬tār</dc:title>
+          <dc:description>Praying for the Prophet.</dc:description>
+          <dc:description>Illuminations in gold, blue and red.</dc:description>
+          <dc:description>Illuminations of Makkah and Medhīnah.</dc:description>
+          <dc:description>Text is enclosed within gold and black multiple frames.</dc:description>
+          <dc:description>Devotional text</dc:description>
+          <dc:subject xml:lang="en">Devotion</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. Add. 0054</dc:subject>
+          <dc:format>80 fols.</dc:format>
+          <dc:format>16.1 x 10.9 x 1.4 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nash̬ī</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 1289-1293]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/mar/codarabadd54/codarabadd54_168.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object60025/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object60569</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object60569/en/</dc:identifier>
+          <dc:title>شيرين و خسرو</dc:title>
+          <dc:title>Širīn va Xosrav</dc:title>
+          <dc:description>The text is a rendition of the love story between Khosrav Parvīz and princess Širīn.</dc:description>
+          <dc:description>With 29 illustrations in watercolours.</dc:description>
+          <dc:description>Love story in poetry</dc:description>
+          <dc:subject xml:lang="en">Poetry</dc:subject>
+          <dc:subject xml:lang="en">Cod. Pers. Add. 0054</dc:subject>
+          <dc:format>229 fols.</dc:format>
+          <dc:format>21 x 17 x 3 cm</dc:format>
+          <dc:language>ku</dc:language>
+          <dc:description>Nasta'līq</dc:description>
+          <dc:description>Kurdish in Persian script</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/mar/codpersadd54/codpersadd54_456.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object60569/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object48677</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object48677/en/</dc:identifier>
+          <dc:title>Khorda Avesta</dc:title>
+          <dc:title>Hormazd yast</dc:title>
+          <dc:title>Sarósh yast hadoqt</dc:title>
+          <dc:title>Māh Nyāish</dc:title>
+          <dc:title>Mihr Nyāish</dc:title>
+          <dc:description>The accompanying translation is partly in Pahlavi and partly in Farsi.</dc:description>
+          <dc:description>19 lines to the page.</dc:description>
+          <dc:description>Purchased by Rasmus Rask in Bombay in 1820.</dc:description>
+          <dc:description>Liturgy</dc:description>
+          <dc:subject xml:lang="en">Prayers</dc:subject>
+          <dc:subject xml:lang="en">Liturgy</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 018</dc:subject>
+          <dc:format>277 pages</dc:format>
+          <dc:format>25 x 14 cm</dc:format>
+          <dc:language>ae-Avst</dc:language>
+          <dc:language>pal-Phlv</dc:language>
+          <dc:language>fa</dc:language>
+          <dc:description>Codices Indici bibliothecæ regiæ Havniensis I (1846), pp. 113-114</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_6/non-archival/Manus/ORTSAM/2009/okt/codiran_18/codiran_18_00312.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object48677/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object69455</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object69455/en/</dc:identifier>
+          <dc:title>佛陀聖人十九圖</dc:title>
+          <dc:title>Fotuo shengren shijiu tu</dc:title>
+          <dc:description>Eighteen Luohans and Buddha with Weituo painted on bo-leaves (Sinhala bo) collected in a folded (liporello) book with wooden board (zitan woood).</dc:description>
+          <dc:description>Opposite each painted leaf is an empty leaf, which indicate the back-side of the painted leaf on the previous page.</dc:description>
+          <dc:description>The Bo-tree is sacred to the Buddhist.</dc:description>
+          <dc:description>All the leaves are placed in af blue setting framed by a light blue brocade.</dc:description>
+          <dc:description>18 Louhans painted on bo-leaves</dc:description>
+          <dc:subject xml:lang="en">Buddhist Luohans (Arhat)</dc:subject>
+          <dc:subject xml:lang="en">OA 102-1975-829</dc:subject>
+          <dc:format>22 fols.</dc:format>
+          <dc:format>27,5 x18,2 x 3,5 cm</dc:format>
+          <dc:language>Chinese</dc:language>
+          <dc:description>Black ink</dc:description>
+          <dc:description>On yellowish dried bo-leaves</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_4/non-archival/Manus/ORTSAM/2011/sept/OA_102-1975-829/OA_102-1975-829_048.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object69455/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object67430</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object67430/en/</dc:identifier>
+          <dc:title>Yashts</dc:title>
+          <dc:title>Ardabahisht,</dc:title>
+          <dc:title>Khǔrshēd,</dc:title>
+          <dc:title>Māh,</dc:title>
+          <dc:title>Mihr,</dc:title>
+          <dc:title>Bahrām,</dc:title>
+          <dc:title>Rām,</dc:title>
+          <dc:title>Vanand Yasht</dc:title>
+          <dc:description>Purchased in Iran by N. L. Westergaard in 1843</dc:description>
+          <dc:description>Hymns</dc:description>
+          <dc:subject xml:lang="en">Hymns</dc:subject>
+          <dc:subject xml:lang="en">Cod. Iran. 040</dc:subject>
+          <dc:format>20,5 x 14 x 4 cm</dc:format>
+          <dc:language>pa</dc:language>
+          <dc:description>Pahlavi</dc:description>
+          <dc:description>with markings, headings and a few words in Sanskrit in red</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2011/august/codiran40/codiran40_702.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object67430/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:kb.dk:oai:kb.dk:manus:ortsam:2009:okt:orientalia:object61538</identifier>
+        <datestamp>2012-12-03T07:53:19Z</datestamp>
+        <setSpec>kb.orientalmss</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/        http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+          <dc:identifier xsi:type="dcterms:URI">http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object61538/en/</dc:identifier>
+          <dc:title>دلائل الخيرات وسوارق الانوار فى ذكر الصلاة على النبى المختار</dc:title>
+          <dc:title>Dalā'il al-h̬ayrāt wa-sawāriq al-anwār fī d̠̠ikr al-ṣalāt 'alā al-nabī al-muh̬tār</dc:title>
+          <dc:description>Praying for the Prophet.</dc:description>
+          <dc:description>Illuminations of Makkah and Medhīnah.</dc:description>
+          <dc:description>The text is placed within gold and black multiple frames.</dc:description>
+          <dc:description>Devotional text</dc:description>
+          <dc:subject xml:lang="en">Devotion</dc:subject>
+          <dc:subject xml:lang="en">Cod. Arab. Add. 0029</dc:subject>
+          <dc:format>127 fols.</dc:format>
+          <dc:format>14.8 x 10,3 x 1.7 cm</dc:format>
+          <dc:language>ar</dc:language>
+          <dc:description>Nash̬ī</dc:description>
+          <dc:description>Described in detail in: Catalogue of Oriental Manuscripts in Danish Collections, vol. 5,3 [pp. 1248-1251]</dc:description>
+          <europeana:object>http://www.kb.dk/imageService/online_master_arkiv/non-archival/Manus/ORTSAM/2011/apr/codarabadd29/codarabadd29_270.jpg</europeana:object>
+          <europeana:provider>    The Royal Library: The National Library of Denmark and Copenhagen University Library  </europeana:provider>
+          <europeana:type>TEXT</europeana:type>
+          <europeana:rights>http://creativecommons.org/licenses/by-nc-nd/2.0/</europeana:rights>
+          <europeana:dataProvider>The Royal Library: The National Library of Denmark and Copenhagen University Library</europeana:dataProvider>
+          <europeana:isShownAt>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object61538/en/</europeana:isShownAt>
+        </record>
+      </metadata>
+    </record>
+  </ListRecords>
+</OAI-PMH>

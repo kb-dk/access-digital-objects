@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Yasna; Yaçna</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Yasna<br/>Yaçna</h4>
+        <p><strong>Beskrivelse</strong><br/>Purchased by Rasmus Rask in Bombay in 1820.
+		  Interpretation in Sanskrit by Niriosängh
+		  Liturgy
+		  Avesta and Sanskrit
+		  high-lights in red. Sanskrit up-side down
+		  </p>
+        <p><strong>Format</strong><br/>437 fols.24 x 17,5 x 7 cm</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object68506/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/manus/ortsam/2009/okt/orientalia/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Yasna" src="http://www.kb.dk/imageService/online_master_arkiv_8/non-archival/Manus/ORTSAM/2011/august/codiran06/codiran06_892.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/manus/ortsam/2009/okt/orientalia/object68506/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators/>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Liturgy</Tag>
+    <Tag>Cod. Iran. 006</Tag>
+  </Tags>
+</DKA>

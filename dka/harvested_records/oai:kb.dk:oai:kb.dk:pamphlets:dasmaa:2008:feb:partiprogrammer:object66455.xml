@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>"Fred" udover alle grænser</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>"Fred" udover alle grænser</h4>
+        <p><strong>Kolofon</strong><br/>Kommunistisk Arbejderparti - KAP</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object66455/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="&quot;Fred&quot; udover alle grænser" src="http://www.kb.dk/imageService/online_master_arkiv_9/non-archival/Pamphlets/DASMAA/2010/nov/partiprog_6/kap1986/kap1986_001.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object66455/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators>
+    <Creator Role="creator" Name="Kommunistisk Arbejderparti - KAP"/>
+  </Creators>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Partiprogrammer</Tag>
+    <Tag>Kommunistisk Arbejderparti -  KAP</Tag>
+    <Tag>1986</Tag>
+    <Tag>"Fred" udover alle grænser  "Fred" udover alle grænser  "Fred" udover alle grænser  "Fred" udover alle grænser</Tag>
+  </Tags>
+</DKA>

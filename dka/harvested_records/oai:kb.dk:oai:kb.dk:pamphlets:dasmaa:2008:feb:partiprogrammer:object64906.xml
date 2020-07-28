@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.danskkulturarv.dk/DKA2.xsd" xmlns:oa="http://www.openarchives.org/OAI/2.0/" xmlns:ese="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd">
+  <Title>Hvad skal fremtiden med Venstre?</Title>
+  <Abstract/>
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div style="vertical-align:top;width:25%;float:left;">
+        <h4>Hvad skal fremtiden med Venstre?</h4>
+        <p><strong>Kolofon</strong><br/>Venstre</p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object64906/en/">Mere om objektet</a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a target="_blank" href="http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/da/">
+		Mere fra samme udgivelse</a>
+          </strong>
+        </p>
+        <div><strong>Copyright</strong><br/>
+	    © The Royal Library: The National Library of Denmark and Copenhagen University Library</div>
+      </div>
+      <div style="vertical-align:top;width:75%;float:left;">
+        <img style="width:100%;" alt="Hvad skal fremtiden med Venstre?" src="http://www.kb.dk/imageService/online_master_arkiv_9/non-archival/Pamphlets/DASMAA/2010/okt/partiprog_5/ven82003/ven8_053.jpg"/>
+      </div>
+    </div>
+  </Description>
+  <Organization>The Royal Library: The National Library of Denmark and Copenhagen University Library</Organization>
+  <ExternalURL>http://www.kb.dk/pamphlets/dasmaa/2008/feb/partiprogrammer/object64906/en/</ExternalURL>
+  <Type>TEXT</Type>
+  <Contributors/>
+  <Creators>
+    <Creator Role="creator" Name="Venstre"/>
+  </Creators>
+  <TechnicalComment/>
+  <Location/>
+  <RightsDescription>Copyright © The Royal Library: The National Library of Denmark and Copenhagen University Library</RightsDescription>
+  <Categories/>
+  <Tags>
+    <Tag>Partiprogrammer</Tag>
+    <Tag>Venstre</Tag>
+    <Tag>2003</Tag>
+    <Tag>Hvad skal fremtiden med Venstre?</Tag>
+  </Tags>
+</DKA>
