@@ -1,0 +1,78 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	   attributeFormDefault="unqualified" 
+	   elementFormDefault="qualified">
+  <xs:element name="DKA">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element name="Title" type="xs:string" />
+	<xs:element name="Abstract" type="xs:string" />
+	<xs:element name="Description" type="xs:string" />
+	<xs:element name="Organization" type="xs:string" />
+	<xs:element name="Type" type="xs:string" />
+	<xs:element name="CreatedDate" type="xs:date" />
+	<xs:element name="FirstPublishedDate" type="xs:date" />
+	<xs:element name="Identifier" type="xs:string" />
+	<xs:element name="Contributor">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="Person" minOccurs="0" maxOccurs="unbounded">
+		<xs:complexType>
+		  <xs:attribute name="Name" type="xs:string" use="required" />
+		  <xs:attribute name="Role" type="xs:string" />
+		</xs:complexType>
+	      </xs:element>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Creator">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="Person" minOccurs="0" maxOccurs="unbounded">
+		<xs:complexType>
+		  <xs:attribute name="Name" type="xs:string" use="required" />
+		  <xs:attribute name="Role" type="xs:string" />
+		</xs:complexType>
+	      </xs:element>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="TechnicalComment" type="xs:string" />
+	<xs:element name="Location" type="xs:string" />
+	<xs:element name="RightsDescription" type="xs:string" />
+	<xs:element name="GeoData">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="Latitude" type="xs:decimal" />
+	      <xs:element name="Longitude" type="xs:decimal" />
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Categories">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element maxOccurs="unbounded" name="Category"
+			  type="xs:string" />
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Tags">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element maxOccurs="unbounded" name="Tag" type="xs:string" />
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Metafield" minOccurs="0" maxOccurs="unbounded">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="Key" type="xs:string" />
+	      <xs:element name="Value" type="xs:string" />
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="ProductionID" type="xs:string" />
+	<xs:element name="StreamDuration" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

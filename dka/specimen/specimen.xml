@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DKA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://www.danskkulturarv.dk/DKA2.xsd ../schemas/DKA.xsd"
+     xmlns="http://www.danskkulturarv.dk/DKA2.xsd"  >
+  <Title>Tryggelev Nor</Title>
+  <Abstract />
+  <Description>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h4>Angrebet fra alle sider</h4>
+      <p>Tryggelev Nor ligger på Langelands vestkyst. Indtil 2008 lå der en
+      langdysse på toppen af klinten. Dyssen lå langs stranden. Gennem mange
+      år har havet arbejdet sig ind på kysten. Til sidst lå alle randstenene
+      fra den ene langside af dyssen nede på stranden i en lang
+      række. Langdyssen er bare én af Danmarks cirka 2500 fredede dysser og
+      jættestuer. Oprindelig var der ti gange så mange. Der bliver passet godt
+      på de tilbageværende, men i nogle tilfælde kan lovgivningen alene ikke
+      forhindre ødelæggelserne. Det gælder, når det er naturen selv, som
+      nedbryder fortidsminderne.</p>
+    </div>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h4>Fra gravkammer til køleskab</h4>
+      <p>Langdyssen ved Tryggelev Nor blev ikke kun angrebet af havet. På
+      landsiden var dyssen også under angreb. Her havde en greve fra
+      Tranekær nemlig fjernet randstenene fra den anden langside i den
+      sidste halvdel af 1800-tallet. Stenene blev kløvet og brugt til at
+      bygge et stendige. Samtidig havde greven bygget sig en jagthytte på
+      stedet. I den forbindelse var gravkammeret blevet indrettet som
+      viktualiekælder, altså en slags naturligt køleskab. I 2006 gnavede
+      en storm endnu et stykke af klinten. Selve gravkammeret var i fare
+      for at falde ned og til fare for publikum. Det var ikke muligt at
+      kystsikre klinten effektivt. I 2008 blev gravkammeret derfor skilt
+      ad og flyttet i sikkerhed.</p>
+    </div>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+      Skrevet af <a target="_blank" href="http://www.kulturarv.dk/1001fortaellinger/da_DK/profile/joergen-westphal">Jørgen Westphal</a>
+    </p>
+  </Description>
+  <Organization>1001 fortællinger om Danmark - Kulturstyrelsen</Organization>
+  <ExternalURL>http://www.kulturarv.dk/1001fortaellinger/da_DK/s/630</ExternalURL>
+  <Type>Picture, Sound</Type>
+  <!-- CreatedDate   / --> <!-- have to omit these, since if left empty it won't validate as xs:dateTime  -->
+  <!-- FirstPublishedDate / --> <!-- have to omit these, since if left empty it won't validate -->
+  <Contributors>
+    <Contributor Name="" Role="" />
+  </Contributors>
+  <Creators>
+    <Creator Role="Administrator" Name="Jørgen Westphal" />
+    <Creator Role="Fotograf" Name="J" />
+    <Creator Role="Forfatter" Name="Jørgen Westphal" />
+  </Creators>
+  <TechnicalComment />
+  <Location>Langeland</Location>
+  <RightsDescription>Copyright © Kulturstyrelsen</RightsDescription>
+  <GeoData>
+    <Latitude>54.791752</Latitude>
+    <Longitude>10.661015</Longitude>
+  </GeoData>
+  <Categories />
+  <Tags>
+    <Tag>Stenalderens bønder</Tag>
+    <Tag>Klima- og landskabsændringer gennem 10000 år</Tag>
+    <Tag>Vi skriver historie</Tag>
+    <Tag>Megalit</Tag>
+    <Tag>dysse</Tag>
+    <Tag>Neolitikum</Tag>
+    <Tag>Stenalder</Tag>
+    <Tag>sikring af fortidsminder</Tag>
+  </Tags>
+
+  <!-- ProductionID / --> <!-- does not belong to the schema -->
+  <!-- We could have had a Metafield at this point -->
+</DKA>
+

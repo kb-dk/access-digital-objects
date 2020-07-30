@@ -1,0 +1,146 @@
+<xs:schema attributeFormDefault="unqualified"
+	   elementFormDefault="qualified"
+	   targetNamespace="http://www.danskkulturarv.dk/DKA2.xsd"
+	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	   xmlns:dka2="http://www.danskkulturarv.dk/DKA2.xsd"
+	   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <xs:import
+      schemaLocation="http://www.w3.org/2002/08/xhtml/xhtml1-transitional.xsd"
+      namespace="http://www.w3.org/1999/xhtml">
+  </xs:import>
+  <xs:element name="DKA">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element name="Title" type="xs:string">
+	  <xs:annotation>
+	    <xs:documentation></xs:documentation>
+	  </xs:annotation>
+	</xs:element>
+	<xs:element name="Abstract" type="xs:string" />
+	<xs:element name="Description">
+	  <xs:complexType>
+	    <xs:complexContent>
+	      <xs:extension base="xhtml:Flow"></xs:extension>
+	    </xs:complexContent>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Organization" type="xs:string" />
+	<xs:element name="ExternalURL" type="xs:string"></xs:element>
+	<xs:element name="ExternalIdentifier" type="xs:string"
+		    minOccurs="0" maxOccurs="1">
+	</xs:element>
+	<xs:element name="Type" type="xs:string">
+	  <xs:annotation>
+	    <xs:documentation>
+	      This field should contain a comma-seperated
+	      list of types among: Video Sound Image Text
+	      This field is deprecated as it is only used
+	      for filtering on the DKA frontend - it
+	      should instead be implemented as a computed
+	      solr index from the file formats attached to
+	      the object.
+	    </xs:documentation>
+	  </xs:annotation>
+	</xs:element>
+	<xs:element name="CreatedDate" type="xs:dateTime"
+		    maxOccurs="1" minOccurs="0" />
+	<xs:element name="FirstPublishedDate" type="xs:dateTime"
+		    maxOccurs="1" minOccurs="0" />
+	<xs:element name="Contributors">
+	  <xs:annotation>
+	    <xs:documentation></xs:documentation>
+	  </xs:annotation>
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="Contributor" minOccurs="0"
+			  maxOccurs="unbounded">
+		<xs:annotation>
+		  <xs:documentation>
+		    A contributor is a
+		    person/organisation on the
+		    "frontside of the camera", such
+		    as an actor.
+		  </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+		  <xs:attribute name="Name"
+				type="xs:string" use="required" />
+		  <xs:attribute name="Role"
+				type="xs:string" />
+		</xs:complexType>
+	      </xs:element>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Creators">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="Creator" minOccurs="0"
+			  maxOccurs="unbounded">
+		<xs:annotation>
+		  <xs:documentation>
+		    A creator is a
+		    person/organisation from "behind
+		    of the camera", such as a
+		    producer, director or
+		    destributing organisation.
+		  </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+		  <xs:attribute name="Name"
+				type="xs:string" use="required" />
+		  <xs:attribute name="Role"
+				type="xs:string" />
+		</xs:complexType>
+	      </xs:element>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="TechnicalComment" type="xs:string"
+		    maxOccurs="1" minOccurs="0" />
+	<xs:element name="Location" type="xs:string"
+		    maxOccurs="1" minOccurs="0" />
+	<xs:element name="RightsDescription" type="xs:string"
+		    maxOccurs="1" minOccurs="1" />
+	<xs:element name="GeoData" maxOccurs="1"
+		    minOccurs="0">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="Latitude"
+			  type="xs:decimal" />
+	      <xs:element name="Longitude"
+			  type="xs:decimal" />
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Categories">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element maxOccurs="unbounded"
+			  name="Category" type="xs:string" minOccurs="0" />
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Tags">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element maxOccurs="unbounded" name="Tag"
+			  type="xs:string" minOccurs="0" />
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+	<xs:element name="Metafield" minOccurs="0"
+		    maxOccurs="unbounded">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="Key" type="xs:string" />
+	      <xs:element name="Value" type="xs:string" />
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+</xs:schema>
