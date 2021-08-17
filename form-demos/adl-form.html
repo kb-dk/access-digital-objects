@@ -149,17 +149,30 @@ cat_ssi:work
 	<tr id="cat_ssi">
 	  <td style="vertical-align:top;text-align:left;"><pre>cat_ssi</pre></td>
 	  <td style="vertical-align:top;text-align:left;">Category of
-	  a text. Use when limiting searches to works or to find volumes or find author portraits (biographies), omit
+	  a text. Use when limiting searches to works or to find
+	  volumes or find author portraits (biographies), omit
 	  otherwise.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
 work
-volume
 author
 period
 	    </pre>
 	  </td>
 	</tr>
+        <tr id="is_editorial_ssi">
+	  <td style="vertical-align:top;text-align:left;"><pre>is_editorial_ssi</pre></td>
+          <td style="vertical-align:top;text-align:left;">The contents
+          originator is someone else than the author. In this service
+          it is typically forewords, prefaces, comments etc in a
+          scientific edition.</td>
+          <td style="vertical-align:top;text-align:right;">
+            <pre>
+yes
+no
+            </pre>
+          </td>
+        </tr>
 	<tr id="type_ssi">
 	  <td style="vertical-align:top;text-align:left;" ><pre>type_ssi</pre></td>
 	  <td style="vertical-align:top;text-align:left;" >Node type
@@ -172,6 +185,7 @@ period
 work
 trunk
 leaf
+volume
 	    </pre>
 	  </td>
 	</tr>
@@ -190,17 +204,16 @@ play
 	  </td>
 	</tr>
 
-	<tr id="genre_ssi">
+	<tr id="subcollection_ssi">
 	  <td style="vertical-align:top;text-align:left;" ><pre>subcollection_ssi</pre></td>
-	  <td style="vertical-align:top;text-align:left;">Filter with respect to section</td>
+	  <td style="vertical-align:top;text-align:left;">Filter with respect to collection. Currently you may use adl and tfs. In the future we may add: <kbd>letters, sks, gv, lhv, pmm</kbd></td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
-adl
-sks
+              adl
+              tfs
 	    </pre>
 	  </td>
 	</tr>
-
 	<tr>
 	  <td colspan="3">
 	    <h2>Sort fields</h2>
@@ -265,6 +278,27 @@ integer
 	  <td style="vertical-align:top;text-align:left;" >The name of a character uttering something in a dialogue</td>
 	  <td style="vertical-align:top;text-align:right;"> <pre>just plain text</pre></td>
 	</tr>
+        
+        <tr id="person_name_ssim">
+          <td style="vertical-align:top;text-align:left;"><kbd>person_name_ssim person_name_tesim</kbd></td>
+        </tr>
+        
+        <tr id="other_location_ssim">
+          <td style="vertical-align:top;text-align:left;"><kbd>other_location_ssim other_location_tesim</kbd></td>
+        </tr>
+        
+        <tr id="bible_ref_ssim">
+          <td style="vertical-align:top;text-align:left;"><kbd>bible_ref_ssim bible_ref_tesim</kbd></td>
+        </tr>
+        
+        <tr id="other_location_ssim">
+          <td style="vertical-align:top;text-align:left;"><kbd>other_location_ssim other_location_tesim</kbd></td>
+        </tr>
+        
+        <tr id="year_itsi">
+          <td style="vertical-align:top;text-align:left;"><kbd>year_itsi</kbd></td>
+        </tr>
+        
       </table>
 
       <h2>Examples</h2>
@@ -421,6 +455,13 @@ position_isi asc
 
       </dl>
 
+      <h2>Choose index instance</h2>
+
+      <ul id="target-instance">
+        <li id="test"><a href="#" onclick="var set_action = document.getElementById('form').action = 'http://index-test.kb.dk/solr/text-retriever-core/select/'">test</a></li>
+        <li id="test"><a href="#" onclick="var set_action = document.getElementById('form').action = 'http://public-index.kb.dk/solr/text-retriever-core/select/'">production</a></li>
+      </ul>
+      
     </div>
   </body>
 </html>
