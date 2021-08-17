@@ -281,19 +281,44 @@ integer
         
         <tr id="person_name_ssim">
           <td style="vertical-align:top;text-align:left;"><kbd>person_name_ssim person_name_tesim</kbd></td>
+          <td style="vertical-align:top;text-align:left;">Name of
+          persons mentioned in works, or, in case of letters, name of
+          the recipient. The field can be accessed both as text
+          (tesim) and string (ssim). The names in these fields are
+          normalized to last name first (LNF) format. Also, the
+          normalized form usually hits variants, such as Shakespear,
+          William hits William Shakespear, and Jesus hits Kristus as
+          well. But only in these fields, there is no query expansion
+          for the full text.</td>
         </tr>
         
         <tr id="other_location_ssim">
-          <td style="vertical-align:top;text-align:left;"><kbd>other_location_ssim other_location_tesim</kbd></td>
+          <td
+          style="vertical-align:top;text-align:left;"><kbd>other_location_ssim
+          other_location_tesim</kbd></td>
+          <td style="vertical-align:top;text-align:left;">Name of
+          places mentioned in works, or, in case of letters, the place
+          of the sender. The field can be accessed both as text
+          (tesim) and string (ssim). The place names are usually
+          normalized. A search in these field for Danmark hits
+          Dannemark as well.</td>
         </tr>
         
         <tr id="bible_ref_ssim">
-          <td style="vertical-align:top;text-align:left;"><kbd>bible_ref_ssim bible_ref_tesim</kbd></td>
+          <td
+          style="vertical-align:top;text-align:left;"><kbd>bible_ref_ssim
+          bible_ref_tesim</kbd></td>
+          <td style="vertical-align:top;text-align:left;">References
+          to the bible mentioned in works. The field can be accessed
+          both as text (tesim) and string (ssim). The references is
+          using standard Danish abbreviations, like <kbd>1 Mos; 1 Kor
+          13,12; 1 Mos 2,7; Matt 16,18; Sl; Åb; ApG; Joh 1,14; Jak;
+          Job</kbd>. In many cases use bible_ref_ssim and then search
+          for the exact string "1 Kor 13,12". These references are
+          standardized whereas in the text Grundtvig and Kierkegaard
+          may just allude to a place in the Bible.</td>
         </tr>
         
-        <tr id="other_location_ssim">
-          <td style="vertical-align:top;text-align:left;"><kbd>other_location_ssim other_location_tesim</kbd></td>
-        </tr>
         
         <tr id="year_itsi">
           <td style="vertical-align:top;text-align:left;"><kbd>year_itsi</kbd></td>
