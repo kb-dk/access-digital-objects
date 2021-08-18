@@ -1,9 +1,9 @@
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <title>Text corpus search API</title>
     <meta http-equiv="Content-Type" 
-	  content="text/html;charset=UTF-8"/>
+	  content="application/xhtml+xml; charset=utf-8"/>
   </head>
   <body id="therootelement">
     <div style="float:left;width:30%; ">
@@ -501,10 +501,33 @@ position_isi asc
       </dl>
 
       <h2>Choose index instance</h2>
+      
 
+      <script type="javascript">
+
+        var bolder = "public-index";
+        var shier  = "index-test";
+
+      </script>
       <ul id="target-instance">
-        <li id="test"><a href="#" onclick="var set_action = document.getElementById('form').action = 'http://index-test.kb.dk/solr/text-retriever-core/select/'">test</a></li>
-        <li id="test"><a href="#" onclick="var set_action = document.getElementById('form').action = 'http://public-index.kb.dk/solr/text-retriever-core/select/'">production</a></li>
+        <li><a id="index-test" style="font-weight: normal;"
+               href="#target-instance"
+               onclick="bolder='index-test';
+                        shier='public-index';
+                        alert('bold    = ' + bolder + '\nshier =' + shier);
+                        var v1 =  document.getElementById(bolder).setAttribute('style', 'font-weight: bold;');
+                        var v2 =  document.getElementById(shier).setAttribute('style', 'font-weight: normal;');
+                        var set_action = document.getElementById('form').action = 'http://index-test.kb.dk/solr/text-retriever-core/select/';">index-test</a></li>
+        
+        <li><a id="public-index"
+               style="font-weight: bold;"
+               href="#target-instance"
+               onclick="bolder='public-index';
+                        shier='index-test';
+                        alert('bold = ' + bolder + '\nshier =' + shier);
+                        var v1 =  document.getElementById(bolder).setAttribute('style', 'font-weight: bold;');
+                        var v2 =  document.getElementById(shier).setAttribute('style', 'font-weight: normal;');
+                        var set_action = document.getElementById('form').action = 'https://public-index.kb.dk/solr/text-retriever-core/select/';">public-index</a></li>
       </ul>
       
     </div>
