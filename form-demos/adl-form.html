@@ -24,7 +24,7 @@
 	  <dt>Search for</dt>
 	  <dd>
 	    <textarea id="queryfield" name="q" cols="30" rows="10">
-type_ssi:work
+type_ssi:work AND cat_ssi:work
 	    </textarea>
 	  </dd>
 	  <dt>filter query</dt>
@@ -49,7 +49,7 @@ type_ssi:work
 	  <dt>start record</dt>
 	  <dd><input name="start" value="0"/></dd>
 	  <dt>number of records</dt>
-	  <dd><input name="rows" value="10"/></dd>
+	  <dd><input id="num_hits" name="rows" value="10"/></dd>
 	  <dt>Sort by</dt>
 	  <dd><input id="sortfield" name="sort" value=""/></dd>
 	  <dt>Query parser</dt> <!-- the dismax parser doesn't work, it seems -->
@@ -60,7 +60,20 @@ type_ssi:work
 	    <input name="indent" type="hidden" value="on"/>
 	  </dt>
 	  <dt><br/>
-	    <input type="submit" value="Submit"/> <a href="#form" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);document.getElementById('filterquery').value = '';"><strong>Reset form!</strong></a>
+	  <input type="submit"
+                 value="Submit"/>
+          <a href="#form"
+             onclick="var content = document.getElementById('all_works').innerHTML;
+                      document.getElementById('queryfield').value = content;
+                      console.log(content);
+                      document.getElementById('filterquery').value = '';
+                      document.getElementById('fieldlist').value = '';
+                      document.getElementById('sortfield').value = '';
+                      document.getElementById('num_hits').value = '10';
+
+">
+            <strong>Reset form!</strong>
+          </a>
 	  </dt>
 	</dl>
       </form>
@@ -370,7 +383,7 @@ performance_extract_tesim
 	</dt>
 	<dd>
 	  <pre id="all_works">
-type_ssi:work
+type_ssi:work AND is_editorial_ssi:no
 	  </pre>
 	</dd>
 
@@ -470,15 +483,20 @@ year_itsi desc
         </dd>
 
         <dt>Find all years when Grundtvig mentions hell (in Danish
-        helvede). <a href="#form" onclick="var content =
-        document.getElementById('grundtvig_hell').innerHTML;
-        document.getElementById('queryfield').value = content; var c2
-        = document.getElementById('grundtvig_hell_sort').innerHTML;
-        document.getElementById('sortfield').value = c2;
-        console.log(content);"><strong>try it!</strong></a> You can
-        limit the retrieval to year only by entering year_itsi into
+        helvede).
+        <a href="#form"
+           onclick="var content = document.getElementById('grundtvig_hell').innerHTML;
+                    document.getElementById('queryfield').value = content;
+                    var c2 = document.getElementById('grundtvig_hell_sort').innerHTML;
+                    document.getElementById('sortfield').value = c2;
+                    var c3 = document.getElementById('grundtvig_hell_fields').innerHTML;
+                    document.getElementById('fieldlist').value = c3;
+                    var c4 = document.getElementById('lot_of_records').innerHTML;
+                    document.getElementById('num_hits').value = c4;
+                    console.log(content);"><strong>try it!</strong></a> You can
+        limit the retrieval to document id and year only by entering year_itsi into
         the field list field in the form) and get all records by
-        setting the number of records to (say) 500.</dt>
+        setting the number of records to (say) <span id="lot_of_records">500</span>.</dt>
         <dd>
           query
           <pre id="grundtvig_hell">
@@ -487,6 +505,10 @@ AND
 verse_extract_tesim:helvede
 AND
 type_ssi:work
+          </pre>
+          field list
+          <pre id="grundtvig_hell_fields">
+id year_itsi            
           </pre>
           sort by ascending
           <pre id="grundtvig_hell_sort">
