@@ -420,6 +420,15 @@ AND
 author_name_tesim:holberg
 	  </pre>
 	</dd>
+        <dt>Find all letters sent from Berlin by Georg Brandes</dt>
+        <dd>Search by author</dd>
+        <dd>
+          <pre>
+author_name_tesim:brandes, georg
+AND
+subcollection_ssi:letters
+          </pre>        
+        </dd>
       </dl>
       <h2>Filter and sort examples</h2>
       <dl>
@@ -516,7 +525,6 @@ position_isi asc
                href="#target-instance"
                onclick="bolder='index-test';
                         shier='public-index';
-                        alert('bold    = ' + bolder + '\nshier =' + shier);
                         var v1 =  document.getElementById(bolder).setAttribute('style', 'font-weight: bold;');
                         var v2 =  document.getElementById(shier).setAttribute('style', 'font-weight: normal;');
                         var set_action = document.getElementById('form').action = 'http://index-test.kb.dk/solr/text-retriever-core/select/';">index-test</a></li>
@@ -526,7 +534,6 @@ position_isi asc
                href="#target-instance"
                onclick="bolder='public-index';
                         shier='index-test';
-                        alert('bold = ' + bolder + '\nshier =' + shier);
                         var v1 =  document.getElementById(bolder).setAttribute('style', 'font-weight: bold;');
                         var v2 =  document.getElementById(shier).setAttribute('style', 'font-weight: normal;');
                         var set_action = document.getElementById('form').action = 'https://public-index.kb.dk/solr/text-retriever-core/select/';">public-index</a></li>
