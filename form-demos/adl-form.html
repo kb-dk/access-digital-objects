@@ -33,6 +33,12 @@ cat_ssi:work
 
 	    </textarea>
 	  </dd>
+	  <dt>field list</dt>
+	  <dd> 
+	    <textarea id="fieldlist" name="fl" cols="30" rows="2">
+
+	    </textarea>
+	  </dd>
 	  <dt>result format</dt>
 	  <dd>
 	    <select id="format" name="wt">
@@ -292,7 +298,14 @@ integer
 	  <td style="vertical-align:top;text-align:left;">The text</td>
 	  <td style="vertical-align:top;text-align:right;"> <pre>just plain text</pre></td>
 	</tr>
-
+	<tr>
+	  <td style="vertical-align:top;text-align:left;" ><pre>prose_extract_tesim
+verse_extract_tesim
+performance_extract_tesim        
+</pre> </td>
+	  <td style="vertical-align:top;text-align:left;">The text, as text_tesim, split up into fields according to its form. The to fields get their content from &lt;p> ... &lt;/p>, &lt;lg> ... &lt;/lg> and &lt;ap> ... &lt;/sp> respectively.</td>
+	  <td style="vertical-align:top;text-align:right;"> <pre>just plain text</pre></td>
+	</tr>
 	<tr>
 	  <td style="vertical-align:top;text-align:left;" ><pre>speaker_tesim</pre> </td>
 	  <td style="vertical-align:top;text-align:left;" >The name of a character uttering something in a dialogue</td>
@@ -306,22 +319,25 @@ integer
           the recipient. The field can be accessed both as text
           (tesim) and string (ssim). The names in these fields are
           normalized to last name first (LNF) format. Also, the
-          normalized form usually hits variants, such as Shakespear,
-          William hits William Shakespear, and Jesus hits Kristus as
-          well. But only in these fields, there is no query expansion
-          for the full text.</td>
+          normalized form usually hits variants, such as Shakespeare,
+          William hits William Shakespeare, and Jesus hits Kristus
+          (Danish fro Christ) as well. But only in these fields, there
+          is no query expansion for the full text.</td>
         </tr>
         
         <tr id="other_location_ssim">
           <td
           style="vertical-align:top;text-align:left;"><kbd>other_location_ssim
-          other_location_tesim</kbd></td>
+          other_location_tesim sender_location_tesim</kbd></td>
           <td style="vertical-align:top;text-align:left;">Name of
           places mentioned in works, or, in case of letters, the place
           of the sender. The field can be accessed both as text
           (tesim) and string (ssim). The place names are usually
-          normalized. A search in these field for Danmark hits
-          Dannemark as well.</td>
+          normalized. For instance, a search in these field for
+          Danmark hits Dannemark as well. The reverse is not true, a
+          search for Dannemark hits only full text (see text_tesim above).
+          <kbd>sender_location_tesim</kbd> applies to letters
+          only.</td>
         </tr>
         
         <tr id="bible_ref_ssim">
@@ -420,13 +436,16 @@ AND
 author_name_tesim:holberg
 	  </pre>
 	</dd>
+        
         <dt>Find all letters sent from Berlin by Georg Brandes</dt>
-        <dd>Search by author</dd>
+        <dd>Filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd>  <a href="#form" onclick="var content = document.getElementById('georg_in_berlin').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dd>
         <dd>
-          <pre>
-author_name_tesim:brandes, georg
-AND
+          <pre id="georg_in_berlin">
 subcollection_ssi:letters
+AND
+author_name_tesim:georg brandes
+AND
+sender_location_tesim:berlin
           </pre>        
         </dd>
       </dl>
@@ -443,6 +462,70 @@ author_name_tesim:holberg
 	</pre>
 	</dd>
 
+        <dt>Find all letters sent from Berlin by Georg Brandes as above, but sort descending by date (year)</dt>
+        <dd>I.e., filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd> <a href="#form" onclick="var content = document.getElementById('georg_in_berlin').innerHTML; document.getElementById('queryfield').value = content;  var c2 = document.getElementById('georg_in_berlin_sort').innerHTML; document.getElementById('sortfield').value = c2; console.log(content);"><strong>try it!</strong></a></dd>
+        <dd>Add sort by clause <pre id="georg_in_berlin_sort">
+year_itsi desc          
+</pre>
+        </dd>
+
+        <dt>Find all years when Grundtvig mentions hell (in Danish
+        helvede). <a href="#form" onclick="var content =
+        document.getElementById('grundtvig_hell').innerHTML;
+        document.getElementById('queryfield').value = content; var c2
+        = document.getElementById('grundtvig_hell_sort').innerHTML;
+        document.getElementById('sortfield').value = c2;
+        console.log(content);"><strong>try it!</strong></a> You can
+        limit the retrieval to year only by entering year_itsi into
+        the field list field in the form) and get all records by
+        setting the number of records to (say) 500. An interesting exercise we leave to the reader is to repeat the search for paradise (the same in Danish).</dt>
+        <dd>
+          query
+          <pre id="grundtvig_hell">
+subcollection_ssi:gv
+AND
+verse_extract_tesim:helvede
+AND
+type_ssi:work
+          </pre>
+          sort by ascending
+          <pre id="grundtvig_hell_sort">
+year_itsi asc            
+          </pre>
+        </dd>
+
+        <dt>
+          Note the difference between *_extract_tesim and
+          genre_ssi. The former is to limit the search to text in the
+          specified form of text in document. The genre_ssi looks
+          specifies the form. genre_ssi is only applicable to
+          paragraph level records.
+        </dt>
+        <dd><pre>
+subcollection_ssi:gv
+AND
+text_tesim:helvede
+AND
+type_ssi:work
+AND
+genre_ssi:poetry
+        </pre></dd>
+        <dt>will give zero hits whereas</dt>
+        <dd><pre>
+subcollection_ssi:gv
+AND
+text_tesim:helvede
+AND
+type_ssi:leaf
+AND
+genre_ssi:poetry
+        </pre></dd>
+        <dt>will give a lot of hits, one for each strophe.</dt>
+        <dd>
+          <pre>
+          </pre>
+        </dd>
+        
 	<dt>Poetry often consists of strophes containing lines (which
 	may or may not contain rhymes and rythm). In TEI, strophes are
 	lines in a line group element (&lt;lg&gt;). Find all strophes
