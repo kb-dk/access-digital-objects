@@ -179,7 +179,9 @@ no
 	  in document. A trunk node can be a whole work, a chapter
 	  etc, whereas a leaf could a paragraph of prose, a stanza (or
 	  strophe) of poetry or a speak in a dialog in a scenic
-	  work. For historical reasons, whole texts describing authors and periods are given type_ssi:work.</td>
+	  work. For historical reasons, whole texts have
+	  type_ssi:work. A <kbd>type_ssi:trunk</kbd> will yield a
+	  result set comprising chapters or section of some kind.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
 work
@@ -190,11 +192,29 @@ volume
 	  </td>
 	</tr>
 
+
+        <tr id="is_monograph_ssi">
+          <td style="vertical-align:top;text-align:left;" ><pre>is_monograph_ssi</pre></td>
+          <td style="vertical-align:top;text-align:left;" >A monograph
+          in text service is perhaps not what you expect (on the other
+          hand, what you expect is a monograph in text service). A
+          monograph is a volume with only one work.</td>
+          <td style="vertical-align:top;text-align:right;">
+	    <pre>
+yes
+no
+	    </pre>
+	  </td>
+
+        </tr>
+        
 	<tr id="genre_ssi">
 	  <td style="vertical-align:top;text-align:left;" ><pre>genre_ssi</pre></td>
 	  <td style="vertical-align:top;text-align:left;" >Genre of a
 	  leaf node. Note that this is not the genre of a work, but
-	  the structure of the paragraph level markup.</td>
+	  the structure of the paragraph level markup. If there is a
+	  song in a scenic work, the speak in question might be
+	  classified as containing mostlty poetry.</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
 prose
