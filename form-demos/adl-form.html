@@ -18,7 +18,7 @@
       <a href="https://github.com/Det-Kongelige-Bibliotek/access-digital-objects/blob/master/README.md#caveats">Caveats</a></p>
 
      
-      <form style="position:fixed;" id="form" action="https://public-index.kb.dk/solr/text-retriever-core/select/" target="_blank">
+      <form style="position:fixed;" id="form" action="http://index-test.kb.dk/solr/text-retriever-core/select/" target="_blank">
 	<h2>Try out the API here</h2>
 	<dl>
 	  <dt>Search for</dt>
@@ -370,7 +370,7 @@ performance_extract_tesim
 	</dt>
 	<dd>
 	  <pre id="all_works">
-cat_ssi:work
+type_ssi:work
 	  </pre>
 	</dd>
 
@@ -381,11 +381,11 @@ cat_ssi:work
 	  <pre id="works_by_gustaf_munch_petersen">
 author_name_tesim:munch
 AND
-cat_ssi:work
+type_ssi:work
 	  </pre>
 	</dd>
 
-	<dt>Find all texts in dialogs (TEI &lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#form" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all speak in dialogs (TEI &lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#form" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="plays_by_jeppe">
 genre_ssi:play
@@ -396,7 +396,7 @@ author_name_tesim:jeppe
 	  </pre>
 	</dd>
 
-	<dt>Find all texts in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#form" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all speak in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#form" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="spoken_by_jeppe">
 genre_ssi:play
@@ -478,7 +478,7 @@ year_itsi desc
         console.log(content);"><strong>try it!</strong></a> You can
         limit the retrieval to year only by entering year_itsi into
         the field list field in the form) and get all records by
-        setting the number of records to (say) 500. An interesting exercise we leave to the reader is to repeat the search for paradise (the same in Danish).</dt>
+        setting the number of records to (say) 500.</dt>
         <dd>
           query
           <pre id="grundtvig_hell">
@@ -520,12 +520,20 @@ type_ssi:leaf
 AND
 genre_ssi:poetry
         </pre></dd>
+
         <dt>will give a lot of hits, one for each strophe.</dt>
         <dd>
           <pre>
           </pre>
         </dd>
-        
+        <dt>An interesting exercise we leave to the reader is to
+        repeat the search for paradise (the same in Danish) or
+        heaven. Does Grundtvig mentions of hell and paradise (or
+        heaven) in anyway correlate temporally?</dt>
+        <dd>
+          <pre>
+          </pre>
+        </dd>
 	<dt>Poetry often consists of strophes containing lines (which
 	may or may not contain rhymes and rythm). In TEI, strophes are
 	lines in a line group element (&lt;lg&gt;). Find all strophes
@@ -604,7 +612,7 @@ position_isi asc
 
       </script>
       <ul id="target-instance">
-        <li><a id="index-test" style="font-weight: normal;"
+        <li><a id="index-test" style="font-weight: bold;"
                href="#target-instance"
                onclick="bolder='index-test';
                         shier='public-index';
@@ -613,7 +621,7 @@ position_isi asc
                         var set_action = document.getElementById('form').action = 'http://index-test.kb.dk/solr/text-retriever-core/select/';">index-test</a></li>
         
         <li><a id="public-index"
-               style="font-weight: bold;"
+               style="font-weight: normal;"
                href="#target-instance"
                onclick="bolder='public-index';
                         shier='index-test';
