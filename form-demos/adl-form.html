@@ -67,7 +67,7 @@ type_ssi:work AND cat_ssi:work
                       document.getElementById('queryfield').value = content;
                       console.log(content);
                       document.getElementById('filterquery').value = '';
-                      document.getElementById('fieldlist').value = '';
+                      document.getElementById('fieldlist').value = '*';
                       document.getElementById('sortfield').value = '';
                       document.getElementById('num_hits').value = '10';
 
@@ -379,7 +379,10 @@ performance_extract_tesim
 
       <dl>
 	<dt>Find all works
-	<a href="#form" onclick="var content = document.getElementById('all_works').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a> (clicking on try it fills in the form to the left such that you may submit the search and then customize the search for your purposes. You might need to <strong>reset</strong> the form before a new search.)
+	<a href="#form" onclick="var content = document.getElementById('all_works').innerHTML;
+                                 document.getElementById('fieldlist').value = '*';
+                                 document.getElementById('queryfield').value = content;
+                                 console.log(content);"><strong>try it!</strong></a> (clicking on try it fills in the form to the left such that you may submit the search and then customize the search for your purposes. You might need to <strong>reset</strong> the form before a new search.)
 	</dt>
 	<dd>
 	  <pre id="all_works">
@@ -390,7 +393,11 @@ type_ssi:work AND is_editorial_ssi:no
 
       <dl>
 	<dt>Find all works by Gustaf Munch-Petersen
-	<a href="#form" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
+	<a href="#form"
+           onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML;
+                    document.getElementById('queryfield').value = content; 
+                    document.getElementById('fieldlist').value = '*';
+                    console.log(content);"><strong>try it!</strong></a>
 	</dt>
 	<dd>
 	  <pre id="works_by_gustaf_munch_petersen">
@@ -402,7 +409,13 @@ type_ssi:work
       </dl>
 
       <dl>
-	<dt>Find all speak in dialogs (TEI &lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#form" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all speak in dialogs (TEI &lt;sp&gt; elements) in ADL, written by someone called Jeppe
+        <a href="#form"
+           onclick="var content = document.getElementById('plays_by_jeppe').innerHTML;
+                    document.getElementById('fieldlist').value = '*';
+                    document.getElementById('queryfield').value = content; 
+                    console.log(content);"><strong>try it!</strong></a>
+        </dt>
 	<dd>
 	  <pre id="plays_by_jeppe">
 genre_ssi:play
@@ -415,7 +428,13 @@ author_name_tesim:jeppe
       </dl>
 
       <dl>
-	<dt>Find all speak in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#form" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all speak in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe
+        <a href="#form" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; 
+                                 document.getElementById('fieldlist').value = '*';
+                                 document.getElementById('queryfield').value = content; console.log(content);">
+          <strong>try it!</strong>
+        </a>
+        </dt>
 	<dd>
 	  <pre id="spoken_by_jeppe">
 genre_ssi:play
@@ -428,7 +447,12 @@ speaker_tesim:jeppe
       </dl>
 
       <dl>
-	<dt>Find all strophes of poetry by Nikolaj Frederik Severin Grundtvig containing the words hjerte and smerte (heart and agony)  <a href="#form" onclick="var content = document.getElementById('heart_agony').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all strophes of poetry by Nikolaj Frederik Severin Grundtvig containing the words hjerte and smerte (heart and agony)
+        <a href="#form"
+           onclick="var content = document.getElementById('heart_agony').innerHTML; 
+                    document.getElementById('fieldlist').value = '*';
+                    document.getElementById('queryfield').value = content; 
+                    console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
   	  <pre id="heart_agony">
 type_ssi:leaf
@@ -447,7 +471,11 @@ text_tesim:smerte
       </dl>
 
       <dl>
-	<dt>Find all dialogues in the plays by Holberg where someone is talking about Mester Erich <a href="#form" onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all dialogues in the plays by Holberg where someone is talking about Mester Erich
+        <a href="#form"
+           onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; 
+                    document.getElementById('fieldlist').value = '*';
+                    document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="who_talks_about_erich">
 genre_ssi:play
@@ -463,7 +491,12 @@ author_name_tesim:holberg
 
       <dl>
         <dt>Find all letters sent from Berlin by Georg Brandes</dt>
-        <dd>Filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd>  <a href="#form" onclick="var content = document.getElementById('georg_in_berlin').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dd>
+        <dd>Filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd>
+        <a href="#form"
+           onclick="var content = document.getElementById('georg_in_berlin').innerHTML;
+                    document.getElementById('fieldlist').value = '*';
+                    document.getElementById('queryfield').value = content;
+                    console.log(content);"><strong>try it!</strong></a></dd>
         <dd>
           <pre id="georg_in_berlin">
 subcollection_ssi:letters
@@ -478,7 +511,14 @@ sender_location_tesim:berlin
       <h2>Filter, join and sort examples</h2>
       
       <dl>
-	<dt>Find all works by Holberg containing poetry <a href="#form" onclick="var c1 = document.getElementById('holberg_poetry').innerHTML; document.getElementById('queryfield').value = c1; console.log(c1);var c2 = document.getElementById('holbgenrepoetry').innerHTML; document.getElementById('filterquery').value = c2; "><strong>try it!</strong></a>. Steps in the search:</dt>  
+	<dt>Find all works by Holberg containing poetry
+        <a href="#form" onclick="var c1 = document.getElementById('holberg_poetry').innerHTML;
+                                 document.getElementById('queryfield').value = c1;
+                                 document.getElementById('fieldlist').value = '*';
+                                 console.log(c1);var c2 = document.getElementById('holbgenrepoetry').innerHTML;
+                                 document.getElementById('filterquery').value = c2; ">
+          <strong>try it!</strong>
+        </a>. Steps in the search:</dt>  
 	<dd>Search for author</dd>
 	<dd><pre id="holberg_poetry">
 author_name_tesim:holberg
@@ -492,7 +532,13 @@ author_name_tesim:holberg
 
       <dl>
         <dt>Find all letters sent from Berlin by Georg Brandes as above, but sort descending by date (year)</dt>
-        <dd>I.e., filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd> <a href="#form" onclick="var content = document.getElementById('georg_in_berlin').innerHTML; document.getElementById('queryfield').value = content;  var c2 = document.getElementById('georg_in_berlin_sort').innerHTML; document.getElementById('sortfield').value = c2; console.log(content);"><strong>try it!</strong></a></dd>
+        <dd>I.e., filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd>
+        <a href="#form" onclick="var content = document.getElementById('georg_in_berlin').innerHTML;
+                                 document.getElementById('queryfield').value = content; 
+                                 document.getElementById('fieldlist').value = '*';
+                                 var c2 = document.getElementById('georg_in_berlin_sort').innerHTML;
+                                 document.getElementById('sortfield').value = c2; console.log(content);"><strong>try it!</strong>
+        </a></dd>
         <dd>Add sort by clause <pre id="georg_in_berlin_sort">
 year_itsi desc          
 </pre>
@@ -583,7 +629,12 @@ genre_ssi:poetry
 	Munch Petersen's collected works.</dt>
 	<dt>Sort the result set in inverse document order 
 
-	<a href="#form" onclick="var c1 = document.getElementById('munpregn1').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn1sort').innerHTML; document.getElementById('sortfield').value = c2;"><strong>Try it!</strong></a>
+	<a href="#form" 
+           onclick="var c1 = document.getElementById('munpregn1').innerHTML;
+                    document.getElementById('queryfield').value = c1;
+                    document.getElementById('fieldlist').value = '*';
+                    var c2 = document.getElementById('munpregn1sort').innerHTML;
+                    document.getElementById('sortfield').value = c2;"><strong>Try it!</strong></a>
 	</dt>
 
 	<dd>The actual search</dd>
@@ -614,7 +665,14 @@ position_isi desc
 	Petersen's collected works.</dt>
 	<dt>Sort the result set in the actual document order 
 
-	<a href="#form" onclick="var c1 = document.getElementById('munpregn2').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn2sort').innerHTML; document.getElementById('sortfield').value = c2; var c3 = document.getElementById('munp_join').innerHTML; document.getElementById('filterquery').value = c3;"><strong>Try it!</strong></a>
+	<a href="#form"
+           onclick="var c1 = document.getElementById('munpregn2').innerHTML;
+                    document.getElementById('queryfield').value = c1;
+                    var c2 = document.getElementById('munpregn2sort').innerHTML;
+                    document.getElementById('sortfield').value = c2;
+                    document.getElementById('fieldlist').value = '*';
+                    var c3 = document.getElementById('munp_join').innerHTML;
+                    document.getElementById('filterquery').value = c3;"><strong>Try it!</strong></a>
 	</dt>
 
 	<dt>The actual search</dt>
