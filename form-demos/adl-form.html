@@ -342,13 +342,14 @@ performance_extract_tesim
           <td
           style="vertical-align:top;text-align:left;"><kbd>other_location_ssim
           other_location_tesim sender_location_tesim</kbd></td>
-          <td style="vertical-align:top;text-align:left;">Name of
-          places mentioned in works, or, in case of letters, the place
-          of the sender. The field can be accessed both as text
-          (tesim) and string (ssim). The place names are usually
+          <td style="vertical-align:top;text-align:left;">Names of
+          places mentioned in works, or, in case of letters, the
+          residence of the sender. The field can be accessed both as
+          text (tesim) and string (ssim). The place names are usually
           normalized. For instance, a search in these field for
           Danmark hits Dannemark as well. The reverse is not true, a
-          search for Dannemark hits only full text (see text_tesim above).
+          search for Dannemark hits only the word Dannemark in the
+          full text (see text_tesim above).
           <kbd>sender_location_tesim</kbd> applies to letters
           only.</td>
         </tr>
@@ -363,9 +364,10 @@ performance_extract_tesim
           using standard Danish abbreviations, like <kbd>1 Mos; 1 Kor
           13,12; 1 Mos 2,7; Matt 16,18; Sl; Åb; ApG; Joh 1,14; Jak;
           Job</kbd>. In many cases use bible_ref_ssim and then search
-          for the exact string "1 Kor 13,12". These references are
-          standardized whereas in the text Grundtvig and Kierkegaard
-          may just allude to a place in the Bible.</td>
+          for the exact string "1 Kor 13,12". The references are
+          standardized annotations but in the full texts (of Grundtvig
+          and Kierkegaard) may just allude to a place in the
+          Bible.</td>
         </tr>
         
         
@@ -383,10 +385,15 @@ performance_extract_tesim
 
       <dl>
 	<dt>Find all works
-	<a href="#form" onclick="var content = document.getElementById('all_works').innerHTML;
-                                 document.getElementById('fieldlist').value = '*';
-                                 document.getElementById('queryfield').value = content;
-                                 console.log(content);"><strong>try it!</strong></a> (clicking on try it fills in the form to the left such that you may submit the search and then customize the search for your purposes. You might need to <strong>reset</strong> the form before a new search.)
+        <a href="#form" onclick="var content =
+	document.getElementById('all_works').innerHTML;
+	document.getElementById('fieldlist').value = '*';
+	document.getElementById('queryfield').value = content;
+	console.log(content);"><strong>try it!</strong></a>
+        (clicking on try it to fill in the form to the left. You may then
+	submit the search or customize it for your
+	purposes. You might need to <strong>reset</strong> the form
+	before a new search.)
 	</dt>
 	<dd>
 	  <pre id="all_works">
@@ -451,7 +458,9 @@ speaker_tesim:jeppe
       </dl>
 
       <dl>
-	<dt>Find all strophes of poetry by Nikolaj Frederik Severin Grundtvig containing the words hjerte and smerte (heart and agony)
+	<dt>Find all strophes of poetry by Nikolaj Frederik Severin
+	Grundtvig containing the words hjerte and smerte (heart and
+	agony) in Archive for Danish Literature (subcollection ADL).
         <a href="#form"
            onclick="var content = document.getElementById('heart_agony').innerHTML; 
                     document.getElementById('fieldlist').value = '*';
@@ -475,7 +484,7 @@ text_tesim:smerte
       </dl>
 
       <dl>
-	<dt>Find all dialogues in the plays by Holberg where someone is talking about Mester Erich
+	<dt>Find all dialogue (all TEI speak &lt;sp> ... &lt;/sp>) in the plays by Holberg where someone is talking about Mester Erich
         <a href="#form"
            onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; 
                     document.getElementById('fieldlist').value = '*';
@@ -508,6 +517,25 @@ AND
 author_name_tesim:georg brandes
 AND
 sender_location_tesim:berlin
+          </pre>        
+        </dd>
+      </dl>
+
+       <dl>
+        <dt>Find all letters sent from Berlin before 1850</dt>
+        <dd>Filter by <kbd>letters</kbd>, search by <kbd>year_itsi</kbd> and <kbd>sender location</kbd>
+        <a href="#form"
+           onclick="var content = document.getElementById('letters_from_berlin').innerHTML;
+                    document.getElementById('fieldlist').value = '*';
+                    document.getElementById('queryfield').value = content;
+                    console.log(content);"><strong>try it!</strong></a></dd>
+        <dd>
+          <pre id="letters_from_berlin">
+subcollection_ssi:letters
+AND
+sender_location_tesim:berlin
+AND
+year_itsi:[1000 TO 1850]
           </pre>        
         </dd>
       </dl>
