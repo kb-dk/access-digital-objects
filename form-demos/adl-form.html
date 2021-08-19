@@ -386,7 +386,9 @@ performance_extract_tesim
 type_ssi:work AND is_editorial_ssi:no
 	  </pre>
 	</dd>
+      </dl>
 
+      <dl>
 	<dt>Find all works by Gustaf Munch-Petersen
 	<a href="#form" onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a>
 	</dt>
@@ -397,7 +399,9 @@ AND
 type_ssi:work
 	  </pre>
 	</dd>
+      </dl>
 
+      <dl>
 	<dt>Find all speak in dialogs (TEI &lt;sp&gt; elements) in ADL, written by someone called Jeppe <a href="#form" onclick="var content = document.getElementById('plays_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="plays_by_jeppe">
@@ -408,7 +412,9 @@ AND
 author_name_tesim:jeppe
 	  </pre>
 	</dd>
+      </dl>
 
+      <dl>
 	<dt>Find all speak in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe <a href="#form" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="spoken_by_jeppe">
@@ -419,7 +425,9 @@ AND
 speaker_tesim:jeppe
 	  </pre>
 	</dd>
+      </dl>
 
+      <dl>
 	<dt>Find all strophes of poetry by Nikolaj Frederik Severin Grundtvig containing the words hjerte and smerte (heart and agony)  <a href="#form" onclick="var content = document.getElementById('heart_agony').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
   	  <pre id="heart_agony">
@@ -436,7 +444,9 @@ AND
 text_tesim:smerte
 	  </pre>
 	</dd>
+      </dl>
 
+      <dl>
 	<dt>Find all dialogues in the plays by Holberg where someone is talking about Mester Erich <a href="#form" onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
 	  <pre id="who_talks_about_erich">
@@ -449,7 +459,9 @@ AND
 author_name_tesim:holberg
 	  </pre>
 	</dd>
-        
+      </dl>
+
+      <dl>
         <dt>Find all letters sent from Berlin by Georg Brandes</dt>
         <dd>Filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd>  <a href="#form" onclick="var content = document.getElementById('georg_in_berlin').innerHTML; document.getElementById('queryfield').value = content; console.log(content);"><strong>try it!</strong></a></dd>
         <dd>
@@ -462,7 +474,9 @@ sender_location_tesim:berlin
           </pre>        
         </dd>
       </dl>
-      <h2>Filter and sort examples</h2>
+      
+      <h2>Filter, join and sort examples</h2>
+      
       <dl>
 	<dt>Find all works by Holberg containing poetry <a href="#form" onclick="var c1 = document.getElementById('holberg_poetry').innerHTML; document.getElementById('queryfield').value = c1; console.log(c1);var c2 = document.getElementById('holbgenrepoetry').innerHTML; document.getElementById('filterquery').value = c2; "><strong>try it!</strong></a>. Steps in the search:</dt>  
 	<dd>Search for author</dd>
@@ -474,14 +488,18 @@ author_name_tesim:holberg
 {!join to=id from=part_of_ssim}genre_ssi:poetry
 	</pre>
 	</dd>
+      </dl>
 
+      <dl>
         <dt>Find all letters sent from Berlin by Georg Brandes as above, but sort descending by date (year)</dt>
         <dd>I.e., filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd> <a href="#form" onclick="var content = document.getElementById('georg_in_berlin').innerHTML; document.getElementById('queryfield').value = content;  var c2 = document.getElementById('georg_in_berlin_sort').innerHTML; document.getElementById('sortfield').value = c2; console.log(content);"><strong>try it!</strong></a></dd>
         <dd>Add sort by clause <pre id="georg_in_berlin_sort">
 year_itsi desc          
 </pre>
         </dd>
+      </dl>
 
+      <dl>
         <dt>Find all years when Grundtvig mentions hell (in Danish
         helvede).
         <a href="#form"
@@ -516,6 +534,9 @@ year_itsi asc
           </pre>
         </dd>
 
+      </dl>
+
+      <dl>
         <dt>
           Note the difference between *_extract_tesim and
           genre_ssi. The former is to limit the search to text in the
@@ -552,10 +573,9 @@ genre_ssi:poetry
         repeat the search for paradise (the same in Danish) or
         heaven. Does Grundtvig mentions of hell and paradise (or
         heaven) in anyway correlate temporally?</dt>
-        <dd>
-          <pre>
-          </pre>
-        </dd>
+      </dl>
+
+      <dl>
 	<dt>Poetry often consists of strophes containing lines (which
 	may or may not contain rhymes and rythm). In TEI, strophes are
 	lines in a line group element (&lt;lg&gt;). Find all strophes
@@ -585,7 +605,9 @@ genre_ssi:poetry
 position_isi desc
 	  </pre>
 	</dd>
+      </dl>
 
+      <dl>
 	<dt>A poem is, technically in TEI, a sequence of line groups
 	(see above). Find all poems (i.e., works) containing strophes
 	with "regn" (i.e., rain) in volume 1 of Gustaf Munch
@@ -595,7 +617,7 @@ position_isi desc
 	<a href="#form" onclick="var c1 = document.getElementById('munpregn2').innerHTML; document.getElementById('queryfield').value = c1; var c2 = document.getElementById('munpregn2sort').innerHTML; document.getElementById('sortfield').value = c2; var c3 = document.getElementById('munp_join').innerHTML; document.getElementById('filterquery').value = c3;"><strong>Try it!</strong></a>
 	</dt>
 
-	<dd>The actual search</dd>
+	<dt>The actual search</dt>
 
 	<dd>
 	  <pre id="munpregn2">
@@ -605,14 +627,14 @@ text_tesim:regn
 	  </pre>
 	</dd>
 
-	<dd>The join</dd>
+	<dt>The join</dt>
 
 	<dd><pre id="munp_join">
 {!join to=id from=part_of_ssim}genre_ssi:poetry
 	</pre>
 	</dd>
 	
-	<dd>The sort</dd>
+	<dt>The sort</dt>
 
 	<dd>
 	  <pre id="munpregn2sort">
@@ -622,7 +644,67 @@ position_isi asc
 
       </dl>
 
-      <h2>Choose index instance</h2>
+      <dl>
+        <dt>Find paragraphs or strophes where there are references to
+        1 Corinthians 13:12 (1 Kor 13,12: <em>For now we see only a
+        reflection as in a mirror; then we shall see face to
+        face.</em>) in the works of N.F.S. Grundtvig.
+
+        <a href="#form"
+           onclick="var content = document.getElementById('a_reflection_as_in_a_mirror').innerHTML;
+                    document.getElementById('queryfield').value = content;
+                    var c2 = document.getElementById('a_reflection_sort').innerHTML;
+                    document.getElementById('sortfield').value = c2;
+                    document.getElementById('fieldlist').value = '*';
+                    document.getElementById('num_hits').value = '10';
+                    document.getElementById('filterquery').value = document.getElementById('reflection_prose').innerHTML;                   
+                    console.log(content);"><strong>try it!</strong></a>
+      </dt>
+
+      <dt>The query</dt>
+      <dd>
+<pre id="a_reflection_as_in_a_mirror">
+bible_ref_ssim:"1 Kor 13,12"
+AND
+subcollection_ssi:gv
+AND
+is_editorial_ssi:no
+</pre>
+      </dd>
+
+      <dt>Sort chronologically</dt>
+      <dd>
+ <pre id="a_reflection_sort">
+ year_itsi asc
+ </pre>
+      </dd>
+
+      <dt>Join with volume parent to return works. For paragraphs of prose.</dt>
+      <dd>
+        <pre id="reflection_prose">
+{!join to=volume_id_ssi from=part_of_ssim}genre_ssi:prose
+</pre>
+      </dd>
+
+      <dt>Join with volume parent to return works. Same thing as the join above but for strophes of poetry.
+       <a href="#form"
+           onclick="var content = document.getElementById('a_reflection_as_in_a_mirror').innerHTML;
+                    document.getElementById('queryfield').value = content;
+                    var c2 = document.getElementById('a_reflection_sort').innerHTML;
+                    document.getElementById('sortfield').value = c2;
+                    document.getElementById('fieldlist').value = '*';
+                    document.getElementById('num_hits').value = '10';
+                    document.getElementById('filterquery').value = document.getElementById('reflection_poetry').innerHTML;
+                    console.log(content);"><strong>Try it again for poetry!</strong></a>
+     </dt>
+      <dd>
+        <pre id="reflection_poetry">
+{!join to=volume_id_ssi from=part_of_ssim}genre_ssi:poetry
+</pre>
+      </dd>
+    </dl>
+
+    <h2>Choose index instance</h2>
 
       <p>You cannot use the index-test instance outside our
       network. Forget this if you are not developer at kb.dk</p>
