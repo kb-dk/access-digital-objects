@@ -6,8 +6,13 @@
 	  content="application/xhtml+xml; charset=utf-8"/>
   </head>
   <body id="therootelement">
-    <div style="float:left;width:30%; ">
+
+    <div style="float:left;width:30%; ">      
+    
+    <div style="text-align: center; clear: both;">
       <h1>Text corpus search API</h1>
+    
+    </div>
 
       <p>This document is a part of <a href="https://www.kb.dk/">Royal
       Danish Library</a>'s APIs, and in particular <a
@@ -84,7 +89,7 @@ type_ssi:work AND cat_ssi:work
     </div>
     <div style="float:left;width:60%;">
 
- <div>
+      <div>
 	<h2>Properties of the search index</h2>
 
 	<p>All the texts that can be searched in using the API are in <a
@@ -99,6 +104,9 @@ type_ssi:work AND cat_ssi:work
 	      <li>Speech in drama: <kbd>&lt;sp&gt; ... &lt;/sp&gt;</kbd></li>
 	      <li>Strophe in poetry: <kbd>&lt;lg&gt; ... &lt;/lg&gt;</kbd></li>
 	    </ul>
+            The distinctions here between prose, drama and poetry is
+            not based on philological analysis, rather, it is
+            determined by what markup was used to represent the text.
 	  </li>
 	  <li>The same text may appear on multiple levels in the
 	  index, and hence be addressed as, for example, paragraph,
@@ -109,6 +117,12 @@ type_ssi:work AND cat_ssi:work
 	  volume contain hundreds of such items, whereas there are usually
 	  only  one novel in a volume.</li>
 	</ul>
+
+        <p>Note that this document does not define or describe all
+        fields in the index. The index is far too rich for that, but I
+        believe that it contains what it takes to use
+        it. The thing I have left out is basically more of the same.</p>
+        
       </div>
 
       <table>
@@ -305,6 +319,9 @@ integer
 	</tr>
 	<tr>
 	  <td style="vertical-align:top;text-align:left;"><pre>author_name_tesim</pre></td>
+          <td style="vertical-align:top;text-align:left;">The
+          author(s) of a document. For messages it is assumed that
+          author is a synonym of sender.</td>
 	</tr>
 	<tr>
 	  <td style="vertical-align:top;text-align:left;" ><pre>text_tesim</pre> </td>
@@ -316,14 +333,34 @@ integer
 verse_extract_tesim
 performance_extract_tesim        
 </pre> </td>
-	  <td style="vertical-align:top;text-align:left;">The text, as text_tesim, split up into fields according to its form. The to fields get their content from &lt;p> ... &lt;/p>, &lt;lg> ... &lt;/lg> and &lt;ap> ... &lt;/sp> respectively.</td>
+	  <td style="vertical-align:top;text-align:left;">The text, as text_tesim, split up into fields according to its form. The to fields get their content from &lt;p> ... &lt;/p>, &lt;lg> ... &lt;/lg> and &lt;sp> ... &lt;/sp> respectively.</td>
 	  <td style="vertical-align:top;text-align:right;"> <pre>just plain text</pre></td>
 	</tr>
+
+        <tr>
+          <td  style="vertical-align:top;text-align:left;"><pre>contains_ssi</pre></td>
+          <td  style="vertical-align:top;text-align:left;">We measures the length of the texts in <kbd>prose_extract_tesim
+verse_extract_tesim
+performance_extract_tesim</kbd>, whichever is the longest is used to assign the value of this field.</td>
+          <td  style="vertical-align:top;text-align:left;">
+<pre>
+prose
+poetry
+play
+</pre>
+          </td>
+        </tr>
 	<tr>
 	  <td style="vertical-align:top;text-align:left;" ><pre>speaker_tesim</pre> </td>
 	  <td style="vertical-align:top;text-align:left;" >The name of a character uttering something in a dialogue</td>
 	  <td style="vertical-align:top;text-align:right;"> <pre>just plain text</pre></td>
 	</tr>
+
+        <tr>
+	  <td style="vertical-align:top;text-align:left;" ><pre>page_ssi</pre> </td>
+	  <td style="vertical-align:top;text-align:left;" >The page number where a leaf node (paragraph, speak or strophe) starts.</td>
+	  <td style="vertical-align:top;text-align:right;">string (either integer or roman numerals)</td>
+        </tr>
         
         <tr id="person_name_ssim">
           <td style="vertical-align:top;text-align:left;"><kbd>person_name_ssim person_name_tesim</kbd></td>
@@ -522,7 +559,7 @@ sender_location_tesim:berlin
       </dl>
 
        <dl>
-        <dt>Find all letters sent from Berlin before 1850</dt>
+        <dt>Find all letters sent from Paris before 1850</dt>
         <dd>Filter by <kbd>letters</kbd>, search by <kbd>year_itsi</kbd> and <kbd>sender location</kbd>
         <a href="#form"
            onclick="var content = document.getElementById('letters_from_berlin').innerHTML;
@@ -533,7 +570,7 @@ sender_location_tesim:berlin
           <pre id="letters_from_berlin">
 subcollection_ssi:letters
 AND
-sender_location_tesim:berlin
+sender_location_tesim:paris
 AND
 year_itsi:[1000 TO 1850]
           </pre>        
@@ -823,7 +860,18 @@ is_editorial_ssi:no
                         var v2 =  document.getElementById(shier).setAttribute('style', 'font-weight: normal;');
                         var set_action = document.getElementById('form').action = 'https://public-index.kb.dk/solr/text-retriever-core/select/';">public-index</a></li>
       </ul>
+
+      <h2>Colophon</h2>
+      <p>This document was authored by</p>
+      <p><em>Sigfrid Lundberg<br/>
+      The Royal Danish Library<br/>
+      Denmark</em></p>
+
+      <p>who also wrote the indexer. However, a large number of people
+      has contributed to this by coding services on top the
+      index. That process has required clarifications of this document
+      and modification of the index. This is the fruit of a teamwork.</p>
       
-    </div>
+    </div>    
   </body>
 </html>
