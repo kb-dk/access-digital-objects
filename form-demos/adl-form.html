@@ -111,7 +111,7 @@ type_ssi:work AND cat_ssi:work
 	  <li>The same text may appear on multiple levels in the
 	  index, and hence be addressed as, for example, paragraph,
 	  chapter and volume.</li>
-	  <li>The index granularity differes between literary
+	  <li>The index granularity differs between literary
 	  genres. For instance can poems and individual short stories
 	  or essays be treated as individual works, and a single
 	  volume contain hundreds of such items, whereas there are usually
@@ -371,7 +371,7 @@ play
           normalized to last name first (LNF) format. Also, the
           normalized form usually hits variants, such as Shakespeare,
           William hits William Shakespeare, and Jesus hits Kristus
-          (Danish fro Christ) as well. But only in these fields, there
+          (Danish for Christ) as well. But only in these fields, there
           is no query expansion for the full text.</td>
         </tr>
         
@@ -411,7 +411,7 @@ play
         <tr id="year_itsi">
           <td style="vertical-align:top;text-align:left;"><kbd>year_itsi</kbd></td>
           <td style="vertical-align:top;text-align:left;">Year of
-          release, publication or. in case of a message, the year it
+          release, publication or, in case of a message, the year it
           was sent.</td>
           <td style="vertical-align:top;text-align:left;"><kbd>long int</kbd></td>
         </tr>
@@ -427,7 +427,7 @@ play
 	document.getElementById('fieldlist').value = '*';
 	document.getElementById('queryfield').value = content;
 	console.log(content);"><strong>try it!</strong></a>
-        (clicking on try it to fill in the form to the left. You may then
+        (clicking on "try it" to fill in the form to the left. You may then
 	submit the search or customize it for your
 	purposes. You might need to <strong>reset</strong> the form
 	before a new search.)
@@ -495,14 +495,14 @@ speaker_tesim:jeppe
       </dl>
 
       <dl>
-	<dt>Find all strophes of poetry by Nikolaj Frederik Severin
-	Grundtvig containing the words hjerte and smerte (heart and
-	agony) in Archive for Danish Literature (subcollection ADL).
-        <a href="#form"
-           onclick="var content = document.getElementById('heart_agony').innerHTML; 
-                    document.getElementById('fieldlist').value = '*';
-                    document.getElementById('queryfield').value = content; 
-                    console.log(content);"><strong>try it!</strong></a></dt>
+	<dt>Find all strophes of poetry by N.F.S. Grundtvig containing
+	the words hjerte and smerte (heart and agony) in Archive for
+	Danish Literature (subcollection ADL).  <a href="#form"
+	onclick="var content =
+	document.getElementById('heart_agony').innerHTML;
+	document.getElementById('fieldlist').value = '*';
+	document.getElementById('queryfield').value = content;
+	console.log(content);"><strong>try it!</strong></a></dt>
 	<dd>
   	  <pre id="heart_agony">
 type_ssi:leaf
@@ -773,9 +773,9 @@ position_isi asc
 
       <dl>
         <dt>Find paragraphs or strophes where there are references to
-        1 Corinthians 13:12 (1 Kor 13,12: <em>For now we see only a
+        1 Corinthians 13:12 (1 Kor 13,12: <em><q>For now we see only a
         reflection as in a mirror; then we shall see face to
-        face.</em>) in the works of N.F.S. Grundtvig.
+        face.</q></em>) in the works of N.F.S. Grundtvig.
 
         <a href="#form"
            onclick="var content = document.getElementById('a_reflection_as_in_a_mirror').innerHTML;
@@ -829,6 +829,13 @@ is_editorial_ssi:no
 {!join to=volume_id_ssi from=part_of_ssim}genre_ssi:poetry
 </pre>
       </dd>
+
+      <dt>I believe 1 Corinthians 13:12 is the part of the scripture
+      most quoted by Grundtvig, but he do that more in prose than in
+      poetry. On the other hand, he wrote more prose in spite of the
+      fact that he is one of the most prolific hymn authors in not
+      only Denmark but the whole of Scandinavia.</dt>
+      
     </dl>
 
     <h2>Choose index instance</h2>
