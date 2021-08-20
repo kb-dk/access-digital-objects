@@ -102,7 +102,7 @@ type_ssi:work AND is_editorial_ssi:no
 	  hierarchies of overlapping content objects</a>. In
 	  particular we can not easily <strong>simultaneously</strong>
 	  ascertain what content there is on a given page and see what
-	  content there is in a paragraph starting on that. However,
+	  content there is in a paragraph starting on that page. However,
 	  we can always know on what page a given chapter, paragraph
 	  or whatever commences. That is a fundamental property of
 	  text.</li>
@@ -351,11 +351,12 @@ position_isi
 	  </pre>
 	  </td>
 	  <td style="vertical-align:top;text-align:left;">The position
-	  of the current node along the sibling axis of the
+	  of the current node along the sibling xpath axis in the
 	  document. Sorting with respect to this field will guarantee
 	  that the result is presented in document order. (We cannot
 	  use page number, which might be a roman numeral or an arabic
-	  one).</td>
+	  one. Also, we need to take into account <kbd>leaf</kbd>
+	  nodes within pages.)</td>
 	  <td style="vertical-align:top;text-align:right;">
 	    <pre>
 integer
@@ -490,7 +491,7 @@ play
 
       <h2>Examples</h2>
 
-      <dl>
+      <dl id="find_all_works">
 	<dt>Find all works
         <a href="#form" onclick="var content =
 	document.getElementById('all_works').innerHTML;
@@ -509,7 +510,7 @@ type_ssi:work AND is_editorial_ssi:no
 	</dd>
       </dl>
 
-      <dl>
+      <dl id="all_by_gustaf">
 	<dt>Find all works by Gustaf Munch-Petersen
 	<a href="#form"
            onclick="var content = document.getElementById('works_by_gustaf_munch_petersen').innerHTML;
@@ -526,7 +527,7 @@ type_ssi:work
 	</dd>
       </dl>
 
-      <dl>
+      <dl id="speak_in_dialogs">
 	<dt>Find all speak in dialogs (TEI &lt;sp&gt; elements) in Archive for
 	Danish Literature (ADL), written by someone called Jeppe
         <a href="#form"
@@ -546,7 +547,7 @@ author_name_tesim:jeppe
 	</dd>
       </dl>
 
-      <dl>
+      <dl id="elements_spoken_by_jeppe">
 	<dt>Find all speak in dialogs (&lt;sp&gt; elements) in ADL, spoken by a character named Jeppe
         <a href="#form" onclick="var content = document.getElementById('spoken_by_jeppe').innerHTML; 
                                  document.getElementById('fieldlist').value = '*';
@@ -565,10 +566,14 @@ speaker_tesim:jeppe
 	</dd>
       </dl>
 
-      <dl>
+      <dl id="rim_hjerte_smerte">
 	<dt>Find all strophes of poetry by N.F.S. Grundtvig containing
-	the words hjerte and smerte (heart and agony) in subcollection ADL.
-        <a href="#form" onclick="var content = document.getElementById('heart_agony').innerHTML;
+	the words hjerte and smerte (the two words rhyme, which heart
+	and agony do not) in subcollection ADL. The query only makes
+	sense in <kbd>leaf</kbd>s; both words will most likely appear in
+	any 19th century text of significant length.  <a href="#form"
+	onclick="var content =
+	document.getElementById('heart_agony').innerHTML;
 	document.getElementById('fieldlist').value = '*';
 	document.getElementById('queryfield').value = content;
 	console.log(content);"><strong>try it!</strong></a></dt>
@@ -589,7 +594,7 @@ text_tesim:smerte
 	</dd>
       </dl>
 
-      <dl>
+      <dl id="holberg_mester">
 	<dt>Find all dialogue (all TEI speak &lt;sp> ... &lt;/sp>) in the plays by Holberg where someone is talking about Mester Erich
         <a href="#form"
            onclick="var content = document.getElementById('who_talks_about_erich').innerHTML; 
@@ -608,7 +613,7 @@ author_name_tesim:holberg
 	</dd>
       </dl>
 
-      <dl>
+      <dl id="brandes_berlin">
         <dt>Find all letters sent from Berlin by Georg Brandes</dt>
         <dd>Filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd>
         <a href="#form"
@@ -627,16 +632,16 @@ sender_location_tesim:berlin
         </dd>
       </dl>
 
-       <dl>
+       <dl id="messages_from_paris_before_1850">
         <dt>Find all letters sent from Paris before 1850</dt>
         <dd>Filter by <kbd>letters</kbd>, search by <kbd>year_itsi</kbd> and <kbd>sender location</kbd>
         <a href="#form"
-           onclick="var content = document.getElementById('letters_from_berlin').innerHTML;
+           onclick="var content = document.getElementById('letters_from_paris').innerHTML;
                     document.getElementById('fieldlist').value = '*';
                     document.getElementById('queryfield').value = content;
                     console.log(content);"><strong>try it!</strong></a></dd>
         <dd>
-          <pre id="letters_from_berlin">
+          <pre id="letters_from_paris">
 subcollection_ssi:letters
 AND
 sender_location_tesim:paris
@@ -648,7 +653,7 @@ year_itsi:[1000 TO 1850]
       
       <h2>Filter, join and sort examples</h2>
       
-      <dl>
+      <dl id="did_holberg_write_poetry">
 	<dt>Find all works by Holberg containing poetry
         <a href="#form" onclick="var c1 = document.getElementById('holberg_poetry').innerHTML;
                                  document.getElementById('queryfield').value = c1;
@@ -668,7 +673,7 @@ author_name_tesim:holberg
 	</dd>
       </dl>
 
-      <dl>
+      <dl id="sort_brandes">
         <dt>Find all letters sent from Berlin by Georg Brandes as above, but sort descending by date (year)</dt>
         <dd>I.e., filter by <kbd>letters</kbd>, search by <kbd>author</kbd> and <kbd>sender location</kbd>
         <a href="#form" onclick="var content = document.getElementById('georg_in_berlin').innerHTML;
@@ -683,7 +688,7 @@ year_itsi desc
         </dd>
       </dl>
 
-      <dl>
+      <dl id="grundtvig_in_hell">
         <dt>Find all years when Grundtvig mentions hell (in Danish
         helvede).
         <a href="#form"
@@ -720,7 +725,7 @@ year_itsi asc
 
       </dl>
 
-      <dl>
+      <dl id="_extract_tesim">
         <dt>
           Note the difference between *_extract_tesim and
           genre_ssi. The former is to limit the search to text in the
@@ -759,7 +764,7 @@ genre_ssi:poetry
         heaven) in anyway correlate temporally?</dt>
       </dl>
 
-      <dl>
+      <dl id="gustaf_in_the_rain">
 	<dt>Poetry often consists of strophes containing lines (which
 	may or may not contain rhymes and rythm). In TEI, strophes are
 	lines in a line group element (&lt;lg&gt;). Find all strophes
@@ -796,7 +801,7 @@ position_isi desc
 	</dd>
       </dl>
 
-      <dl>
+      <dl id="gustaf_in_more_rain">
 	<dt>A poem is, technically in TEI, a sequence of line groups
 	(see above). Find all poems (i.e., works) containing strophes
 	with "regn" (i.e., rain) in volume 1 of Gustaf Munch
@@ -840,7 +845,7 @@ position_isi asc
 
       </dl>
 
-      <dl>
+      <dl id="like_a_mirror">
         <dt>Find paragraphs or strophes where there are references to
         1 Corinthians 13:12 (1 Kor 13,12: <em><q>For now we see only a
         reflection as in a mirror; then we shall see face to
