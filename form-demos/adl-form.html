@@ -97,16 +97,20 @@ type_ssi:work AND is_editorial_ssi:no
 	Encoding Initiative</a>, TEI for short, markup.</p>
 
 	<ul>
-	  <li>The TEI documents are basically <a
+	  <li>The text documents are basically <a
 	  href="http://cds.library.brown.edu/resources/stg/monographs/ohco.html">ordered
 	  hierarchies of overlapping content objects</a>. In
-	  particular we can never know what content there is on a
-	  given page, but we can always know on what page a given
-	  chapter, paragraph or whatever commences. That is a fundamental property of text.</li>
+	  particular we can not easily <strong>simultaneously</strong>
+	  ascertain what content there is on a given page and see what
+	  content there is in a paragraph starting on that. However,
+	  we can always know on what page a given chapter, paragraph
+	  or whatever commences. That is a fundamental property of
+	  text.</li>
           <li>
-            The content objects in the content hierarchy are 
-            <ul>
 
+            In text service the objects in the content hierarchy are 
+
+            <ul>
               <li>A <kbd>work</kbd> is an entity someone has decided
               to annotate using metadata. It is hence the unit the
               search engine returns in the result set. The granularity
@@ -115,7 +119,7 @@ type_ssi:work AND is_editorial_ssi:no
               each <kbd>works</kbd>, the higher the granularity.</li>
               
               <li>The <kbd>leaf</kbd> is the smallest unit of the tree
-              which can be identified and there retrievable and
+              which can be identified and therefore retrievable and
               possible to index. The user interface gives for each
               <kbd>work</kbd> in a result set a list of
               <kbd>leaf</kbd>s that are relevant for the
@@ -123,8 +127,8 @@ type_ssi:work AND is_editorial_ssi:no
               do usually not appear in table of contents.</li>
               
               <li>The <kbd>trunk</kbd>s are contained in
-              <kbd>work</kbd>s. It may contain other <kbd>trunk</kbd>
-              nodes, or <kbd>works</kbd> or <kbd>leafs</kbd>. It is
+              <kbd>work</kbd>s. They may contain other <kbd>trunk</kbd>
+              nodes, or <kbd>work</kbd>s or <kbd>leaf</kbd>s. It is
               possible to address a <kbd>trunk</kbd> so it is possible
               to send a URI to someone and say: <q>Read chapter 5, it
               is so good!</q> They are indexed and searchable in
@@ -140,7 +144,8 @@ type_ssi:work AND is_editorial_ssi:no
           </li>
 
 	  <li>
-	    All text is indexed down to paragraph level, which implies
+	    All text is indexed down to <kbd>leaf</kbd>, basically
+	    <q>paragraph</q>, level, which implies
 	    <ul>
 	      <li>Paragraph in prose: <kbd>&lt;p&gt; ... &lt;/p&gt;</kbd></li>
 	      <li>Speech in drama: <kbd>&lt;sp&gt; ... &lt;/sp&gt;</kbd></li>
@@ -149,16 +154,22 @@ type_ssi:work AND is_editorial_ssi:no
             The distinctions here between prose, drama and poetry is
             not based on philological analysis, rather, it is
             determined by what markup was used to represent the text.
-            There are other leaf nodes, like table rows, lists etc. 
+            There are other leaf nodes, like table rows, list items
+            etc.  <em>If the markup is made stringently, then this way of
+            indexing will be stringent.</em>
 	  </li>
+
 	  <li>The same text may appear on multiple levels in the
 	  index, and hence be addressed as, for example, paragraph,
-	  chapter and volume.</li>
+	  chapter and volume. In particular, <kbd>work</kbd>s will
+	  contain all text from its <kbd>leaf</kbd> nodes.</li>
+          
 	  <li>The index granularity differs between literary
 	  genres. For instance can poems and individual short stories
 	  or essays be treated as individual works, and a single
 	  volume contain hundreds of such items, whereas there are usually
-	  only  one novel in a volume.</li>
+	  only one novel in a volume.</li>
+          
 	</ul>
 
         <p>Note that this document does not define or describe all
@@ -167,7 +178,8 @@ type_ssi:work AND is_editorial_ssi:no
         it. The thing I have left out is basically more of the same.</p>
 
         <p>Finally, all fields are not available for all editions,
-        because the heterogeneity of the data.</p>
+        because the heterogeneity of the data, or wishes from the
+        projects contributing data.</p>
         
       </div>
 
@@ -190,8 +202,8 @@ type_ssi:work AND is_editorial_ssi:no
 	  <td style="vertical-align:top;text-align:left;">The ID of
 	  the record. It identifies the collection, the TEI file and
 	  is constructed as a string concatenation of that basename
-	  with the sequence of xml:ids identifying the uniq xpath to
-	  the content indexed.</td>
+	  with the xml:id of the the content indexed and some other
+	  stuff.</td>
 	  <td rowspan="3" style="vertical-align:top;text-align:right;">
 	    <pre>string</pre>
 	  </td>
@@ -199,7 +211,8 @@ type_ssi:work AND is_editorial_ssi:no
 
 	<tr>
 	  <td style="vertical-align:top;text-align:left;"><pre>volume_id_ssi</pre></td>
-	  <td style="vertical-align:top;text-align:left;">The ID of the volume that contain the node</td>
+	  <td style="vertical-align:top;text-align:left;">The ID of
+	  the volume that contain the node</td>
 	</tr>
 
 	<tr>
