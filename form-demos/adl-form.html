@@ -29,7 +29,7 @@
 	  <dt>Search for</dt>
 	  <dd>
 	    <textarea id="queryfield" name="q" cols="30" rows="10">
-type_ssi:work AND cat_ssi:work
+type_ssi:work AND is_editorial_ssi:no
 	    </textarea>
 	  </dd>
 	  <dt>filter query</dt>
@@ -96,7 +96,49 @@ type_ssi:work AND cat_ssi:work
 	href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Text
 	Encoding Initiative</a>, TEI for short, markup.</p>
 
-	<ul>	
+	<ul>
+	  <li>The TEI documents are basically <a
+	  href="http://cds.library.brown.edu/resources/stg/monographs/ohco.html">ordered
+	  hierarchies of overlapping content objects</a>. In
+	  particular we can never know what content there is on a
+	  given page, but we can always know on what page a given
+	  chapter, paragraph or whatever commences. That is a fundamental property of text.</li>
+          <li>
+            The content objects in the content hierarchy are 
+            <ul>
+
+              <li>A <kbd>work</kbd> is an entity someone has decided
+              to annotate using metadata. It is hence the unit the
+              search engine returns in the result set. The granularity
+              is an editorial issue. The more <kbd>work</kbd>s there
+              are in a <kbd>volume</kbd> the less text there is in
+              each <kbd>works</kbd>, the higher the granularity.</li>
+              
+              <li>The <kbd>leaf</kbd> is the smallest unit of the tree
+              which can be identified and there retrievable and
+              possible to index. The user interface gives for each
+              <kbd>work</kbd> in a result set a list of
+              <kbd>leaf</kbd>s that are relevant for the
+              search. <kbd>leaf</kbd>s are possible to quote but they
+              do usually not appear in table of contents.</li>
+              
+              <li>The <kbd>trunk</kbd>s are contained in
+              <kbd>work</kbd>s. It may contain other <kbd>trunk</kbd>
+              nodes, or <kbd>works</kbd> or <kbd>leafs</kbd>. It is
+              possible to address a <kbd>trunk</kbd> so it is possible
+              to send a URI to someone and say: <q>Read chapter 5, it
+              is so good!</q> They are indexed and searchable in
+              principle. However, the user interface only support them
+              in table of contents and quotation services.</li>
+              
+              <li>A <kbd>volume</kbd> is what comes close to a physical
+              book. It contains one or more <kbd>work</kbd>s. If a
+              <kbd>volume</kbd> contains only one work, we refer to it
+              as a <kbd>monograph</kbd></li>
+              
+            </ul>
+          </li>
+
 	  <li>
 	    All text is indexed down to paragraph level, which implies
 	    <ul>
@@ -107,6 +149,7 @@ type_ssi:work AND cat_ssi:work
             The distinctions here between prose, drama and poetry is
             not based on philological analysis, rather, it is
             determined by what markup was used to represent the text.
+            There are other leaf nodes, like table rows, lists etc. 
 	  </li>
 	  <li>The same text may appear on multiple levels in the
 	  index, and hence be addressed as, for example, paragraph,
@@ -161,13 +204,20 @@ type_ssi:work AND cat_ssi:work
 
 	<tr>
 	  <td style="vertical-align:top;text-align:left;"><pre>part_of_ssim</pre></td>
-	  <td style="vertical-align:top;text-align:left;">Array of IDs
-	  of trunk nodes being containers of the node at hand. Typically
-	  containing
-	  <ul>
-	    <li>One (or more) work(s) as a parent(s). Works may contain works.</li>
-	    <li>A volume as an ancestor</li>
-	  </ul>
+	  <td style="vertical-align:top;text-align:left;">
+
+            Array of IDs of trunk nodes being containers of the node
+            at hand. Typically containing
+
+	    <ul>
+	      <li>One (or more) work(s) as a parent(s). Works may contain works.</li>
+	      <li>A volume as an ancestor</li>
+	    </ul>
+
+	    Some works are monographs (i.e., their are contained in a
+	    volume with only one work), and for those the
+	    <kbd>part_of_ssim</kbd> field become meaningless.
+	  
 	  </td>
 	</tr>
 
