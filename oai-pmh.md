@@ -50,9 +50,9 @@ Examples:
 | [oai:kb.dk:images:billed:2010:okt:billeder](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:images:billed:2010:okt:billeder&metadataPrefix=ese) | Billeder | 
 | [oai:kb.dk:manus:ortsam:2009:okt:orientalia](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:ortsam:2009:okt:orientalia&metadataPrefix=ese) | Oriental Collection: Manuscripts |
 | [oai:kb.dk:pamphlets:dasmaa:2008:feb:daellsvarehus](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:pamphlets:dasmaa:2008:feb:daellsvarehus&metadataPrefix=ese) | Varehuskataloger |
-| [oai:kb.dk\:books:judsam:2010:maj:jstryk](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:books:judsam:2010:maj:jstryk&metadataPrefix=ese) | Judaistisk Samling: Tidlige & sjældne tryk |
+| [oai:kb.dk\\:books:judsam:2010:maj:jstryk](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:books:judsam:2010:maj:jstryk&metadataPrefix=ese) | Judaistisk Samling: Tidlige & sjældne tryk |
 | [oai:kb.dk:manus:judsam:2009:sep:dsh](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:judsam:2009:sep:dsh&metadataPrefix=ese) | David Simonsens Håndskrifter |
-| [oai:kb.dk\:books:ortsam:2011:mar:ostryk](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:books:ortsam:2011:mar:ostryk&metadataPrefix=ese) | Tidlige tryk i Orientalsk Samling |
+| [oai:kb.dk\\:books:ortsam:2011:mar:ostryk](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:books:ortsam:2011:mar:ostryk&metadataPrefix=ese) | Tidlige tryk i Orientalsk Samling |
 | [oai:kb.dk:manus:musman:2010:dec:viser](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:musman:2010:dec:viser&metadataPrefix=ese) | DFS |
 | [oai:kb.dk:images:billed:2014:jun:hca](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:images:billed:2014:jun:hca&metadataPrefix=ese) | H.C. Andersen |
 | [oai:kb.dk:manus:vmanus:2011:dec:ha](http://www.kb.dk/cop/oai/?verb=ListRecords&set=oai:kb.dk:manus:vmanus:2011:dec:ha&metadataPrefix=ese) | Vesterlandske håndskrifter |
